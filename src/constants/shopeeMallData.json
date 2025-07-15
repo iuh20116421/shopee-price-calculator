@@ -1,0 +1,278 @@
+{
+  "Cameras & Flycam": {
+    "Phụ kiện máy ảnh": {
+      "Đế pin": "6.38%",
+      "Bộ sạc pin": "6.38%",
+      "Túi đựng máy ảnh": "6.38%",
+      "Phụ kiện đèn Flash": {
+        "Dụng cụ tản sáng": "6.38%",
+        "Thiết bị kích đèn": "6.38%",
+        "Khác": "6.38%"
+      },
+      "Đèn Flash": "6.38%",
+      "Tay cầm chống rung": "6.38%",
+      "Thiết bị ánh sáng và phòng chụp": "6.38%",
+      "Khác": "6.38%",
+      "Giấy & phim in ảnh": "6.38%",
+      "Máy in ảnh": "6.38%",
+      "Chân máy ảnh": "6.38%"
+    },
+    "Phụ kiện chăm sóc máy ảnh": {
+      "Bóng thổi bụi": "6.38%",
+      "Bộ vệ sinh máy ảnh": "6.38%",
+      "Tủ & hộp chống ẩm": "6.38%",
+      "Bút lau & bàn chải làm sạch ống kính": "6.38%",
+      "Khác": "6.38%",
+      "Gói hút ẩm": "6.38%"
+    },
+    "Máy ảnh": {
+      "Máy quay hành động": "6.38%",
+      "Máy ảnh film": "6.38%",
+      "Máy ảnh cơ/DSLRs": "3.93%",
+      "Máy ảnh chụp lấy liền": "6.38%",
+      "Máy ảnh không gương lật": "3.93%",
+      "Khác": "6.38%",
+      "Máy ảnh kỹ thuật số": "6.38%",
+      "Máy quay phim": "6.38%"
+    },
+    "Phụ kiện Flycam": "6.38%",
+    "Flycam": "6.38%",
+    "Phụ kiện ống kính": {
+      "Kính lọc": "6.38%",
+      "Nắp ống kính": "6.38%",
+      "Loa che sáng ống kính": "6.38%",
+      "Ngàm ống kính & Ngàm chuyển đổi ống": "6.38%",
+      "Khác": "6.38%"
+    },
+    "Ống kính": "6.38%",
+    "Khác": "6.38%",
+    "Camera giám sát": {
+      "Camera giám sát kết nối internet": "6.38%",
+      "Camera giả chống trộm": "6.38%",
+      "Đầu ghi hình": "6.38%",
+      "Khác": "6.38%",
+      "Camera ngụy trang": "6.38%"
+    }
+  },
+  "Chăm Sóc Thú Cưng": {
+    "Vệ sinh cho thú cưng": {
+      "Khay & Bồn vệ sinh cho mèo": "6.87%",
+      "Tã cho thú cưng": "6.87%",
+      "Khay huấn luyện vệ sinh cho chó": "6.87%",
+      "Khác": "6.87%",
+      "Túi & Xẻng dọn vệ sinh": "6.87%",
+      "Lót chuồng cho thú nhỏ": "6.87%"
+    },
+    "Khác": "6.87%",
+    "Phụ kiện cho thú cưng": {
+      "Phụ kiện thủy sinh": "6.87%",
+      "Bát & dụng cụ ăn": "6.87%",
+      "Vòng cổ, dây dắt & rọ mõm": "6.87%",
+      "Khác": "6.87%",
+      "Nội thất cho thú cưng": {
+        "Đệm & Thảm": "6.87%",
+        "Chuồng & lồng": "6.87%",
+        "Phụ kiện nhà & chuồng": "6.87%",
+        "Nhà": "6.87%",
+        "Khác": "6.87%",
+        "Bàn & cây cào móng": "6.87%"
+      },
+      "Đồ chơi": {
+        "Đồ chơi cho chim": "6.87%",
+        "Đồ chơi cho chó mèo": "6.87%",
+        "Khác": "6.87%",
+        "Đồ chơi cho thú nhỏ": "6.87%"
+      },
+      "Thiết bị du lịch": "6.87%"
+    },
+    "Quần áo & phụ kiện": {
+      "Giày, tất & bảo vệ móng": "6.87%",
+      "Kính mắt": "6.87%",
+      "Phụ kiện lông": "6.87%",
+      "Mũ nón thú cưng": "6.87%",
+      "Phụ kiện đeo cổ": "6.87%",
+      "Khác": "6.87%",
+      "Quần áo thú cưng": "6.87%",
+      "Áo mưa chó mèo": "6.87%"
+    },
+    "Thức ăn cho thú cưng": {
+      "Thức ăn cho cá": "6.87%",
+      "Thức ăn cho chim": "6.87%",
+      "Thức ăn cho mèo": "6.87%",
+      "Snack cho mèo": "6.87%",
+      "Thức ăn cho chó": "6.87%",
+      "Snack cho chó": "6.87%",
+      "Khác": "6.87%",
+      "Thức ăn cho bò sát": "6.87%",
+      "Thức ăn cho thú nhỏ": "6.87%",
+      "Snack cho thú nhỏ": "6.87%"
+    },
+    "Làm đẹp cho thú cưng": {
+      "Chăm sóc móng": "6.87%",
+      "Chăm sóc lông": "6.87%",
+      "Chăm sóc răng miệng": "6.87%",
+      "Khác": "6.87%"
+    },
+    "Chăm sóc sức khỏe": {
+      "Tẩy giun & diệt bọ chét": "6.87%",
+      "Dược phẩm": "6.87%",
+      "Khác": "6.87%",
+      "Vitamin & chất bổ sung dinh dưỡng": "6.87%"
+    }
+  },
+  "Điện Thoại & Phụ Kiện": {
+    "Phụ kiện": {
+      "Cáp, sạc & bộ chuyển đổi": {
+        "Bao đựng cáp, Bảo vệ cáp & Cuộn dây": "6.38%",
+        "Bộ sạc": "6.38%",
+        "Đế sạc đứng": "6.38%",
+        "Cáp & Bộ chuyển đổi di động": "6.38%",
+        "Khác": "6.38%",
+        "Bộ sạc du lịch": "6.38%"
+      },
+      "Vỏ bao, Ốp lưng & Miếng dán": {
+        "Khác": "6.38%",
+        "Vỏ bao, Ốp lưng & Miếng dán điện thoại": "6.38%",
+        "Vỏ bao, Ốp lưng & Miếng dán máy tính bảng": "6.38%"
+      },
+      "Thiết bị trình chiếu": "6.38%",
+      "Thẻ nhớ": "6.38%",
+      "Đèn flash điện thoại & Đèn selfie": "6.38%",
+      "Ống kính điện thoại": "6.38%",
+      "Túi đựng điện thoại": "6.38%",
+      "Khác": "6.38%",
+      "Kẹp điện thoại": "6.38%",
+      "Dây đeo điện thoại & Móc khóa": "6.38%",
+      "Bộ phát Wifi bỏ túi": "6.38%",
+      "Sạc dự phòng & Pin": {
+        "Pin": "6.38%",
+        "Khác": "6.38%",
+        "Sạc dự phòng": "6.38%",
+        "Vỏ sạc dự phòng": "6.38%"
+      },
+      "Miếng dán màn hình": "6.38%",
+      "Phụ kiện selfie": {
+        "Giá đỡ": "6.38%",
+        "Khác": "6.38%",
+        "Điều khiển chụp hình": "6.38%",
+        "Gậy selfie": "6.38%"
+      },
+      "Bút cảm ứng": "6.38%",
+      "Quạt USB & Quạt điện thoại": "6.38%",
+      "Đèn USB & Đèn điện thoại": "6.38%",
+      "Phụ kiện cho đồng hồ thông minh": "6.38%"
+    },
+    "Điện thoại": "1.47%",
+    "Khác": "6.38%",
+    "Thẻ sim": "6.38%",
+    "Máy tính bảng": "1.47%",
+    "Bộ đàm": "6.38%",
+    "Thiết bị đeo thông minh": {
+      "Thiết bị định vị GPS": "6.38%",
+      "Khác": "6.38%",
+      "Đồng hồ thông minh & Vòng đeo tay sức khỏe": "6.38%",
+      "Thiết bị thực tế ảo": "6.38%"
+    }
+  },
+  "Đồng Hồ": {
+    "Đồng hồ nam": "6.87%",
+    "Khác": "6.87%",
+    "Bộ đồng hồ & Đồng hồ cặp": "6.87%",
+    "Phụ kiện đồng hồ": {
+      "Pin đồng hồ": "6.87%",
+      "Hộp đựng đồng hồ": "6.87%",
+      "Khóa đồng hồ": "6.87%",
+      "Khác": "6.87%",
+      "Dụng cụ sửa chữa": "6.87%",
+      "Dây đồng hồ": "6.87%"
+    },
+    "Đồng hồ nữ": "6.87%"
+  },
+  "Du lịch & Hành lý": {
+    "Vali": "6.87%",
+    "Khác": "6.87%",
+    "Phụ kiện du lịch": {
+      "Khóa vali": "7.95%",
+      "Áo trùm vali": "7.95%",
+      "Cân hành lý": "7.95%",
+      "Dây đai vali": "7.95%",
+      "Thẻ hành lý": "7.95%",
+      "Phụ kiện khác": "7.95%",
+      "Ví hộ chiếu": "7.95%",
+      "Túi du lịch nhiều ngăn": "7.95%",
+      "Gối & Bịt mắt": "7.95%",
+      "Bộ chiết mỹ phẩm": "7.95%"
+    },
+    "Túi du lịch": {
+      "Túi dây rút": "7.95%",
+      "Túi trống": "7.95%",
+      "Túi gấp gọn": "7.95%",
+      "Túi khác": "7.95%"
+    }
+  },
+  "Gaming & Console": {
+    "Phụ kiện console": "6.87%",
+    "Máy chơi game": {
+      "Gameboy": "6.38%",
+      "Nintendo DS": "6.38%",
+      "Khác": "6.38%",
+      "Playstation": "6.38%",
+      "PS Vita": "6.38%",
+      "PSP": "6.38%",
+      "Switch": "6.38%",
+      "Wii": "6.38%",
+      "Xbox": "6.38%"
+    },
+    "Khác": "6.87%",
+    "Video Games": {
+      "Game Gameboy": "6.87%",
+      "Game Nintendo DS": "6.87%",
+      "Game Máy Khác": "6.87%",
+      "Game PC": "6.87%",
+      "Game Playstation": "6.87%",
+      "Game PS Vita": "6.87%",
+      "Game PSP": "6.87%",
+      "Game Switch": "6.87%",
+      "Game Wii": "6.87%",
+      "Game Xbox": "6.87%"
+    }
+  },
+  "Giày Dép Nam": {
+    "Bốt": {
+      "Bốt thời trang": "6.87%",
+      "Khác": "6.87%",
+      "Bốt đi mưa": "6.87%",
+      "Bốt bảo hộ": "6.87%"
+    },
+    "Giày tây lười": "6.87%",
+    "Khác": "6.87%",
+    "Giày Oxfords & Giày buộc dây": "6.87%",
+    "Xăng-đan & Dép": {
+      "Dép xỏ ngón": "6.87%",
+      "Dép mát-xa": "6.87%",
+      "Dép đi trong nhà": "6.87%",
+      "Khác": "6.87%",
+      "Xăng-đan": "6.87%"
+    },
+    "Phụ kiện giày dép": {
+      "Khác": "6.87%",
+      "Dụng cụ chăm sóc & Vệ sinh giày": "6.87%",
+      "Khử mùi giày dép": "6.87%",
+      "Cây đón gót & Giữ form giày": "6.87%",
+      "Lót giày": "6.87%",
+      "Dây giày": "6.87%"
+    },
+    "Giày sục": "6.87%",
+    "Giày thể thao/ Sneakers": "6.87%"
+  },
+  "Giày Dép Nữ": {
+    "Bốt": {
+      "Bốt thời trang": "6.87%",
+      "Khác": "6.87%",
+      "Bốt đi mưa": "6.87%"
+    },
+    "Xăng-đan và dép": {
+      "Xăng-đan đế bằng": "6.87%"
+    }
+  }
+} 
