@@ -1,0 +1,130 @@
+{
+  "common": {
+    "appName": "Shopee Price Calculator",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "refresh": "Refresh",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "reset": "Reset"
+  },
+  "navigation": {
+    "home": "Home",
+    "calculator": "Price Calculator",
+    "services": "E-commerce Services",
+    "blog": "E-commerce Blog",
+    "guide": "User Guide",
+    "contact": "Contact",
+    "consultation": "Get Consultation"
+  },
+  "services": {
+    "shopeeServices": "Shopee Services",
+    "lazadaServices": "Lazada Services",
+    "training": "Training Programs",
+    "consulting": "Business Consulting"
+  },
+  "blog": {
+    "news": "News",
+    "experience": "Experience Sharing",
+    "guide": "Guides",
+    "qa": "Q&A"
+  },
+  "home": {
+    "hero": {
+      "title": "Shopee Price Calculator Tool",
+      "titleHighlight": "Shopee",
+      "subtitle": "Optimize your Shopee business profits with our professional price calculator. Set accurate product prices, track competition, and increase revenue.",
+      "ctaPrimary": "Start Calculating Now",
+      "ctaSecondary": "View Guide"
+    },
+    "features": {
+      "title": "Why Choose Us?",
+      "subtitle": "Tools specially designed for Shopee sellers to help you run your business more effectively.",
+      "accuracy": {
+        "title": "Accurate Calculations",
+        "description": "High-accuracy Shopee product pricing tool to help you optimize profits."
+      },
+      "analysis": {
+        "title": "Market Analysis",
+        "description": "Track price trends and competition on the Shopee market to make the best business decisions."
+      },
+      "security": {
+        "title": "Information Security",
+        "description": "Your product information and business data are absolutely secure."
+      },
+      "performance": {
+        "title": "Fast Features",
+        "description": "User-friendly interface with features optimized for high performance."
+      }
+    },
+    "cta": {
+      "title": "Ready to Optimize Your Business?",
+      "subtitle": "Start using the Shopee price calculator today and discover your business potential.",
+      "button": "Try for Free"
+    }
+  },
+  "calculator": {
+    "title": "Shopee Product Price Calculator",
+    "subtitle": "Enter product information to calculate optimal selling price and desired profit",
+    "form": {
+      "title": "Product Information",
+      "costPrice": "Cost Price (VND)",
+      "costPricePlaceholder": "Enter product cost price",
+      "desiredProfit": "Desired Profit (VND)",
+      "desiredProfitPlaceholder": "Enter desired profit",
+      "shippingFee": "Shipping Fee (VND)",
+      "shippingFeePlaceholder": "Enter shipping fee",
+      "shopeeCommission": "Shopee Commission (%)",
+      "shopeeCommissionPlaceholder": "Enter Shopee commission %",
+      "calculate": "Calculate",
+      "reset": "Reset"
+    },
+    "results": {
+      "title": "Calculation Results",
+      "suggestedPrice": "Suggested Price",
+      "costPrice": "Cost Price:",
+      "shopeeFee": "Shopee Fee:",
+      "shippingFee": "Shipping Fee:",
+      "profit": "Profit:",
+      "profitMargin": "Profit Margin:",
+      "recommendation": "Recommendation:",
+      "recommendations": {
+        "high": "Excellent profit margin! Product has high business potential.",
+        "medium": "Good profit margin. Consider increasing price for better optimization.",
+        "low": "Low profit margin. Should review pricing strategy or find better suppliers."
+      },
+      "placeholder": "Enter product information and click \"Calculate\" to see results"
+    },
+    "validation": {
+      "costPriceRequired": "Please enter a valid cost price"
+    }
+  },
+  "footer": {
+    "description": "Professional Shopee product price calculator tool. Help you optimize profits and price products accurately.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "contactInfo": "Contact Information",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "copyright": "All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "paymentPolicy": "Payment Policy",
+    "returnPolicy": "Return & Refund Policy"
+  },
+  "language": {
+    "vi": "Tiếng Việt",
+    "en": "English"
+  }
+} 
