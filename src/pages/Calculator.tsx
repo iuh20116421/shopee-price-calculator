@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Calculator as CalculatorIcon, Box, Store, TrendingUp, Facebook, Phone } from 'lucide-react';
+import { Calculator as CalculatorIcon, Box, Store, TrendingUp, Facebook, Phone, Search } from 'lucide-react';
 import shopeeMallData from '../constants/shopeeMallData.json';
 import shopeeRegularData from '../constants/shopeeRegularData.json';
+import CategorySelector from '../components/CategorySelector';
 import { 
   calculateSellingPrice, 
   formatCurrency, 
@@ -16,11 +17,20 @@ interface CategoryData {
   [key: string]: string | CategoryData;
 }
 
+interface ProductSuggestion {
+  name: string;
+  fee: string;
+  path: string[];
+}
+
 const Calculator: React.FC = () => {
   const { t } = useTranslation();
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-  const [selectedProductFee, setSelectedProductFee] = useState<string | null>(null);
-  const [currentData, setCurrentData] = useState<CategoryData>({});
+  const [productName, setProductName] = useState('');
+  const [selectedProduct, setSelectedProduct] = useState<ProductSuggestion | null>(null);
+  const [suggestions, setSuggestions] = useState<ProductSuggestion[]>([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [isSearching, setIsSearching] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState<{path: string[], fee: string} | null>(null);
   const [formData, setFormData] = useState({
     cogs: '',
     shopeeType: 'mall' as 'mall' | 'regular',
@@ -39,103 +49,168 @@ const Calculator: React.FC = () => {
     return formData.shopeeType === 'mall' ? shopeeMallData : shopeeRegularData;
   };
 
+  // Tìm kiếm sản phẩm trong data
+  const searchProducts = useCallback((searchTerm: string): ProductSuggestion[] => {
+    if (!searchTerm.trim()) return [];
+    
+    const productData = getProductData();
+    const results: ProductSuggestion[] = [];
+    
+    // Tách từ khóa thành các từ riêng biệt và chuẩn hóa (chỉ chuyển về chữ thường, giữ nguyên dấu)
+    const searchWords = searchTerm
+      .toLowerCase()
+      .trim()
+      .split(/\s+/)
+      .filter(word => word.length > 0);
+    
+    if (searchWords.length === 0) return [];
+    
+    const searchInCategory = (data: CategoryData, path: string[] = []) => {
+      for (const [key, value] of Object.entries(data)) {
+        const currentPath = [...path, key];
+        
+        if (typeof value === 'string') {
+          // Đây là sản phẩm (có giá trị %)
+          const productNameLower = key.toLowerCase();
+          
+          // Kiểm tra xem tên sản phẩm có chứa ít nhất 1 từ khóa không
+          const hasMatch = searchWords.some(word => productNameLower.includes(word));
+          
+          if (hasMatch) {
+            results.push({
+              name: key,
+              fee: value,
+              path: currentPath
+            });
+          }
+        } else {
+          // Đây là danh mục con, tiếp tục tìm kiếm
+          searchInCategory(value, currentPath);
+        }
+      }
+    };
+    
+    searchInCategory(productData);
+    
+    // Sắp xếp theo độ tương đồng
+    return results.sort((a, b) => {
+      const aNameLower = a.name.toLowerCase();
+      const bNameLower = b.name.toLowerCase();
+      
+      // Đếm số từ khóa khớp
+      const aMatchCount = searchWords.filter(word => aNameLower.includes(word)).length;
+      const bMatchCount = searchWords.filter(word => bNameLower.includes(word)).length;
+      
+      // Sắp xếp theo số từ khóa khớp (nhiều hơn trước)
+      if (aMatchCount !== bMatchCount) {
+        return bMatchCount - aMatchCount;
+      }
+      
+      // Nếu số từ khóa khớp bằng nhau, ưu tiên sản phẩm có tên bắt đầu bằng từ khóa
+      const aStartsWith = searchWords.some(word => aNameLower.startsWith(word));
+      const bStartsWith = searchWords.some(word => bNameLower.startsWith(word));
+      
+      if (aStartsWith && !bStartsWith) return -1;
+      if (!aStartsWith && bStartsWith) return 1;
+      
+      // Cuối cùng sắp xếp theo tên
+      return a.name.localeCompare(b.name);
+    }).slice(0, 10); // Giới hạn 10 kết quả
+  }, [formData.shopeeType]);
+
+  // Debounced search
+  useEffect(() => {
+    if (!productName.trim()) {
+      setSuggestions([]);
+      setShowSuggestions(false);
+      return;
+    }
+
+    setIsSearching(true);
+    const timeoutId = setTimeout(() => {
+      const results = searchProducts(productName);
+      setSuggestions(results);
+      setShowSuggestions(results.length > 0);
+      setIsSearching(false);
+    }, 500); // Debounce 500ms
+
+    return () => {
+      clearTimeout(timeoutId);
+      setIsSearching(false);
+    };
+  }, [productName, searchProducts]);
+
+  // Handle click outside to close suggestions
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (!target.closest('.product-search-container')) {
+        setShowSuggestions(false);
+      }
+    };
+
+    if (showSuggestions) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [showSuggestions]);
+
   // Xử lý thay đổi loại Shopee
   const handleShopeeTypeChange = (type: 'mall' | 'regular') => {
     setFormData(prev => ({ ...prev, shopeeType: type }));
-    setSelectedCategories([]);
-    setSelectedProductFee(null);
-    setCurrentData({});
+    setProductName('');
+    setSelectedProduct(null);
+    setSuggestions([]);
+    setShowSuggestions(false);
     setShowResult(false);
     setCalculationResult(null);
+    setSelectedCategory(null);
+    clearError('product');
   };
 
-  // Xử lý chọn danh mục
-  const handleCategorySelect = (level: number, value: string) => {
-    // Xóa lỗi category nếu có
-    clearError('category');
-    
-    const newCategories = [...selectedCategories.slice(0, level - 1), value];
-    setSelectedCategories(newCategories);
-
-    const productData = getProductData();
-    let currentLevelData = productData;
-    
-    // Điều hướng qua các cấp danh mục đã chọn
-    for (let i = 0; i < newCategories.length; i++) {
-      const categoryValue = currentLevelData[newCategories[i]];
-      
-      if (typeof categoryValue === 'string') {
-        // Đây là cấp cuối cùng, hiển thị phí
-        setSelectedProductFee(categoryValue);
-        setShowResult(false);
-        setCalculationResult(null);
-        return;
-      } else {
-        currentLevelData = categoryValue as CategoryData;
-      }
-    }
-
-    setCurrentData(currentLevelData);
-    setSelectedProductFee(null);
+  // Xử lý chọn category
+  const handleCategorySelect = (categoryPath: string[], fee: string) => {
+    setSelectedCategory({ path: categoryPath, fee });
+    setProductName(categoryPath[categoryPath.length - 1]);
+    setSelectedProduct({
+      name: categoryPath[categoryPath.length - 1],
+      fee: fee,
+      path: categoryPath
+    });
     setShowResult(false);
     setCalculationResult(null);
+    clearError('product');
   };
 
-  // Lấy danh sách danh mục cho level
-  const getCategoryOptions = (level: number): string[] => {
-    if (level === 1) {
-      return Object.keys(getProductData());
-    }
-
-    const productData = getProductData();
-    let currentLevelData = productData;
+  // Xử lý chọn sản phẩm từ gợi ý
+  const handleProductSelect = (product: ProductSuggestion) => {
+    setSelectedProduct(product);
+    setProductName(product.name);
+    setSuggestions([]);
+    setShowSuggestions(false);
+    setShowResult(false);
+    setCalculationResult(null);
+    clearError('product');
     
-    // Điều hướng đến cấp trước đó
-    for (let i = 0; i < level - 1; i++) {
-      if (selectedCategories[i]) {
-        const categoryValue = currentLevelData[selectedCategories[i]];
-        if (typeof categoryValue === 'string') {
-          // Nếu đã đến cấp cuối, không có cấp con
-          return [];
-        }
-        currentLevelData = categoryValue as CategoryData;
-      } else {
-        return [];
-      }
-    }
-
-    return Object.keys(currentLevelData);
+    // Tự động chọn category theo đường dẫn của sản phẩm
+    setSelectedCategory({
+      path: product.path,
+      fee: product.fee
+    });
   };
 
-  // Kiểm tra xem có cần hiển thị cấp danh mục tiếp theo không
-  const shouldShowNextLevel = (level: number): boolean => {
-    if (level === 1) {
-      return Boolean(selectedCategories[0]) && getCategoryOptions(2).length > 0;
+  // Xử lý thay đổi tên sản phẩm
+  const handleProductNameChange = (value: string) => {
+    setProductName(value);
+    if (!value.trim()) {
+      setSelectedProduct(null);
+      setSuggestions([]);
+      setShowSuggestions(false);
     }
-    
-    const productData = getProductData();
-    let currentLevelData = productData;
-    
-    // Điều hướng đến cấp hiện tại
-    for (let i = 0; i < level - 1; i++) {
-      if (selectedCategories[i]) {
-        const categoryValue = currentLevelData[selectedCategories[i]];
-        if (typeof categoryValue === 'string') {
-          return false; // Đã đến cấp cuối
-        }
-        currentLevelData = categoryValue as CategoryData;
-      } else {
-        return false;
-      }
-    }
-    
-    // Kiểm tra xem cấp hiện tại có cấp con không
-    if (selectedCategories[level - 1]) {
-      const categoryValue = currentLevelData[selectedCategories[level - 1]];
-      return typeof categoryValue === 'object' && Object.keys(categoryValue).length > 0;
-    }
-    
-    return false;
+    clearError('product');
   };
 
   // Hiển thị toast thông báo
@@ -166,8 +241,8 @@ const Calculator: React.FC = () => {
   const validateForm = (): boolean => {
     const newErrors: {[key: string]: string} = {};
 
-    if (!selectedProductFee) {
-      newErrors.category = 'Vui lòng chọn ngành hàng đầy đủ';
+    if (!selectedCategory) {
+      newErrors.product = 'Vui lòng chọn ngành hàng';
     }
 
     if (!formData.cogs || parseFloat(formData.cogs) <= 0) {
@@ -217,7 +292,7 @@ const Calculator: React.FC = () => {
 
     const input: CalculationInput = {
       cogs: parseFloat(formData.cogs),
-      productFeePercent: parseFeeString(selectedProductFee!),
+      productFeePercent: parseFeeString(selectedCategory!.fee),
       shopeeType: formData.shopeeType,
       marketingCostPercent: formData.marketingCostPercent ? parseFloat(formData.marketingCostPercent) : undefined,
       desiredProfitPercent: parseFloat(formData.desiredProfitPercent),
@@ -284,188 +359,106 @@ const Calculator: React.FC = () => {
         </div>
 
         <div className="calculator-content">
-          <div className="form-grid">
-            {/* Cài đặt Shopee */}
-            <div className="form-section">
-              <div className="section-title">
-                <Store className="section-icon" />
-                Cài đặt Shopee
-              </div>
-
-              {/* Pi Ship */}
-              <div className="form-group">
-                <label>Sử dụng Pi Ship:</label>
-                <div className="radio-group">
-                  <div className="radio-item">
-                    <input
-                      type="radio"
-                      id="piShipYes"
-                      name="piShip"
-                      value="yes"
-                      checked={formData.piShip === 'yes'}
-                      onChange={(e) => setFormData(prev => ({ ...prev, piShip: e.target.value as 'yes' | 'no' }))}
-                    />
-                    <label htmlFor="piShipYes">Có (1,620 VND)</label>
-                  </div>
-                  <div className="radio-item">
-                    <input
-                      type="radio"
-                      id="piShipNo"
-                      name="piShip"
-                      value="no"
-                      checked={formData.piShip === 'no'}
-                      onChange={(e) => setFormData(prev => ({ ...prev, piShip: e.target.value as 'yes' | 'no' }))}
-                    />
-                    <label htmlFor="piShipNo">Không</label>
-                  </div>
-                </div>
-              </div>
-
-              {/* Content Xtra */}
-              <div className="form-group">
-                <label>Dịch vụ Content Xtra:</label>
-                <div className="checkbox-group">
-                  <div className="checkbox-item">
-                    <input
-                      type="checkbox"
-                      id="contentXtra"
-                      checked={formData.contentXtra}
-                      onChange={(e) => setFormData(prev => ({ ...prev, contentXtra: e.target.checked }))}
-                    />
-                    <label htmlFor="contentXtra">
-                      Sử dụng Content Xtra (2.59%
-                      {formData.shopeeType === 'mall' ? ', tối đa 50,000 VND' : ''})
-                    </label>
-                  </div>
-                </div>
-              </div>
-
-              {/* Voucher Xtra */}
-              <div className="form-group">
-                <label>Dịch vụ Voucher Xtra:</label>
-                <div className="checkbox-group">
-                  <div className="checkbox-item">
-                    <input
-                      type="checkbox"
-                      id="voucherXtra"
-                      checked={formData.voucherXtra}
-                      onChange={(e) => setFormData(prev => ({ ...prev, voucherXtra: e.target.checked }))}
-                    />
-                    <label htmlFor="voucherXtra">Sử dụng Voucher Xtra (1.96%)</label>
-                  </div>
-                </div>
-              </div>
+          {/* Thông tin sản phẩm - Full width */}
+          <div className="form-section wide">
+            <div className="section-title">
+              <Box className="section-icon" />
+              Thông tin sản phẩm
             </div>
 
-            {/* Thông tin sản phẩm */}
-            <div className="form-section">
-              <div className="section-title">
-                <Box className="section-icon" />
-                Thông tin sản phẩm
-              </div>
-
-              {/* Loại Shopee */}
-              <div className="form-group">
-                <label>Loại Shopee:<span className="required">*</span></label>
-                <div className="radio-group">
-                  <div className="radio-item">
-                    <input
-                      type="radio"
-                      id="shopeeMall"
-                      name="shopeeType"
-                      value="mall"
-                      checked={formData.shopeeType === 'mall'}
-                      onChange={() => handleShopeeTypeChange('mall')}
-                    />
-                    <label htmlFor="shopeeMall">Shopee Mall</label>
-                  </div>
-                  <div className="radio-item">
-                    <input
-                      type="radio"
-                      id="shopeeRegular"
-                      name="shopeeType"
-                      value="regular"
-                      checked={formData.shopeeType === 'regular'}
-                      onChange={() => handleShopeeTypeChange('regular')}
-                    />
-                    <label htmlFor="shopeeRegular">Shopee thường</label>
+            <div className="product-info-grid">
+              {/* Loại Shopee và Tên sản phẩm */}
+              <div className="product-info-row">
+                {/* Loại Shopee */}
+                <div className="form-group inline">
+                  <label>Loại Shopee:<span className="required">*</span></label>
+                  <div className="radio-group">
+                    <div className="radio-item">
+                      <input
+                        type="radio"
+                        id="shopeeMall"
+                        name="shopeeType"
+                        value="mall"
+                        checked={formData.shopeeType === 'mall'}
+                        onChange={() => handleShopeeTypeChange('mall')}
+                      />
+                      <label htmlFor="shopeeMall">Shopee Mall</label>
+                    </div>
+                    <div className="radio-item">
+                      <input
+                        type="radio"
+                        id="shopeeRegular"
+                        name="shopeeType"
+                        value="regular"
+                        checked={formData.shopeeType === 'regular'}
+                        onChange={() => handleShopeeTypeChange('regular')}
+                      />
+                      <label htmlFor="shopeeRegular">Shopee thường</label>
+                    </div>
                   </div>
                 </div>
+
+                {/* Tên sản phẩm */}
+                <div className="form-group">
+                  <label>Tên sản phẩm:<span className="required">*</span></label>
+                  <div className="product-search-container">
+                    <div className="search-input-wrapper">
+                      <Search className="search-icon" />
+                      <input
+                        name="product"
+                        type="text"
+                        value={productName}
+                        onChange={(e) => handleProductNameChange(e.target.value)}
+                        placeholder="Nhập tên sản phẩm để tìm kiếm..."
+                        className={`search-input ${errors.product ? 'error' : ''}`}
+                      />
+                      {isSearching && <div className="searching-indicator">Đang tìm...</div>}
+                    </div>
+                    
+                    {/* Dropdown gợi ý */}
+                    {showSuggestions && suggestions.length > 0 && (
+                      <div className="suggestions-dropdown">
+                        {suggestions.map((product, index) => (
+                          <div
+                            key={index}
+                            className="suggestion-item"
+                            onClick={() => handleProductSelect(product)}
+                          >
+                            <div className="suggestion-name">{product.name}</div>
+                            <div className="suggestion-path">{product.path.join(' > ')}</div>
+                            <div className="suggestion-fee">{product.fee}</div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                  {errors.product && <div className="error-message">{errors.product}</div>}
+                </div>
               </div>
 
-              {/* Danh mục cấp 1 */}
+              {/* Chọn ngành hàng */}
               <div className="form-group">
-                <label>Ngành hàng cấp 1:<span className="required">*</span></label>
-                <select 
-                  name="category"
-                  value={selectedCategories[0] || ''}
-                  onChange={(e) => handleCategorySelect(1, e.target.value)}
-                  className={errors.category ? 'error' : ''}
-                >
-                  <option value="">Chọn ngành hàng cấp 1</option>
-                  {getCategoryOptions(1).map(category => (
-                    <option key={category} value={category}>{category}</option>
-                  ))}
-                </select>
-                {errors.category && <div className="error-message">{errors.category}</div>}
+                <label>Chọn ngành hàng:<span className="required">*</span></label>
+                <CategorySelector
+                  data={getProductData()}
+                  onCategorySelect={handleCategorySelect}
+                  selectedPath={selectedCategory?.path || []}
+                  maxLevels={formData.shopeeType === 'mall' ? 4 : 2}
+                />
               </div>
 
-              {/* Danh mục cấp 2 */}
-              {shouldShowNextLevel(1) && (
-                <div className="form-group">
-                  <label>Ngành hàng cấp 2:<span className="required">*</span></label>
-                  <select 
-                    value={selectedCategories[1] || ''}
-                    onChange={(e) => handleCategorySelect(2, e.target.value)}
-                    className={errors.category ? 'error' : ''}
-                  >
-                    <option value="">Chọn ngành hàng cấp 2</option>
-                    {getCategoryOptions(2).map(category => (
-                      <option key={category} value={category}>{category}</option>
-                    ))}
-                  </select>
-                  {errors.category && <div className="error-message">{errors.category}</div>}
-                </div>
-              )}
-
-              {/* Danh mục cấp 3 */}
-              {shouldShowNextLevel(2) && (
-                <div className="form-group">
-                  <label>Ngành hàng cấp 3:<span className="required">*</span></label>
-                  <select 
-                    value={selectedCategories[2] || ''}
-                    onChange={(e) => handleCategorySelect(3, e.target.value)}
-                    className={errors.category ? 'error' : ''}
-                  >
-                    <option value="">Chọn ngành hàng cấp 3</option>
-                    {getCategoryOptions(3).map(category => (
-                      <option key={category} value={category}>{category}</option>
-                    ))}
-                  </select>
-                  {errors.category && <div className="error-message">{errors.category}</div>}
-                </div>
-              )}
-
-              {/* Danh mục cấp 4 */}
-              {shouldShowNextLevel(3) && (
-                <div className="form-group">
-                  <label>Ngành hàng cấp 4:</label>
-                  <select 
-                    value={selectedCategories[3] || ''}
-                    onChange={(e) => handleCategorySelect(4, e.target.value)}
-                  >
-                    <option value="">Chọn ngành hàng cấp 4</option>
-                    {getCategoryOptions(4).map(category => (
-                      <option key={category} value={category}>{category}</option>
-                    ))}
-                  </select>
-                </div>
-              )}
-
-              {/* Hiển thị phí cố định */}
-              {selectedProductFee && (
-                <div className="fee-display">
-                  <strong>Phí cố định sản phẩm: {selectedProductFee}</strong>
+              {/* Hiển thị sản phẩm đã chọn */}
+              {selectedProduct && (
+                <div className="selected-product">
+                  <div className="selected-product-info">
+                    <strong>Sản phẩm đã chọn:</strong> {selectedProduct.name}
+                  </div>
+                  <div className="selected-product-path">
+                    <strong>Ngành hàng:</strong> {selectedProduct.path.join(' > ')}
+                  </div>
+                  <div className="selected-product-fee">
+                    <strong>Phí cố định:</strong> {selectedProduct.fee}
+                  </div>
                 </div>
               )}
 
@@ -491,63 +484,135 @@ const Calculator: React.FC = () => {
             </div>
           </div>
 
-          {/* Chi phí dự tính */}
+          {/* Cài đặt Shopee và Chi phí dự tính - Combined */}
           <div className="form-section wide">
-            <div className="section-title">
-              <TrendingUp className="section-icon" />
-              Chi phí dự tính
-            </div>
+            <div className="settings-cost-layout">
+              {/* Cài đặt Shopee */}
+              <div className="settings-section">
+                <div className="section-title">
+                  <Store className="section-icon" />
+                  Cài đặt Shopee
+                </div>
 
-            <div className="cost-grid">
-              {/* Lợi nhuận mong muốn */}
-              <div className="form-group">
-                <label>Lợi nhuận mong muốn (%):<span className="required">*</span></label>
-                <input
-                  name="desiredProfitPercent"
-                  type="text"
-                  value={formData.desiredProfitPercent}
-                  onChange={(e) => {
-                    clearError('desiredProfitPercent');
-                    setFormData(prev => ({ 
-                      ...prev, 
-                      desiredProfitPercent: formatPercentageInput(e.target.value) 
-                    }));
-                  }}
-                  placeholder="20.00"
-                  className={errors.desiredProfitPercent ? 'error' : ''}
-                />
-                {errors.desiredProfitPercent && <div className="error-message">{errors.desiredProfitPercent}</div>}
+                {/* Pi Ship */}
+                <div className="form-group inline">
+                  <label>Sử dụng Pi Ship:</label>
+                  <div className="radio-group">
+                    <div className="radio-item">
+                      <input
+                        type="radio"
+                        id="piShipYes"
+                        name="piShip"
+                        value="yes"
+                        checked={formData.piShip === 'yes'}
+                        onChange={(e) => setFormData(prev => ({ ...prev, piShip: e.target.value as 'yes' | 'no' }))}
+                      />
+                      <label htmlFor="piShipYes">Có</label>
+                    </div>
+                    <div className="radio-item">
+                      <input
+                        type="radio"
+                        id="piShipNo"
+                        name="piShip"
+                        value="no"
+                        checked={formData.piShip === 'no'}
+                        onChange={(e) => setFormData(prev => ({ ...prev, piShip: e.target.value as 'yes' | 'no' }))}
+                      />
+                      <label htmlFor="piShipNo">Không</label>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Content Xtra và Voucher Xtra */}
+                <div className="form-group inline">
+                  <label>Dịch vụ Extra:</label>
+                  <div className="checkbox-group">
+                    <div className="checkbox-item">
+                      <input
+                        type="checkbox"
+                        id="contentXtra"
+                        checked={formData.contentXtra}
+                        onChange={(e) => setFormData(prev => ({ ...prev, contentXtra: e.target.checked }))}
+                      />
+                      <label htmlFor="contentXtra">Content Xtra</label>
+                    </div>
+                    <div className="checkbox-item">
+                      <input
+                        type="checkbox"
+                        id="voucherXtra"
+                        checked={formData.voucherXtra}
+                        onChange={(e) => setFormData(prev => ({ ...prev, voucherXtra: e.target.checked }))}
+                      />
+                      <label htmlFor="voucherXtra">Voucher Xtra</label>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              {/* Chi phí marketing */}
-              <div className="form-group">
-                <label>Chi phí marketing (%):</label>
-                <input
-                  name="marketingCostPercent"
-                  type="text"
-                  value={formData.marketingCostPercent}
-                  onChange={(e) => {
-                    clearError('marketingCostPercent');
-                    setFormData(prev => ({ 
-                      ...prev, 
-                      marketingCostPercent: formatPercentageInput(e.target.value) 
-                    }));
-                  }}
-                  placeholder="0.00"
-                  className={errors.marketingCostPercent ? 'error' : ''}
-                />
-                {errors.marketingCostPercent && <div className="error-message">{errors.marketingCostPercent}</div>}
+              {/* Chi phí dự tính */}
+              <div className="cost-section">
+                <div className="section-title">
+                  <TrendingUp className="section-icon" />
+                  Chi phí dự tính
+                </div>
+
+                <div className="cost-inputs">
+                  {/* Lợi nhuận mong muốn và Chi phí marketing */}
+                  <div className="cost-inputs-row">
+                    {/* Lợi nhuận mong muốn */}
+                    <div className="form-group inline">
+                      <label>Lợi nhuận mong muốn (%):<span className="required">*</span></label>
+                      <input
+                        name="desiredProfitPercent"
+                        type="text"
+                        value={formData.desiredProfitPercent}
+                        onChange={(e) => {
+                          clearError('desiredProfitPercent');
+                          setFormData(prev => ({ 
+                            ...prev, 
+                            desiredProfitPercent: formatPercentageInput(e.target.value) 
+                          }));
+                        }}
+                        placeholder="20.00"
+                        className={errors.desiredProfitPercent ? 'error' : ''}
+                      />
+                      {errors.desiredProfitPercent && <div className="error-message">{errors.desiredProfitPercent}</div>}
+                    </div>
+
+                    {/* Chi phí marketing */}
+                    <div className="form-group inline">
+                      <label>Chi phí marketing (%):</label>
+                      <input
+                        name="marketingCostPercent"
+                        type="text"
+                        value={formData.marketingCostPercent}
+                        onChange={(e) => {
+                          clearError('marketingCostPercent');
+                          setFormData(prev => ({ 
+                            ...prev, 
+                            marketingCostPercent: formatPercentageInput(e.target.value) 
+                          }));
+                        }}
+                        placeholder="0.00"
+                        className={errors.marketingCostPercent ? 'error' : ''}
+                      />
+                      {errors.marketingCostPercent && <div className="error-message">{errors.marketingCostPercent}</div>}
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Nút tính toán */}
-            <button 
-              className="calculate-btn" 
-              onClick={handleCalculate}
-            >
-              <TrendingUp className="btn-icon" />
-              Tính Giá Bán
-            </button>
+            {/* Nút tính toán - Nằm ngoài box */}
+            <div className="calculate-button-container">
+              <button 
+                className="calculate-btn" 
+                onClick={handleCalculate}
+              >
+                <TrendingUp className="btn-icon" />
+                Tính Giá Bán
+              </button>
+            </div>
           </div>
 
           {/* Kết quả tính toán */}
