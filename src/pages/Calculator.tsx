@@ -285,6 +285,78 @@ const Calculator: React.FC = () => {
 
         <div className="calculator-content">
           <div className="form-grid">
+            {/* Cài đặt Shopee */}
+            <div className="form-section">
+              <div className="section-title">
+                <Store className="section-icon" />
+                Cài đặt Shopee
+              </div>
+
+              {/* Pi Ship */}
+              <div className="form-group">
+                <label>Sử dụng Pi Ship:</label>
+                <div className="radio-group">
+                  <div className="radio-item">
+                    <input
+                      type="radio"
+                      id="piShipYes"
+                      name="piShip"
+                      value="yes"
+                      checked={formData.piShip === 'yes'}
+                      onChange={(e) => setFormData(prev => ({ ...prev, piShip: e.target.value as 'yes' | 'no' }))}
+                    />
+                    <label htmlFor="piShipYes">Có (1,620 VND)</label>
+                  </div>
+                  <div className="radio-item">
+                    <input
+                      type="radio"
+                      id="piShipNo"
+                      name="piShip"
+                      value="no"
+                      checked={formData.piShip === 'no'}
+                      onChange={(e) => setFormData(prev => ({ ...prev, piShip: e.target.value as 'yes' | 'no' }))}
+                    />
+                    <label htmlFor="piShipNo">Không</label>
+                  </div>
+                </div>
+              </div>
+
+              {/* Content Xtra */}
+              <div className="form-group">
+                <label>Dịch vụ Content Xtra:</label>
+                <div className="checkbox-group">
+                  <div className="checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="contentXtra"
+                      checked={formData.contentXtra}
+                      onChange={(e) => setFormData(prev => ({ ...prev, contentXtra: e.target.checked }))}
+                    />
+                    <label htmlFor="contentXtra">
+                      Sử dụng Content Xtra (2.59%
+                      {formData.shopeeType === 'mall' ? ', tối đa 50,000 VND' : ''})
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              {/* Voucher Xtra */}
+              <div className="form-group">
+                <label>Dịch vụ Voucher Xtra:</label>
+                <div className="checkbox-group">
+                  <div className="checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="voucherXtra"
+                      checked={formData.voucherXtra}
+                      onChange={(e) => setFormData(prev => ({ ...prev, voucherXtra: e.target.checked }))}
+                    />
+                    <label htmlFor="voucherXtra">Sử dụng Voucher Xtra (1.96%)</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Thông tin sản phẩm */}
             <div className="form-section">
               <div className="section-title">
@@ -415,78 +487,6 @@ const Calculator: React.FC = () => {
                   className={errors.cogs ? 'error' : ''}
                 />
                 {errors.cogs && <div className="error-message">{errors.cogs}</div>}
-              </div>
-            </div>
-
-            {/* Cài đặt Shopee */}
-            <div className="form-section">
-              <div className="section-title">
-                <Store className="section-icon" />
-                Cài đặt Shopee
-              </div>
-
-              {/* Pi Ship */}
-              <div className="form-group">
-                <label>Sử dụng Pi Ship:</label>
-                <div className="radio-group">
-                  <div className="radio-item">
-                    <input
-                      type="radio"
-                      id="piShipYes"
-                      name="piShip"
-                      value="yes"
-                      checked={formData.piShip === 'yes'}
-                      onChange={(e) => setFormData(prev => ({ ...prev, piShip: e.target.value as 'yes' | 'no' }))}
-                    />
-                    <label htmlFor="piShipYes">Có (1,620 VND)</label>
-                  </div>
-                  <div className="radio-item">
-                    <input
-                      type="radio"
-                      id="piShipNo"
-                      name="piShip"
-                      value="no"
-                      checked={formData.piShip === 'no'}
-                      onChange={(e) => setFormData(prev => ({ ...prev, piShip: e.target.value as 'yes' | 'no' }))}
-                    />
-                    <label htmlFor="piShipNo">Không</label>
-                  </div>
-                </div>
-              </div>
-
-              {/* Content Xtra */}
-              <div className="form-group">
-                <label>Dịch vụ Content Xtra:</label>
-                <div className="checkbox-group">
-                  <div className="checkbox-item">
-                    <input
-                      type="checkbox"
-                      id="contentXtra"
-                      checked={formData.contentXtra}
-                      onChange={(e) => setFormData(prev => ({ ...prev, contentXtra: e.target.checked }))}
-                    />
-                    <label htmlFor="contentXtra">
-                      Sử dụng Content Xtra (2.59%
-                      {formData.shopeeType === 'mall' ? ', tối đa 50,000 VND' : ''})
-                    </label>
-                  </div>
-                </div>
-              </div>
-
-              {/* Voucher Xtra */}
-              <div className="form-group">
-                <label>Dịch vụ Voucher Xtra:</label>
-                <div className="checkbox-group">
-                  <div className="checkbox-item">
-                    <input
-                      type="checkbox"
-                      id="voucherXtra"
-                      checked={formData.voucherXtra}
-                      onChange={(e) => setFormData(prev => ({ ...prev, voucherXtra: e.target.checked }))}
-                    />
-                    <label htmlFor="voucherXtra">Sử dụng Voucher Xtra (1.96%)</label>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
