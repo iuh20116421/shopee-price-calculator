@@ -78,11 +78,15 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 30px;
+  min-height: 80px;
 }
 
 /* Logo */
 .header-logo {
   flex-shrink: 0;
+  min-width: 160px;
+  max-width: 200px;
 }
 
 .logo-link {
@@ -132,6 +136,10 @@ code {
 .header-nav {
   display: flex;
   align-items: center;
+  flex: 1;
+  justify-content: center;
+  min-width: 0;
+  margin: 0 20px;
 }
 
 .nav-menu {
@@ -140,6 +148,8 @@ code {
   gap: 0;
   margin: 0;
   padding: 0;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .nav-item {
@@ -149,15 +159,16 @@ code {
 .nav-link {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 12px 20px;
+  gap: 4px;
+  padding: 10px 12px;
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 13px;
   transition: all 0.3s ease;
   border-radius: 8px;
-  margin: 0 2px;
+  margin: 0 1px;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -171,8 +182,8 @@ code {
 }
 
 .nav-icon {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
 }
 
 /* Dropdown */
@@ -245,19 +256,23 @@ code {
 .header-cta {
   display: flex;
   align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  min-width: 0;
 }
 
 .btn-primary {
   background: linear-gradient(135deg, #F30404, #860404);
   color: #fff;
   border: none;
-  padding: 12px 24px;
+  padding: 8px 16px;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(243, 4, 4, 0.3);
+  white-space: nowrap;
 }
 
 .btn-primary:hover {
@@ -594,27 +609,33 @@ code {
 .language-switcher {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 6px 10px;
 }
 
 .language-btn {
   background: none;
   border: none;
-  color: #ccc;
+  color: #6c757d;
   cursor: pointer;
-  padding: 4px 8px;
+  padding: 4px 6px;
   border-radius: 4px;
   font-size: 12px;
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
 .language-btn:hover {
-  color: #fff;
-  background: #333;
+  color: #F30404;
+  background: #fff5f5;
 }
 
 .language-btn.active {
   color: #F30404;
+  background: #fff5f5;
   font-weight: 600;
 }
 
@@ -1147,7 +1168,7 @@ input:focus, select:focus {
 
 .checkbox-item:hover {
   border-color: #27ae60;
-  background: #f8fff8;
+  /*background: #f8fff8;*/
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(39, 174, 96, 0.2);
 }
@@ -1490,6 +1511,44 @@ input:focus, select:focus {
   .checkbox-item {
     padding: 12px 15px;
   }
+
+  /* Header responsive */
+  .header-content {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .header-logo {
+    min-width: auto;
+    max-width: none;
+    flex: 1;
+  }
+
+  .header-nav {
+    order: 3;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .nav-link {
+    padding: 8px 12px;
+    font-size: 14px;
+    white-space: normal;
+  }
+
+  .header-cta {
+    gap: 12px;
+  }
+
+  .btn-primary {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
 }
 
 /* Responsive utilities */
@@ -1707,7 +1766,7 @@ input:focus, select:focus {
 
 .search-icon {
   position: absolute;
-  left: 18px;
+  right: 18px;
   top: 50%;
   transform: translateY(-50%);
   color: #6b7280;
@@ -2174,7 +2233,7 @@ input:focus, select:focus {
 
 .form-group.inline .radio-item:hover,
 .form-group.inline .checkbox-item:hover {
-  border-color: #F30404;
+  border-color: #00CC33;
   background: #fdf2f2;
 }
 

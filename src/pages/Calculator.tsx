@@ -201,7 +201,7 @@ const Calculator: React.FC = () => {
       fee: product.fee
     });
   };
-
+    
   // Xử lý thay đổi tên sản phẩm
   const handleProductNameChange = (value: string) => {
     setProductName(value);
@@ -242,19 +242,19 @@ const Calculator: React.FC = () => {
     const newErrors: {[key: string]: string} = {};
 
     if (!selectedCategory) {
-      newErrors.product = 'Vui lòng chọn ngành hàng';
+      newErrors.product = t('calculator.validation.categoryRequired');
     }
 
     if (!formData.cogs || parseFloat(formData.cogs) <= 0) {
-      newErrors.cogs = 'Vui lòng nhập giá vốn sản phẩm hợp lệ';
+      newErrors.cogs = t('calculator.validation.costPriceRequired');
     }
 
     if (!formData.desiredProfitPercent || parseFloat(formData.desiredProfitPercent) < 0) {
-      newErrors.desiredProfitPercent = 'Vui lòng nhập lợi nhuận mong muốn hợp lệ';
+      newErrors.desiredProfitPercent = t('calculator.validation.profitRequired');
     }
 
     if (formData.marketingCostPercent && parseFloat(formData.marketingCostPercent) < 0) {
-      newErrors.marketingCostPercent = 'Chi phí marketing không hợp lệ';
+      newErrors.marketingCostPercent = t('calculator.validation.marketingCostInvalid');
     }
 
     setErrors(newErrors);
@@ -306,7 +306,7 @@ const Calculator: React.FC = () => {
     setShowResult(true);
 
     if (result.isValid) {
-      showToast('Tính toán thành công!', 'success');
+      showToast(t('common.success'), 'success');
       // Scroll to result
       setTimeout(() => {
         const resultSection = document.getElementById('resultSection');
@@ -315,7 +315,7 @@ const Calculator: React.FC = () => {
         }
       }, 100);
     } else {
-      showToast(result.errorMessage || 'Có lỗi xảy ra khi tính toán', 'error');
+      showToast(result.errorMessage || t('common.error'), 'error');
     }
   };
 
@@ -353,66 +353,80 @@ const Calculator: React.FC = () => {
         <div className="calculator-header">
           <h1>
             <CalculatorIcon className="header-icon" />
-            Công Cụ Tính Giá Bán Shopee
+            {t('calculator.title')}
           </h1>
-          <p>Tính toán chi phí và lợi nhuận bán hàng trên Shopee một cách chính xác</p>
+          <p>{t('calculator.subtitle')}</p>
         </div>
 
         <div className="calculator-content">
           {/* Thông tin sản phẩm - Full width */}
           <div className="form-section wide">
-            <div className="section-title">
-              <Box className="section-icon" />
-              Thông tin sản phẩm
-            </div>
+              <div className="section-title">
+                <Box className="section-icon" />
+                {t('calculator.form.productInfo')}
+              </div>
 
             <div className="product-info-grid">
               {/* Loại Shopee và Tên sản phẩm */}
               <div className="product-info-row">
-                {/* Loại Shopee */}
+              {/* Loại Shopee */}
                 <div className="form-group inline">
-                  <label>Loại Shopee:<span className="required">*</span></label>
-                  <div className="radio-group">
-                    <div className="radio-item">
-                      <input
-                        type="radio"
-                        id="shopeeMall"
-                        name="shopeeType"
-                        value="mall"
-                        checked={formData.shopeeType === 'mall'}
-                        onChange={() => handleShopeeTypeChange('mall')}
-                      />
-                      <label htmlFor="shopeeMall">Shopee Mall</label>
-                    </div>
-                    <div className="radio-item">
-                      <input
-                        type="radio"
-                        id="shopeeRegular"
-                        name="shopeeType"
-                        value="regular"
-                        checked={formData.shopeeType === 'regular'}
-                        onChange={() => handleShopeeTypeChange('regular')}
-                      />
-                      <label htmlFor="shopeeRegular">Shopee thường</label>
-                    </div>
+                <label>{t('calculator.form.shopeeType')}<span className="required">*</span></label>
+                <div className="radio-group">
+                  <div className="radio-item">
+                    <input
+                      type="radio"
+                      id="shopeeMall"
+                      name="shopeeType"
+                      value="mall"
+                      checked={formData.shopeeType === 'mall'}
+                      onChange={() => handleShopeeTypeChange('mall')}
+                    />
+                    <label htmlFor="shopeeMall">{t('calculator.form.shopeeMall')}</label>
+                  </div>
+                  <div className="radio-item">
+                    <input
+                      type="radio"
+                      id="shopeeRegular"
+                      name="shopeeType"
+                      value="regular"
+                      checked={formData.shopeeType === 'regular'}
+                      onChange={() => handleShopeeTypeChange('regular')}
+                    />
+                    <label htmlFor="shopeeRegular">{t('calculator.form.shopeeRegular')}</label>
                   </div>
                 </div>
+              </div>
 
                 {/* Tên sản phẩm */}
                 <div className="form-group">
-                  <label>Tên sản phẩm:<span className="required">*</span></label>
+                  <label>{t('calculator.form.productName')}<span className="required">*</span></label>
                   <div className="product-search-container">
-                    <div className="search-input-wrapper">
-                      <Search className="search-icon" />
+                    <div className="search-input-wrapper" style={{ position: 'relative' }}>
                       <input
                         name="product"
                         type="text"
                         value={productName}
                         onChange={(e) => handleProductNameChange(e.target.value)}
-                        placeholder="Nhập tên sản phẩm để tìm kiếm..."
+                        placeholder={t('calculator.form.productNamePlaceholder')}
                         className={`search-input ${errors.product ? 'error' : ''}`}
+                        style={{ paddingRight: 40 }}
                       />
-                      {isSearching && <div className="searching-indicator">Đang tìm...</div>}
+                      <Search
+                        className="search-icon"
+                        style={{
+                          position: 'absolute',
+                          right: 4,
+                          top: '50%',
+                          transform: 'translateY(-50%)',
+                          color: '#6b7280',
+                          width: 18,
+                          height: 18,
+                          pointerEvents: 'none',
+                          zIndex: 2
+                        }}
+                      />
+                      {isSearching && <div className="searching-indicator">{t('calculator.form.searching')}</div>}
                     </div>
                     
                     {/* Dropdown gợi ý */}
@@ -429,42 +443,42 @@ const Calculator: React.FC = () => {
                             <div className="suggestion-fee">{product.fee}</div>
                           </div>
                         ))}
-                      </div>
-                    )}
+                </div>
+              )}
                   </div>
                   {errors.product && <div className="error-message">{errors.product}</div>}
                 </div>
               </div>
 
               {/* Chọn ngành hàng */}
-              <div className="form-group">
-                <label>Chọn ngành hàng:<span className="required">*</span></label>
+                <div className="form-group">
+                <label>{t('calculator.form.selectCategory')}<span className="required">*</span></label>
                 <CategorySelector
                   data={getProductData()}
                   onCategorySelect={handleCategorySelect}
                   selectedPath={selectedCategory?.path || []}
                   maxLevels={formData.shopeeType === 'mall' ? 4 : 2}
                 />
-              </div>
+                </div>
 
               {/* Hiển thị sản phẩm đã chọn */}
               {selectedProduct && (
                 <div className="selected-product">
                   <div className="selected-product-info">
-                    <strong>Sản phẩm đã chọn:</strong> {selectedProduct.name}
+                    <strong>{t('calculator.form.selectedProduct')}</strong> {selectedProduct.name}
                   </div>
                   <div className="selected-product-path">
-                    <strong>Ngành hàng:</strong> {selectedProduct.path.join(' > ')}
+                    <strong>{t('calculator.form.category')}</strong> {selectedProduct.path.join(' > ')}
                   </div>
                   <div className="selected-product-fee">
-                    <strong>Phí cố định:</strong> {selectedProduct.fee}
+                    <strong>{t('calculator.form.fixedFee')}</strong> {selectedProduct.fee}
                   </div>
                 </div>
               )}
 
               {/* Giá vốn sản phẩm */}
               <div className="form-group">
-                <label>Giá vốn sản phẩm (VND):<span className="required">*</span></label>
+                <label>{t('calculator.form.costPrice')}<span className="required">*</span></label>
                 <input
                   name="cogs"
                   type="text"
@@ -476,127 +490,127 @@ const Calculator: React.FC = () => {
                       cogs: formatMoneyInput(e.target.value) 
                     }));
                   }}
-                  placeholder="Nhập giá vốn sản phẩm"
+                  placeholder={t('calculator.form.costPricePlaceholder')}
                   className={errors.cogs ? 'error' : ''}
                 />
                 {errors.cogs && <div className="error-message">{errors.cogs}</div>}
               </div>
+              </div>
             </div>
-          </div>
 
           {/* Cài đặt Shopee và Chi phí dự tính - Combined */}
           <div className="form-section wide">
             <div className="settings-cost-layout">
-              {/* Cài đặt Shopee */}
+            {/* Cài đặt Shopee */}
               <div className="settings-section">
-                <div className="section-title">
-                  <Store className="section-icon" />
-                  Cài đặt Shopee
-                </div>
+              <div className="section-title">
+                <Store className="section-icon" />
+                {t('calculator.settings.title')}
+              </div>
 
-                {/* Pi Ship */}
+              {/* Pi Ship */}
                 <div className="form-group inline">
-                  <label>Sử dụng Pi Ship:</label>
-                  <div className="radio-group">
-                    <div className="radio-item">
-                      <input
-                        type="radio"
-                        id="piShipYes"
-                        name="piShip"
-                        value="yes"
-                        checked={formData.piShip === 'yes'}
-                        onChange={(e) => setFormData(prev => ({ ...prev, piShip: e.target.value as 'yes' | 'no' }))}
-                      />
-                      <label htmlFor="piShipYes">Có</label>
-                    </div>
-                    <div className="radio-item">
-                      <input
-                        type="radio"
-                        id="piShipNo"
-                        name="piShip"
-                        value="no"
-                        checked={formData.piShip === 'no'}
-                        onChange={(e) => setFormData(prev => ({ ...prev, piShip: e.target.value as 'yes' | 'no' }))}
-                      />
-                      <label htmlFor="piShipNo">Không</label>
-                    </div>
+                <label>{t('calculator.settings.usePiShip')}</label>
+                <div className="radio-group">
+                  <div className="radio-item">
+                    <input
+                      type="radio"
+                      id="piShipYes"
+                      name="piShip"
+                      value="yes"
+                      checked={formData.piShip === 'yes'}
+                      onChange={(e) => setFormData(prev => ({ ...prev, piShip: e.target.value as 'yes' | 'no' }))}
+                    />
+                      <label htmlFor="piShipYes">{t('calculator.settings.yes')}</label>
                   </div>
-                </div>
-
-                {/* Content Xtra và Voucher Xtra */}
-                <div className="form-group inline">
-                  <label>Dịch vụ Extra:</label>
-                  <div className="checkbox-group">
-                    <div className="checkbox-item">
-                      <input
-                        type="checkbox"
-                        id="contentXtra"
-                        checked={formData.contentXtra}
-                        onChange={(e) => setFormData(prev => ({ ...prev, contentXtra: e.target.checked }))}
-                      />
-                      <label htmlFor="contentXtra">Content Xtra</label>
-                    </div>
-                    <div className="checkbox-item">
-                      <input
-                        type="checkbox"
-                        id="voucherXtra"
-                        checked={formData.voucherXtra}
-                        onChange={(e) => setFormData(prev => ({ ...prev, voucherXtra: e.target.checked }))}
-                      />
-                      <label htmlFor="voucherXtra">Voucher Xtra</label>
-                    </div>
+                  <div className="radio-item">
+                    <input
+                      type="radio"
+                      id="piShipNo"
+                      name="piShip"
+                      value="no"
+                      checked={formData.piShip === 'no'}
+                      onChange={(e) => setFormData(prev => ({ ...prev, piShip: e.target.value as 'yes' | 'no' }))}
+                    />
+                    <label htmlFor="piShipNo">{t('calculator.settings.no')}</label>
                   </div>
                 </div>
               </div>
 
-              {/* Chi phí dự tính */}
-              <div className="cost-section">
-                <div className="section-title">
-                  <TrendingUp className="section-icon" />
-                  Chi phí dự tính
+                {/* Content Xtra và Voucher Xtra */}
+                <div className="form-group inline">
+                  <label>{t('calculator.settings.extraServices')}</label>
+                <div className="checkbox-group">
+                  <div className="checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="contentXtra"
+                      checked={formData.contentXtra}
+                      onChange={(e) => setFormData(prev => ({ ...prev, contentXtra: e.target.checked }))}
+                    />
+                                          <label htmlFor="contentXtra">{t('calculator.settings.contentXtra')}</label>
+                  </div>
+                  <div className="checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="voucherXtra"
+                      checked={formData.voucherXtra}
+                      onChange={(e) => setFormData(prev => ({ ...prev, voucherXtra: e.target.checked }))}
+                    />
+                    <label htmlFor="voucherXtra">{t('calculator.settings.voucherXtra')}</label>
+                  </div>
                 </div>
+              </div>
+          </div>
+
+          {/* Chi phí dự tính */}
+              <div className="cost-section">
+            <div className="section-title">
+              <TrendingUp className="section-icon" />
+              {t('calculator.costs.title')}
+            </div>
 
                 <div className="cost-inputs">
                   {/* Lợi nhuận mong muốn và Chi phí marketing */}
                   <div className="cost-inputs-row">
-                    {/* Lợi nhuận mong muốn */}
+              {/* Lợi nhuận mong muốn */}
                     <div className="form-group inline">
-                      <label>Lợi nhuận mong muốn (%):<span className="required">*</span></label>
-                      <input
-                        name="desiredProfitPercent"
-                        type="text"
-                        value={formData.desiredProfitPercent}
-                        onChange={(e) => {
-                          clearError('desiredProfitPercent');
-                          setFormData(prev => ({ 
-                            ...prev, 
-                            desiredProfitPercent: formatPercentageInput(e.target.value) 
-                          }));
-                        }}
-                        placeholder="20.00"
-                        className={errors.desiredProfitPercent ? 'error' : ''}
-                      />
-                      {errors.desiredProfitPercent && <div className="error-message">{errors.desiredProfitPercent}</div>}
-                    </div>
+                <label>{t('calculator.costs.desiredProfitPercent')}<span className="required">*</span></label>
+                <input
+                  name="desiredProfitPercent"
+                  type="text"
+                  value={formData.desiredProfitPercent}
+                  onChange={(e) => {
+                    clearError('desiredProfitPercent');
+                    setFormData(prev => ({ 
+                      ...prev, 
+                      desiredProfitPercent: formatPercentageInput(e.target.value) 
+                    }));
+                  }}
+                  placeholder={t('calculator.costs.desiredProfitPercentPlaceholder')}
+                  className={errors.desiredProfitPercent ? 'error' : ''}
+                />
+                {errors.desiredProfitPercent && <div className="error-message">{errors.desiredProfitPercent}</div>}
+              </div>
 
-                    {/* Chi phí marketing */}
+              {/* Chi phí marketing */}
                     <div className="form-group inline">
-                      <label>Chi phí marketing (%):</label>
-                      <input
-                        name="marketingCostPercent"
-                        type="text"
-                        value={formData.marketingCostPercent}
-                        onChange={(e) => {
-                          clearError('marketingCostPercent');
-                          setFormData(prev => ({ 
-                            ...prev, 
-                            marketingCostPercent: formatPercentageInput(e.target.value) 
-                          }));
-                        }}
-                        placeholder="0.00"
-                        className={errors.marketingCostPercent ? 'error' : ''}
-                      />
-                      {errors.marketingCostPercent && <div className="error-message">{errors.marketingCostPercent}</div>}
+                <label>{t('calculator.costs.adCost')}</label>
+                <input
+                  name="marketingCostPercent"
+                  type="text"
+                  value={formData.marketingCostPercent}
+                  onChange={(e) => {
+                    clearError('marketingCostPercent');
+                    setFormData(prev => ({ 
+                      ...prev, 
+                      marketingCostPercent: formatPercentageInput(e.target.value) 
+                    }));
+                  }}
+                  placeholder={t('calculator.costs.adCostPlaceholder')}
+                  className={errors.marketingCostPercent ? 'error' : ''}
+                />
+                {errors.marketingCostPercent && <div className="error-message">{errors.marketingCostPercent}</div>}
                     </div>
                   </div>
                 </div>
@@ -605,13 +619,13 @@ const Calculator: React.FC = () => {
 
             {/* Nút tính toán - Nằm ngoài box */}
             <div className="calculate-button-container">
-              <button 
-                className="calculate-btn" 
-                onClick={handleCalculate}
-              >
-                <TrendingUp className="btn-icon" />
-                Tính Giá Bán
-              </button>
+            <button 
+              className="calculate-btn" 
+              onClick={handleCalculate}
+            >
+              <TrendingUp className="btn-icon" />
+              {t('calculator.form.calculate')}
+            </button>
             </div>
           </div>
 
@@ -621,7 +635,7 @@ const Calculator: React.FC = () => {
               <div className="result-header">
                 <h2>
                   <CalculatorIcon className="result-icon" />
-                  Kết Quả Tính Toán
+                  {t('calculator.results.title')}
                 </h2>
               </div>
               
@@ -636,44 +650,47 @@ const Calculator: React.FC = () => {
                     <div className="result-card">
                       <h3>
                         <Store className="card-icon" />
-                        Chi phí Shopee
+                        {t('calculator.results.estimatedCosts')}
                       </h3>
                       <table className="result-table">
                         <tbody>
                           <tr>
-                            <td>Phí cố định sản phẩm:</td>
-                            <td className="highlight-value">{formatCurrency(calculationResult.productFee)}</td>
+                            <td>{t('calculator.results.productFee')}:</td>
+                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.productFee)}</td>
                           </tr>
                           <tr>
-                            <td>Phí thanh toán (4.91%):</td>
-                            <td className="highlight-value">{formatCurrency(calculationResult.paymentFee)}</td>
+                            <td>{t('calculator.results.paymentFee')}:</td>
+                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.paymentFee)}</td>
                           </tr>
                           <tr>
-                            <td>Phí vận chuyển Pi Ship:</td>
-                            <td className="highlight-value">{formatCurrency(calculationResult.shippingCost)}</td>
+                            <td>{t('calculator.results.shippingCost')}:</td>
+                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.shippingCost)}</td>
                           </tr>
                           <tr>
-                            <td>Phí Content Xtra:</td>
-                            <td className="highlight-value">{formatCurrency(calculationResult.contentXtraFee)}</td>
+                            <td>{t('calculator.results.contentXtraFee')}:</td>
+                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.contentXtraFee)}</td>
                           </tr>
                           <tr>
-                            <td>Phí Voucher Xtra:</td>
-                            <td className="highlight-value">{formatCurrency(calculationResult.voucherXtraFee)}</td>
+                            <td>{t('calculator.results.voucherXtraFee')}:</td>
+                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.voucherXtraFee)}</td>
                           </tr>
                           <tr>
-                            <td>Phí hạ tầng:</td>
-                            <td className="highlight-value">{formatCurrency(calculationResult.infrastructureFee)}</td>
+                            <td>{t('calculator.results.infrastructureFee')}:</td>
+                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.infrastructureFee)}</td>
                           </tr>
-                          <tr>
-                            <td>VAT (1.5%):</td>
-                            <td className="highlight-value">{formatCurrency(calculationResult.vatFee)}</td>
+                          <tr style={{ fontWeight: 'bold', backgroundColor: '#f8f9fa', borderTop: '2px solid #dee2e6' }}>
+                            <td>{t('calculator.results.totalCosts')}:</td>
+                            <td className="highlight-value" style={{ fontWeight: 'bold', textAlign: 'right' }}>
+                              {formatCurrency(
+                                calculationResult.productFee +
+                                calculationResult.paymentFee +
+                                calculationResult.shippingCost +
+                                calculationResult.contentXtraFee +
+                                calculationResult.voucherXtraFee +
+                                calculationResult.infrastructureFee
+                              )}
+                            </td>
                           </tr>
-                          {calculationResult.marketingCost > 0 && (
-                            <tr>
-                              <td>Chi phí marketing:</td>
-                              <td className="highlight-value">{formatCurrency(calculationResult.marketingCost)}</td>
-                            </tr>
-                          )}
                         </tbody>
                       </table>
                     </div>
@@ -682,34 +699,81 @@ const Calculator: React.FC = () => {
                     <div className="result-card">
                       <h3>
                         <TrendingUp className="card-icon" />
-                        Tổng Kết
+                        {t('calculator.results.costBreakdown')}
                       </h3>
                       <table className="result-table">
+                        <thead>
+                          <tr>
+                            <th style={{ minWidth: 180 }}>{t('calculator.results.item')}</th>
+                            <th style={{ minWidth: 120 }}>{t('calculator.results.amount')}</th>
+                            <th style={{ minWidth: 90 }}>{t('calculator.results.percentageOnPrice')}</th>
+                          </tr>
+                        </thead>
                         <tbody>
+                          {/* Hàng 1: Giá vốn sản phẩm */}
                           <tr>
-                            <td>Giá vốn sản phẩm:</td>
-                            <td className="highlight-value">{formatCurrency(calculationResult.cogs)}</td>
+                            <td>{t('calculator.results.costPrice')}</td>
+                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.cogs)}</td>
+                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatPercentage(calculationResult.finalPrice ? (calculationResult.cogs / calculationResult.finalPrice) * 100 : 0)}</td>
                           </tr>
+                          {/* Hàng 2: Chi phí dự kiến */}
                           <tr>
-                            <td>Tổng chi phí:</td>
-                            <td className="highlight-value">{formatCurrency(calculationResult.totalCost)}</td>
+                            <td colSpan={3} style={{ fontWeight: 600, color: '#2c3e50', backgroundColor: '#f8f9fa' }}>{t('calculator.results.estimatedCosts')}:</td>
                           </tr>
+                          {/* Hàng20.1: Chi phí Shopee (tổng các phí Shopee) */}
+                          <tr>
+                            <td style={{ paddingLeft: 20 }}>{t('calculator.results.shopeeCosts')}:</td>
+                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(
+                              calculationResult.productFee +
+                              calculationResult.paymentFee +
+                              calculationResult.shippingCost +
+                              calculationResult.contentXtraFee +
+                              calculationResult.voucherXtraFee +
+                              calculationResult.infrastructureFee
+                            )}</td>
+                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatPercentage(calculationResult.finalPrice ? (
+                              (
+                                calculationResult.productFee +
+                                calculationResult.paymentFee +
+                                calculationResult.shippingCost +
+                                calculationResult.contentXtraFee +
+                                calculationResult.voucherXtraFee +
+                                calculationResult.infrastructureFee
+                              ) / calculationResult.finalPrice
+                            ) * 100 : 0)}</td>
+                          </tr>
+                          {/* Hàng 2.2: Chi phí Marketing (nếu có) */}
+                          {calculationResult.marketingCost > 0 && (
+                            <tr>
+                              <td style={{ paddingLeft: 20 }}>{t('calculator.costs.adCost')}:</td>
+                              <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.marketingCost)}</td>
+                              <td className="highlight-value" style={{ textAlign: 'right' }}>{formatPercentage(calculationResult.finalPrice ? (calculationResult.marketingCost / calculationResult.finalPrice) * 100 : 0)}</td>
+                            </tr>
+                          )}
+                          {/* Hàng 3: Lợi nhuận */}
+                          <tr>
+                            <td>{t('calculator.results.profit')}:</td>
+                            <td className={`highlight-value ${calculationResult.profit >= 0 ? 'profit-positive' : 'profit-negative'}`} style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.profit)}</td>
+                            <td className={`highlight-value ${calculationResult.profit >= 0 ? 'profit-positive' : 'profit-negative'}`} style={{ textAlign: 'right' }}>{formatPercentage(calculationResult.finalPrice ? (calculationResult.profit / calculationResult.finalPrice) * 100 : 0)}</td>
+                          </tr>
+                          {/* Hàng VAT */}
+                          <tr>
+                            <td>VAT (1.5%):</td>
+                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.vatFee)}</td>
+                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatPercentage(calculationResult.finalPrice ? (calculationResult.vatFee / calculationResult.finalPrice) * 100 : 0)}</td>
+                          </tr>
+                          {/* Hàng cuối: Giá bán cuối cùng */}
                           <tr className="final-price-row">
-                            <td><strong>Giá bán cuối cùng:</strong></td>
-                            <td className="highlight-value" style={{ fontSize: '1.3rem', fontWeight: 'bold' }}>
-                              {formatCurrency(calculationResult.finalPrice)}
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Lợi nhuận:</td>
-                            <td className={`highlight-value ${calculationResult.profit >= 0 ? 'profit-positive' : 'profit-negative'}`}>
-                              {formatCurrency(calculationResult.profit)}
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Tỷ lệ lợi nhuận:</td>
-                            <td className={`highlight-value ${calculationResult.profitMargin >= 0 ? 'profit-positive' : 'profit-negative'}`}>
-                              {formatPercentage(calculationResult.profitMargin)}
+                            <td><strong>{t('calculator.results.finalPrice')}:</strong></td>
+                            <td className="highlight-value" style={{ fontSize: '1.3rem', fontWeight: 'bold', textAlign: 'right' }}>{formatCurrency(calculationResult.finalPrice)}</td>
+                            <td className="highlight-value" style={{ fontSize: '1.3rem', fontWeight: 'bold', textAlign: 'right' }}>
+                              {formatPercentage(calculationResult.finalPrice ? (
+                                ((calculationResult.cogs / calculationResult.finalPrice) * 100) +
+                                (((calculationResult.productFee + calculationResult.paymentFee + calculationResult.shippingCost + calculationResult.contentXtraFee + calculationResult.voucherXtraFee + calculationResult.infrastructureFee) / calculationResult.finalPrice) * 100) +
+                                ((calculationResult.marketingCost / calculationResult.finalPrice) * 100) +
+                                ((calculationResult.profit / calculationResult.finalPrice) * 100) +
+                                ((calculationResult.vatFee / calculationResult.finalPrice) * 100)
+                              ) : 0)}
                             </td>
                           </tr>
                         </tbody>

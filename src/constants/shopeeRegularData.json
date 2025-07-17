@@ -10,15 +10,6 @@
     "Khác": "6.38%",
     "Camera giám sát": "6.38%"
   },
-  "Chăm Sóc Thú Cưng": {
-    "Vệ sinh cho thú cưng": "6.87%",
-    "Khác": "6.87%",
-    "Phụ kiện cho thú cưng": "6.87%",
-    "Quần áo & phụ kiện": "6.87%",
-    "Thức ăn cho thú cưng": "6.87%",
-    "Làm đẹp cho thú cưng": "6.87%",
-    "Chăm sóc sức khỏe": "6.87%"
-  },
   "Điện Thoại & Phụ Kiện": {
     "Phụ kiện": "6.38%",
     "Điện thoại": "1.47%",
@@ -28,37 +19,333 @@
     "Bộ đàm": "6.38%",
     "Thiết bị đeo thông minh": "6.38%"
   },
-  "Đồng Hồ": {
-    "Đồng hồ nam": "6.87%",
-    "Khác": "6.87%",
-    "Bộ đồng hồ & Đồng hồ cặp": "6.87%",
-    "Phụ kiện đồng hồ": "6.87%",
-    "Đồng hồ nữ": "6.87%"
-  },
-  "Du lịch & Hành lý": {
-    "Vali": "6.87%",
-    "Khác": "6.87%",
-    "Phụ kiện du lịch": "7.95%",
-    "Túi du lịch": "7.95%"
-  },
   "Gaming & Console": {
     "Phụ kiện console": "6.87%",
     "Máy chơi game": "6.38%",
     "Khác": "6.87%",
     "Video Games": "6.87%"
   },
-  "Giày Dép Nam": {
-    "Bốt": "6.87%",
-    "Giày tây lười": "6.87%",
-    "Khác": "6.87%",
-    "Giày Oxfords & Giày buộc dây": "6.87%",
-    "Xăng-đan & Dép": "6.87%",
-    "Phụ kiện giày dép": "6.87%",
-    "Giày sục": "6.87%",
-    "Giày thể thao/ Sneakers": "6.87%"
+  "Máy tính & Laptop": {
+    "Chuột & Bàn Phím": "7.85%",
+    "Laptop": "1.47%",
+    "Linh Kiện Máy Tính": "6.87%",
+    "Màn Hình": "1.47%",
+    "Máy In & Máy Scan": "6.87%",
+    "Máy Tính Bàn": "1.47%",
+    "Phần Mềm": "7.85%",
+    "Phụ Kiện Máy Tính": "6.87%",
+    "Phụ Kiện Máy Tính Khác": "6.87%",
+    "Thiết Bị Lưu Trữ": "6.87%",
+    "Thiết bị văn phòng": "7.85%",
+    "Thiết bị mạng": "6.87%"
   },
-  "Giày Dép Nữ": {
-    "Bốt": "6.87%",
-    "Xăng-đan và dép": "6.87%"
-  }
-} 
+  "Thiết Bị Âm Thanh": {
+    "Tai nghe nhét tai & chụp tai": "7.85%",
+    "Amply và đầu chỉnh âm": "7.85%",
+    "Cáp âm thanh/ video & Đầu chuyển": "6.87%",
+    "Dàn âm thanh": "7.85%",
+    "Máy nghe nhạc": "6.87%",
+    "Micro thu âm": "7.85%",
+    "Khác": "6.87%"
+  },
+  "Thiết Bị Điện Gia Dụng": {
+    "Pin": "7.85%",
+    "Mạch điện & Phụ tùng": "7.85%",
+    "Máy chiếu & Phụ kiện": "7.85%",
+    "Thiết bị điều khiển từ xa": "7.85%",
+    "Đồ gia dụng nhà bếp": "7.85%",
+    "Thiết bị điện gia dụng nhỏ": "6.87%",
+    "Thiết bị điện gia dụng lớn": "6.87%",
+    "Tivi & Phụ kiện": "6.87%",
+    "Thuốc lá điện tử": "8.84%",
+    "Khác": "6.87%"
+  },
+  "Voucher & Dịch vụ": {
+    "Sự kiện & Giải trí": "9.82%",
+    "Nhà hàng & Ẩn uống": "9.82%",
+    "Mua sắm": "9.82%",
+    "Thanh toán hóa đơn": "9.82%",
+    "Dịch vụ khác": "9.82%",
+    "Sức khỏe & Làm đẹp": "9.82%",
+    "Gọi xe": "9.82%",
+    "Khóa học": "9.82%",
+    "Nạp tiền tài khoản": "9.82%",
+    "Du lịch & Khách sạn": "9.82%",
+    "Tiền điện tử": "9.82%",
+    "Bất động sản": "9.82%",
+    "Thẻ game": "9.82%",
+    "Streaming": "9.82%",
+    "Mã quà tặng Shopee": "9.82%",
+    "Khác": "9.82%"
+  },
+  "Chăm Sóc Thú Cưng": {
+    "Vệ sinh cho thú cưng": "6.87%",
+    "Khác": "6.87%",
+    "Phụ kiện cho thú cưng": "6.87%",
+    "Quần áo & phụ kiện": "6.87%",
+    "Thức ăn cho thú cưng": "6.87%",
+    "Làm đẹp cho thú cưng": "6.87%",
+    "Chăm sóc sức khỏe": "6.87%"
+  },
+  "Mẹ & Bé": {
+    "An toan cho bé": "10.80%",
+    "Đồ dùng phòng tắm & Chăm sóc cơ thể": "8.84%",
+    "Đồ dùng ăn dặm cho bé": "10.31%",
+    "Phụ kiện cho mẹ": "10.31%",
+    "Bộ & Gói quà tặng": "10.80%",
+    "Đồ dùng phòng ngủ cho bé": "10.31%",
+    "Chăm sóc sức khỏe mẹ": "10.31%",
+    "Chăm sóc sức khỏe bé": "8.84%",
+    "Tã & bô em bé": "8.84%",
+    "Sữa công thức & Thực phẩm cho bé": "8.84%",
+    "Đồ chơi": "10.31%",
+    "Đồ dùng du lịch cho bé": "9.82%",
+    "Khác": "10.80%"
+  },
+  "Sắc Đẹp": {
+    "Chăm sóc da mặt": "11.78%",
+    "Tắm & chăm sóc cơ thể": "11.78%",
+    "Bộ sản phẩm làm đẹp": "11.78%",
+    "Dụng cụ làm đẹp": "11.78%",
+    "Trang điểm": "11.78%",
+    "Nước hoa": "11.78%",
+    "Chăm sóc tóc": "11.78%",
+    "Chăm sóc nam giới": "11.78%",
+    "Chăm sóc tay, chân & móng": "11.78%",
+    "Khác": "11.78%"
+  },
+  "Sức Khỏe": {
+    "Chăm sóc cá nhân": "11.29%",
+    "Thực phẩm chức năng": "11.29%",
+    "Hỗ trợ tình dục": "11.78%",
+    "Vật tư y tế": "10.31%",
+    "Khác": "11.78%"
+  },
+  "Thực phẩm và đồ uống": {
+    "Ngũ cốc & mứt": "8.84%",
+    "Đồ uống": "8.84%",
+    "Đồ chế biến sẵn": "8.84%",
+    "Các loại bánh": "8.84%",
+    "Nguyên liệu nấu ăn": "8.84%",
+    "Sữa - trứng": "8.84%",
+    "Thực phẩm tươi sống & đông lạnh": "8.84%",
+    "Đồ ăn vặt": "8.84%",
+    "Nhu yếu phẩm": "8.84%",
+    "Đồ uống có cồn": "10.80%",
+    "Bộ quà tặng": "10.80%",
+    "Đồ làm bánh": "10.80%",
+    "Khác": "10.80%"
+  },
+  "Mô tô, xe máy": {
+    "Phụ kiện xe máy": "10.80%",
+    "Mũ bảo hiểm & Phụ kiện": "10.80%",
+    "Phụ kiện xe máy": "10.80%",
+    "Mô tô, xe máy": "3.93%",
+    "Khác": "10.80%"
+  },
+  "Nhà cửa & Đời sống": {
+    "Dụng cụ chăm sóc nhà cửa": "8.84%",
+    "Dụng cụ & Thiết bị tiện ích": "10.31%",
+    "Sắp xếp nhà cửa": "10.80%",
+    "Trang trí tiệc tùng": "10.80%",
+    "Chân ga gối nệm": "10.80%",
+    "Đồ thờ cúng, đồ phong thủy": "10.80%",
+    "Nội thất": "10.80%",
+    "Làm vườn": "10.80%",
+    "Túi làm ấm": "10.80%",
+    "Chất khử mùi, làm thơm nhà": "10.80%",
+    "Dụng cụ nhà bếp": "10.80%",
+    "Đèn": "10.80%",
+    "Bảo hộ gia đình": "10.80%",
+    "Đồ dùng phòng tắm": "10.80%",
+    "Trang trí nhà cửa": "10.80%",
+    "Bộ đồ bàn ăn": "10.80%",
+    "Khác": "10.80%"
+  },
+  "Ô tô": {
+    "Dụng cụ sửa chữa ô tô": "10.80%",
+    "Phụ tùng ô tô": "10.80%",
+    "Phụ kiện nội thất ô tô": "10.80%",
+    "Móc chia khóa và Bọc chìa ô tô": "10.80%",
+    "Dầu nhớt và phụ gia ô tô": "10.80%",
+    "Phụ kiện ngoại thất ô tô": "10.80%",
+    "Chăm sóc ô tô": "10.80%",
+    "Ô tô": "3.93%",
+    "Dịch vụ cho xe": "10.80%",
+    "Khác": "10.80%"
+  },
+  "Sở thích & Sưu tầm": {
+    "Bảng - Đĩa": "10.80%",
+    "Dụng Cụ May Vá": "10.80%",
+    "Album Ảnh": "10.80%",
+    "Nhạc Cụ & Phụ Kiện": "10.80%",
+    "Quà Lưu Niệm": "10.80%",
+    "Đồ chơi - Giải trí": "10.80%",
+    "Đồ Sưu Tầm": "11.78%",
+    "Địa Than": "10.80%",
+    "Khác": "10.80%"
+  },
+  "Văn Phòng Phẩm": {
+    "Quà Tặng - Giấy Gói": "9.82%",
+    "Họa cụ": "11.78%",
+    "Sổ & Giấy Các Loại": "10.80%",
+    "Thư Tín": "10.80%",
+    "Bút Các Loại": "10.80%",
+    "Thiết Bị Trường Học": "10.80%",
+    "Khác": "10.80%"
+  },
+    "Đồng Hồ": {
+      "Đồng hồ nam": "6.87%",
+      "Khác": "6.87%",
+      "Bộ đồng hồ & Đồng hồ cặp": "6.87%",
+      "Phụ kiện đồng hồ": "6.87%",
+      "Đồng hồ nữ": "6.87%"
+    },
+    "Du lịch & Hành lý": {
+      "Vali": "6.87%",
+      "Khác": "6.87%",
+      "Phụ kiện du lịch": "7.95%",
+      "Túi du lịch": "7.95%"
+    },
+    "Giày Dép Nam": {
+      "Bốt": "6.87%",
+      "Giày tây lười": "6.87%",
+      "Khác": "6.87%",
+      "Giày Oxfords & Giày buộc dây": "6.87%",
+      "Xăng-đan & Dép": "6.87%",
+      "Phụ kiện giày dép": "6.87%",
+      "Giày sục": "6.87%",
+      "Giày thể thao/ Sneakers": "6.87%"
+    },
+    "Giày Dép Nữ": {
+      "Bốt": "10.80%",
+      "Giày cao gót": "10.80%",
+      "Giày thể thao/ sneaker": "10.80%",
+      "Giày đế bằng": "10.80%",
+      "Giày đế xuồng": "10.80%",
+      "Khác": "10.80%",
+      "Phụ kiện & chăm sóc giày": "10.80%",
+      "Xăng-đan và dép": "10.80%"
+    },
+    "Muslim Fashion": {
+      "Kid Muslim Wear": "10.80%",
+      "Men Muslim Wear": "10.80%",
+      "Others": "10.80%",
+      "Outerwear": "10.80%",
+      "Prayer Attire & Equipment": "10.80%",
+      "Sets": "10.80%",
+      "Women Muslim Wear": "10.80%"
+    },
+    "Phụ Kiện Thời Trang": {
+      "Bộ phụ kiện": "10.80%",
+      "Lắc chân": "10.80%",
+      "Vòng tay & Lắc tay": "11.78%",
+      "Bông tai": "10.80%",
+      "Mũ": "10.80%",
+      "Dây chuyền": "11.78%",
+      "Cà vạt & Nơ cổ": "10.80%",
+      "Nhẫn": "11.78%",
+      "Khăn choàng": "10.80%",
+      "Phụ kiện thêm": "11.78%",
+      "Thắt lưng": "10.80%",
+      "Kính mắt": "11.78%",
+      "Găng tay": "10.80%",
+      "Phụ kiện tóc": "11.78%",
+      "Kim loại quý": "10.80%",
+      "Khác": "10.80%"
+    },
+    "Thể Thao & Dã Ngoại": {
+      "Dụng Cụ Thể Thao & Dã Ngoại": "10.80%",
+      "Thời Trang Thể Thao & Dã Ngoại": "10.80%",
+      "Giày Thể Thao": "10.80%",
+      "Khác": "10.80%",
+      "Phụ Kiện Thể Thao & Dã Ngoại": "10.80%"
+    },
+    "Thời Trang Nam": {
+      "Đồ lót": "10.80%",
+      "Quần jean": "10.80%",
+      "Áo": "10.80%",
+      "Đồ hóa trang": "10.80%",
+      "Hoodie & Áo nỉ": "10.80%",
+      "Áo khoác": "10.80%",
+      "Trang phục ngành nghề": "10.80%",
+      "Quần dài": "10.80%",
+      "Bộ": "10.80%",
+      "Quần đùi": "10.80%",
+      "Đồ ngủ": "10.80%",
+      "Vớ/Tất": "10.80%",
+      "Áo len": "10.80%",
+      "Khác": "10.80%",
+      "Com lê": "10.80%",
+      "Trang phục truyền thống": "10.80%"
+    },
+    "Thời Trang Nữ": {
+      "Vải": "9.82%",
+      "Đồ Bầu": "10.80%",
+      "Đồ hóa trang": "10.80%",
+      "Đầm": "10.80%",
+      "Hoodie và Áo nỉ": "10.80%",
+      "Áo khoác": "10.80%",
+      "Quần jeans": "10.80%",
+      "Đồ liền thân": "10.80%",
+      "Đồ lót": "10.80%",
+      "Bộ": "10.80%",
+      "Quần đùi": "10.80%",
+      "Váy": "10.80%",
+      "Đồ ngủ": "10.80%",
+      "Áo len": "10.80%",
+      "Áo": "10.80%",
+      "Váy cưới": "10.80%",
+      "Quần": "10.80%",
+      "Vớ/Tất": "10.80%",
+      "Đồ truyền thống": "10.80%",
+      "Khác": "10.80%"
+    },
+    "Thời trang trẻ em & trẻ sơ sinh": {
+      "Giày bé trai": "10.80%",
+      "Phụ kiện trẻ em & trẻ sơ sinh": "10.80%",
+      "Quần áo trẻ em": "10.80%",
+      "Bao tay trẻ em & Tất": "10.80%",
+      "Quần áo bé trai": "10.80%",
+      "Quần áo bé gái": "10.80%",
+      "Giày bé gái": "10.80%",
+      "Khác": "10.80%"
+    },
+    "Túi Ví Nam": {
+      "Cặp laptop": "10.80%",
+      "Bóp/ Ví": "10.80%",
+      "Ba lô": "10.80%",
+      "Cặp xách công sở": "10.80%",
+      "Ví cầm tay": "10.80%",
+      "Túi đeo chéo": "10.80%",
+      "Túi tote": "10.80%",
+      "Túi đeo hông & Túi đeo ngực": "10.80%",
+      "Khác": "10.80%"
+    },
+    "Túi Ví Nữ": {
+      "Cặp laptop": "10.80%",
+      "Ba lô": "10.80%",
+      "Phụ kiện túi": "10.80%",
+      "Ví dự tiệc & Ví cầm tay": "10.80%",
+      "Túi đeo chéo & Túi đeo vai": "10.80%",
+      "Túi quai xách": "10.80%",
+      "Túi tote": "10.80%",
+      "Túi đeo hông & Túi đeo ngực": "10.80%",
+      "Ví": "10.80%",
+      "Khác": "10.80%"
+    }
+                 
+}
+                      
+                    
+                    
+                  
+                  
+                
+                
+              
+            
+            
+          
+          
+        

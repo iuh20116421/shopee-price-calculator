@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, Calculator, Home, ChevronDown, ShoppingBag, BookOpen, FileText, Users, Phone } from 'lucide-react';
+import { Menu, X, Calculator, Home, ChevronDown, ShoppingBag, BookOpen, FileText, Users } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const Header: React.FC = () => {
@@ -42,26 +42,6 @@ const Header: React.FC = () => {
 
   return (
     <header className="header-main">
-      {/* Top bar */}
-      <div className="header-top">
-        <div className="container-custom">
-          <div className="header-top-content">
-            <div className="header-contact">
-              <span className="header-phone">
-                <Phone className="header-icon" />
-                (+84) 0345.811.456
-              </span>
-              <span className="header-email">
-                tukigroup123@gmail.com
-              </span>
-            </div>
-            <div className="header-top-right">
-              <LanguageSwitcher />
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Main header */}
       <div className="header-main-content">
         <div className="container-custom">
@@ -154,8 +134,9 @@ const Header: React.FC = () => {
               </ul>
             </nav>
 
-            {/* CTA Button */}
+            {/* CTA Button and Language Switcher */}
             <div className="header-cta">
+              <LanguageSwitcher />
               <button className="btn-primary">
                 {t('navigation.consultation')}
               </button>
