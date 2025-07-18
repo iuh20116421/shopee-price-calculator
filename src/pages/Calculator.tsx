@@ -367,9 +367,8 @@ const Calculator: React.FC = () => {
                 {t('calculator.form.productInfo')}
               </div>
 
-            <div className="product-info-grid">
+            <div className="settings-cost-layout">
               {/* Loại Shopee và Tên sản phẩm */}
-              <div className="product-info-row">
               {/* Loại Shopee */}
                 <div className="form-group inline">
                 <label>{t('calculator.form.shopeeType')}<span className="required">*</span></label>
@@ -449,7 +448,6 @@ const Calculator: React.FC = () => {
                   </div>
                   {errors.product && <div className="error-message">{errors.product}</div>}
                 </div>
-              </div>
 
               {/* Chọn ngành hàng */}
                 <div className="form-group">

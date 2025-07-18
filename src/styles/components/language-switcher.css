@@ -1,0 +1,33 @@
+/* Language Switcher */
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+.language-btn {
+  background: none;
+  border: none;
+  color: #6c757d;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.language-btn:hover {
+  color: #F30404;
+  background: #fff5f5;
+}
+
+.language-btn.active {
+  color: #F30404;
+  background: #fff5f5;
+  font-weight: 600;
+} 

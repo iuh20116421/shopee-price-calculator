@@ -1,0 +1,13 @@
+/* Import base styles */
+@import './base.css';
+
+/* Import component styles */
+@import './components/header.css';
+@import './components/footer.css';
+@import './components/language-switcher.css';
+@import './components/category-selector.css';
+@import './components/toast.css';
+
+/* Import page styles */
+@import './pages/home.css';
+@import './pages/calculator.css'; 
