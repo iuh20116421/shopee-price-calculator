@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Calculator as CalculatorIcon, Box, Store, TrendingUp, Facebook, Phone, Search } from 'lucide-react';
+import { Calculator as CalculatorIcon, Box, Store, TrendingUp, Facebook, Phone, Search, Info } from 'lucide-react';
 import shopeeMallData from '../constants/shopeeMallData.json';
 import shopeeRegularData from '../constants/shopeeRegularData.json';
 import CategorySelector from '../components/CategorySelector';
@@ -43,6 +43,7 @@ const Calculator: React.FC = () => {
   const [calculationResult, setCalculationResult] = useState<CalculationResult | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [errors, setErrors] = useState<{[key: string]: string}>({});
+  const [showMarketingTooltip, setShowMarketingTooltip] = useState(false);
 
   // Lấy dữ liệu sản phẩm theo loại Shopee
   const getProductData = (): CategoryData => {
@@ -594,8 +595,21 @@ const Calculator: React.FC = () => {
               </div>
 
               {/* Chi phí marketing */}
-                    <div className="form-group inline">
-                <label>{t('calculator.costs.adCost')}</label>
+              <div className="form-group inline">
+                <label>
+                  {t('calculator.costs.adCost')}
+                  <Info 
+                    className="info-icon" 
+                    onMouseEnter={() => setShowMarketingTooltip(true)}
+                    onMouseLeave={() => setShowMarketingTooltip(false)}
+                  />
+                  {showMarketingTooltip && (
+                    <div className="tooltip">
+                      Chi phí marketing gồm: quảng cáo, afiliate, voucher, ... Nhập số ước tính %. Ví dụ: 10 %
+                      <div className="tooltip-arrow"></div>
+                    </div>
+                  )}
+                </label>
                 <input
                   name="marketingCostPercent"
                   type="text"
@@ -611,7 +625,7 @@ const Calculator: React.FC = () => {
                   className={errors.marketingCostPercent ? 'error' : ''}
                 />
                 {errors.marketingCostPercent && <div className="error-message">{errors.marketingCostPercent}</div>}
-                    </div>
+              </div>
                   </div>
                 </div>
               </div>
@@ -796,9 +810,9 @@ const Calculator: React.FC = () => {
                 <Facebook />
                 Facebook TukiGroup
               </a>
-              <a href="tel:+84345811456" className="consultation-btn zalo">
+              <a href="tel:+84789 282 979" className="consultation-btn zalo">
                 <Phone />
-                Hotline: 0345.811.456
+                Hotline: 0789 282 979
               </a>
             </div>
           </div>

@@ -352,13 +352,181 @@ code {
 
 /* Footer Styles */
 .footer-main {
-  background: #1a1a1a;
+  background: #0C234E;
   color: #fff;
   position: relative;
 }
 
+/* New Footer Layout */
+.footer-grid-new {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.footer-section-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-company-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.footer-company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.footer-logo-new {
+  flex-shrink: 0;
+}
+
+.footer-logo-icon-new {
+  width: 70px;
+  height: 70px;
+  background: transparent;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.footer-company-name-new {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.footer-company-details-new {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-company-details-new p {
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.footer-section-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-contact-new {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-contact-item-new {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footer-contact-icon-new {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.footer-contact-value-new {
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 0;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.footer-contact-value-new.footer-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
+}
+
+.footer-contact-value-new.footer-link:hover {
+  color: #F30404;
+}
+
+.footer-social-new {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-social-link-new {
+  width: 40px;
+  height: 40px;
+  background: #0c36bf;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-social-link-new:hover {
+  background: #F30404;
+  transform: translateY(-2px);
+}
+
+.footer-social-icon-new {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+.zalo-icon {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer-bottom-new {
+  border-top: 1px solid #333;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+.footer-bottom-content-new {
+  text-align: center;
+}
+
+.footer-copyright-new {
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 0;
+  line-height: 1.5;
+}
+
 .footer-content {
-  padding: 60px 0 40px;
+  padding: 40px 0 30px;
 }
 
 .footer-grid {
@@ -409,13 +577,13 @@ code {
 
 .footer-logo-subtitle {
   font-size: 12px;
-  color: #ccc;
+  color: #FFFFFF;
   font-weight: 500;
   margin: 0;
 }
 
 .footer-description {
-  color: #ccc;
+  color: #FFFFFF;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -466,7 +634,7 @@ code {
 }
 
 .footer-link {
-  color: #ccc;
+  color: #FFFFFF;
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 14px;
@@ -502,20 +670,19 @@ code {
 
 .footer-contact-label {
   font-size: 12px;
-  color: #999;
+  color: #FFFFFF;
   margin: 0 0 4px 0;
   font-weight: 500;
 }
 
 .footer-contact-value {
   font-size: 14px;
-  color: #ccc;
+  color: #FFFFFF;
   margin: 0;
   line-height: 1.4;
 }
 
 .footer-company-info {
-  background: #111;
   padding: 20px 0;
   border-top: 1px solid #333;
 }
@@ -530,13 +697,13 @@ code {
 .footer-company-issuer,
 .footer-company-representative {
   font-size: 12px;
-  color: #999;
+  color: #FFFFFF;
   margin: 4px 0;
 }
 
 .footer-company-name {
   font-weight: 600;
-  color: #ccc;
+  color: #FFFFFF;
 }
 
 .footer-bottom {
@@ -554,7 +721,7 @@ code {
 }
 
 .footer-copyright {
-  color: #999;
+  color: #FFFFFF;
   font-size: 14px;
   margin: 0;
 }
@@ -566,7 +733,7 @@ code {
 }
 
 .footer-bottom-link {
-  color: #999;
+  color: #FFFFFF;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s ease;
@@ -1259,15 +1426,15 @@ input:focus, select:focus {
 .calculate-btn {
   width: 100%;
   padding: 18px;
-  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  background: linear-gradient(to bottom, #0991ED, #002095);
   color: white;
-  border: none;
+  border: 3px solid #BBFBFF;
   border-radius: 15px;
   font-size: 1.2rem;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 10px 30px rgba(46, 204, 113, 0.3);
+  box-shadow: 0 10px 30px rgba(9, 145, 237, 0.3);
   text-transform: uppercase;
   letter-spacing: 1px;
   display: flex;
@@ -1278,8 +1445,8 @@ input:focus, select:focus {
 
 .calculate-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(46, 204, 113, 0.4);
-  background: linear-gradient(135deg, #27ae60, #219a52);
+  box-shadow: 0 15px 40px rgba(9, 145, 237, 0.4);
+  background: linear-gradient(to bottom, #0A8FE8, #001F8A);
 }
 
 .calculate-btn:active {
@@ -1372,7 +1539,7 @@ input:focus, select:focus {
 }
 
 .result-header {
-  background: linear-gradient(135deg, #8e44ad, #9b59b6);
+  background: linear-gradient(135deg, #880E4F, #363B87);
   color: white;
   padding: 25px;
   text-align: center;
@@ -1480,6 +1647,46 @@ input:focus, select:focus {
 }
 
 @media (max-width: 768px) {
+  .footer-grid-new {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .footer-company-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .footer-company-info {
+    align-items: flex-start;
+  }
+  
+  .footer-company-name-new {
+    font-size: 14px;
+  }
+  
+  .footer-contact-item-new {
+    gap: 10px;
+  }
+  
+  .footer-contact-value-new {
+    font-size: 13px;
+  }
+  
+  .footer-social-new {
+    gap: 12px;
+  }
+  
+  .footer-social-link-new {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .footer-copyright-new {
+    font-size: 12px;
+  }
+
   .calculator-content {
     padding: 20px;
   }
@@ -2288,9 +2495,9 @@ input:focus, select:focus {
   padding: 20px 40px;
   font-size: 1.3rem;
   font-weight: 600;
-  background: linear-gradient(135deg, #F30404, #860404);
+  background: linear-gradient(to bottom, #0991ED, #002095);
   color: white;
-  border: none;
+  border: 3px solid #BBFBFF;
   border-radius: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -2302,7 +2509,8 @@ input:focus, select:focus {
 
 .calculate-button-container .calculate-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 30px rgba(243, 4, 4, 0.3);
+  box-shadow: 0 15px 30px rgba(9, 145, 237, 0.3);
+  background: linear-gradient(to bottom, #0A8FE8, #001F8A);
 }
 
 /* Responsive adjustments */
@@ -2360,5 +2568,63 @@ input:focus, select:focus {
   .form-group.inline .checkbox-group {
     width: 100%;
     justify-content: space-between;
+  }
+}
+
+/* Info Icon and Tooltip Styles */
+.info-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  color: #6B7280;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.info-icon:hover {
+  color: #3B82F6;
+}
+
+.form-group label {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.tooltip {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #979898;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  white-space: nowrap;
+  z-index: 1000;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  animation: fadeIn 0.2s ease;
+}
+
+.tooltip-arrow {
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #374151;
+}
+
+@media (max-width: 768px) {
+  .tooltip {
+    white-space: normal;
+    max-width: 200px;
+    width: max-content;
   }
 }
