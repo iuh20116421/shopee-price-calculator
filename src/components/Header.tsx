@@ -10,6 +10,21 @@ const Header: React.FC = () => {
   const location = useLocation();
   const { t } = useTranslation();
 
+  // Close mobile menu when clicking outside
+  React.useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (isMenuOpen && !target.closest('.header-mobile-toggle')) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMenuOpen]);
+
   const navigation = [
     { 
       name: t('navigation.home'), 
@@ -134,7 +149,7 @@ const Header: React.FC = () => {
               </ul>
             </nav>
 
-            {/* CTA Button and Language Switcher */}
+            {/* Desktop CTA Button and Language Switcher */}
             <div className="header-cta">
               <LanguageSwitcher />
               <button className="btn-primary">
@@ -142,53 +157,56 @@ const Header: React.FC = () => {
               </button>
             </div>
 
-            {/* Mobile menu button */}
-            <div className="header-mobile-toggle">
-              <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="mobile-menu-btn"
-              >
-                {isMenuOpen ? (
-                  <X className="mobile-menu-icon" />
-                ) : (
-                  <Menu className="mobile-menu-icon" />
-                )}
+            {/* Mobile CTA and Menu */}
+            <div className="header-mobile-actions">
+              <button className="mobile-cta-button">
+                {t('navigation.consultation')}
               </button>
+              <div className="header-mobile-toggle">
+                <button
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  className="mobile-menu-btn"
+                >
+                  <Menu className="mobile-menu-icon" />
+                </button>
+                {isMenuOpen && (
+                  <div className="mobile-dropdown">
+                    <Link to="/" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
+                      <Home className="mobile-dropdown-icon" />
+                      Trang chủ
+                    </Link>
+                    <Link to="/calculator" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
+                      <Calculator className="mobile-dropdown-icon" />
+                      Tính giá
+                    </Link>
+                    <Link to="/services" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
+                      <ShoppingBag className="mobile-dropdown-icon" />
+                      Dịch vụ
+                    </Link>
+                    <Link to="/blog" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
+                      <FileText className="mobile-dropdown-icon" />
+                      Blog
+                    </Link>
+                    <Link to="/contact" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
+                      <Users className="mobile-dropdown-icon" />
+                      Liên hệ
+                    </Link>
+                    
+                    {/* Mobile Language Switcher */}
+                    <div className="mobile-dropdown-cta">
+                      <div className="mobile-language-switcher">
+                        <LanguageSwitcher />
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <div className="mobile-menu">
-          <div className="mobile-menu-content">
-            <ul className="mobile-nav-menu">
-              {navigation.map((item) => {
-                const Icon = item.icon;
-                const isActive = location.pathname === item.href;
-                return (
-                  <li key={item.name} className="mobile-nav-item">
-                    <Link
-                      to={item.href}
-                      className={`mobile-nav-link ${isActive ? 'mobile-nav-link-active' : ''}`}
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      <Icon className="mobile-nav-icon" />
-                      {item.name}
-                    </Link>
-                  </li>
-                );
-              })}
-              <li className="mobile-nav-item">
-                <Link to="/contact" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>
-                  {t('navigation.contact')}
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      )}
+
     </header>
   );
 };

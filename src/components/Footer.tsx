@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="footer-contact-item-new">
                   <Phone className="footer-contact-icon-new" />
-                  <p className="footer-contact-value-new">(+84) 0789.282.979</p>
+                  <p className="footer-contact-value-new">(+84) 0789.282.979 (Ms. Đào) - Quản lý Tuki Group Chi nhánh Hồ Chí Minh </p>
                 </div>
                 <div className="footer-contact-item-new">
                   <Mail className="footer-contact-icon-new" />

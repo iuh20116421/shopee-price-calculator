@@ -74,7 +74,7 @@
     }
   },
   "calculator": {
-    "title": "Công cụ tính giá sản phẩm Shopee",
+    "title": "Công cụ tính giá bán Shopee 2025",
     "subtitle": "Tính toán chi phí và lợi nhuận khi bán hàng trên Shopee một cách chính xác",
     "form": {
       "title": "Thông tin sản phẩm",
@@ -89,7 +89,7 @@
       "selectedProduct": "Sản phẩm đã chọn:",
       "category": "Ngành hàng:",
       "fixedFee": "Phí cố định:",
-      "costPrice": "Giá vốn sản phẩm (VNĐ):",
+      "costPrice": "Giá vốn (VNĐ):",
       "costPricePlaceholder": "Nhập giá vốn sản phẩm",
       "desiredProfit": "Lợi nhuận mong muốn (VNĐ):",
       "desiredProfitPlaceholder": "Nhập lợi nhuận mong muốn",
@@ -101,17 +101,17 @@
       "reset": "Đặt lại"
     },
     "settings": {
-      "title": "Cài đặt Shopee",
-      "usePiShip": "Sử dụng Pi Ship:",
+      "title": "Thiết lập chương trình Shopee",
+      "usePiShip": "Pi Ship:",
       "yes": "Có",
       "no": "Không",
-      "extraServices": "Dịch vụ Extra:",
+      "extraServices": "Dịch vụ Xtra:",
       "contentXtra": "Content Xtra",
       "voucherXtra": "Voucher Xtra"
     },
     "costs": {
       "title": "Chi phí dự kiến",
-      "adCost": "Chi phí quảng cáo (%)",
+      "adCost": "Chi phí Marketing (%)",
       "adCostPlaceholder": "Nhập chi phí quảng cáo",
       "shopVoucherFee": "Phí voucher shop (VNĐ):",
       "shopVoucherFeePlaceholder": "Nhập phí voucher shop",
@@ -140,12 +140,12 @@
       "shopeeCosts": "Chi phí Shopee",
       "productFee": "Phí cố định",
       "paymentFee": "Phí thanh toán",
-      "shippingCost": "Phí Pi Ship",
-      "contentXtraFee": "Phí Content Xtra",
-      "voucherXtraFee": "Phí Voucher Xtra",
+      "shippingCost": "Pi Ship",
+      "contentXtraFee": "Content Xtra",
+      "voucherXtraFee": "Voucher Xtra",
       "infrastructureFee": "Phí hạ tầng",
-      "totalCosts": "Tổng chi phí Shopee",
-      "finalPrice": "Giá bán cuối cùng",
+      "totalCosts": "Tổng chi phí ước tính (dựa trên giá bán đề xuất)",
+      "finalPrice": "Giá bán đề xuất",
       "totalProfit": "Tổng lợi nhuận",
       "profitPercentage": "trên giá bán",
       "item": "Hạng mục",

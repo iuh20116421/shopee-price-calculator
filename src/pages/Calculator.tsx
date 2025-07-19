@@ -44,6 +44,34 @@ const Calculator: React.FC = () => {
   const [showResult, setShowResult] = useState(false);
   const [errors, setErrors] = useState<{[key: string]: string}>({});
   const [showMarketingTooltip, setShowMarketingTooltip] = useState(false);
+  const [showProfitTooltip, setShowProfitTooltip] = useState(false);
+  const [showCostPriceTooltip, setShowCostPriceTooltip] = useState(false);
+
+  // Function to adjust tooltip position if it goes off screen
+  const adjustTooltipPosition = (tooltipElement: HTMLElement) => {
+    const rect = tooltipElement.getBoundingClientRect();
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+    
+    // Check if tooltip goes off the right edge
+    if (rect.right > viewportWidth - 10) {
+      tooltipElement.style.left = 'auto';
+      tooltipElement.style.right = '0';
+      tooltipElement.style.transform = 'none';
+    }
+    
+    // Check if tooltip goes off the left edge
+    if (rect.left < 10) {
+      tooltipElement.style.left = '0';
+      tooltipElement.style.transform = 'none';
+    }
+    
+    // Check if tooltip goes off the top edge
+    if (rect.top < 10) {
+      tooltipElement.style.top = 'auto';
+      tooltipElement.style.bottom = '-45px';
+    }
+  };
 
   // Lấy dữ liệu sản phẩm theo loại Shopee
   const getProductData = (): CategoryData => {
@@ -477,7 +505,21 @@ const Calculator: React.FC = () => {
 
               {/* Giá vốn sản phẩm */}
               <div className="form-group">
-                <label>{t('calculator.form.costPrice')}<span className="required">*</span></label>
+                <label>
+                  {t('calculator.form.costPrice')}
+                  <Info 
+                    className="info-icon" 
+                    onMouseEnter={() => setShowCostPriceTooltip(true)}
+                    onMouseLeave={() => setShowCostPriceTooltip(false)}
+                  />
+                  {showCostPriceTooltip && (
+                    <div className="tooltip">
+                      Tổng chi phí để có sản phẩm sẵn sàng bán: giá nhập, vận chuyển, thuế, đóng gói, lưu kho.
+                      <div className="tooltip-arrow"></div>
+                    </div>
+                  )}
+                  <span className="required">*</span>
+                </label>
                 <input
                   name="cogs"
                   type="text"
@@ -574,7 +616,21 @@ const Calculator: React.FC = () => {
                   <div className="cost-inputs-row">
               {/* Lợi nhuận mong muốn */}
                     <div className="form-group inline">
-                <label>{t('calculator.costs.desiredProfitPercent')}<span className="required">*</span></label>
+                <label>
+                  {t('calculator.costs.desiredProfitPercent')}
+                  <Info 
+                    className="info-icon" 
+                    onMouseEnter={() => setShowProfitTooltip(true)}
+                    onMouseLeave={() => setShowProfitTooltip(false)}
+                  />
+                                    {showProfitTooltip && (
+                    <div className="tooltip">
+                      Tỷ lệ lợi nhuận mong muốn trên giá bán (ví dụ: 15.50%).
+                      <div className="tooltip-arrow"></div>
+                    </div>
+                  )}
+                  <span className="required">*</span>
+                </label>
                 <input
                   name="desiredProfitPercent"
                   type="text"
@@ -603,7 +659,7 @@ const Calculator: React.FC = () => {
                   />
                   {showMarketingTooltip && (
                     <div className="tooltip">
-                      Chi phí marketing gồm: quảng cáo, afiliate, voucher, ... Nhập số ước tính %. Ví dụ: 10 %
+                      Chi phí quảng cáo, afiliate, voucher trên giá bán (ví dụ: 5.5%).
                       <div className="tooltip-arrow"></div>
                     </div>
                   )}
