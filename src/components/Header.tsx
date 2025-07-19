@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, Calculator, Home, ChevronDown, ShoppingBag, BookOpen, FileText, Users, Phone } from 'lucide-react';
+import { Menu, X, Calculator, Home, ChevronDown, ShoppingBag, BookOpen, FileText, Users } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const Header: React.FC = () => {
@@ -9,6 +9,21 @@ const Header: React.FC = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const location = useLocation();
   const { t } = useTranslation();
+
+  // Close mobile menu when clicking outside
+  React.useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (isMenuOpen && !target.closest('.header-mobile-toggle')) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMenuOpen]);
 
   const navigation = [
     { 
@@ -42,26 +57,6 @@ const Header: React.FC = () => {
 
   return (
     <header className="header-main">
-      {/* Top bar */}
-      <div className="header-top">
-        <div className="container-custom">
-          <div className="header-top-content">
-            <div className="header-contact">
-              <span className="header-phone">
-                <Phone className="header-icon" />
-                (+84) 0345.811.456
-              </span>
-              <span className="header-email">
-                tukigroup123@gmail.com
-              </span>
-            </div>
-            <div className="header-top-right">
-              <LanguageSwitcher />
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Main header */}
       <div className="header-main-content">
         <div className="container-custom">
@@ -154,60 +149,64 @@ const Header: React.FC = () => {
               </ul>
             </nav>
 
-            {/* CTA Button */}
+            {/* Desktop CTA Button and Language Switcher */}
             <div className="header-cta">
+              <LanguageSwitcher />
               <button className="btn-primary">
                 {t('navigation.consultation')}
               </button>
             </div>
 
-            {/* Mobile menu button */}
-            <div className="header-mobile-toggle">
-              <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="mobile-menu-btn"
-              >
-                {isMenuOpen ? (
-                  <X className="mobile-menu-icon" />
-                ) : (
-                  <Menu className="mobile-menu-icon" />
-                )}
+            {/* Mobile CTA and Menu */}
+            <div className="header-mobile-actions">
+              <button className="mobile-cta-button">
+                {t('navigation.consultation')}
               </button>
+              <div className="header-mobile-toggle">
+                <button
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  className="mobile-menu-btn"
+                >
+                  <Menu className="mobile-menu-icon" />
+                </button>
+                {isMenuOpen && (
+                  <div className="mobile-dropdown">
+                    <Link to="/" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
+                      <Home className="mobile-dropdown-icon" />
+                      Trang chủ
+                    </Link>
+                    <Link to="/calculator" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
+                      <Calculator className="mobile-dropdown-icon" />
+                      Tính giá
+                    </Link>
+                    <Link to="/services" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
+                      <ShoppingBag className="mobile-dropdown-icon" />
+                      Dịch vụ
+                    </Link>
+                    <Link to="/blog" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
+                      <FileText className="mobile-dropdown-icon" />
+                      Blog
+                    </Link>
+                    <Link to="/contact" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
+                      <Users className="mobile-dropdown-icon" />
+                      Liên hệ
+                    </Link>
+                    
+                    {/* Mobile Language Switcher */}
+                    <div className="mobile-dropdown-cta">
+                      <div className="mobile-language-switcher">
+                        <LanguageSwitcher />
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <div className="mobile-menu">
-          <div className="mobile-menu-content">
-            <ul className="mobile-nav-menu">
-              {navigation.map((item) => {
-                const Icon = item.icon;
-                const isActive = location.pathname === item.href;
-                return (
-                  <li key={item.name} className="mobile-nav-item">
-                    <Link
-                      to={item.href}
-                      className={`mobile-nav-link ${isActive ? 'mobile-nav-link-active' : ''}`}
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      <Icon className="mobile-nav-icon" />
-                      {item.name}
-                    </Link>
-                  </li>
-                );
-              })}
-              <li className="mobile-nav-item">
-                <Link to="/contact" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>
-                  {t('navigation.contact')}
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      )}
+
     </header>
   );
 };

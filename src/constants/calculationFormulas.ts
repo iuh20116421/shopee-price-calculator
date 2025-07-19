@@ -226,7 +226,7 @@ export function formatCurrency(amount: number): string {
  * Format phần trăm
  */
 export function formatPercentage(value: number): string {
-  return `${value.toFixed(2)}%`;
+  return `${value.toFixed(2)} %`;
 }
 
 /**

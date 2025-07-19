@@ -14,114 +14,166 @@
     "refresh": "Làm mới",
     "back": "Quay lại",
     "next": "Tiếp theo",
-    "previous": "Trước đó",
+    "previous": "Trước",
     "submit": "Gửi",
-    "reset": "Làm mới"
+    "reset": "Đặt lại"
   },
   "navigation": {
     "home": "Trang chủ",
-    "calculator": "Tính giá sản phẩm",
-    "services": "Dịch vụ TMĐT",
-    "blog": "Blog TMĐT",
-    "guide": "Hướng dẫn sử dụng",
+    "calculator": "Tính giá",
+    "services": "Dịch vụ",
+    "blog": "Blog",
+    "guide": "Hướng dẫn",
     "contact": "Liên hệ",
-    "consultation": "Nhận tư vấn"
+    "consultation": "Tư vấn"
   },
   "services": {
     "shopeeServices": "Dịch vụ Shopee",
     "lazadaServices": "Dịch vụ Lazada",
-    "training": "Chương trình đào tạo",
+    "training": "Đào tạo",
     "consulting": "Tư vấn kinh doanh"
   },
   "blog": {
     "news": "Tin tức",
     "experience": "Chia sẻ kinh nghiệm",
     "guide": "Hướng dẫn",
-    "qa": "Hỏi – Đáp"
+    "qa": "Hỏi đáp"
   },
   "home": {
     "hero": {
-      "title": "Công cụ tính giá bán",
+      "title": "Công cụ tính giá Shopee",
       "titleHighlight": "Shopee",
-      "subtitle": "Tối ưu hóa lợi nhuận kinh doanh trên Shopee với công cụ tính giá bán chuyên nghiệp. Định giá sản phẩm chính xác, theo dõi cạnh tranh và tăng doanh thu.",
+      "subtitle": "Tối ưu lợi nhuận kinh doanh Shopee với công cụ tính giá chuyên nghiệp. Định giá sản phẩm chính xác, theo dõi đối thủ cạnh tranh và tăng doanh thu.",
       "ctaPrimary": "Bắt đầu tính giá ngay",
       "ctaSecondary": "Xem hướng dẫn"
     },
     "features": {
       "title": "Tại sao chọn chúng tôi?",
-      "subtitle": "Công cụ được thiết kế đặc biệt cho người bán hàng trên Shopee, giúp bạn kinh doanh hiệu quả hơn.",
+      "subtitle": "Các công cụ được thiết kế đặc biệt cho người bán Shopee giúp bạn vận hành kinh doanh hiệu quả hơn.",
       "accuracy": {
         "title": "Tính toán chính xác",
-        "description": "Công cụ tính giá bán sản phẩm trên Shopee với độ chính xác cao, giúp bạn tối ưu hóa lợi nhuận."
+        "description": "Công cụ tính giá sản phẩm Shopee độ chính xác cao giúp bạn tối ưu lợi nhuận."
       },
       "analysis": {
         "title": "Phân tích thị trường",
-        "description": "Theo dõi xu hướng giá cả và cạnh tranh trên thị trường Shopee để đưa ra quyết định kinh doanh tốt nhất."
+        "description": "Theo dõi xu hướng giá và đối thủ cạnh tranh trên thị trường Shopee để đưa ra quyết định kinh doanh tốt nhất."
       },
       "security": {
         "title": "Bảo mật thông tin",
         "description": "Thông tin sản phẩm và dữ liệu kinh doanh của bạn được bảo mật tuyệt đối."
       },
       "performance": {
-        "title": "Tính năng nhanh chóng",
-        "description": "Giao diện thân thiện, dễ sử dụng với các tính năng được tối ưu hóa cho hiệu suất cao."
+        "title": "Tính năng nhanh",
+        "description": "Giao diện thân thiện với các tính năng được tối ưu cho hiệu suất cao."
       }
     },
     "cta": {
-      "title": "Sẵn sàng tối ưu hóa kinh doanh?",
-      "subtitle": "Bắt đầu sử dụng công cụ tính giá bán Shopee ngay hôm nay và khám phá tiềm năng kinh doanh của bạn.",
+      "title": "Sẵn sàng tối ưu kinh doanh?",
+      "subtitle": "Bắt đầu sử dụng công cụ tính giá Shopee ngay hôm nay và khám phá tiềm năng kinh doanh của bạn.",
       "button": "Dùng thử miễn phí"
     }
   },
   "calculator": {
-    "title": "Tính giá bán sản phẩm Shopee",
-    "subtitle": "Nhập thông tin sản phẩm để tính giá bán tối ưu và lợi nhuận mong muốn",
+    "title": "Công cụ tính giá bán Shopee 2025",
+    "subtitle": "Tính toán chi phí và lợi nhuận khi bán hàng trên Shopee một cách chính xác",
     "form": {
       "title": "Thông tin sản phẩm",
-      "costPrice": "Giá vốn (VNĐ)",
+      "productInfo": "Thông tin sản phẩm",
+      "shopeeType": "Loại Shopee:",
+      "shopeeMall": "Shopee Mall",
+      "shopeeRegular": "Shopee thường",
+      "productName": "Tên sản phẩm:",
+      "productNamePlaceholder": "Nhập tên sản phẩm để tìm kiếm...",
+      "searching": "Đang tìm kiếm...",
+      "selectCategory": "Chọn ngành hàng:",
+      "selectedProduct": "Sản phẩm đã chọn:",
+      "category": "Ngành hàng:",
+      "fixedFee": "Phí cố định:",
+      "costPrice": "Giá vốn (VNĐ):",
       "costPricePlaceholder": "Nhập giá vốn sản phẩm",
-      "desiredProfit": "Lợi nhuận mong muốn (VNĐ)",
+      "desiredProfit": "Lợi nhuận mong muốn (VNĐ):",
       "desiredProfitPlaceholder": "Nhập lợi nhuận mong muốn",
-      "shippingFee": "Phí vận chuyển (VNĐ)",
+      "shippingFee": "Phí vận chuyển (VNĐ):",
       "shippingFeePlaceholder": "Nhập phí vận chuyển",
       "shopeeCommission": "Phí hoa hồng Shopee (%)",
-      "shopeeCommissionPlaceholder": "Nhập % hoa hồng Shopee",
+      "shopeeCommissionPlaceholder": "Nhập % phí hoa hồng Shopee",
       "calculate": "Tính toán",
-      "reset": "Làm mới"
+      "reset": "Đặt lại"
+    },
+    "settings": {
+      "title": "Thiết lập chương trình Shopee",
+      "usePiShip": "Pi Ship:",
+      "yes": "Có",
+      "no": "Không",
+      "extraServices": "Dịch vụ Xtra:",
+      "contentXtra": "Content Xtra",
+      "voucherXtra": "Voucher Xtra"
+    },
+    "costs": {
+      "title": "Chi phí dự kiến",
+      "adCost": "Chi phí Marketing (%)",
+      "adCostPlaceholder": "Nhập chi phí quảng cáo",
+      "shopVoucherFee": "Phí voucher shop (VNĐ):",
+      "shopVoucherFeePlaceholder": "Nhập phí voucher shop",
+      "returnRate": "Tỷ lệ hoàn hàng (%):",
+      "returnRatePlaceholder": "Nhập tỷ lệ hoàn hàng",
+      "desiredProfitPercent": "Lợi nhuận mong muốn (%):",
+      "desiredProfitPercentPlaceholder": "Nhập % lợi nhuận mong muốn"
     },
     "results": {
       "title": "Kết quả tính toán",
-      "suggestedPrice": "Giá bán đề xuất",
+      "suggestedPrice": "Giá đề xuất",
       "costPrice": "Giá vốn:",
       "shopeeFee": "Phí Shopee:",
       "shippingFee": "Phí vận chuyển:",
-      "profit": "Lợi nhuận:",
-      "profitMargin": "Tỷ lệ lợi nhuận:",
+      "profit": "Lợi nhuận",
+      "profitMargin": "Tỷ suất lợi nhuận:",
       "recommendation": "Khuyến nghị:",
       "recommendations": {
-        "high": "Tỷ lệ lợi nhuận rất tốt! Sản phẩm có tiềm năng kinh doanh cao.",
-        "medium": "Tỷ lệ lợi nhuận khá tốt. Có thể cân nhắc tăng giá để tối ưu hơn.",
-        "low": "Tỷ lệ lợi nhuận thấp. Nên xem xét lại chiến lược giá hoặc tìm nguồn hàng tốt hơn."
+        "high": "Tỷ suất lợi nhuận tuyệt vời! Sản phẩm có tiềm năng kinh doanh cao.",
+        "medium": "Tỷ suất lợi nhuận tốt. Cân nhắc tăng giá để tối ưu hơn.",
+        "low": "Tỷ suất lợi nhuận thấp. Nên xem xét lại chiến lược định giá hoặc tìm nhà cung cấp tốt hơn."
       },
-      "placeholder": "Nhập thông tin sản phẩm và nhấn \"Tính toán\" để xem kết quả"
+      "placeholder": "Nhập thông tin sản phẩm và nhấn \"Tính toán\" để xem kết quả",
+      "costBreakdown": "Tổng kết",
+      "estimatedCosts": "Chi phí dự kiến",
+      "shopeeCosts": "Chi phí Shopee",
+      "productFee": "Phí cố định",
+      "paymentFee": "Phí thanh toán",
+      "shippingCost": "Pi Ship",
+      "contentXtraFee": "Content Xtra",
+      "voucherXtraFee": "Voucher Xtra",
+      "infrastructureFee": "Phí hạ tầng",
+      "totalCosts": "Tổng chi phí ước tính (dựa trên giá bán đề xuất)",
+      "finalPrice": "Giá bán đề xuất",
+      "totalProfit": "Tổng lợi nhuận",
+      "profitPercentage": "trên giá bán",
+      "item": "Hạng mục",
+      "amount": "Số tiền",
+      "percentageOnPrice": "% trên giá bán"
     },
     "validation": {
-      "costPriceRequired": "Vui lòng nhập giá vốn hợp lệ"
+      "costPriceRequired": "Vui lòng nhập giá vốn hợp lệ",
+      "productRequired": "Vui lòng chọn sản phẩm",
+      "categoryRequired": "Vui lòng chọn ngành hàng",
+      "shopeeTypeRequired": "Vui lòng chọn loại Shopee",
+      "profitRequired": "Vui lòng nhập lợi nhuận mong muốn hợp lệ",
+      "marketingCostInvalid": "Chi phí marketing không hợp lệ"
     }
   },
   "footer": {
-    "description": "Công cụ tính giá bán sản phẩm trên Shopee chuyên nghiệp. Giúp bạn tối ưu hóa lợi nhuận và định giá sản phẩm một cách chính xác.",
+    "description": "Công cụ tính giá sản phẩm Shopee chuyên nghiệp. Giúp bạn tối ưu lợi nhuận và định giá sản phẩm chính xác.",
     "quickLinks": "Liên kết nhanh",
     "services": "Dịch vụ",
     "contactInfo": "Thông tin liên hệ",
     "email": "Email",
     "phone": "Điện thoại",
     "address": "Địa chỉ",
-    "copyright": "Tất cả quyền được bảo lưu.",
+    "copyright": "Bản quyền thuộc về.",
     "privacyPolicy": "Chính sách bảo mật",
     "termsOfService": "Điều khoản sử dụng",
     "paymentPolicy": "Chính sách thanh toán",
-    "returnPolicy": "Chính sách đổi trả & hoàn tiền"
+    "returnPolicy": "Chính sách đổi trả"
   },
   "language": {
     "vi": "Tiếng Việt",

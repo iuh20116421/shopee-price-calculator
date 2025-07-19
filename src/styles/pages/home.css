@@ -1,0 +1,42 @@
+/* Home Page Styles */
+.bg-gradient-to-br {
+  background: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.from-primary-50 {
+  --tw-gradient-from: #fef2f2;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(254, 242, 242, 0));
+}
+
+.to-blue-50 {
+  --tw-gradient-to: #fef2f2;
+}
+
+.text-primary-600 {
+  color: #F30404;
+}
+
+.bg-primary-600 {
+  background-color: #F30404;
+}
+
+.bg-primary-100 {
+  background-color: #fed7d7;
+}
+
+.text-primary-100 {
+  color: #fed7d7;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.hover\:bg-gray-100:hover {
+  background-color: #f3f4f6;
+}
+
+/* CTA Section */
+.bg-primary-600 {
+  background: linear-gradient(135deg, #F30404, #860404);
+} 
