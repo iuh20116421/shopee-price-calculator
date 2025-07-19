@@ -111,7 +111,7 @@
     },
     "costs": {
       "title": "Chi phí dự kiến",
-      "adCost": "Chi phí quảng cáo (%):",
+      "adCost": "Chi phí quảng cáo (%)",
       "adCostPlaceholder": "Nhập chi phí quảng cáo",
       "shopVoucherFee": "Phí voucher shop (VNĐ):",
       "shopVoucherFeePlaceholder": "Nhập phí voucher shop",
@@ -126,7 +126,7 @@
       "costPrice": "Giá vốn:",
       "shopeeFee": "Phí Shopee:",
       "shippingFee": "Phí vận chuyển:",
-      "profit": "Lợi nhuận:",
+      "profit": "Lợi nhuận",
       "profitMargin": "Tỷ suất lợi nhuận:",
       "recommendation": "Khuyến nghị:",
       "recommendations": {
