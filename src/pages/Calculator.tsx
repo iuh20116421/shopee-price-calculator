@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { Calculator as CalculatorIcon, Box, Store, TrendingUp, Facebook, Phone, Search, Info } from 'lucide-react';
 import shopeeMallData from '../constants/shopeeMallData.json';
 import shopeeRegularData from '../constants/shopeeRegularData.json';
+import shopeeMallDataEn from '../constants/shopeeMallDataEn.json';
+import shopeeRegularDataEn from '../constants/shopeeRegularDataEn.json';
 import CategorySelector from '../components/CategorySelector';
 import { 
   calculateSellingPrice, 
@@ -46,6 +48,7 @@ const Calculator: React.FC = () => {
   const [showMarketingTooltip, setShowMarketingTooltip] = useState(false);
   const [showProfitTooltip, setShowProfitTooltip] = useState(false);
   const [showCostPriceTooltip, setShowCostPriceTooltip] = useState(false);
+  const [currentLanguage, setCurrentLanguage] = useState(localStorage.getItem('i18nextLng') || 'vi');
 
   // Function to adjust tooltip position if it goes off screen
   const adjustTooltipPosition = (tooltipElement: HTMLElement) => {
@@ -73,9 +76,14 @@ const Calculator: React.FC = () => {
     }
   };
 
-  // Lấy dữ liệu sản phẩm theo loại Shopee
+  // Lấy dữ liệu sản phẩm theo loại Shopee và ngôn ngữ
   const getProductData = (): CategoryData => {
-    return formData.shopeeType === 'mall' ? shopeeMallData : shopeeRegularData;
+    const isEnglish = currentLanguage === 'en';
+    if (formData.shopeeType === 'mall') {
+      return isEnglish ? shopeeMallDataEn : shopeeMallData;
+    } else {
+      return isEnglish ? shopeeRegularDataEn : shopeeRegularData;
+    }
   };
 
   // Tìm kiếm sản phẩm trong data
@@ -145,7 +153,7 @@ const Calculator: React.FC = () => {
       // Cuối cùng sắp xếp theo tên
       return a.name.localeCompare(b.name);
     }).slice(0, 10); // Giới hạn 10 kết quả
-  }, [formData.shopeeType]);
+  }, [formData.shopeeType, currentLanguage]);
 
   // Debounced search
   useEffect(() => {
@@ -186,6 +194,29 @@ const Calculator: React.FC = () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [showSuggestions]);
+
+  // Listen for language changes
+  useEffect(() => {
+    const handleLanguageChange = () => {
+      const newLanguage = localStorage.getItem('i18nextLng') || 'vi';
+      if (newLanguage !== currentLanguage) {
+        setCurrentLanguage(newLanguage);
+        setProductName('');
+        setSelectedProduct(null);
+        setSuggestions([]);
+        setShowSuggestions(false);
+        setShowResult(false);
+        setCalculationResult(null);
+        setSelectedCategory(null);
+        clearError('product');
+      }
+    };
+
+    // Check for language changes periodically
+    const interval = setInterval(handleLanguageChange, 100);
+    
+    return () => clearInterval(interval);
+  }, [currentLanguage]);
 
   // Xử lý thay đổi loại Shopee
   const handleShopeeTypeChange = (type: 'mall' | 'regular') => {
@@ -514,7 +545,7 @@ const Calculator: React.FC = () => {
                   />
                   {showCostPriceTooltip && (
                     <div className="tooltip">
-                      Tổng chi phí để có sản phẩm sẵn sàng bán: giá nhập, vận chuyển, thuế, đóng gói, lưu kho.
+                      {t('calculator.tooltips.costPrice')}
                       <div className="tooltip-arrow"></div>
                     </div>
                   )}
@@ -625,7 +656,7 @@ const Calculator: React.FC = () => {
                   />
                                     {showProfitTooltip && (
                     <div className="tooltip">
-                      Tỷ lệ lợi nhuận mong muốn trên giá bán (ví dụ: 15.50%).
+                      {t('calculator.tooltips.profit')}
                       <div className="tooltip-arrow"></div>
                     </div>
                   )}
@@ -659,7 +690,7 @@ const Calculator: React.FC = () => {
                   />
                   {showMarketingTooltip && (
                     <div className="tooltip">
-                      Chi phí quảng cáo, afiliate, voucher trên giá bán (ví dụ: 5.5%).
+                      {t('calculator.tooltips.marketing')}
                       <div className="tooltip-arrow"></div>
                     </div>
                   )}
@@ -724,31 +755,31 @@ const Calculator: React.FC = () => {
                         <tbody>
                           <tr>
                             <td>{t('calculator.results.productFee')}:</td>
-                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.productFee)}</td>
+                            <td className="highlight-value" style={{ textAlign: 'right', fontSize: '1rem' }}>{formatCurrency(calculationResult.productFee)}</td>
                           </tr>
                           <tr>
                             <td>{t('calculator.results.paymentFee')}:</td>
-                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.paymentFee)}</td>
+                            <td className="highlight-value" style={{ textAlign: 'right', fontSize: '1rem' }}>{formatCurrency(calculationResult.paymentFee)}</td>
                           </tr>
                           <tr>
                             <td>{t('calculator.results.shippingCost')}:</td>
-                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.shippingCost)}</td>
+                            <td className="highlight-value" style={{ textAlign: 'right', fontSize: '1rem' }}>{formatCurrency(calculationResult.shippingCost)}</td>
                           </tr>
                           <tr>
                             <td>{t('calculator.results.contentXtraFee')}:</td>
-                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.contentXtraFee)}</td>
+                            <td className="highlight-value" style={{ textAlign: 'right', fontSize: '1rem' }}>{formatCurrency(calculationResult.contentXtraFee)}</td>
                           </tr>
                           <tr>
                             <td>{t('calculator.results.voucherXtraFee')}:</td>
-                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.voucherXtraFee)}</td>
+                            <td className="highlight-value" style={{ textAlign: 'right', fontSize: '1rem' }}>{formatCurrency(calculationResult.voucherXtraFee)}</td>
                           </tr>
                           <tr>
                             <td>{t('calculator.results.infrastructureFee')}:</td>
-                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.infrastructureFee)}</td>
+                            <td className="highlight-value" style={{ textAlign: 'right', fontSize: '1rem' }}>{formatCurrency(calculationResult.infrastructureFee)}</td>
                           </tr>
                           <tr style={{ fontWeight: 'bold', backgroundColor: '#f8f9fa', borderTop: '2px solid #dee2e6' }}>
                             <td>{t('calculator.results.totalCosts')}:</td>
-                            <td className="highlight-value" style={{ fontWeight: 'bold', textAlign: 'right' }}>
+                            <td className="highlight-value" style={{ fontWeight: 'bold', textAlign: 'right', fontSize: '1rem' }}>
                               {formatCurrency(
                                 calculationResult.productFee +
                                 calculationResult.paymentFee +
@@ -781,8 +812,8 @@ const Calculator: React.FC = () => {
                           {/* Hàng 1: Giá vốn sản phẩm */}
                           <tr>
                             <td>{t('calculator.results.costPrice')}</td>
-                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.cogs)}</td>
-                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatPercentage(calculationResult.finalPrice ? (calculationResult.cogs / calculationResult.finalPrice) * 100 : 0)}</td>
+                            <td className="highlight-value" style={{ textAlign: 'right', fontSize: '1rem' }}>{formatCurrency(calculationResult.cogs)}</td>
+                            <td className="highlight-value" style={{ textAlign: 'right', fontSize: '1rem' }}>{formatPercentage(calculationResult.finalPrice ? (calculationResult.cogs / calculationResult.finalPrice) * 100 : 0)}</td>
                           </tr>
                           {/* Hàng 2: Chi phí dự kiến */}
                           <tr>
@@ -791,7 +822,7 @@ const Calculator: React.FC = () => {
                           {/* Hàng20.1: Chi phí Shopee (tổng các phí Shopee) */}
                           <tr>
                             <td style={{ paddingLeft: 20 }}>{t('calculator.results.shopeeCosts')}:</td>
-                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(
+                            <td className="highlight-value" style={{ textAlign: 'right', fontSize: '1rem' }}>{formatCurrency(
                               calculationResult.productFee +
                               calculationResult.paymentFee +
                               calculationResult.shippingCost +
@@ -799,7 +830,7 @@ const Calculator: React.FC = () => {
                               calculationResult.voucherXtraFee +
                               calculationResult.infrastructureFee
                             )}</td>
-                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatPercentage(calculationResult.finalPrice ? (
+                            <td className="highlight-value" style={{ textAlign: 'right', fontSize: '1rem' }}>{formatPercentage(calculationResult.finalPrice ? (
                               (
                                 calculationResult.productFee +
                                 calculationResult.paymentFee +
@@ -814,34 +845,28 @@ const Calculator: React.FC = () => {
                           {calculationResult.marketingCost > 0 && (
                             <tr>
                               <td style={{ paddingLeft: 20 }}>{t('calculator.costs.adCost')}:</td>
-                              <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.marketingCost)}</td>
-                              <td className="highlight-value" style={{ textAlign: 'right' }}>{formatPercentage(calculationResult.finalPrice ? (calculationResult.marketingCost / calculationResult.finalPrice) * 100 : 0)}</td>
+                              <td className="highlight-value" style={{ textAlign: 'right', fontSize: '1rem' }}>{formatCurrency(calculationResult.marketingCost)}</td>
+                              <td className="highlight-value" style={{ textAlign: 'right', fontSize: '1rem' }}>{formatPercentage(calculationResult.finalPrice ? (calculationResult.marketingCost / calculationResult.finalPrice) * 100 : 0)}</td>
                             </tr>
                           )}
                           {/* Hàng 3: Lợi nhuận */}
                           <tr>
                             <td>{t('calculator.results.profit')}:</td>
-                            <td className={`highlight-value ${calculationResult.profit >= 0 ? 'profit-positive' : 'profit-negative'}`} style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.profit)}</td>
-                            <td className={`highlight-value ${calculationResult.profit >= 0 ? 'profit-positive' : 'profit-negative'}`} style={{ textAlign: 'right' }}>{formatPercentage(calculationResult.finalPrice ? (calculationResult.profit / calculationResult.finalPrice) * 100 : 0)}</td>
+                            <td className={`highlight-value ${calculationResult.profit >= 0 ? 'profit-positive' : 'profit-negative'}`} style={{ textAlign: 'right', fontSize: '1rem' }}>{formatCurrency(calculationResult.profit)}</td>
+                            <td className={`highlight-value ${calculationResult.profit >= 0 ? 'profit-positive' : 'profit-negative'}`} style={{ textAlign: 'right', fontSize: '1rem' }}>{formatPercentage(calculationResult.finalPrice ? (calculationResult.profit / calculationResult.finalPrice) * 100 : 0)}</td>
                           </tr>
                           {/* Hàng VAT */}
                           <tr>
-                            <td>VAT (1.5%):</td>
-                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatCurrency(calculationResult.vatFee)}</td>
-                            <td className="highlight-value" style={{ textAlign: 'right' }}>{formatPercentage(calculationResult.finalPrice ? (calculationResult.vatFee / calculationResult.finalPrice) * 100 : 0)}</td>
+                            <td>{t('calculator.results.vat')}:</td>
+                            <td className="highlight-value" style={{ textAlign: 'right', fontSize: '1rem' }}>{formatCurrency(calculationResult.vatFee)}</td>
+                            <td className="highlight-value" style={{ textAlign: 'right', fontSize: '1rem' }}>{formatPercentage(calculationResult.finalPrice ? (calculationResult.vatFee / calculationResult.finalPrice) * 100 : 0)}</td>
                           </tr>
                           {/* Hàng cuối: Giá bán cuối cùng */}
                           <tr className="final-price-row">
                             <td><strong>{t('calculator.results.finalPrice')}:</strong></td>
                             <td className="highlight-value" style={{ fontSize: '1.3rem', fontWeight: 'bold', textAlign: 'right' }}>{formatCurrency(calculationResult.finalPrice)}</td>
-                            <td className="highlight-value" style={{ fontSize: '1.3rem', fontWeight: 'bold', textAlign: 'right' }}>
-                              {formatPercentage(calculationResult.finalPrice ? (
-                                ((calculationResult.cogs / calculationResult.finalPrice) * 100) +
-                                (((calculationResult.productFee + calculationResult.paymentFee + calculationResult.shippingCost + calculationResult.contentXtraFee + calculationResult.voucherXtraFee + calculationResult.infrastructureFee) / calculationResult.finalPrice) * 100) +
-                                ((calculationResult.marketingCost / calculationResult.finalPrice) * 100) +
-                                ((calculationResult.profit / calculationResult.finalPrice) * 100) +
-                                ((calculationResult.vatFee / calculationResult.finalPrice) * 100)
-                              ) : 0)}
+                            <td className="highlight-value" style={{ fontSize: '1.3rem', fontWeight: 'bold', textAlign: 'right', whiteSpace: 'nowrap' }}>
+                              {formatPercentage(100)}
                             </td>
                           </tr>
                         </tbody>
@@ -857,16 +882,16 @@ const Calculator: React.FC = () => {
           <div className="consultation-section">
             <div className="consultation-title">
               <Phone className="consultation-icon" />
-              Cần tư vấn thêm?
+              {t('calculator.consultation.title')}
             </div>
             <div>
-              <a href="https://www.facebook.com/tukigroup" target="_blank" rel="noopener noreferrer" className="consultation-btn facebook">
+              <a href="https://www.facebook.com/TukiGroupHCM" target="_blank" rel="noopener noreferrer" className="consultation-btn facebook">
                 <Facebook />
-                Facebook TukiGroup
+                {t('calculator.consultation.facebook')}
               </a>
               <a href="tel:+84789 282 979" className="consultation-btn zalo">
                 <Phone />
-                Hotline: 0789 282 979
+                {t('calculator.consultation.hotline')}
               </a>
             </div>
           </div>

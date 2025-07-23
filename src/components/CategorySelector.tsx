@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { ChevronRight } from 'lucide-react';
 
 interface CategoryData {
@@ -18,6 +19,7 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({
   selectedPath,
   maxLevels = 4
 }) => {
+  const { t } = useTranslation();
   const [level1Categories, setLevel1Categories] = useState<string[]>([]);
   const [level2Categories, setLevel2Categories] = useState<string[]>([]);
   const [level3Categories, setLevel3Categories] = useState<string[]>([]);
@@ -187,7 +189,7 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({
       <div className={`category-columns columns-${currentColumns}`}>
         {/* Cột cấp 1 */}
         <div className="category-column">
-          <div className="category-column-header">Cấp 1</div>
+          <div className="category-column-header">{t('calculator.form.level1')}</div>
           <div className="category-list">
             {level1Categories.map((category) => (
               <div
@@ -207,7 +209,7 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({
         {/* Cột cấp 2 - chỉ hiển thị khi có dữ liệu */}
         {level2Categories.length > 0 && (
           <div className="category-column">
-            <div className="category-column-header">Cấp 2</div>
+            <div className="category-column-header">{t('calculator.form.level2')}</div>
             <div className="category-list">
               {level2Categories.map((category) => (
                 <div
@@ -228,7 +230,7 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({
         {/* Cột cấp 3 - chỉ hiển thị khi có dữ liệu và maxLevels >= 3 */}
         {level3Categories.length > 0 && maxLevels >= 3 && (
           <div className="category-column">
-            <div className="category-column-header">Cấp 3</div>
+            <div className="category-column-header">{t('calculator.form.level3')}</div>
             <div className="category-list">
               {level3Categories.map((category) => (
                 <div
@@ -249,7 +251,7 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({
         {/* Cột cấp 4 - chỉ hiển thị khi có dữ liệu và maxLevels >= 4 */}
         {level4Categories.length > 0 && maxLevels >= 4 && (
           <div className="category-column">
-            <div className="category-column-header">Cấp 4</div>
+            <div className="category-column-header">{t('calculator.form.level4')}</div>
             <div className="category-list">
               {level4Categories.map((category) => (
                 <div

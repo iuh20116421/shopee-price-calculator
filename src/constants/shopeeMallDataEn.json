@@ -1,0 +1,352 @@
+{
+  "Cameras & Flycam": {
+    "Camera Accessories": {
+      "Battery Grip": "6.38%",
+      "Battery Charger": "6.38%",
+      "Camera Bag": "6.38%",
+      "Flash Accessories": {
+        "Light Diffuser": "6.38%",
+        "Flash Trigger": "6.38%",
+        "Others": "6.38%"
+      },
+      "Flash": "6.38%",
+      "Gimbal": "6.38%",
+      "Lighting & Studio Equipment": "6.38%",
+      "Others": "6.38%",
+      "Photo Paper & Film": "6.38%",
+      "Photo Printer": "6.38%",
+      "Tripod": "6.38%"
+    },
+    "Camera Care Accessories": {
+      "Air Blower": "6.38%",
+      "Camera Cleaning Kit": "6.38%",
+      "Dry Box": "6.38%",
+      "Lens Cleaning Pen & Brush": "6.38%",
+      "Others": "6.38%",
+      "Silica Gel": "6.38%"
+    },
+    "Cameras": {
+      "Action Camera": "6.38%",
+      "Film Camera": "6.38%",
+      "DSLR Camera": "3.93%",
+      "Instant Camera": "6.38%",
+      "Mirrorless Camera": "3.93%",
+      "Others": "6.38%",
+      "Digital Camera": "6.38%",
+      "Video Camera": "6.38%"
+    },
+    "Drone Accessories": "6.38%",
+    "Drones": "6.38%",
+    "Lens Accessories": {
+      "Lens Filter": "6.38%",
+      "Lens Cap": "6.38%",
+      "Lens Hood": "6.38%",
+      "Lens Mount & Adapter": "6.38%",
+      "Others": "6.38%"
+    },
+    "Lenses": "6.38%",
+    "Others": "6.38%",
+    "Security Camera": {
+      "IP Camera": "6.38%",
+      "Fake Security Camera": "6.38%",
+      "DVR": "6.38%",
+      "Others": "6.38%",
+      "Hidden Camera": "6.38%"
+    }
+  },
+  "Pet Care": {
+    "Pet Hygiene": {
+      "Cat Litter Box": "6.87%",
+      "Pet Diapers": "6.87%",
+      "Dog Training Pads": "6.87%",
+      "Others": "6.87%",
+      "Poop Bags & Scoopers": "6.87%",
+      "Small Pet Bedding": "6.87%"
+    },
+    "Others": "6.87%",
+    "Pet Accessories": {
+      "Aquarium Accessories": "6.87%",
+      "Bowls & Feeding Tools": "6.87%",
+      "Collars, Leashes & Muzzles": "6.87%",
+      "Others": "6.87%",
+      "Pet Furniture": {
+        "Beds & Mats": "6.87%",
+        "Cages & Crates": "6.87%",
+        "House & Cage Accessories": "6.87%",
+        "Houses": "6.87%",
+        "Others": "6.87%",
+        "Scratching Posts": "6.87%"
+      },
+      "Toys": {
+        "Bird Toys": "6.87%",
+        "Cat & Dog Toys": "6.87%",
+        "Others": "6.87%",
+        "Small Pet Toys": "6.87%"
+      },
+      "Travel Equipment": "6.87%"
+    },
+    "Pet Clothing & Accessories": {
+      "Shoes, Socks & Nail Protection": "6.87%",
+      "Pet Glasses": "6.87%",
+      "Fur Accessories": "6.87%",
+      "Pet Hats": "6.87%",
+      "Neck Accessories": "6.87%",
+      "Others": "6.87%",
+      "Pet Clothing": "6.87%",
+      "Pet Raincoats": "6.87%"
+    },
+    "Pet Food": {
+      "Fish Food": "6.87%",
+      "Bird Food": "6.87%",
+      "Cat Food": "6.87%",
+      "Dog Food": "6.87%",
+      "Small Pet Food": "6.87%",
+      "Others": "6.87%"
+    },
+    "Pet Grooming": {
+      "Pet Shampoo": "6.87%",
+      "Pet Brushes": "6.87%",
+      "Pet Nail Clippers": "6.87%",
+      "Pet Toothpaste": "6.87%",
+      "Others": "6.87%"
+    },
+    "Pet Health Care": {
+      "Pet Vitamins": "6.87%",
+      "Pet Medicine": "6.87%",
+      "Pet Supplements": "6.87%",
+      "Others": "6.87%"
+    }
+  },
+  "Mother & Baby": {
+    "Baby Safety": {
+      "Baby Monitors": "10.80%",
+      "Baby Safety Gates": "10.80%",
+      "Baby Safety Locks": "10.80%",
+      "Others": "10.80%"
+    },
+    "Baby Bath & Body Care": {
+      "Baby Bath Tubs": "8.84%",
+      "Baby Body Care": "8.84%",
+      "Baby Hair Care": "8.84%",
+      "Baby Skin Care": "8.84%",
+      "Others": "8.84%"
+    },
+    "Baby Feeding": {
+      "Baby Bottles": "10.31%",
+      "Baby Food": "10.31%",
+      "Baby Utensils": "10.31%",
+      "Others": "10.31%"
+    },
+    "Mother Accessories": {
+      "Breastfeeding Accessories": "10.31%",
+      "Maternity Clothing": "10.31%",
+      "Others": "10.31%"
+    },
+    "Gift Sets": {
+      "Baby Gift Sets": "10.80%",
+      "Mother Gift Sets": "10.80%",
+      "Others": "10.80%"
+    },
+    "Baby Bedroom": {
+      "Baby Bedding": "10.31%",
+      "Baby Furniture": "10.31%",
+      "Others": "10.31%"
+    },
+    "Mother Health Care": {
+      "Maternity Vitamins": "10.31%",
+      "Pregnancy Care": "10.31%",
+      "Others": "10.31%"
+    },
+    "Baby Health Care": {
+      "Baby Medicine": "8.84%",
+      "Baby Vitamins": "8.84%",
+      "Others": "8.84%"
+    },
+    "Baby Diapers": {
+      "Baby Diapers": "8.84%",
+      "Baby Wipes": "8.84%",
+      "Others": "8.84%"
+    },
+    "Baby Formula": {
+      "Baby Formula": "8.84%",
+      "Baby Food": "8.84%",
+      "Others": "8.84%"
+    }
+  },
+  "Electronics": {
+    "Mobile Phones & Accessories": {
+      "Mobile Phones": "1.47%",
+      "Mobile Accessories": "6.38%",
+      "Tablets": "1.47%",
+      "Smart Watches": "6.38%",
+      "Others": "6.38%"
+    },
+    "Computers & Laptops": {
+      "Laptops": "1.47%",
+      "Desktop Computers": "1.47%",
+      "Computer Accessories": "6.87%",
+      "Computer Parts": "6.87%",
+      "Software": "7.85%",
+      "Others": "6.87%"
+    },
+    "Audio Equipment": {
+      "Headphones": "7.85%",
+      "Speakers": "7.85%",
+      "Microphones": "7.85%",
+      "Others": "6.87%"
+    },
+    "Home Appliances": {
+      "Kitchen Appliances": "7.85%",
+      "Small Appliances": "6.87%",
+      "Large Appliances": "6.87%",
+      "TVs & Accessories": "6.87%",
+      "Others": "6.87%"
+    }
+  },
+  "Fashion": {
+    "Men's Clothing": {
+      "Men's Shirts": "6.87%",
+      "Men's Pants": "6.87%",
+      "Men's Jackets": "6.87%",
+      "Others": "6.87%"
+    },
+    "Women's Clothing": {
+      "Women's Dresses": "6.87%",
+      "Women's Tops": "6.87%",
+      "Women's Pants": "6.87%",
+      "Others": "6.87%"
+    },
+    "Shoes": {
+      "Men's Shoes": "6.87%",
+      "Women's Shoes": "6.87%",
+      "Sports Shoes": "6.87%",
+      "Others": "6.87%"
+    },
+    "Bags": {
+      "Handbags": "6.87%",
+      "Backpacks": "6.87%",
+      "Wallets": "6.87%",
+      "Others": "6.87%"
+    }
+  },
+  "Beauty & Health": {
+    "Skincare": {
+      "Facial Cleansers": "8.84%",
+      "Moisturizers": "8.84%",
+      "Sunscreen": "8.84%",
+      "Others": "8.84%"
+    },
+    "Makeup": {
+      "Foundation": "8.84%",
+      "Lipstick": "8.84%",
+      "Eye Makeup": "8.84%",
+      "Others": "8.84%"
+    },
+    "Hair Care": {
+      "Shampoo": "8.84%",
+      "Conditioner": "8.84%",
+      "Hair Styling": "8.84%",
+      "Others": "8.84%"
+    },
+    "Health Care": {
+      "Vitamins": "8.84%",
+      "Medicine": "8.84%",
+      "Medical Devices": "8.84%",
+      "Others": "8.84%"
+    }
+  },
+  "Sports & Outdoor": {
+    "Sports Equipment": {
+      "Fitness Equipment": "6.87%",
+      "Team Sports": "6.87%",
+      "Individual Sports": "6.87%",
+      "Others": "6.87%"
+    },
+    "Outdoor Activities": {
+      "Camping": "6.87%",
+      "Hiking": "6.87%",
+      "Fishing": "6.87%",
+      "Others": "6.87%"
+    },
+    "Sports Clothing": {
+      "Sports Shirts": "6.87%",
+      "Sports Pants": "6.87%",
+      "Sports Shoes": "6.87%",
+      "Others": "6.87%"
+    }
+  },
+  "Home & Living": {
+    "Furniture": {
+      "Living Room": "6.87%",
+      "Bedroom": "6.87%",
+      "Kitchen": "6.87%",
+      "Others": "6.87%"
+    },
+    "Home Decor": {
+      "Wall Decor": "6.87%",
+      "Table Decor": "6.87%",
+      "Lighting": "6.87%",
+      "Others": "6.87%"
+    },
+    "Kitchen & Dining": {
+      "Kitchen Tools": "6.87%",
+      "Dining Sets": "6.87%",
+      "Storage": "6.87%",
+      "Others": "6.87%"
+    }
+  },
+  "Automotive": {
+    "Car Accessories": {
+      "Interior": "6.87%",
+      "Exterior": "6.87%",
+      "Electronics": "6.87%",
+      "Others": "6.87%"
+    },
+    "Motorcycle Accessories": {
+      "Helmets": "6.87%",
+      "Protective Gear": "6.87%",
+      "Parts": "6.87%",
+      "Others": "6.87%"
+    },
+    "Car Care": {
+      "Car Wash": "6.87%",
+      "Car Wax": "6.87%",
+      "Car Polish": "6.87%",
+      "Others": "6.87%"
+    }
+  },
+  "Books & Stationery": {
+    "Books": {
+      "Fiction": "6.87%",
+      "Non-Fiction": "6.87%",
+      "Educational": "6.87%",
+      "Others": "6.87%"
+    },
+    "Stationery": {
+      "Pens": "6.87%",
+      "Paper": "6.87%",
+      "Office Supplies": "6.87%",
+      "Others": "6.87%"
+    }
+  },
+  "Food & Beverages": {
+    "Snacks": {
+      "Chips": "6.87%",
+      "Nuts": "6.87%",
+      "Candy": "6.87%",
+      "Others": "6.87%"
+    },
+    "Beverages": {
+      "Soft Drinks": "6.87%",
+      "Juices": "6.87%",
+      "Coffee": "6.87%",
+      "Others": "6.87%"
+    },
+    "Canned Food": {
+      "Meat": "6.87%",
+      "Fish": "6.87%",
+      "Vegetables": "6.87%",
+      "Others": "6.87%"
+    }
+  }
+} 

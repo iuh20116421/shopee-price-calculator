@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, Calculator, Home, ChevronDown, ShoppingBag, BookOpen, FileText, Users } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
+import logoImage from '../assets/images/logos.png';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -64,13 +65,7 @@ const Header: React.FC = () => {
             {/* Logo */}
             <div className="header-logo">
               <Link to="/" className="logo-link">
-                <div className="logo-icon">
-                  <Calculator className="logo-svg" />
-                </div>
-                <div className="logo-text">
-                  <span className="logo-title">TUKIGROUP</span>
-                  <span className="logo-subtitle">Shopee Calculator</span>
-                </div>
+                <img src={logoImage} alt="TUKIGROUP Logo" className="logo-image" />
               </Link>
             </div>
 
@@ -173,23 +168,23 @@ const Header: React.FC = () => {
                   <div className="mobile-dropdown">
                     <Link to="/" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
                       <Home className="mobile-dropdown-icon" />
-                      Trang chủ
+                      {t('navigation.home')}
                     </Link>
                     <Link to="/calculator" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
                       <Calculator className="mobile-dropdown-icon" />
-                      Tính giá
+                      {t('navigation.calculator')}
                     </Link>
                     <Link to="/services" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
                       <ShoppingBag className="mobile-dropdown-icon" />
-                      Dịch vụ
+                      {t('navigation.services')}
                     </Link>
                     <Link to="/blog" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
                       <FileText className="mobile-dropdown-icon" />
-                      Blog
+                      {t('navigation.blog')}
                     </Link>
                     <Link to="/contact" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
                       <Users className="mobile-dropdown-icon" />
-                      Liên hệ
+                      {t('navigation.contact')}
                     </Link>
                     
                     {/* Mobile Language Switcher */}

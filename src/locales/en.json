@@ -74,8 +74,8 @@
     }
   },
   "calculator": {
-    "title": "Shopee Product Price Calculator",
-    "subtitle": "Calculate costs and profits for selling on Shopee accurately",
+    "title": "Shopee Price Calculator Tool",
+    "subtitle": "Calculate costs and profits when selling on Shopee with the latest updated information",
     "form": {
       "title": "Product Information",
       "productInfo": "Product Information",
@@ -86,10 +86,14 @@
       "productNamePlaceholder": "Enter product name to search...",
       "searching": "Searching...",
       "selectCategory": "Select Category:",
+      "level1": "Level 1",
+      "level2": "Level 2", 
+      "level3": "Level 3",
+      "level4": "Level 4",
       "selectedProduct": "Selected Product:",
       "category": "Category:",
       "fixedFee": "Fixed Fee:",
-      "costPrice": "Product Cost Price (VND):",
+      "costPrice": "Cost Price (VND):",
       "costPricePlaceholder": "Enter product cost price",
       "desiredProfit": "Desired Profit (VND):",
       "desiredProfitPlaceholder": "Enter desired profit",
@@ -101,23 +105,23 @@
       "reset": "Reset"
     },
     "settings": {
-      "title": "Shopee Settings",
-      "usePiShip": "Use Pi Ship:",
+      "title": "Shopee Program Settings",
+      "usePiShip": "Pi Ship",
       "yes": "Yes",
       "no": "No",
-      "extraServices": "Extra Services:",
+      "extraServices": "Xtra Services:",
       "contentXtra": "Content Xtra",
       "voucherXtra": "Voucher Xtra"
     },
     "costs": {
       "title": "Estimated Costs",
-      "adCost": "Marketing Cost (%):",
+      "adCost": "Marketing Cost (%)",
       "adCostPlaceholder": "Enter marketing cost",
       "shopVoucherFee": "Shop Voucher Fee (VND):",
       "shopVoucherFeePlaceholder": "Enter shop voucher fee",
       "returnRate": "Return Rate (%):",
       "returnRatePlaceholder": "Enter return rate",
-      "desiredProfitPercent": "Desired Profit (%):",
+      "desiredProfitPercent": "Desired Profit (%)",
       "desiredProfitPercentPlaceholder": "Enter desired profit percentage"
     },
     "results": {
@@ -138,19 +142,20 @@
       "costBreakdown": "Cost Breakdown",
       "estimatedCosts": "Estimated Costs",
       "shopeeCosts": "Shopee Costs",
-      "productFee": "Product Fee",
+      "productFee": "Fixed Fee",
       "paymentFee": "Payment Fee",
-      "shippingCost": "Shipping Cost",
+      "shippingCost": "Pi Ship",
       "contentXtraFee": "Content Xtra Fee",
       "voucherXtraFee": "Voucher Xtra Fee",
       "infrastructureFee": "Infrastructure Fee",
-      "totalCosts": "Total Costs",
-      "finalPrice": "Final Selling Price",
+      "totalCosts": "Total Estimated Costs (based on suggested selling price)",
+      "finalPrice": "Suggested Selling Price",
       "totalProfit": "Total Profit",
-      "profitPercentage": "Profit Percentage",
+      "profitPercentage": "on selling price",
       "item": "Item",
       "amount": "Amount",
-      "percentageOnPrice": "% on selling price"
+      "percentageOnPrice": "% on selling price",
+      "vat": "VAT (1.5%)"
     },
     "validation": {
       "costPriceRequired": "Please enter a valid cost price",
@@ -159,6 +164,16 @@
       "shopeeTypeRequired": "Please select Shopee type",
       "profitRequired": "Please enter a valid desired profit percentage",
       "marketingCostInvalid": "Marketing cost is invalid"
+    },
+    "consultation": {
+      "title": "Need more consultation?",
+      "facebook": "TukiGroup HCM",
+      "hotline": "Hotline: 0789 282 979"
+    },
+    "tooltips": {
+      "costPrice": "Total cost to have the product ready for sale: import price, shipping, tax, packaging, storage.",
+      "profit": "Desired profit percentage on selling price (e.g., 15.50%).",
+      "marketing": "Advertising, affiliate, voucher costs on selling price (e.g., 5.5%)."
     }
   },
   "footer": {
@@ -169,11 +184,23 @@
     "email": "Email",
     "phone": "Phone",
     "address": "Address",
-    "copyright": "All rights reserved.",
+    "copyright": "©2025 Tuki Group. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "paymentPolicy": "Payment Policy",
-    "returnPolicy": "Return & Refund Policy"
+    "returnPolicy": "Return & Refund Policy",
+    "company": {
+      "name": "TUKIGROUP JOINT STOCK COMPANY",
+      "taxNumber": "Tax Code",
+      "issueDate": "Issue Date",
+      "issuer": "Issuer",
+      "issuerName": "HANOI DEPARTMENT OF PLANNING AND INVESTMENT",
+      "representative": "Representative: Nguyen Trung Kien"
+    },
+    "contact": {
+      "address": "65 Nguyen Minh Hoang St., Ward 12, Tan Binh, Ho Chi Minh City 70000, Vietnam",
+      "phone": "(+84) 0789.282.979 (Ms. Dao) - Tuki Group Ho Chi Minh Branch Manager"
+    }
   },
   "language": {
     "vi": "Tiếng Việt",

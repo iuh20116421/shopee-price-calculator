@@ -1,0 +1,187 @@
+{
+  "Cameras & Flycam": {
+    "Camera Accessories": "6.38%",
+    "Camera Care Accessories": "6.38%",
+    "Cameras": "6.38%",
+    "Drone Accessories": "6.38%",
+    "Drones": "6.38%",
+    "Lens Accessories": "6.38%",
+    "Lenses": "6.38%",
+    "Others": "6.38%",
+    "Security Camera": "6.38%"
+  },
+  "Mobile Phones & Accessories": {
+    "Accessories": "6.38%",
+    "Mobile Phones": "1.47%",
+    "Others": "6.38%",
+    "SIM Cards": "6.38%",
+    "Tablets": "1.47%",
+    "Walkie Talkies": "6.38%",
+    "Smart Wearables": "6.38%"
+  },
+  "Gaming & Console": {
+    "Console Accessories": "6.87%",
+    "Gaming Consoles": "6.38%",
+    "Others": "6.87%",
+    "Video Games": "6.87%"
+  },
+  "Computers & Laptops": {
+    "Mouse & Keyboard": "7.85%",
+    "Laptops": "1.47%",
+    "Computer Parts": "6.87%",
+    "Monitors": "1.47%",
+    "Printers & Scanners": "6.87%",
+    "Desktop Computers": "1.47%",
+    "Software": "7.85%",
+    "Computer Accessories": "6.87%",
+    "Other Computer Accessories": "6.87%",
+    "Storage Devices": "6.87%",
+    "Office Equipment": "7.85%",
+    "Network Devices": "6.87%"
+  },
+  "Audio Equipment": {
+    "Earphones & Headphones": "7.85%",
+    "Amplifiers & Audio Processors": "7.85%",
+    "Audio/Video Cables & Adapters": "6.87%",
+    "Audio Systems": "7.85%",
+    "Music Players": "6.87%",
+    "Microphones": "7.85%",
+    "Others": "6.87%"
+  },
+  "Home Appliances": {
+    "Batteries": "7.85%",
+    "Electrical Circuits & Parts": "7.85%",
+    "Projectors & Accessories": "7.85%",
+    "Remote Controls": "7.85%",
+    "Kitchen Appliances": "7.85%",
+    "Small Home Appliances": "6.87%",
+    "Large Home Appliances": "6.87%",
+    "TVs & Accessories": "6.87%",
+    "E-cigarettes": "8.84%",
+    "Others": "6.87%"
+  },
+  "Vouchers & Services": {
+    "Events & Entertainment": "9.82%",
+    "Restaurants & Dining": "9.82%",
+    "Shopping": "9.82%",
+    "Bill Payments": "9.82%",
+    "Other Services": "9.82%",
+    "Health & Beauty": "9.82%",
+    "Transportation": "9.82%",
+    "Courses": "9.82%",
+    "Account Top-up": "9.82%",
+    "Travel & Hotels": "9.82%",
+    "Cryptocurrency": "9.82%",
+    "Real Estate": "9.82%",
+    "Game Cards": "9.82%",
+    "Streaming": "9.82%",
+    "Shopee Gift Cards": "9.82%",
+    "Others": "9.82%"
+  },
+  "Pet Care": {
+    "Pet Hygiene": "6.87%",
+    "Others": "6.87%",
+    "Pet Accessories": "6.87%",
+    "Pet Clothing & Accessories": "6.87%",
+    "Pet Food": "6.87%",
+    "Pet Grooming": "6.87%",
+    "Pet Health Care": "6.87%"
+  },
+  "Mother & Baby": {
+    "Baby Safety": "10.80%",
+    "Baby Bath & Body Care": "8.84%",
+    "Baby Feeding": "10.31%",
+    "Mother Accessories": "10.31%",
+    "Gift Sets": "10.80%",
+    "Baby Bedroom": "10.31%",
+    "Mother Health Care": "10.31%",
+    "Baby Health Care": "8.84%",
+    "Baby Diapers": "8.84%",
+    "Baby Formula": "8.84%"
+  },
+  "Fashion": {
+    "Men's Clothing": "6.87%",
+    "Women's Clothing": "6.87%",
+    "Kids' Clothing": "6.87%",
+    "Shoes": "6.87%",
+    "Bags": "6.87%",
+    "Jewelry": "6.87%",
+    "Watches": "6.87%",
+    "Others": "6.87%"
+  },
+  "Beauty & Health": {
+    "Skincare": "8.84%",
+    "Makeup": "8.84%",
+    "Hair Care": "8.84%",
+    "Fragrances": "8.84%",
+    "Health Care": "8.84%",
+    "Personal Care": "8.84%",
+    "Others": "8.84%"
+  },
+  "Sports & Outdoor": {
+    "Sports Equipment": "6.87%",
+    "Sports Clothing": "6.87%",
+    "Outdoor Activities": "6.87%",
+    "Fitness": "6.87%",
+    "Others": "6.87%"
+  },
+  "Home & Living": {
+    "Furniture": "6.87%",
+    "Home Decor": "6.87%",
+    "Kitchen & Dining": "6.87%",
+    "Bedding": "6.87%",
+    "Bathroom": "6.87%",
+    "Storage": "6.87%",
+    "Others": "6.87%"
+  },
+  "Automotive": {
+    "Car Accessories": "6.87%",
+    "Motorcycle Accessories": "6.87%",
+    "Car Care": "6.87%",
+    "Car Parts": "6.87%",
+    "Motorcycle Parts": "6.87%",
+    "Others": "6.87%"
+  },
+  "Books & Stationery": {
+    "Books": "6.87%",
+    "Stationery": "6.87%",
+    "Office Supplies": "6.87%",
+    "Art Supplies": "6.87%",
+    "Others": "6.87%"
+  },
+  "Food & Beverages": {
+    "Snacks": "6.87%",
+    "Beverages": "6.87%",
+    "Canned Food": "6.87%",
+    "Instant Food": "6.87%",
+    "Condiments": "6.87%",
+    "Others": "6.87%"
+  },
+  "Health & Personal Care": {
+    "Personal Care": "8.84%",
+    "Health Care": "8.84%",
+    "Medical Devices": "8.84%",
+    "Supplements": "8.84%",
+    "Others": "8.84%"
+  },
+  "Toys & Hobbies": {
+    "Educational Toys": "6.87%",
+    "Action Figures": "6.87%",
+    "Board Games": "6.87%",
+    "Model Kits": "6.87%",
+    "Others": "6.87%"
+  },
+  "Tools & Hardware": {
+    "Hand Tools": "6.87%",
+    "Power Tools": "6.87%",
+    "Hardware": "6.87%",
+    "Garden Tools": "6.87%",
+    "Others": "6.87%"
+  },
+  "Industrial & Scientific": {
+    "Industrial Equipment": "6.87%",
+    "Scientific Instruments": "6.87%",
+    "Safety Equipment": "6.87%",
+    "Others": "6.87%"
+  }
+} 

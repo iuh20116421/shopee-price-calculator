@@ -26,12 +26,12 @@ const Footer: React.FC = () => {
                   </div>
                 </div>
                 <div className="footer-company-info">
-                  <h3 className="footer-company-name-new">CÔNG TY CỔ PHẦN TẬP ĐOÀN TUKIGROUP</h3>
+                  <h3 className="footer-company-name-new">{t('footer.company.name')}</h3>
                   <div className="footer-company-details-new">
-                    <p className="footer-company-tax">Mã số thuế: 0109789110</p>
-                    <p className="footer-company-date">Ngày cấp: 25/10/2021</p>
-                    <p className="footer-company-issuer">Nơi cấp: SỞ KẾ HOẠCH VÀ ĐẦU TƯ THÀNH PHỐ HÀ NỘI</p>
-                    <p className="footer-company-representative">Người đại diện: NGUYỄN TRUNG KIÊN</p>
+                    <p className="footer-company-tax">{t('footer.company.taxNumber')}: 0109789110</p>
+                    <p className="footer-company-date">{t('footer.company.issueDate')}: 25/10/2021</p>
+                    <p className="footer-company-issuer">{t('footer.company.issuer')}: {t('footer.company.issuerName')}</p>
+                    <p className="footer-company-representative">{t('footer.company.representative')}</p>
                   </div>
                 </div>
               </div>
@@ -42,11 +42,11 @@ const Footer: React.FC = () => {
               <div className="footer-contact-new">
                 <div className="footer-contact-item-new">
                   <Home className="footer-contact-icon-new" />
-                  <p className="footer-contact-value-new">65 Đ. Nguyễn Minh Hoàng, Phường 12, Tân Bình, Hồ Chí Minh 70000, Việt Nam</p>
+                  <p className="footer-contact-value-new">{t('footer.contact.address')}</p>
                 </div>
                 <div className="footer-contact-item-new">
                   <Phone className="footer-contact-icon-new" />
-                  <p className="footer-contact-value-new">(+84) 0789.282.979 (Ms. Đào) - Quản lý Tuki Group Chi nhánh Hồ Chí Minh </p>
+                  <p className="footer-contact-value-new">{t('footer.contact.phone')}</p>
                 </div>
                 <div className="footer-contact-item-new">
                   <Mail className="footer-contact-icon-new" />
@@ -54,13 +54,13 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="footer-contact-item-new">
                   <Globe className="footer-contact-icon-new" />
-                  <a href="https://tukigroup.vn/" target="_blank" rel="noopener noreferrer" className="footer-contact-value-new footer-link">
-                    https://tukigroup.vn/
+                  <a href="https://www.facebook.com/TukiGroupHCM" target="_blank" rel="noopener noreferrer" className="footer-contact-value-new footer-link">
+                  https://www.facebook.com/TukiGroupHCM
                   </a>
                 </div>
               </div>
               <div className="footer-social-new">
-                <a href="https://www.facebook.com/TukiGroupHCM?locale=vi_VN" target="_blank" rel="noopener noreferrer" className="footer-social-link-new">
+                <a href="https://www.facebook.com/TukiGroupHCM" target="_blank" rel="noopener noreferrer" className="footer-social-link-new">
                   <Facebook className="footer-social-icon-new" />
                 </a>
                 <a href="https://zalo.me/0789282979" target="_blank" rel="noopener noreferrer" className="footer-social-link-new">
@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
         <div className="footer-bottom-new">
           <div className="footer-bottom-content-new">
             <p className="footer-copyright-new">
-              ©2025 Tuki Group. Tất cả quyền được bảo lưu. | Chuyên về các giải pháp kinh doanh trên sàn thương mại điện tử Shopee
+              {t('footer.copyright')} | {t('footer.description')}
             </p>
           </div>
         </div>
