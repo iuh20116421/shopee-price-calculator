@@ -86,6 +86,10 @@
       "productNamePlaceholder": "Nhập tên sản phẩm để tìm kiếm...",
       "searching": "Đang tìm kiếm...",
       "selectCategory": "Chọn ngành hàng:",
+      "level1": "Cấp 1",
+      "level2": "Cấp 2",
+      "level3": "Cấp 3", 
+      "level4": "Cấp 4",
       "selectedProduct": "Sản phẩm đã chọn:",
       "category": "Ngành hàng:",
       "fixedFee": "Phí cố định:",
@@ -150,7 +154,8 @@
       "profitPercentage": "trên giá bán",
       "item": "Hạng mục",
       "amount": "Số tiền",
-      "percentageOnPrice": "% trên giá bán"
+      "percentageOnPrice": "% trên giá bán",
+      "vat": "VAT (1.5%)"
     },
     "validation": {
       "costPriceRequired": "Vui lòng nhập giá vốn hợp lệ",
@@ -159,6 +164,16 @@
       "shopeeTypeRequired": "Vui lòng chọn loại Shopee",
       "profitRequired": "Vui lòng nhập lợi nhuận mong muốn hợp lệ",
       "marketingCostInvalid": "Chi phí marketing không hợp lệ"
+    },
+    "consultation": {
+      "title": "Cần tư vấn thêm?",
+      "facebook": "TukiGroup HCM",
+      "hotline": "Hotline: 0789 282 979"
+    },
+    "tooltips": {
+      "costPrice": "Tổng chi phí để có sản phẩm sẵn sàng bán: giá nhập, vận chuyển, thuế, đóng gói, lưu kho.",
+      "profit": "Tỷ lệ lợi nhuận mong muốn trên giá bán (ví dụ: 15.50%).",
+      "marketing": "Chi phí quảng cáo, afiliate, voucher trên giá bán (ví dụ: 5.5%)."
     }
   },
   "footer": {
@@ -169,11 +184,23 @@
     "email": "Email",
     "phone": "Điện thoại",
     "address": "Địa chỉ",
-    "copyright": "Bản quyền thuộc về.",
+    "copyright": "©2025 Tuki Group. Tất cả quyền được bảo lưu.",
     "privacyPolicy": "Chính sách bảo mật",
     "termsOfService": "Điều khoản sử dụng",
     "paymentPolicy": "Chính sách thanh toán",
-    "returnPolicy": "Chính sách đổi trả"
+    "returnPolicy": "Chính sách đổi trả",
+    "company": {
+      "name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN TUKIGROUP",
+      "taxNumber": "Mã số thuế",
+      "issueDate": "Ngày cấp",
+      "issuer": "Nơi cấp",
+      "issuerName": "SỞ KẾ HOẠCH VÀ ĐẦU TƯ THÀNH PHỐ HÀ NỘI",
+      "representative": "Người đại diện: NGUYỄN TRUNG KIÊN"
+    },
+    "contact": {
+      "address": "65 Đ. Nguyễn Minh Hoàng, Phường 12, Tân Bình, Hồ Chí Minh 70000, Việt Nam",
+      "phone": "(+84) 0789.282.979 (Ms. Đào) - Quản lý Tuki Group Chi nhánh Hồ Chí Minh"
+    }
   },
   "language": {
     "vi": "Tiếng Việt",

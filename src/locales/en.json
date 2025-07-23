@@ -86,6 +86,10 @@
       "productNamePlaceholder": "Enter product name to search...",
       "searching": "Searching...",
       "selectCategory": "Select Category:",
+      "level1": "Level 1",
+      "level2": "Level 2", 
+      "level3": "Level 3",
+      "level4": "Level 4",
       "selectedProduct": "Selected Product:",
       "category": "Category:",
       "fixedFee": "Fixed Fee:",
@@ -150,7 +154,8 @@
       "profitPercentage": "on selling price",
       "item": "Item",
       "amount": "Amount",
-      "percentageOnPrice": "% on selling price"
+      "percentageOnPrice": "% on selling price",
+      "vat": "VAT (1.5%)"
     },
     "validation": {
       "costPriceRequired": "Please enter a valid cost price",
@@ -159,6 +164,16 @@
       "shopeeTypeRequired": "Please select Shopee type",
       "profitRequired": "Please enter a valid desired profit percentage",
       "marketingCostInvalid": "Marketing cost is invalid"
+    },
+    "consultation": {
+      "title": "Need more consultation?",
+      "facebook": "TukiGroup HCM",
+      "hotline": "Hotline: 0789 282 979"
+    },
+    "tooltips": {
+      "costPrice": "Total cost to have the product ready for sale: import price, shipping, tax, packaging, storage.",
+      "profit": "Desired profit percentage on selling price (e.g., 15.50%).",
+      "marketing": "Advertising, affiliate, voucher costs on selling price (e.g., 5.5%)."
     }
   },
   "footer": {
@@ -169,11 +184,23 @@
     "email": "Email",
     "phone": "Phone",
     "address": "Address",
-    "copyright": "All rights reserved.",
+    "copyright": "©2025 Tuki Group. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "paymentPolicy": "Payment Policy",
-    "returnPolicy": "Return & Refund Policy"
+    "returnPolicy": "Return & Refund Policy",
+    "company": {
+      "name": "TUKIGROUP JOINT STOCK COMPANY",
+      "taxNumber": "Tax Code",
+      "issueDate": "Issue Date",
+      "issuer": "Issuer",
+      "issuerName": "HANOI DEPARTMENT OF PLANNING AND INVESTMENT",
+      "representative": "Representative: Nguyen Trung Kien"
+    },
+    "contact": {
+      "address": "65 Nguyen Minh Hoang St., Ward 12, Tan Binh, Ho Chi Minh City 70000, Vietnam",
+      "phone": "(+84) 0789.282.979 (Ms. Dao) - Tuki Group Ho Chi Minh Branch Manager"
+    }
   },
   "language": {
     "vi": "Tiếng Việt",
