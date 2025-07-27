@@ -14,6 +14,7 @@ import {
   CalculationInput,
   CalculationResult 
 } from '../constants/calculationFormulas';
+import axios from 'axios';
 
 interface CategoryData {
   [key: string]: string | CategoryData;
@@ -26,6 +27,52 @@ interface ProductSuggestion {
 }
 
 const Calculator: React.FC = () => {
+  const getDataFixedFee = async () => {
+    try {
+      const API_KEY = 'AIzaSyDW-UUUQc4AFLpO3kMk_lB_RkSF_sHZyo4';
+      const SPREADSHEET_ID = '1MZSfcmOe_urH3WibOExoTwy28LLSUppdREBC_hYf1Ug';
+      const RANGE = 'Trang tính1!A2:H2';
+      
+      console.log('Fetching data from Google Sheets...');
+      const response = await axios.get(`https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE}?key=${API_KEY}`);
+      
+      if (response.data && response.data.values) {
+        const values = response.data.values;
+                 if (values.length > 0) {
+           const [PAYMENT_FEE_PERCENT, VOUCHER_XTRA_FEE_PERCENT, CONTENT_XTRA_FEE_PERCENT, CONTENT_XTRA_FEE_MAX, SHIPPING_COST_PI_SHIP, INFRASTRUCTURE_FEE, VAT_PERCENT] = values[0];
+           
+           // Lưu vào state
+           setFixedFees({
+             PAYMENT_FEE_PERCENT: parseFloat(PAYMENT_FEE_PERCENT) || 4.91,
+             VOUCHER_XTRA_FEE_PERCENT: parseFloat(VOUCHER_XTRA_FEE_PERCENT) || 1.96,
+             CONTENT_XTRA_FEE_PERCENT: parseFloat(CONTENT_XTRA_FEE_PERCENT) || 2.59,
+             CONTENT_XTRA_FEE_MAX: parseFloat(CONTENT_XTRA_FEE_MAX) || 50000,
+             SHIPPING_COST_PI_SHIP: parseFloat(SHIPPING_COST_PI_SHIP) || 1620,
+             INFRASTRUCTURE_FEE: parseFloat(INFRASTRUCTURE_FEE) || 3000,
+             VAT_PERCENT: parseFloat(VAT_PERCENT) || 1.5
+           });
+           
+           console.log("Fixed fees updated from Google Sheets:", {
+             PAYMENT_FEE_PERCENT,
+             VOUCHER_XTRA_FEE_PERCENT,
+             CONTENT_XTRA_FEE_PERCENT,
+             CONTENT_XTRA_FEE_MAX,
+             SHIPPING_COST_PI_SHIP,
+             INFRASTRUCTURE_FEE,
+             VAT_PERCENT
+           });
+         }
+      }
+      
+    } catch (error) {
+      showToast('Error fetching data from Google Sheets', 'error');
+    }
+  };
+
+  useEffect(() => {
+    getDataFixedFee();
+  }, []);
+
   const { t } = useTranslation();
   const [productName, setProductName] = useState('');
   const [selectedProduct, setSelectedProduct] = useState<ProductSuggestion | null>(null);
@@ -49,6 +96,15 @@ const Calculator: React.FC = () => {
   const [showProfitTooltip, setShowProfitTooltip] = useState(false);
   const [showCostPriceTooltip, setShowCostPriceTooltip] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState(localStorage.getItem('i18nextLng') || 'vi');
+  const [fixedFees, setFixedFees] = useState<{
+    PAYMENT_FEE_PERCENT: number;
+    CONTENT_XTRA_FEE_PERCENT: number;
+    CONTENT_XTRA_FEE_MAX: number;
+    VOUCHER_XTRA_FEE_PERCENT: number;
+    SHIPPING_COST_PI_SHIP: number;
+    INFRASTRUCTURE_FEE: number;
+    VAT_PERCENT: number;
+  } | null>(null);
 
   // Function to adjust tooltip position if it goes off screen
   const adjustTooltipPosition = (tooltipElement: HTMLElement) => {
@@ -339,7 +395,7 @@ const Calculator: React.FC = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  // Tính toán
+    // Tính toán
   const handleCalculate = () => {
     if (!validateForm()) {
       // Hiển thị toast với lỗi đầu tiên
@@ -358,7 +414,8 @@ const Calculator: React.FC = () => {
       desiredProfitPercent: parseFloat(formData.desiredProfitPercent),
       piShip: formData.piShip,
       contentXtra: formData.contentXtra,
-      voucherXtra: formData.voucherXtra
+      voucherXtra: formData.voucherXtra,
+      ...(fixedFees && { fixedFees }) // Chỉ thêm fixedFees nếu nó không null
     };
 
     const result = calculateSellingPrice(input);
@@ -519,20 +576,20 @@ const Calculator: React.FC = () => {
                 />
                 </div>
 
-              {/* Hiển thị sản phẩm đã chọn */}
-              {selectedProduct && (
-                <div className="selected-product">
-                  <div className="selected-product-info">
-                    <strong>{t('calculator.form.selectedProduct')}</strong> {selectedProduct.name}
-                  </div>
-                  <div className="selected-product-path">
-                    <strong>{t('calculator.form.category')}</strong> {selectedProduct.path.join(' > ')}
-                  </div>
-                  <div className="selected-product-fee">
-                    <strong>{t('calculator.form.fixedFee')}</strong> {selectedProduct.fee}
-                  </div>
-                </div>
-              )}
+                        {/* Hiển thị sản phẩm đã chọn */}
+          {selectedProduct && (
+            <div className="selected-product">
+              <div className="selected-product-info">
+                <strong>{t('calculator.form.selectedProduct')}</strong> {selectedProduct.name}
+              </div>
+              <div className="selected-product-path">
+                <strong>{t('calculator.form.category')}</strong> {selectedProduct.path.join(' > ')}
+              </div>
+              <div className="selected-product-fee">
+                <strong>{t('calculator.form.fixedFee')}</strong> {selectedProduct.fee}
+              </div>
+            </div>
+          )}
 
               {/* Giá vốn sản phẩm */}
               <div className="form-group">
