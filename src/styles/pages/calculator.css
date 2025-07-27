@@ -43,10 +43,20 @@
   z-index: 1;
 }
 
-.header-icon {
-  width: 40px;
-  height: 40px;
-}
+  .header-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .section-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .card-icon {
+    width: 20px;
+    height: 20px;
+  }
 
 .calculator-content {
   padding: 40px;
@@ -145,7 +155,6 @@ input:focus, select:focus {
   outline: none;
   border-color: #F30404;
   background: white;
-  box-shadow: 0 0 0 4px rgba(243, 4, 4, 0.1);
   transform: translateY(-2px);
 }
 
@@ -439,6 +448,8 @@ input:focus, select:focus {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .result-table th,
@@ -446,6 +457,10 @@ input:focus, select:focus {
   padding: 12px;
   text-align: left;
   border-bottom: 1px solid #e9ecef;
+}
+
+.result-table {
+  border: 1px solid #e9ecef;
 }
 
 .result-table th {
@@ -1133,5 +1148,559 @@ input:focus, select:focus {
   
   .selected-product-fee {
     font-size: 0.95rem;
+  }
+}
+
+/* Mobile responsive for phones */
+@media (max-width: 480px) {
+  .calculator-page {
+    padding: 8px;
+  }
+  
+  .calculator-container {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  .calculator-content {
+    padding: 12px;
+  }
+  
+  .calculator-header {
+    padding: 16px 12px;
+  }
+  
+  .calculator-header h1 {
+    font-size: 1.3rem;
+    flex-direction: column;
+    gap: 6px;
+    line-height: 1.2;
+  }
+  
+  .header-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .calculator-header p {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+  
+  .form-section {
+    padding: 16px 12px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+  }
+  
+  .section-title {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    line-height: 1.3;
+  }
+  
+  .form-group {
+    margin-bottom: 12px;
+  }
+  
+  .form-group label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    line-height: 1.3;
+    font-weight: 500;
+  }
+  
+  input, select {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    line-height: 1.2;
+  }
+  
+  /* Result section mobile optimization */
+  .result-section {
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  .result-header {
+    padding: 16px 12px;
+  }
+  
+  .result-header h2 {
+    font-size: 1.2rem;
+    flex-direction: column;
+    gap: 6px;
+    line-height: 1.2;
+  }
+  
+  .result-content {
+    padding: 16px 12px;
+  }
+  
+  .result-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .result-card {
+    padding: 16px 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  .result-card:last-child {
+    margin-bottom: 0;
+  }
+  
+  .result-card h3 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+    line-height: 1.3;
+  }
+  
+  .section-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .card-icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  /* Table responsive for mobile */
+  .result-table {
+    font-size: 0.8rem;
+  }
+  
+  .result-table th,
+  .result-table td {
+    padding: 6px 4px;
+    font-size: 0.75rem;
+    line-height: 1.2;
+  }
+  
+  .result-table th {
+    font-size: 0.8rem;
+    padding: 8px 4px;
+    font-weight: 600;
+  }
+  
+  /* Make table scrollable on mobile */
+  .result-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 5px;
+    border: 1px solid #e9ecef;
+  }
+  
+  .result-table thead,
+  .result-table tbody,
+  .result-table tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .result-table th,
+  .result-table td {
+    min-width: 80px;
+    word-wrap: break-word;
+    white-space: normal;
+    vertical-align: middle;
+  }
+  
+  /* Specific column widths for mobile */
+  .result-table th:nth-child(1),
+  .result-table td:nth-child(1) {
+    min-width: 130px;
+    max-width: 130px;
+  }
+  
+  .result-table th:nth-child(2),
+  .result-table td:nth-child(2) {
+    min-width: 110px;
+    max-width: 110px;
+  }
+  
+  .result-table th:nth-child(3),
+  .result-table td:nth-child(3) {
+    min-width: 90px;
+    max-width: 90px;
+  }
+  
+  /* Improve table readability on mobile */
+  .result-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  .result-table tr:hover {
+    background-color: #e9ecef;
+  }
+  
+  /* Better spacing for mobile table */
+  .result-table th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #34495e;
+  }
+  
+  .highlight-value {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .final-price-row td {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  
+  /* Settings and cost sections mobile */
+  .settings-section,
+  .cost-section {
+    padding: 16px 12px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+  
+  .settings-section:last-child,
+  .cost-section:last-child {
+    margin-bottom: 0;
+  }
+  
+  .cost-inputs-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .form-group.inline {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .form-group.inline label {
+    min-width: auto;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .form-group.inline input[type="text"] {
+    max-width: none;
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .form-group.inline .radio-group,
+  .form-group.inline .checkbox-group {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  
+  .form-group.inline .radio-item,
+  .form-group.inline .checkbox-item {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    border-radius: 6px;
+  }
+  
+  /* Calculate button mobile */
+  .calculate-button-container .calculate-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+  
+  /* Consultation section mobile */
+  .consultation-section {
+    margin: 16px 0;
+  }
+  
+  .consultation-title {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+  
+  .consultation-btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    margin: 4px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  /* Product search mobile */
+  .search-input {
+    padding: 10px 12px 10px 40px;
+    font-size: 0.9rem;
+  }
+  
+  .search-icon {
+    right: 10px;
+    width: 14px;
+    height: 14px;
+  }
+  
+  .suggestions-dropdown {
+    max-height: 180px;
+  }
+  
+  .suggestion-item {
+    padding: 8px 10px;
+  }
+  
+  .suggestion-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .suggestion-path,
+  .suggestion-fee {
+    font-size: 0.75rem;
+  }
+  
+  /* Selected product mobile */
+  .selected-product {
+    padding: 12px;
+    margin-top: 12px;
+  }
+  
+  .selected-product-info {
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .selected-product-path {
+    font-size: 0.75rem;
+  }
+  
+  .selected-product-fee {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  /* Tooltip mobile */
+  .tooltip {
+    max-width: 160px;
+    font-size: 0.75rem;
+    padding: 5px 8px;
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.2;
+  }
+  
+  /* Adjust tooltip position for mobile */
+  .form-group label {
+    position: relative;
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    transform: none;
+    z-index: 1000;
+  }
+  
+  .tooltip-arrow {
+    top: auto;
+    bottom: -4px;
+    left: 20px;
+    transform: none;
+  }
+  
+  /* Radio and checkbox items mobile */
+  .radio-item,
+  .checkbox-item {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    border-radius: 6px;
+  }
+  
+  .radio-group,
+  .checkbox-group {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+/* Medium mobile responsive (600px and below) */
+@media (max-width: 600px) {
+  .calculator-container {
+    width: 98%;
+  }
+  
+  .calculator-content {
+    padding: 16px;
+  }
+  
+  .form-section {
+    padding: 20px 16px;
+  }
+  
+  .result-card {
+    padding: 20px 16px;
+  }
+  
+  .result-table th,
+  .result-table td {
+    padding: 8px 6px;
+    font-size: 0.85rem;
+  }
+  
+  .result-table th:nth-child(1),
+  .result-table td:nth-child(1) {
+    min-width: 140px;
+    max-width: 140px;
+  }
+  
+  .result-table th:nth-child(2),
+  .result-table td:nth-child(2) {
+    min-width: 120px;
+    max-width: 120px;
+  }
+  
+  .result-table th:nth-child(3),
+  .result-table td:nth-child(3) {
+    min-width: 100px;
+    max-width: 100px;
+  }
+  
+  .highlight-value {
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  
+  .final-price-row td {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+}
+
+/* Extra small mobile responsive (320px and below) */
+@media (max-width: 320px) {
+  .calculator-page {
+    padding: 4px;
+  }
+  
+  .calculator-container {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .calculator-content {
+    padding: 8px;
+  }
+  
+  .calculator-header {
+    padding: 12px 8px;
+  }
+  
+  .calculator-header h1 {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+  
+  .calculator-header p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+  
+  .form-section {
+    padding: 12px 8px;
+    margin-bottom: 12px;
+  }
+  
+  .section-title {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  
+  .result-card {
+    padding: 12px 8px;
+  }
+  
+  .result-table th,
+  .result-table td {
+    padding: 4px 3px;
+    font-size: 0.7rem;
+    line-height: 1.1;
+  }
+  
+  .result-table th:nth-child(1),
+  .result-table td:nth-child(1) {
+    min-width: 100px;
+    max-width: 100px;
+  }
+  
+  .result-table th:nth-child(2),
+  .result-table td:nth-child(2) {
+    min-width: 90px;
+    max-width: 90px;
+  }
+  
+  .result-table th:nth-child(3),
+  .result-table td:nth-child(3) {
+    min-width: 70px;
+    max-width: 70px;
+  }
+  
+  .highlight-value {
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  
+  .final-price-row td {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  
+  .settings-section,
+  .cost-section {
+    padding: 12px 8px;
+    margin-bottom: 12px;
+  }
+  
+  .calculate-button-container .calculate-btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .consultation-btn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .header-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .section-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .card-icon {
+    width: 14px;
+    height: 14px;
   }
 } 
