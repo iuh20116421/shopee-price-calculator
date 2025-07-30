@@ -27,11 +27,11 @@ interface ProductSuggestion {
 }
 
 const Calculator: React.FC = () => {
-  const getDataFixedFee = async () => {
+  const getDataFixedFee = useCallback(async () => {
     try {
       const API_KEY = 'AIzaSyDW-UUUQc4AFLpO3kMk_lB_RkSF_sHZyo4';
       const SPREADSHEET_ID = '1MZSfcmOe_urH3WibOExoTwy28LLSUppdREBC_hYf1Ug';
-      const RANGE = 'Trang tính1!A2:H2';
+      const RANGE = 'Chi phí Shopee!A2:H2';
       
       console.log('Fetching data from Google Sheets...');
       const response = await axios.get(`https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE}?key=${API_KEY}`);
@@ -67,11 +67,11 @@ const Calculator: React.FC = () => {
     } catch (error) {
       showToast('Error fetching data from Google Sheets', 'error');
     }
-  };
+  }, []);
 
   useEffect(() => {
     getDataFixedFee();
-  }, []);
+  }, [getDataFixedFee]);
 
   const { t } = useTranslation();
   const [productName, setProductName] = useState('');
@@ -106,41 +106,15 @@ const Calculator: React.FC = () => {
     VAT_PERCENT: number;
   } | null>(null);
 
-  // Function to adjust tooltip position if it goes off screen
-  const adjustTooltipPosition = (tooltipElement: HTMLElement) => {
-    const rect = tooltipElement.getBoundingClientRect();
-    const viewportWidth = window.innerWidth;
-    const viewportHeight = window.innerHeight;
-    
-    // Check if tooltip goes off the right edge
-    if (rect.right > viewportWidth - 10) {
-      tooltipElement.style.left = 'auto';
-      tooltipElement.style.right = '0';
-      tooltipElement.style.transform = 'none';
-    }
-    
-    // Check if tooltip goes off the left edge
-    if (rect.left < 10) {
-      tooltipElement.style.left = '0';
-      tooltipElement.style.transform = 'none';
-    }
-    
-    // Check if tooltip goes off the top edge
-    if (rect.top < 10) {
-      tooltipElement.style.top = 'auto';
-      tooltipElement.style.bottom = '-45px';
-    }
-  };
-
   // Lấy dữ liệu sản phẩm theo loại Shopee và ngôn ngữ
-  const getProductData = (): CategoryData => {
+  const getProductData = useCallback((): CategoryData => {
     const isEnglish = currentLanguage === 'en';
     if (formData.shopeeType === 'mall') {
       return isEnglish ? shopeeMallDataEn : shopeeMallData;
     } else {
       return isEnglish ? shopeeRegularDataEn : shopeeRegularData;
     }
-  };
+  }, [currentLanguage, formData.shopeeType]);
 
   // Tìm kiếm sản phẩm trong data
   const searchProducts = useCallback((searchTerm: string): ProductSuggestion[] => {
@@ -209,7 +183,7 @@ const Calculator: React.FC = () => {
       // Cuối cùng sắp xếp theo tên
       return a.name.localeCompare(b.name);
     }).slice(0, 10); // Giới hạn 10 kết quả
-  }, [formData.shopeeType, currentLanguage]);
+  }, [getProductData]);
 
   // Debounced search
   useEffect(() => {
@@ -264,7 +238,6 @@ const Calculator: React.FC = () => {
         setShowResult(false);
         setCalculationResult(null);
         setSelectedCategory(null);
-        clearError('product');
       }
     };
 

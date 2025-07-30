@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, Calculator, Home, ChevronDown, ShoppingBag, BookOpen, FileText, Users } from 'lucide-react';
+import { Menu, Calculator, Home, ChevronDown, ShoppingBag, BookOpen, FileText, Users } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 import logoImage from '../assets/images/logos.png';
 

@@ -136,7 +136,6 @@ export function calculateSellingPrice(input: CalculationInput): CalculationResul
     const infrastructureFee = fees.INFRASTRUCTURE_FEE;
     const vatFee = sellingPrice * (fees.VAT_PERCENT / 100);
     const marketingCost = input.marketingCostPercent ? sellingPrice * (input.marketingCostPercent / 100) : 0;
-    const profit = sellingPrice * (input.desiredProfitPercent / 100);
 
     // Tính tổng chi phí
     const totalCost = input.cogs + productFee + paymentFee + shippingCost + 

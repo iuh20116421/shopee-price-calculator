@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Calculator, Mail, Phone, MapPin, Facebook, Youtube, Globe, ArrowUp, Home } from 'lucide-react';
+import { Mail, Phone, Facebook, Youtube, Globe, ArrowUp, Home } from 'lucide-react';
 import logoIcon from '../assets/images/logo_icon_trắng.png';
 
 const Footer: React.FC = () => {
