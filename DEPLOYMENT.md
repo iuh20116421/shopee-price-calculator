@@ -11,18 +11,37 @@
 - Downgrade các testing libraries về phiên bản tương thích
 - Sử dụng @types phiên bản cũ hơn để tương thích
 
-### 3. Cấu hình Vercel
+### 3. Cấu hình Vercel (Static Build)
 ```json
 {
-  "buildCommand": "npm run build",
-  "installCommand": "npm install",
-  "framework": "create-react-app",
-  "outputDirectory": "build",
-  "functions": {
-    "app/api/**/*.js": {
-      "runtime": "nodejs16.x"
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
     }
-  }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico"
+    },
+    {
+      "src": "/manifest.json",
+      "dest": "/manifest.json"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
 }
 ```
 
@@ -50,4 +69,6 @@ Loại bỏ `legacy-peer-deps` vì không cần thiết với react-scripts 4.0.
 - React-scripts 4.0.3 ổn định hơn và ít conflict hơn
 - Node.js 16.x tương thích tốt với react-scripts 4.0.3
 - Loại bỏ các cấu hình phức tạp để tránh xung đột
-- Sử dụng dependencies phiên bản cũ hơn nhưng ổn định 
+- Sử dụng dependencies phiên bản cũ hơn nhưng ổn định
+- Sử dụng @vercel/static-build để build static site
+- Cấu hình routes để hỗ trợ React Router 
