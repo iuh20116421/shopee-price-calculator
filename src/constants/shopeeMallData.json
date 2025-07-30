@@ -378,28 +378,28 @@
     },
     "Phần Mềm": "6,38%"
   },
-    "Mẹ & Bé": {
-      "Đồ dùng du lịch cho bé": {
-        "Túi đựng bỉm sữa": "6,87%"
+  "Mẹ & Bé": {
+    "Đồ dùng du lịch cho bé": {
+      "Túi đựng bỉm sữa": "6,87%"
+    },
+    "Đồ dùng ăn dặm cho bé": {
+      "Yếm": "7,95%",
+      "Bình sữa": {
+        "Dụng cụ vệ sinh bình sữa": "7,95%",
+        "Túi ủ bình sữa": "7,95%",
+        "Bình sữa & Phụ kiện": "7,95%",
+        "Khác": "7,95%",
+        "Máy tiệt trùng bình sữa": "7,95%",
+        "Máy hâm sữa": "7,95%"
       },
-      "Đồ dùng ăn dặm cho bé": {
-        "Yếm": "7,95%",
-        "Bình sữa": {
-          "Dụng cụ vệ sinh bình sữa": "7,95%",
-          "Túi ủ bình sữa": "7,95%",
-          "Bình sữa & Phụ kiện": "7,95%",
-          "Khác": "7,95%",
-          "Máy tiệt trùng bình sữa": "7,95%",
-          "Máy hâm sữa": "7,95%"
-        },
-        "Đồ dùng cho con bú": {
-          "Miếng lót thấm sữa": "7,95%",
-          "Máy hút sữa & phụ kiện": "7,95%",
-          "Túi trữ sữa": "7,95%",
-          "Khăn choàng cho con bú": "7,95%",
-          "Khác": "7,95%"
-        },
-        "Máy xay cắt thực phẩm": "7,95%",
+      "Đồ dùng cho con bú": {
+        "Miếng lót thấm sữa": "7,95%",
+        "Máy hút sữa & phụ kiện": "7,95%",
+        "Túi trữ sữa": "7,95%",
+        "Khăn choàng cho con bú": "7,95%",
+        "Khác": "7,95%"
+      },
+      "Máy xay cắt thực phẩm": "7,95%",
         "Ghế ăn dặm": "7,95%",
         "Khác": "7,95%",
         "Ti giả": "7,95%",
@@ -569,48 +569,48 @@
         }
       }
     },
-    "Nhà cửa & Đời sống": {
-      "Đồ dùng phòng tắm": {
-        "Bông tắm": "6,87%",
-        "Kệ để đồ phòng tắm": "6,87%",
-        "Bồn tắm": "6,87%",
-        "Khác": "6,87%",
-        "Tay cầm an toàn": "6,87%",
-        "Mũ tắm": "6,87%",
-        "Rèm cửa nhà tắm": "6,87%",
-        "Ghế nhà tắm, ghế chống trượt": "6,87%",
-        "Vòi sen & vòi xịt vệ sinh": "6,87%",
-        "Kệ đựng xà phòng": "6,87%",
-        "Bồn cầu, ghế và nắp bồn cầu": "6,87%",
-        "Kệ đựng bàn chải, kệ nhả kem đánh răng": "6,87%"
+  "Nhà cửa & Đời sống": {
+    "Đồ dùng phòng tắm": {
+      "Bông tắm": "6,87%",
+      "Kệ để đồ phòng tắm": "6,87%",
+      "Bồn tắm": "6,87%",
+      "Khác": "6,87%",
+      "Tay cầm an toàn": "6,87%",
+      "Mũ tắm": "6,87%",
+      "Rèm cửa nhà tắm": "6,87%",
+      "Ghế nhà tắm, ghế chống trượt": "6,87%",
+      "Vòi sen & vòi xịt vệ sinh": "6,87%",
+      "Kệ đựng xà phòng": "6,87%",
+      "Bồn cầu, ghế và nắp bồn cầu": "6,87%",
+      "Kệ đựng bàn chải, kệ nhả kem đánh răng": "6,87%"
+    },
+    "Chăn ga gối nệm": {
+      "Ga trải giường, vỏ gối": "6,87%",
+      "Chăn, mền": "6,87%",
+      "Gối ôm": "6,87%",
+      "Chiếu điều hòa": "6,87%",
+      "Tấm bảo vệ nệm, topper": "6,87%",
+      "Nệm": "6,38%",
+      "Mùng/ Màn chống muỗi": "6,87%",
+      "Khác": "6,87%",
+      "Gối": "6,87%"
+    },
+    "Trang trí nhà cửa": {
+      "Nến & đồ đựng nến": "6,87%",
+      "Thảm trải sàn": "6,87%",
+      "Đồng hồ": "6,87%",
+      "Rèm cửa, màn che": "6,87%",
+      "Thảm chùi chân": "6,87%",
+      "Hoa trang trí": "6,87%",
+      "Vỏ bọc nội thất": "6,87%",
+      "Gương": "6,87%",
+      "Khác": "6,87%",
+      "Khung ảnh & vật trang trí tường": "6,87%",
+      "Khăn trải bàn": "6,87%",
+      "Bình trang trí": "6,87%",
+      "Decal, tranh dán tường": "6,87%"
       },
-      "Chăn ga gối nệm": {
-        "Ga trải giường, vỏ gối": "6,87%",
-        "Chăn, mền": "6,87%",
-        "Gối ôm": "6,87%",
-        "Chiếu điều hòa": "6,87%",
-        "Tấm bảo vệ nệm, topper": "6,87%",
-        "Nệm": "6,38%",
-        "Mùng/ Màn chống muỗi": "6,87%",
-        "Khác": "6,87%",
-        "Gối": "6,87%"
-      },
-      "Trang trí nhà cửa": {
-        "Nến & đồ đựng nến": "6,87%",
-        "Thảm trải sàn": "6,87%",
-        "Đồng hồ": "6,87%",
-        "Rèm cửa, màn che": "6,87%",
-        "Thảm chùi chân": "6,87%",
-        "Hoa trang trí": "6,87%",
-        "Vỏ bọc nội thất": "6,87%",
-        "Gương": "6,87%",
-        "Khác": "6,87%",
-        "Khung ảnh & vật trang trí tường": "6,87%",
-        "Khăn trải bàn": "6,87%",
-        "Bình trang trí": "6,87%",
-        "Decal, tranh dán tường": "6,87%"
-      },
-      "Bộ đồ bàn ăn": {
+    "Bộ đồ bàn ăn": {
       "Tô": "6,87%",
       "Cốc, ly, tách uống nước": "6,87%",
       "Bộ dao kéo": "6,87%",
@@ -766,7 +766,8 @@
         "Sơn & chất chống thấm tường": "6,87%",
         "Máy bơm nước & phụ kiện": "6,87%"
       }
-    },
+    }
+  },
     "Ô tô": {
     "Dịch vụ cho xe": "6,87%",
     "Phụ kiện ngoại thất ô tô": {
@@ -2287,4 +2288,4 @@
     },
     "Thanh toán hóa đơn": "6,38%"
   }
-}}
+}

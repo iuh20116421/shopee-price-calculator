@@ -1,12 +1,12 @@
 // Các hằng số phí cố định
 export const FIXED_FEES = {
-  PAYMENT_FEE_PERCENT: 4.91, // 4.91%
-  CONTENT_XTRA_FEE_PERCENT: 2.59, // 2.59% (max 50,000 VND cho Mall)
-  CONTENT_XTRA_FEE_MAX: 50000, // 50,000 VND cho Mall
-  VOUCHER_XTRA_FEE_PERCENT: 1.96, // 1.96%
-  SHIPPING_COST_PI_SHIP: 1620, // 1,620 VND cho Pi ship
-  INFRASTRUCTURE_FEE: 3000, // 3,000 VND phí hạ tầng
-  VAT_PERCENT: 1.5, // 1.5% VAT
+  PAYMENT_FEE_PERCENT: 0, // 4.91%
+  CONTENT_XTRA_FEE_PERCENT: 0, // 2.59% (max 50,000 VND cho Mall)
+  CONTENT_XTRA_FEE_MAX: 0, // 50,000 VND cho Mall
+  VOUCHER_XTRA_FEE_PERCENT: 0, // 1.96%
+  SHIPPING_COST_PI_SHIP: 0, // 1,620 VND cho Pi ship
+  INFRASTRUCTURE_FEE: 0, // 3,000 VND phí hạ tầng
+  VAT_PERCENT: 0, // 1.5% VAT
 };
 
 // Interface cho input tính toán
@@ -19,6 +19,15 @@ export interface CalculationInput {
   piShip: 'yes' | 'no'; // Có Pi ship hay không
   contentXtra: boolean; // Có Content Xtra
   voucherXtra: boolean; // Có Voucher Xtra
+  fixedFees?: {
+    PAYMENT_FEE_PERCENT: number;
+    CONTENT_XTRA_FEE_PERCENT: number;
+    CONTENT_XTRA_FEE_MAX: number;
+    VOUCHER_XTRA_FEE_PERCENT: number;
+    SHIPPING_COST_PI_SHIP: number;
+    INFRASTRUCTURE_FEE: number;
+    VAT_PERCENT: number;
+  }; // Dữ liệu phí từ Google Sheets (optional)
 }
 
 // Interface cho kết quả tính toán
@@ -84,8 +93,11 @@ export function calculateSellingPrice(input: CalculationInput): CalculationResul
       };
     }
 
+    // Sử dụng fixedFees từ input hoặc fallback về FIXED_FEES cứng
+    const fees = input.fixedFees || FIXED_FEES;
+
     // Tính tổng phí phần trăm
-    const totalFeePercent = calculateTotalFeePercent(input);
+    const totalFeePercent = calculateTotalFeePercent(input, fees);
 
     // Kiểm tra xem tổng % có vượt quá 100% không
     const totalPercent = totalFeePercent / 100;
@@ -99,32 +111,31 @@ export function calculateSellingPrice(input: CalculationInput): CalculationResul
 
     // Tính giá bán cuối cùng
     // a = cogs + (tổng phí % * a + phí cố định) / (1 - tổng phí %)
-    const fixedCosts = FIXED_FEES.INFRASTRUCTURE_FEE + 
-                      (input.piShip === 'yes' ? FIXED_FEES.SHIPPING_COST_PI_SHIP : 0);
+    const fixedCosts = fees.INFRASTRUCTURE_FEE + 
+                      (input.piShip === 'yes' ? fees.SHIPPING_COST_PI_SHIP : 0);
     
     const sellingPrice = (input.cogs + fixedCosts) / (1 - totalPercent);
 
     // Tính các phí dựa trên giá bán
     const productFee = sellingPrice * (input.productFeePercent / 100);
-    const paymentFee = sellingPrice * (FIXED_FEES.PAYMENT_FEE_PERCENT / 100);
-    const shippingCost = input.piShip === 'yes' ? FIXED_FEES.SHIPPING_COST_PI_SHIP : 0;
+    const paymentFee = sellingPrice * (fees.PAYMENT_FEE_PERCENT / 100);
+    const shippingCost = input.piShip === 'yes' ? fees.SHIPPING_COST_PI_SHIP : 0;
     
     // Content Xtra Fee - max 50,000 VND chỉ cho Mall
     let contentXtraFee = 0;
     if (input.contentXtra) {
-      const contentXtraFeePercent = sellingPrice * (FIXED_FEES.CONTENT_XTRA_FEE_PERCENT / 100);
+      const contentXtraFeePercent = sellingPrice * (fees.CONTENT_XTRA_FEE_PERCENT / 100);
       if (input.shopeeType === 'mall') {
-        contentXtraFee = Math.min(contentXtraFeePercent, FIXED_FEES.CONTENT_XTRA_FEE_MAX);
+        contentXtraFee = Math.min(contentXtraFeePercent, fees.CONTENT_XTRA_FEE_MAX);
       } else {
         contentXtraFee = contentXtraFeePercent; // Regular tính theo %
       }
     }
     
-    const voucherXtraFee = input.voucherXtra ? sellingPrice * (FIXED_FEES.VOUCHER_XTRA_FEE_PERCENT / 100) : 0;
-    const infrastructureFee = FIXED_FEES.INFRASTRUCTURE_FEE;
-    const vatFee = sellingPrice * (FIXED_FEES.VAT_PERCENT / 100);
+    const voucherXtraFee = input.voucherXtra ? sellingPrice * (fees.VOUCHER_XTRA_FEE_PERCENT / 100) : 0;
+    const infrastructureFee = fees.INFRASTRUCTURE_FEE;
+    const vatFee = sellingPrice * (fees.VAT_PERCENT / 100);
     const marketingCost = input.marketingCostPercent ? sellingPrice * (input.marketingCostPercent / 100) : 0;
-    const profit = sellingPrice * (input.desiredProfitPercent / 100);
 
     // Tính tổng chi phí
     const totalCost = input.cogs + productFee + paymentFee + shippingCost + 
@@ -168,18 +179,18 @@ export function calculateSellingPrice(input: CalculationInput): CalculationResul
 /**
  * Tính tổng phí phần trăm
  */
-function calculateTotalFeePercent(input: CalculationInput): number {
+function calculateTotalFeePercent(input: CalculationInput, fees: typeof FIXED_FEES): number {
   let totalFeePercent = input.productFeePercent + 
-                       FIXED_FEES.PAYMENT_FEE_PERCENT + 
-                       FIXED_FEES.VAT_PERCENT +
+                       fees.PAYMENT_FEE_PERCENT + 
+                       fees.VAT_PERCENT +
                        input.desiredProfitPercent;
 
   if (input.contentXtra) {
-    totalFeePercent += FIXED_FEES.CONTENT_XTRA_FEE_PERCENT;
+    totalFeePercent += fees.CONTENT_XTRA_FEE_PERCENT;
   }
 
   if (input.voucherXtra) {
-    totalFeePercent += FIXED_FEES.VOUCHER_XTRA_FEE_PERCENT;
+    totalFeePercent += fees.VOUCHER_XTRA_FEE_PERCENT;
   }
 
   if (input.marketingCostPercent) {
