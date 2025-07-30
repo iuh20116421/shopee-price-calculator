@@ -11,7 +11,12 @@
 - Sử dụng các phiên bản mới nhất tương thích với Node.js 18
 - Cập nhật @types và testing libraries
 
-### 3. Cấu hình Vercel (Static Build)
+### 3. Fix ajv conflicts
+- Thêm `resolutions` trong package.json để fix phiên bản ajv và ajv-keywords
+- Sử dụng ajv ^8.12.0, ajv-keywords ^5.1.0, và schema-utils ^4.2.0
+- Tạo file .yarnrc để đảm bảo yarn sử dụng resolutions
+
+### 4. Cấu hình Vercel (Static Build)
 ```json
 {
   "version": 2,
@@ -48,19 +53,25 @@
 }
 ```
 
-### 4. Cập nhật package.json
+### 5. Cập nhật package.json
 - Thêm `engines` field để chỉ định Node.js 18.x (yêu cầu của Vercel)
 - Sử dụng react-scripts 5.0.1 và TypeScript 5.8.3
 - Cập nhật tất cả dependencies lên phiên bản mới nhất
+- Thêm `resolutions` để fix ajv conflicts
 
-### 5. Tạo file .nvmrc
+### 6. Tạo file .nvmrc
 ```
 18.20.0
 ```
 
-### 6. Cập nhật .npmrc
+### 7. Cập nhật .npmrc
 ```
 legacy-peer-deps=true
+```
+
+### 8. Tạo file .yarnrc
+```
+--ignore-engines true
 ```
 
 ## Cách deploy:
@@ -74,5 +85,6 @@ legacy-peer-deps=true
 - Node.js 18.x là yêu cầu bắt buộc của Vercel
 - React-scripts 5.0.1 tương thích tốt với Node.js 18
 - Sử dụng `--legacy-peer-deps` để tránh xung đột dependencies
+- Sử dụng `resolutions` để fix ajv và ajv-keywords conflicts
 - Sử dụng @vercel/static-build để build static site
 - Cấu hình routes để hỗ trợ React Router 
