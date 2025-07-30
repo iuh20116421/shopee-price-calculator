@@ -2,14 +2,14 @@
 
 ## Các thay đổi đã thực hiện để sửa lỗi deployment:
 
-### 1. Downgrade to stable versions
-- React-scripts: 5.0.1 → 4.0.3 (ổn định hơn)
-- TypeScript: 5.8.3 → 4.9.5 (tương thích với react-scripts 4.0.3)
-- Node.js: 16.x → 18.x (yêu cầu của Vercel)
+### 1. Cấu hình Node.js và React-scripts
+- Node.js: 18.x (yêu cầu bắt buộc của Vercel)
+- React-scripts: 5.0.1 (tương thích với Node.js 18)
+- TypeScript: 5.8.3 (tương thích với react-scripts 5.0.1)
 
 ### 2. Cập nhật dependencies
-- Downgrade các testing libraries về phiên bản tương thích
-- Sử dụng @types phiên bản cũ hơn để tương thích
+- Sử dụng các phiên bản mới nhất tương thích với Node.js 18
+- Cập nhật @types và testing libraries
 
 ### 3. Cấu hình Vercel (Static Build)
 ```json
@@ -41,14 +41,17 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ]
+  ],
+  "env": {
+    "NPM_FLAGS": "--legacy-peer-deps"
+  }
 }
 ```
 
 ### 4. Cập nhật package.json
 - Thêm `engines` field để chỉ định Node.js 18.x (yêu cầu của Vercel)
-- Loại bỏ `resolutions` và `overrides` để tránh conflict
-- Sử dụng dependencies phiên bản ổn định
+- Sử dụng react-scripts 5.0.1 và TypeScript 5.8.3
+- Cập nhật tất cả dependencies lên phiên bản mới nhất
 
 ### 5. Tạo file .nvmrc
 ```
@@ -56,19 +59,20 @@
 ```
 
 ### 6. Cập nhật .npmrc
-Loại bỏ `legacy-peer-deps` vì không cần thiết với react-scripts 4.0.3
+```
+legacy-peer-deps=true
+```
 
 ## Cách deploy:
 
 1. Push code lên GitHub
 2. Kết nối repository với Vercel
 3. Vercel sẽ tự động sử dụng cấu hình trong `vercel.json`
-4. Build sẽ sử dụng Node.js 18.x và react-scripts 4.0.3
+4. Build sẽ sử dụng Node.js 18.x và react-scripts 5.0.1
 
 ## Lưu ý:
-- React-scripts 4.0.3 ổn định hơn và ít conflict hơn
 - Node.js 18.x là yêu cầu bắt buộc của Vercel
-- Loại bỏ các cấu hình phức tạp để tránh xung đột
-- Sử dụng dependencies phiên bản cũ hơn nhưng ổn định
+- React-scripts 5.0.1 tương thích tốt với Node.js 18
+- Sử dụng `--legacy-peer-deps` để tránh xung đột dependencies
 - Sử dụng @vercel/static-build để build static site
 - Cấu hình routes để hỗ trợ React Router 

@@ -26,5 +26,8 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ]
+  ],
+  "env": {
+    "NPM_FLAGS": "--legacy-peer-deps"
+  }
 } 
