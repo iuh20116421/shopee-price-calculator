@@ -20,6 +20,7 @@ i18n
   .init({
     resources,
     fallbackLng: 'vi',
+    lng: 'vi', // Set Vietnamese as default language
     debug: false,
 
     interpolation: {
@@ -29,7 +30,19 @@ i18n
     detection: {
       order: ['localStorage', 'navigator'],
       caches: ['localStorage'],
+      lookupLocalStorage: 'i18nextLng',
+      lookupSessionStorage: 'i18nextLng',
+      lookupCookie: 'i18nextLng',
+      lookupQuerystring: 'lng',
+      lookupFromPathIndex: 0,
+      lookupFromSubdomainIndex: 0,
     },
   });
+
+// Force Vietnamese as default language on first load
+if (!localStorage.getItem('i18nextLng')) {
+  localStorage.setItem('i18nextLng', 'vi');
+  i18n.changeLanguage('vi');
+}
 
 export default i18n; 

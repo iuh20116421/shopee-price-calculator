@@ -111,7 +111,8 @@
       "no": "No",
       "extraServices": "Xtra Services:",
       "contentXtra": "Content Xtra",
-      "voucherXtra": "Voucher Xtra"
+      "voucherXtra": "Voucher Xtra",
+      "extraServicesNote": "When both services are selected, the system will calculate based on the higher fee"
     },
     "costs": {
       "title": "Estimated Costs",

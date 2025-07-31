@@ -75,7 +75,7 @@
   },
   "calculator": {
     "title": "Công cụ cân đối giá bán shopee",
-    "subtitle": "Tính toán chi phí và lợi nhuận khi bán hàng trên Shopee với thông tin được cập nhật mới nhất",
+    "subtitle": "Tính toán chi phí và lợi nhuận bán hàng trên Shopee một cách chính xác\nvới dữ liệu cập nhật liên tục, hỗ trợ bạn ra quyết định kịp thời",
     "form": {
       "title": "Thông tin sản phẩm",
       "productInfo": "Thông tin sản phẩm",
@@ -111,7 +111,8 @@
       "no": "Không",
       "extraServices": "Dịch vụ Xtra:",
       "contentXtra": "Content Xtra",
-      "voucherXtra": "Voucher Xtra"
+      "voucherXtra": "Voucher Xtra",
+      "extraServicesNote": "Khi chọn cả 2 dịch vụ, hệ thống sẽ tính phí theo giá trị cao hơn"
     },
     "costs": {
       "title": "Chi phí dự kiến",
