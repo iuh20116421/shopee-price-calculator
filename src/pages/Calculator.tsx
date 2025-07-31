@@ -616,7 +616,7 @@ const Calculator: React.FC = () => {
                 </div>
               </div>
 
-                {/* Content Xtra và Voucher Xtra */}
+                {/* Dịch vụ Xtra: Content Xtra và Voucher Xtra */}
                 <div className="form-group inline">
                   <label>
                     {t('calculator.settings.extraServices')}
