@@ -1,43 +1,43 @@
 {
   "Cameras & Flycam": {
-    "Camera Accessories": "6.38%",
-    "Camera Care Accessories": "6.38%",
-    "Cameras": "6.38%",
-    "Drone Accessories": "6.38%",
-    "Drones": "6.38%",
-    "Lens Accessories": "6.38%",
-    "Lenses": "6.38%",
-    "Others": "6.38%",
-    "Security Camera": "6.38%"
+    "Security Camera": "6.87%",
+    "Lenses": "6.87%",
+    "Camera Accessories": "7.85%",
+    "Drone Accessories": "7.85%",
+    "Lens Accessories": "7.85%",
+    "Camera Care Accessories": "7.85%",
+    "Drones": "6.87%",
+    "Cameras": "6.87%",
+    "Others": "6.87%"
   },
   "Mobile Phones & Accessories": {
-    "Accessories": "6.38%",
-    "Mobile Phones": "1.47%",
-    "Others": "6.38%",
-    "SIM Cards": "6.38%",
     "Tablets": "1.47%",
-    "Walkie Talkies": "6.38%",
-    "Smart Wearables": "6.38%"
+    "Mobile Phones": "1.47%",
+    "Accessories": "9.82%",
+    "Smart Wearables": "8.84%",
+    "Walkie Talkies": "9.82%",
+    "SIM Cards": "9.82%",
+    "Others": "8.84%"
   },
   "Gaming & Console": {
-    "Console Accessories": "6.87%",
-    "Gaming Consoles": "6.38%",
-    "Others": "6.87%",
-    "Video Games": "6.87%"
+    "Console Accessories": "7.85%",
+    "Video Games": "7.85%",
+    "Gaming Consoles": "6.87%",
+    "Others": "6.87%"
   },
   "Computers & Laptops": {
-    "Mouse & Keyboard": "7.85%",
-    "Laptops": "1.47%",
-    "Computer Parts": "6.87%",
     "Monitors": "1.47%",
-    "Printers & Scanners": "6.87%",
     "Desktop Computers": "1.47%",
-    "Software": "7.85%",
+    "Laptops": "1.47%",
     "Computer Accessories": "6.87%",
-    "Other Computer Accessories": "6.87%",
+    "Computer Parts": "6.87%",
+    "Printers & Scanners": "6.87%",
     "Storage Devices": "6.87%",
+    "Mouse & Keyboard": "7.85%",
     "Office Equipment": "7.85%",
-    "Network Devices": "6.87%"
+    "Software": "7.85%",
+    "Network Devices": "6.87%",
+    "Other Computer Accessories": "6.87%"
   },
   "Audio Equipment": {
     "Earphones & Headphones": "7.85%",
@@ -79,13 +79,13 @@
     "Others": "9.82%"
   },
   "Pet Care": {
-    "Pet Hygiene": "6.87%",
-    "Others": "6.87%",
-    "Pet Accessories": "6.87%",
-    "Pet Clothing & Accessories": "6.87%",
-    "Pet Food": "6.87%",
-    "Pet Grooming": "6.87%",
-    "Pet Health Care": "6.87%"
+    "Pet Clothing & Accessories": "10.80%",
+    "Pet Health Care": "10.80%",
+    "Pet Accessories": "10.80%",
+    "Pet Food": "10.80%",
+    "Pet Grooming": "10.80%",
+    "Pet Hygiene": "10.80%",
+    "Others": "10.80%"
   },
   "Mother & Baby": {
     "Baby Safety": "10.80%",
@@ -97,91 +97,241 @@
     "Mother Health Care": "10.31%",
     "Baby Health Care": "8.84%",
     "Baby Diapers": "8.84%",
-    "Baby Formula": "8.84%"
+    "Baby Formula": "8.84%",
+    "Toys": "10.31%",
+    "Baby Travel": "9.82%",
+    "Others": "10.80%"
   },
-  "Fashion": {
-    "Men's Clothing": "6.87%",
-    "Women's Clothing": "6.87%",
-    "Kids' Clothing": "6.87%",
-    "Shoes": "6.87%",
-    "Bags": "6.87%",
-    "Jewelry": "6.87%",
-    "Watches": "6.87%",
-    "Others": "6.87%"
+  "Beauty": {
+    "Skincare": "11.78%",
+    "Bath & Body Care": "11.78%",
+    "Beauty Sets": "11.78%",
+    "Beauty Tools": "11.78%",
+    "Makeup": "11.78%",
+    "Fragrances": "11.78%",
+    "Hair Care": "11.78%",
+    "Men's Grooming": "11.78%",
+    "Nail Care": "11.78%",
+    "Others": "11.78%"
   },
-  "Beauty & Health": {
-    "Skincare": "8.84%",
-    "Makeup": "8.84%",
-    "Hair Care": "8.84%",
-    "Fragrances": "8.84%",
-    "Health Care": "8.84%",
-    "Personal Care": "8.84%",
-    "Others": "8.84%"
-  },
-  "Sports & Outdoor": {
-    "Sports Equipment": "6.87%",
-    "Sports Clothing": "6.87%",
-    "Outdoor Activities": "6.87%",
-    "Fitness": "6.87%",
-    "Others": "6.87%"
-  },
-  "Home & Living": {
-    "Furniture": "6.87%",
-    "Home Decor": "6.87%",
-    "Kitchen & Dining": "6.87%",
-    "Bedding": "6.87%",
-    "Bathroom": "6.87%",
-    "Storage": "6.87%",
-    "Others": "6.87%"
-  },
-  "Automotive": {
-    "Car Accessories": "6.87%",
-    "Motorcycle Accessories": "6.87%",
-    "Car Care": "6.87%",
-    "Car Parts": "6.87%",
-    "Motorcycle Parts": "6.87%",
-    "Others": "6.87%"
-  },
-  "Books & Stationery": {
-    "Books": "6.87%",
-    "Stationery": "6.87%",
-    "Office Supplies": "6.87%",
-    "Art Supplies": "6.87%",
-    "Others": "6.87%"
+  "Health": {
+    "Personal Care": "11.29%",
+    "Supplements": "11.29%",
+    "Sexual Health": "11.78%",
+    "Medical Supplies": "10.31%",
+    "Others": "11.78%"
   },
   "Food & Beverages": {
-    "Snacks": "6.87%",
-    "Beverages": "6.87%",
-    "Canned Food": "6.87%",
-    "Instant Food": "6.87%",
-    "Condiments": "6.87%",
-    "Others": "6.87%"
+    "Cereals & Jams": "8.84%",
+    "Beverages": "8.84%",
+    "Ready-to-eat Food": "8.84%",
+    "Bakery": "8.84%",
+    "Cooking Ingredients": "8.84%",
+    "Dairy & Eggs": "8.84%",
+    "Fresh & Frozen Food": "8.84%",
+    "Snacks": "8.84%",
+    "Essentials": "8.84%",
+    "Alcoholic Beverages": "10.80%",
+    "Gift Sets": "10.80%",
+    "Baking Supplies": "10.80%",
+    "Others": "10.80%"
   },
-  "Health & Personal Care": {
-    "Personal Care": "8.84%",
-    "Health Care": "8.84%",
-    "Medical Devices": "8.84%",
-    "Supplements": "8.84%",
-    "Others": "8.84%"
+  "Motorcycles": {
+    "Motorcycle Parts": "10.80%",
+    "Helmets & Accessories": "10.80%",
+    "Motorcycle Accessories": "10.80%",
+    "Motorcycles": "3.93%",
+    "Others": "10.80%"
   },
-  "Toys & Hobbies": {
-    "Educational Toys": "6.87%",
-    "Action Figures": "6.87%",
-    "Board Games": "6.87%",
-    "Model Kits": "6.87%",
-    "Others": "6.87%"
+  "Home & Living": {
+    "Home Care Tools": "8.84%",
+    "Tools & Utility Equipment": "10.31%",
+    "Home Organization": "10.80%",
+    "Party Decorations": "10.80%",
+    "Bedding": "10.80%",
+    "Religious Items": "10.80%",
+    "Furniture": "10.80%",
+    "Gardening": "10.80%",
+    "Heating Bags": "10.80%",
+    "Air Fresheners": "10.80%",
+    "Kitchen Tools": "10.80%",
+    "Lighting": "10.80%",
+    "Home Security": "10.80%",
+    "Bathroom Items": "10.80%",
+    "Home Decor": "10.80%",
+    "Dining Sets": "10.80%",
+    "Others": "10.80%"
   },
-  "Tools & Hardware": {
-    "Hand Tools": "6.87%",
-    "Power Tools": "6.87%",
-    "Hardware": "6.87%",
-    "Garden Tools": "6.87%",
-    "Others": "6.87%"
+  "Automotive": {
+    "Car Repair Tools": "10.80%",
+    "Car Parts": "10.80%",
+    "Car Interior Accessories": "10.80%",
+    "Car Key Chains & Covers": "10.80%",
+    "Car Oil & Additives": "10.80%",
+    "Car Exterior Accessories": "10.80%",
+    "Car Care": "10.80%",
+    "Cars": "3.93%",
+    "Car Services": "10.80%",
+    "Others": "10.80%"
   },
-  "Industrial & Scientific": {
-    "Industrial Equipment": "6.87%",
-    "Scientific Instruments": "6.87%",
-    "Safety Equipment": "6.87%",
-    "Others": "6.87%"
+  "Hobbies & Collectibles": {
+    "CDs & DVDs": "10.80%",
+    "Sewing Tools": "10.80%",
+    "Photo Albums": "10.80%",
+    "Musical Instruments & Accessories": "10.80%",
+    "Souvenirs": "10.80%",
+    "Toys & Entertainment": "11.78%",
+    "Collectibles": "10.80%",
+    "Vinyl Records": "10.80%",
+    "Others": "10.80%"
+  },
+  "Stationery": {
+    "Gifts & Wrapping": "9.82%",
+    "Art Supplies": "11.78%",
+    "Notebooks & Paper": "10.80%",
+    "Mail": "10.80%",
+    "Pens": "10.80%",
+    "School Equipment": "10.80%",
+    "Others": "10.80%"
+  },
+  "Watches": {
+    "Men's Watches": "10.80%",
+    "Watch Sets & Couple Watches": "10.80%",
+    "Women's Watches": "10.80%",
+    "Watch Accessories": "10.80%",
+    "Others": "10.80%"
+  },
+  "Travel & Luggage": {
+    "Luggage": "10.80%",
+    "Travel Bags": "11.78%",
+    "Travel Accessories": "11.78%",
+    "Others": "10.80%"
+  },
+  "Men's Shoes": {
+    "Loafers": "10.80%",
+    "Oxfords & Lace-up Shoes": "10.80%",
+    "Sandals & Flip-flops": "10.80%",
+    "Slides": "10.80%",
+    "Sports Shoes/ Sneakers": "10.80%",
+    "Others": "10.80%",
+    "Boots": "10.80%",
+    "Shoe Accessories": "10.80%"
+  },
+  "Women's Shoes": {
+    "Boots": "10.80%",
+    "Sandals and Flip-flops": "10.80%",
+    "Flat Shoes": "10.80%",
+    "High Heels": "10.80%",
+    "Shoe Accessories & Care": "10.80%",
+    "Sports Shoes/ Sneakers": "10.80%",
+    "Platform Shoes": "10.80%",
+    "Others": "10.80%"
+  },
+  "Muslim Fashion": {
+    "Women Muslim Wear": "10.80%",
+    "Prayer Attire & Equipment": "10.80%",
+    "Kid Muslim Wear": "10.80%",
+    "Men Muslim Wear": "10.80%",
+    "Sets": "10.80%",
+    "Outerwear": "10.80%",
+    "Others": "10.80%"
+  },
+  "Fashion Accessories": {
+    "Accessory Sets": "10.80%",
+    "Anklets": "10.80%",
+    "Bracelets & Wristbands": "11.78%",
+    "Earrings": "11.78%",
+    "Hats": "10.80%",
+    "Necklaces": "11.78%",
+    "Ties & Bow Ties": "10.80%",
+    "Rings": "11.78%",
+    "Scarves": "10.80%",
+    "Additional Accessories": "11.78%",
+    "Belts": "10.80%",
+    "Eyewear": "11.78%",
+    "Gloves": "10.80%",
+    "Hair Accessories": "11.78%",
+    "Precious Metals": "10.80%",
+    "Others": "10.80%"
+  },
+  "Sports & Outdoor": {
+    "Sports & Outdoor Equipment": "10.80%",
+    "Sports & Outdoor Clothing": "10.80%",
+    "Sports Shoes": "10.80%",
+    "Others": "10.80%",
+    "Sports & Outdoor Accessories": "10.80%"
+  },
+  "Men's Fashion": {
+    "Underwear": "10.80%",
+    "Jeans": "10.80%",
+    "Shirts": "10.80%",
+    "Costumes": "10.80%",
+    "Hoodies & Sweatshirts": "10.80%",
+    "Jackets": "10.80%",
+    "Workwear": "10.80%",
+    "Pants": "10.80%",
+    "Sets": "10.80%",
+    "Shorts": "10.80%",
+    "Sleepwear": "10.80%",
+    "Socks": "10.80%",
+    "Sweaters": "10.80%",
+    "Others": "10.80%",
+    "Suits": "10.80%",
+    "Traditional Clothing": "10.80%"
+  },
+  "Women's Fashion": {
+    "Fabric": "9.82%",
+    "Maternity Wear": "10.80%",
+    "Costumes": "10.80%",
+    "Dresses": "10.80%",
+    "Hoodies and Sweatshirts": "10.80%",
+    "Jackets": "10.80%",
+    "Jeans": "10.80%",
+    "Bodysuits": "10.80%",
+    "Underwear": "10.80%",
+    "Sets": "10.80%",
+    "Shorts": "10.80%",
+    "Skirts": "10.80%",
+    "Sleepwear": "10.80%",
+    "Sweaters": "10.80%",
+    "Tops": "10.80%",
+    "Wedding Dresses": "10.80%",
+    "Pants": "10.80%",
+    "Socks": "10.80%",
+    "Traditional Clothing": "10.80%",
+    "Others": "10.80%"
+  },
+  "Kids' Fashion": {
+    "Boys' Shoes": "10.80%",
+    "Kids' Accessories": "10.80%",
+    "Kids' Clothing": "10.80%",
+    "Kids' Gloves & Socks": "10.80%",
+    "Boys' Clothing": "10.80%",
+    "Girls' Clothing": "10.80%",
+    "Girls' Shoes": "10.80%",
+    "Others": "10.80%"
+  },
+  "Men's Bags": {
+    "Laptop Bags": "10.80%",
+    "Wallets": "10.80%",
+    "Backpacks": "10.80%",
+    "Office Bags": "10.80%",
+    "Handbags": "10.80%",
+    "Crossbody Bags": "10.80%",
+    "Tote Bags": "10.80%",
+    "Waist Bags & Chest Bags": "10.80%",
+    "Others": "10.80%"
+  },
+  "Women's Bags": {
+    "Laptop Bags": "10.80%",
+    "Backpacks": "10.80%",
+    "Bag Accessories": "10.80%",
+    "Evening Bags & Handbags": "10.80%",
+    "Crossbody & Shoulder Bags": "10.80%",
+    "Tote Bags": "10.80%",
+    "Tote Bags": "10.80%",
+    "Waist Bags & Chest Bags": "10.80%",
+    "Wallets": "10.80%",
+    "Others": "10.80%"
   }
 } 
