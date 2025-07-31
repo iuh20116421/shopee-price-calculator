@@ -4,7 +4,12 @@ import { useTranslation } from 'react-i18next';
 import { Calculator, TrendingUp, Shield, Zap, ArrowRight } from 'lucide-react';
 
 const Home: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  // Get calculator URL based on current language
+  const getCalculatorUrl = () => {
+    return i18n.language === 'en' ? '/shopee-price-calculator' : '/tinh-gia-shopee';
+  };
   
   const features = [
     {
@@ -48,7 +53,7 @@ const Home: React.FC = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  to="/calculator"
+                  to={getCalculatorUrl()}
                   className="btn-primary inline-flex items-center justify-center"
                 >
                   {t('home.hero.ctaPrimary')}
@@ -107,7 +112,7 @@ const Home: React.FC = () => {
             {t('home.cta.subtitle')}
           </p>
           <Link
-            to="/calculator"
+            to={getCalculatorUrl()}
             className="inline-flex items-center bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors"
           >
             {t('home.cta.button')}

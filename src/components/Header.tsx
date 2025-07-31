@@ -9,7 +9,12 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const location = useLocation();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  // Get calculator URL based on current language
+  const getCalculatorUrl = () => {
+    return i18n.language === 'en' ? '/shopee-price-calculator' : '/tinh-gia-shopee';
+  };
 
   // Close mobile menu when clicking outside
   React.useEffect(() => {
@@ -34,7 +39,7 @@ const Header: React.FC = () => {
     },
     { 
       name: t('navigation.calculator'), 
-      href: '/calculator', 
+      href: getCalculatorUrl(), 
       icon: Calculator 
     },
   ];
@@ -170,18 +175,34 @@ const Header: React.FC = () => {
                       <Home className="mobile-dropdown-icon" />
                       {t('navigation.home')}
                     </Link>
-                    <Link to="/calculator" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
+                    <Link to={getCalculatorUrl()} className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
                       <Calculator className="mobile-dropdown-icon" />
                       {t('navigation.calculator')}
                     </Link>
-                    <Link to="/services" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
-                      <ShoppingBag className="mobile-dropdown-icon" />
-                      {t('navigation.services')}
-                    </Link>
-                    <Link to="/blog" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
-                      <FileText className="mobile-dropdown-icon" />
-                      {t('navigation.blog')}
-                    </Link>
+                    {/* Services Section */}
+                    <div className="mobile-dropdown-section">
+                      <div className="mobile-dropdown-title">{t('navigation.services')}</div>
+                      {serviceMenu.map((item) => {
+                        const Icon = item.icon;
+                        return (
+                          <Link key={item.name} to={item.href} className="mobile-dropdown-item mobile-dropdown-subitem" onClick={() => setIsMenuOpen(false)}>
+                            <Icon className="mobile-dropdown-icon" />
+                            {item.name}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                    
+                    {/* Blog Section */}
+                    <div className="mobile-dropdown-section">
+                      <div className="mobile-dropdown-title">{t('navigation.blog')}</div>
+                      {blogMenu.map((item) => (
+                        <Link key={item.name} to={item.href} className="mobile-dropdown-item mobile-dropdown-subitem" onClick={() => setIsMenuOpen(false)}>
+                          <FileText className="mobile-dropdown-icon" />
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
                     <Link to="/contact" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
                       <Users className="mobile-dropdown-icon" />
                       {t('navigation.contact')}

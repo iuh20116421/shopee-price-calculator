@@ -44,7 +44,7 @@ const Calculator: React.FC = () => {
            // Lưu vào state
            setFixedFees({
              PAYMENT_FEE_PERCENT: parseFloat(PAYMENT_FEE_PERCENT) || 4.91,
-             VOUCHER_XTRA_FEE_PERCENT: parseFloat(VOUCHER_XTRA_FEE_PERCENT) || 1.96,
+             VOUCHER_XTRA_FEE_PERCENT: parseFloat(VOUCHER_XTRA_FEE_PERCENT) || 3.0,
              CONTENT_XTRA_FEE_PERCENT: parseFloat(CONTENT_XTRA_FEE_PERCENT) || 2.59,
              CONTENT_XTRA_FEE_MAX: parseFloat(CONTENT_XTRA_FEE_MAX) || 50000,
              SHIPPING_COST_PI_SHIP: parseFloat(SHIPPING_COST_PI_SHIP) || 1620,
@@ -397,11 +397,18 @@ const Calculator: React.FC = () => {
 
     if (result.isValid) {
       showToast(t('common.success'), 'success');
-      // Scroll to result
+      // Scroll to result with offset to ensure full visibility
       setTimeout(() => {
         const resultSection = document.getElementById('resultSection');
         if (resultSection) {
-          resultSection.scrollIntoView({ behavior: 'smooth' });
+          const headerHeight = 80; // Approximate header height
+          const offset = headerHeight -70; // Add some padding
+          const elementTop = resultSection.offsetTop - offset;
+          
+          window.scrollTo({
+            top: elementTop,
+            behavior: 'smooth'
+          });
         }
       }, 100);
     } else {
@@ -445,7 +452,7 @@ const Calculator: React.FC = () => {
             <CalculatorIcon className="header-icon" />
             {t('calculator.title')}
           </h1>
-          <p>{t('calculator.subtitle')}</p>
+          <p style={{ whiteSpace: 'pre-line' }}>{t('calculator.subtitle')}</p>
         </div>
 
         <div className="calculator-content">
@@ -662,6 +669,17 @@ const Calculator: React.FC = () => {
                     <label htmlFor="voucherXtra">{t('calculator.settings.voucherXtra')}</label>
                   </div>
                 </div>
+                {/* Thông báo về logic tính phí */}
+                {formData.contentXtra && formData.voucherXtra && (
+                  <div className="info-notice" style={{ 
+                    fontSize: '0.85rem', 
+                    color: '#6b7280', 
+                    marginTop: '8px',
+                    fontStyle: 'italic'
+                  }}>
+                    ℹ️ {t('calculator.settings.extraServicesNote')}
+                  </div>
+                )}
               </div>
           </div>
 

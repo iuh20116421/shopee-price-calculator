@@ -3,7 +3,7 @@ export const FIXED_FEES = {
   PAYMENT_FEE_PERCENT: 0, // 4.91%
   CONTENT_XTRA_FEE_PERCENT: 0, // 2.59% (max 50,000 VND cho Mall)
   CONTENT_XTRA_FEE_MAX: 0, // 50,000 VND cho Mall
-  VOUCHER_XTRA_FEE_PERCENT: 0, // 1.96%
+  VOUCHER_XTRA_FEE_PERCENT: 0, // 3%
   SHIPPING_COST_PI_SHIP: 0, // 1,620 VND cho Pi ship
   INFRASTRUCTURE_FEE: 0, // 3,000 VND phí hạ tầng
   VAT_PERCENT: 0, // 1.5% VAT
@@ -121,18 +121,45 @@ export function calculateSellingPrice(input: CalculationInput): CalculationResul
     const paymentFee = sellingPrice * (fees.PAYMENT_FEE_PERCENT / 100);
     const shippingCost = input.piShip === 'yes' ? fees.SHIPPING_COST_PI_SHIP : 0;
     
-    // Content Xtra Fee - max 50,000 VND chỉ cho Mall
+    // Content Xtra và Voucher Xtra - tính phí cao hơn nếu cả 2 được chọn
     let contentXtraFee = 0;
-    if (input.contentXtra) {
+    let voucherXtraFee = 0;
+    
+    if (input.contentXtra && input.voucherXtra) {
+      // Cả 2 được chọn - tính phí cao hơn
       const contentXtraFeePercent = sellingPrice * (fees.CONTENT_XTRA_FEE_PERCENT / 100);
+      const voucherXtraFeePercent = sellingPrice * (fees.VOUCHER_XTRA_FEE_PERCENT / 100);
+      
+      let contentXtraFeeCalculated = 0;
       if (input.shopeeType === 'mall') {
-        contentXtraFee = Math.min(contentXtraFeePercent, fees.CONTENT_XTRA_FEE_MAX);
+        contentXtraFeeCalculated = Math.min(contentXtraFeePercent, fees.CONTENT_XTRA_FEE_MAX);
       } else {
-        contentXtraFee = contentXtraFeePercent; // Regular tính theo %
+        contentXtraFeeCalculated = contentXtraFeePercent; // Regular tính theo %
+      }
+      
+      // Chọn phí cao hơn
+      if (contentXtraFeeCalculated > voucherXtraFeePercent) {
+        contentXtraFee = contentXtraFeeCalculated;
+        voucherXtraFee = 0;
+      } else {
+        contentXtraFee = 0;
+        voucherXtraFee = voucherXtraFeePercent;
+      }
+    } else {
+      // Chỉ 1 trong 2 được chọn - tính bình thường
+      if (input.contentXtra) {
+        const contentXtraFeePercent = sellingPrice * (fees.CONTENT_XTRA_FEE_PERCENT / 100);
+        if (input.shopeeType === 'mall') {
+          contentXtraFee = Math.min(contentXtraFeePercent, fees.CONTENT_XTRA_FEE_MAX);
+        } else {
+          contentXtraFee = contentXtraFeePercent; // Regular tính theo %
+        }
+      }
+      
+      if (input.voucherXtra) {
+        voucherXtraFee = sellingPrice * (fees.VOUCHER_XTRA_FEE_PERCENT / 100);
       }
     }
-    
-    const voucherXtraFee = input.voucherXtra ? sellingPrice * (fees.VOUCHER_XTRA_FEE_PERCENT / 100) : 0;
     const infrastructureFee = fees.INFRASTRUCTURE_FEE;
     const vatFee = sellingPrice * (fees.VAT_PERCENT / 100);
     const marketingCost = input.marketingCostPercent ? sellingPrice * (input.marketingCostPercent / 100) : 0;
@@ -185,12 +212,23 @@ function calculateTotalFeePercent(input: CalculationInput, fees: typeof FIXED_FE
                        fees.VAT_PERCENT +
                        input.desiredProfitPercent;
 
-  if (input.contentXtra) {
-    totalFeePercent += fees.CONTENT_XTRA_FEE_PERCENT;
-  }
+  // Logic tính phí Xtra - chỉ tính phí cao hơn nếu cả 2 được chọn
+  if (input.contentXtra && input.voucherXtra) {
+    // Cả 2 được chọn - chỉ tính phí cao hơn
+    const contentXtraFeePercent = fees.CONTENT_XTRA_FEE_PERCENT;
+    const voucherXtraFeePercent = fees.VOUCHER_XTRA_FEE_PERCENT;
+    
+    // Chọn phí cao hơn
+    totalFeePercent += Math.max(contentXtraFeePercent, voucherXtraFeePercent);
+  } else {
+    // Chỉ 1 trong 2 được chọn - tính bình thường
+    if (input.contentXtra) {
+      totalFeePercent += fees.CONTENT_XTRA_FEE_PERCENT;
+    }
 
-  if (input.voucherXtra) {
-    totalFeePercent += fees.VOUCHER_XTRA_FEE_PERCENT;
+    if (input.voucherXtra) {
+      totalFeePercent += fees.VOUCHER_XTRA_FEE_PERCENT;
+    }
   }
 
   if (input.marketingCostPercent) {
