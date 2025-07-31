@@ -5,7 +5,7 @@ import shopeeMallData from '../constants/shopeeMallData.json';
 import shopeeRegularData from '../constants/shopeeRegularData.json';
 import shopeeMallDataEn from '../constants/shopeeMallDataEn.json';
 import shopeeRegularDataEn from '../constants/shopeeRegularDataEn.json';
-import CategorySelector from '../components/CategorySelector';
+
 import { 
   calculateSellingPrice, 
   formatCurrency, 
@@ -79,7 +79,7 @@ const Calculator: React.FC = () => {
   const [suggestions, setSuggestions] = useState<ProductSuggestion[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [isSearching, setIsSearching] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState<{path: string[], fee: string} | null>(null);
+
   const [formData, setFormData] = useState({
     cogs: '',
     shopeeType: 'mall' as 'mall' | 'regular',
@@ -95,6 +95,7 @@ const Calculator: React.FC = () => {
   const [showMarketingTooltip, setShowMarketingTooltip] = useState(false);
   const [showProfitTooltip, setShowProfitTooltip] = useState(false);
   const [showCostPriceTooltip, setShowCostPriceTooltip] = useState(false);
+  const [showExtraServicesTooltip, setShowExtraServicesTooltip] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState(localStorage.getItem('i18nextLng') || 'vi');
   const [fixedFees, setFixedFees] = useState<{
     PAYMENT_FEE_PERCENT: number;
@@ -235,10 +236,9 @@ const Calculator: React.FC = () => {
         setSelectedProduct(null);
         setSuggestions([]);
         setShowSuggestions(false);
-        setShowResult(false);
-        setCalculationResult(null);
-        setSelectedCategory(null);
-      }
+                 setShowResult(false);
+         setCalculationResult(null);
+       }
     };
 
     // Check for language changes periodically
@@ -256,21 +256,6 @@ const Calculator: React.FC = () => {
     setShowSuggestions(false);
     setShowResult(false);
     setCalculationResult(null);
-    setSelectedCategory(null);
-    clearError('product');
-  };
-
-  // Xử lý chọn category
-  const handleCategorySelect = (categoryPath: string[], fee: string) => {
-    setSelectedCategory({ path: categoryPath, fee });
-    setProductName(categoryPath[categoryPath.length - 1]);
-    setSelectedProduct({
-      name: categoryPath[categoryPath.length - 1],
-      fee: fee,
-      path: categoryPath
-    });
-    setShowResult(false);
-    setCalculationResult(null);
     clearError('product');
   };
 
@@ -283,12 +268,6 @@ const Calculator: React.FC = () => {
     setShowResult(false);
     setCalculationResult(null);
     clearError('product');
-    
-    // Tự động chọn category theo đường dẫn của sản phẩm
-    setSelectedCategory({
-      path: product.path,
-      fee: product.fee
-    });
   };
     
   // Xử lý thay đổi tên sản phẩm
@@ -330,8 +309,8 @@ const Calculator: React.FC = () => {
   const validateForm = (): boolean => {
     const newErrors: {[key: string]: string} = {};
 
-    if (!selectedCategory) {
-      newErrors.product = t('calculator.validation.categoryRequired');
+    if (!selectedProduct) {
+      newErrors.product = t('calculator.validation.productRequired');
     }
 
     if (!formData.cogs || parseFloat(formData.cogs) <= 0) {
@@ -381,7 +360,7 @@ const Calculator: React.FC = () => {
 
     const input: CalculationInput = {
       cogs: parseFloat(formData.cogs),
-      productFeePercent: parseFeeString(selectedCategory!.fee),
+      productFeePercent: parseFeeString(selectedProduct!.fee),
       shopeeType: formData.shopeeType,
       marketingCostPercent: formData.marketingCostPercent ? parseFloat(formData.marketingCostPercent) : undefined,
       desiredProfitPercent: parseFloat(formData.desiredProfitPercent),
@@ -545,16 +524,7 @@ const Calculator: React.FC = () => {
                   {errors.product && <div className="error-message">{errors.product}</div>}
                 </div>
 
-              {/* Chọn ngành hàng */}
-                <div className="form-group">
-                <label>{t('calculator.form.selectCategory')}<span className="required">*</span></label>
-                <CategorySelector
-                  data={getProductData()}
-                  onCategorySelect={handleCategorySelect}
-                  selectedPath={selectedCategory?.path || []}
-                  maxLevels={formData.shopeeType === 'mall' ? 4 : 2}
-                />
-                </div>
+
 
                         {/* Hiển thị sản phẩm đã chọn */}
           {selectedProduct && (
@@ -648,7 +618,20 @@ const Calculator: React.FC = () => {
 
                 {/* Content Xtra và Voucher Xtra */}
                 <div className="form-group inline">
-                  <label>{t('calculator.settings.extraServices')}</label>
+                  <label>
+                    {t('calculator.settings.extraServices')}
+                    <Info 
+                      className="info-icon" 
+                      onMouseEnter={() => setShowExtraServicesTooltip(true)}
+                      onMouseLeave={() => setShowExtraServicesTooltip(false)}
+                    />
+                    {showExtraServicesTooltip && (
+                      <div className="tooltip">
+                        {t('calculator.settings.extraServicesNote')}
+                        <div className="tooltip-arrow"></div>
+                      </div>
+                    )}
+                  </label>
                 <div className="checkbox-group">
                   <div className="checkbox-item">
                     <input
@@ -669,17 +652,6 @@ const Calculator: React.FC = () => {
                     <label htmlFor="voucherXtra">{t('calculator.settings.voucherXtra')}</label>
                   </div>
                 </div>
-                {/* Thông báo về logic tính phí */}
-                {formData.contentXtra && formData.voucherXtra && (
-                  <div className="info-notice" style={{ 
-                    fontSize: '0.85rem', 
-                    color: '#6b7280', 
-                    marginTop: '8px',
-                    fontStyle: 'italic'
-                  }}>
-                    ℹ️ {t('calculator.settings.extraServicesNote')}
-                  </div>
-                )}
               </div>
           </div>
 
