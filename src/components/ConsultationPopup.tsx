@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { X } from 'lucide-react';
+import { CloudCog, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import popupImage from '../assets/images/popupTuVan.jpg';
+import { googleSheetsService } from '../services/googleSheetsService';
+import { showToast } from '../utils/toast';
 
 interface ConsultationPopupProps {
   isOpen: boolean;
@@ -17,6 +19,10 @@ const ConsultationPopup: React.FC<ConsultationPopupProps> = ({ isOpen, onClose }
     shopLink: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errors, setErrors] = useState({
+    fullName: '',
+    phoneNumber: ''
+  });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -24,39 +30,97 @@ const ConsultationPopup: React.FC<ConsultationPopupProps> = ({ isOpen, onClose }
       ...prev,
       [name]: value
     }));
+
+    if (errors[name as keyof typeof errors]) {
+      setErrors(prev => ({
+        ...prev,
+        [name]: ''
+      }));
+    }
+  };
+
+  const validatePhoneNumber = (phone: string): boolean => {
+    const cleanPhone = phone.replace(/\s+/g, '').replace(/[-().]/g, '');
+    const phoneRegex = /^(0[3-9]\d{8}|02\d{8,9})$/;
+    return phoneRegex.test(cleanPhone);
+  };
+
+  const validateForm = (): boolean => {
+    const newErrors = {
+      fullName: '',
+      phoneNumber: ''
+    };
+
+    if (!formData.fullName.trim()) {
+      newErrors.fullName = t('popup.validation.nameRequired');
+    }
+
+    if (!formData.phoneNumber.trim()) {
+      newErrors.phoneNumber = t('popup.validation.phoneRequired');
+    } else if (!validatePhoneNumber(formData.phoneNumber)) {
+      newErrors.phoneNumber = t('popup.validation.phoneInvalid');
+    }
+
+    setErrors(newErrors);
+    return !newErrors.fullName && !newErrors.phoneNumber;
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!validateForm()) {
+      return;
+    }
+
     setIsSubmitting(true);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    console.log('Form submitted:', formData);
+
+    try {
+      const result = await googleSheetsService.submitConsultation({
+        fullName: formData.fullName,
+        phoneNumber: formData.phoneNumber,
+        shopIssue: formData.shopIssue,
+        shopLink: formData.shopLink
+      });
+
+      if (result.success) {
+        showToast('Gửi thông tin thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất.', 'success');
+
+        // Reset form
+        setFormData({
+          fullName: '',
+          phoneNumber: '',
+          shopIssue: '',
+          shopLink: ''
+        });
+
+        onClose();
+      } else {
+        showToast(result.message || 'Có lỗi xảy ra khi gửi thông tin. Vui lòng thử lại.', 'error');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      showToast('Không thể gửi thông tin. Vui lòng kiểm tra kết nối mạng và thử lại.', 'error');
+    }
+
     setIsSubmitting(false);
-    onClose();
   };
 
   if (!isOpen) return null;
-
   return (
     <div className="popup-overlay" onClick={onClose}>
       <div className="popup-container" onClick={(e) => e.stopPropagation()}>
-        {/* Left Section - Promotional Image */}
         <div className="popup-left">
           <div className="popup-image-container">
             <img src={popupImage} alt="Tư vấn kinh doanh" className="popup-main-image" />
           </div>
         </div>
-                 {/* Right Section - Contact Form */}
-         <div className="popup-right">
-           <div className="popup-form-container">
-             <button className="popup-close-btn" onClick={onClose}>
-               <X size={20} />
-             </button>
+        <div className="popup-right">
+          <div className="popup-form-container">
+            <button className="popup-close-btn" onClick={onClose}>
+              <X size={20} />
+            </button>
             <h3 className="popup-form-title">{t('popup.popupTitle')}</h3>
-            
+
             <form onSubmit={handleSubmit} className="popup-form">
               <div className="form-group">
                 <input
@@ -64,47 +128,56 @@ const ConsultationPopup: React.FC<ConsultationPopupProps> = ({ isOpen, onClose }
                   name="fullName"
                   value={formData.fullName}
                   onChange={handleInputChange}
-                  placeholder={t('popup.namePlaceholder')}
+                  placeholder={`${t('popup.namePlaceholder')} *`}
+                  className={`form-input ${errors.fullName ? 'error' : ''}`}
+                />
+                {errors.fullName && (
+                  <div className="form-error">
+                    {errors.fullName}
+                  </div>
+                )}
+              </div>
+
+              <div className="form-group">
+                <input
+                  type="tel"
+                  name="phoneNumber"
+                  value={formData.phoneNumber}
+                  onChange={handleInputChange}
+                  placeholder={`${t('popup.phonePlaceholder')} *`}
+                  className={`form-input ${errors.phoneNumber ? 'error' : ''}`}
+                />
+                {errors.phoneNumber && (
+                  <div className="form-error">
+                    {errors.phoneNumber}
+                  </div>
+                )}
+              </div>
+
+              <div className="form-group">
+                <input
+                  type="text"
+                  name="shopIssue"
+                  value={formData.shopIssue}
+                  onChange={handleInputChange}
+                  placeholder={t('popup.shopIssuePlaceholder')}
                   className="form-input"
                 />
               </div>
-              
-                             <div className="form-group">
-                 <input
-                   type="tel"
-                   name="phoneNumber"
-                   value={formData.phoneNumber}
-                   onChange={handleInputChange}
-                   placeholder={t('popup.phonePlaceholder')}
-                   className="form-input"
-                   required
-                 />
-               </div>
-               
-               <div className="form-group">
-                 <input
-                   type="text"
-                   name="shopIssue"
-                   value={formData.shopIssue}
-                   onChange={handleInputChange}
-                   placeholder={t('popup.shopIssuePlaceholder')}
-                   className="form-input"
-                 />
-               </div>
-               
-               <div className="form-group">
-                 <input
-                   type="url"
-                   name="shopLink"
-                   value={formData.shopLink}
-                   onChange={handleInputChange}
-                   placeholder={t('popup.shopLinkPlaceholder')}
-                   className="form-input"
-                 />
-               </div>
-              
-              <button 
-                type="submit" 
+
+              <div className="form-group">
+                <input
+                  type="url"
+                  name="shopLink"
+                  value={formData.shopLink}
+                  onChange={handleInputChange}
+                  placeholder={t('popup.shopLinkPlaceholder')}
+                  className="form-input"
+                />
+              </div>
+
+              <button
+                type="submit"
                 className={`popup-submit-btn ${isSubmitting ? 'submitting' : ''}`}
                 disabled={isSubmitting}
               >

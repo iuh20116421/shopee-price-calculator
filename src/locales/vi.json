@@ -213,7 +213,12 @@
     "phonePlaceholder": "Số điện thoại",
     "shopIssuePlaceholder": "Vấn đề shop đang gặp phải",
     "shopLinkPlaceholder": "Nhập link shop",
-    "submitButton": "KHÁM SHOP MIỄN PHÍ",
-    "processingText": "ĐANG XỬ LÝ..."
+    "submitButton": "NHẬN TƯ VẤN",
+    "processingText": "ĐANG XỬ LÝ...",
+    "validation": {
+      "nameRequired": "Vui lòng nhập họ và tên",
+      "phoneRequired": "Vui lòng nhập số điện thoại",
+      "phoneInvalid": "Số điện thoại không đúng định dạng"
+    }
   }
 } 
