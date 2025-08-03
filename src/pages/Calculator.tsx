@@ -14,6 +14,7 @@ import {
   CalculationInput,
   CalculationResult 
 } from '../constants/calculationFormulas';
+import { showToast } from '../utils/toast';
 import axios from 'axios';
 
 interface CategoryData {
@@ -29,8 +30,8 @@ interface ProductSuggestion {
 const Calculator: React.FC = () => {
   const getDataFixedFee = useCallback(async () => {
     try {
-      const API_KEY = 'AIzaSyDW-UUUQc4AFLpO3kMk_lB_RkSF_sHZyo4';
-      const SPREADSHEET_ID = '1MZSfcmOe_urH3WibOExoTwy28LLSUppdREBC_hYf1Ug';
+      const API_KEY = process.env.REACT_APP_API_KEY;
+      const SPREADSHEET_ID = process.env.REACT_APP_SPREADSHEET_ID;
       const RANGE = 'Chi phí Shopee!A2:H2';
       
       console.log('Fetching data from Google Sheets...');
@@ -236,7 +237,7 @@ const Calculator: React.FC = () => {
         setSelectedProduct(null);
         setSuggestions([]);
         setShowSuggestions(false);
-                 setShowResult(false);
+        setShowResult(false);
          setCalculationResult(null);
        }
     };
@@ -279,30 +280,6 @@ const Calculator: React.FC = () => {
       setShowSuggestions(false);
     }
     clearError('product');
-  };
-
-  // Hiển thị toast thông báo
-  const showToast = (message: string, type: 'error' | 'success' = 'error') => {
-    // Tạo toast element
-    const toast = document.createElement('div');
-    toast.className = `toast toast-${type}`;
-    toast.textContent = message;
-    
-    // Thêm vào body
-    document.body.appendChild(toast);
-    
-    // Hiển thị toast
-    setTimeout(() => {
-      toast.classList.add('show');
-    }, 100);
-    
-    // Tự động ẩn sau 3 giây
-    setTimeout(() => {
-      toast.classList.remove('show');
-      setTimeout(() => {
-        document.body.removeChild(toast);
-      }, 300);
-    }, 3000);
   };
 
   // Validate form
@@ -578,7 +555,7 @@ const Calculator: React.FC = () => {
             </div>
 
           {/* Cài đặt Shopee và Chi phí dự tính - Combined */}
-          <div className="form-section wide">
+          <div className="form-section wide settings-section-container">
             <div className="settings-cost-layout">
             {/* Cài đặt Shopee */}
               <div className="settings-section">
