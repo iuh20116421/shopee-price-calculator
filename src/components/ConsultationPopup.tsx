@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CloudCog, X } from 'lucide-react';
+import { X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import popupImage from '../assets/images/popupTuVan.jpg';
 import { googleSheetsService } from '../services/googleSheetsService';
