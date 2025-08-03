@@ -69,7 +69,7 @@ const Calculator: React.FC = () => {
     }
   }, []);
 
-  useEffect(() => {
+  useEffect(() => { 
     getDataFixedFee();
   }, [getDataFixedFee]);
 

@@ -206,5 +206,14 @@
   "language": {
     "vi": "Tiếng Việt",
     "en": "English"
+  },
+  "popup": {
+    "popupTitle": "LIÊN HỆ TƯ VẤN",
+    "namePlaceholder": "Họ và tên",
+    "phonePlaceholder": "Số điện thoại",
+    "shopIssuePlaceholder": "Vấn đề shop đang gặp phải",
+    "shopLinkPlaceholder": "Nhập link shop",
+    "submitButton": "KHÁM SHOP MIỄN PHÍ",
+    "processingText": "ĐANG XỬ LÝ..."
   }
 } 

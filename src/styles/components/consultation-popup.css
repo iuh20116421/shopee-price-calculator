@@ -1,0 +1,598 @@
+/* Consultation Popup Styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.popup-container {
+  display: flex;
+  max-width:900px;
+  width: 100%;
+  height: 480px;
+  background: linear-gradient(135deg, #F5F8FF 0%, #E8F2FF 100%);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 
+    0 25px 80px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+  position: relative;
+  animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Left Section - Promotional Image */
+.popup-left {
+  flex: 1;
+  background: linear-gradient(135deg, #F5F8FF 0%, #E8F2FF 100%);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.popup-left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(59, 130, 246, 0.05) 0%, rgba(147, 197, 253, 0.05) 100%);
+  pointer-events: none;
+}
+
+.popup-image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-main-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.popup-main-image:hover {
+  transform: scale(1.02);
+}
+
+/* Right Section - Contact Form */
+.popup-right {
+  flex: 1;
+  background: linear-gradient(135deg, #ffffff 0%, #fafbfc 100%);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.popup-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #6b7280;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.popup-close-btn:hover {
+  background: rgba(255, 255, 255, 1);
+  color: #dc2626;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(220, 38, 38, 0.2);
+}
+
+.popup-close-btn:active {
+  transform: scale(0.95);
+}
+
+.popup-form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 6px;
+  padding: 24px;
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.popup-form-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.02) 0%, rgba(147, 197, 253, 0.02) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.popup-form-container:hover::before {
+  opacity: 1;
+}
+
+.popup-form-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.12),
+    0 0 0 1px rgba(59, 130, 246, 0.1);
+}
+
+/* Hiệu ứng ripple cho các input khi click */
+.form-input,
+.form-textarea,
+.form-select {
+  position: relative;
+  overflow: hidden;
+}
+
+.form-input:active::after,
+.form-textarea:active::after,
+.form-select:active::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(59, 130, 246, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: ripple 0.6s ease-out;
+}
+
+@keyframes ripple {
+  to {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+.popup-form-title {
+  font-size: 26px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 28px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  position: relative;
+}
+
+.popup-form-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  border-radius: 2px;
+}
+
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group {
+  position: relative;
+  transition: all 0.1s ease;
+}
+
+.form-group:hover {
+  transform: translateX(2px);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  transition: all 0.1s ease;
+}
+
+.form-group:hover .form-label {
+  color: #3b82f6;
+  transform: translateX(2px);
+}
+
+/* Hiệu ứng cho checkbox và radio */
+.form-checkbox,
+.form-radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.1s ease;
+  margin: 4px 0;
+}
+
+.form-checkbox:hover,
+.form-radio:hover {
+  background: rgba(59, 130, 246, 0.05);
+  transform: translateX(4px);
+}
+
+.form-checkbox input[type="checkbox"],
+.form-radio input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #3b82f6;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.form-checkbox:hover input[type="checkbox"],
+.form-radio:hover input[type="radio"] {
+  transform: scale(1.1);
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 14px;
+  transition: all 0.1s ease;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  position: relative;
+  cursor: text;
+}
+
+.form-input::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 197, 253, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.05s ease;
+  pointer-events: none;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 
+    0 0 0 3px rgba(59, 130, 246, 0.1),
+    0 4px 16px rgba(59, 130, 246, 0.15);
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+}
+
+.form-input:hover,
+.form-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 
+    0 4px 16px rgba(59, 130, 246, 0.15),
+    0 0 0 1px rgba(59, 130, 246, 0.1);
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+}
+
+.form-input:hover::before,
+.form-input:focus::before {
+  opacity: 1;
+}
+
+/* Hiệu ứng glow khi hover và focus - phản hồi tức thì */
+.form-input:hover::after,
+.form-input:focus::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, #3b82f6, #60a5fa, #93c5fd);
+  border-radius: 14px;
+  z-index: -1;
+  opacity: 0.5;
+  animation: glowPulse 1s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.01);
+  }
+}
+
+.form-input::placeholder {
+  color: #9ca3af;
+  transition: color 0.05s ease;
+}
+
+.form-input:hover::placeholder,
+.form-input:focus::placeholder {
+  color: #6b7280;
+}
+
+/* Hiệu ứng cho textarea */
+.form-textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 14px;
+  transition: all 0.1s ease;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  position: relative;
+  cursor: text;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 
+    0 0 0 3px rgba(59, 130, 246, 0.1),
+    0 4px 16px rgba(59, 130, 246, 0.15);
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+}
+
+.form-textarea:hover,
+.form-textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 
+    0 4px 16px rgba(59, 130, 246, 0.15),
+    0 0 0 1px rgba(59, 130, 246, 0.1);
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+}
+
+.form-textarea::placeholder {
+  color: #9ca3af;
+  transition: color 0.05s ease;
+}
+
+.form-textarea:hover::placeholder,
+.form-textarea:focus::placeholder {
+  color: #6b7280;
+}
+
+/* Hiệu ứng cho select dropdown */
+.form-select {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 14px;
+  transition: all 0.1s ease;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  position: relative;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 
+    0 0 0 3px rgba(59, 130, 246, 0.1),
+    0 4px 16px rgba(59, 130, 246, 0.15);
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+}
+
+.form-select:hover,
+.form-select:focus {
+  border-color: #3b82f6;
+  box-shadow: 
+    0 4px 16px rgba(59, 130, 246, 0.15),
+    0 0 0 1px rgba(59, 130, 246, 0.1);
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+}
+
+
+
+.popup-submit-btn {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  color: white;
+  border: none;
+  padding: 16px 28px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 12px;
+  box-shadow: 
+    0 4px 16px rgba(220, 38, 38, 0.3),
+    0 0 0 1px rgba(220, 38, 38, 0.1);
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 0.5px;
+}
+
+.popup-submit-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.popup-submit-btn:hover::before {
+  left: 100%;
+}
+
+.popup-submit-btn:hover {
+  background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+  transform: translateY(-3px);
+  box-shadow: 
+    0 8px 32px rgba(220, 38, 38, 0.4),
+    0 0 0 1px rgba(220, 38, 38, 0.2);
+}
+
+.popup-submit-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 
+    0 4px 16px rgba(220, 38, 38, 0.3),
+    0 0 0 1px rgba(220, 38, 38, 0.1);
+}
+
+.popup-submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.popup-submit-btn.submitting {
+  background: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #ffffff;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .popup-container {
+    flex-direction: column;
+    height: auto;
+    max-height: 90vh;
+  }
+  
+  .popup-left {
+    padding: 30px 20px;
+    min-height: 300px;
+  }
+  
+  .popup-right {
+    padding: 30px 20px;
+  }
+  
+  .popup-form-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup-overlay {
+    padding: 10px;
+  }
+  
+  .popup-container {
+    border-radius: 15px;
+  }
+  
+  .popup-left {
+    padding: 20px 15px;
+  }
+  
+  .popup-right {
+    padding: 20px 15px;
+  }
+  
+  .popup-form-title {
+    font-size: 20px;
+  }
+} 

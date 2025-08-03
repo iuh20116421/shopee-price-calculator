@@ -3,11 +3,13 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Menu, Calculator, Home, ChevronDown, ShoppingBag, BookOpen, FileText, Users } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
+import ConsultationPopup from './ConsultationPopup';
 import logoImage from '../assets/images/logos.png';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
   const location = useLocation();
   const { t, i18n } = useTranslation();
 
@@ -152,14 +154,20 @@ const Header: React.FC = () => {
             {/* Desktop CTA Button and Language Switcher */}
             <div className="header-cta">
               <LanguageSwitcher />
-              <button className="btn-primary">
+              <button 
+                className="btn-primary"
+                onClick={() => setIsPopupOpen(true)}
+              >
                 {t('navigation.consultation')}
               </button>
             </div>
 
             {/* Mobile CTA and Menu */}
             <div className="header-mobile-actions">
-              <button className="mobile-cta-button">
+              <button 
+                className="mobile-cta-button"
+                onClick={() => setIsPopupOpen(true)}
+              >
                 {t('navigation.consultation')}
               </button>
               <div className="header-mobile-toggle">
@@ -222,7 +230,11 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-
+      {/* Consultation Popup */}
+      <ConsultationPopup 
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+      />
     </header>
   );
 };

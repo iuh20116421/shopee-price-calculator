@@ -206,5 +206,14 @@
   "language": {
     "vi": "Tiếng Việt",
     "en": "English"
+  },
+  "popup": {
+    "popupTitle": "CONTACT FOR CONSULTATION",
+    "namePlaceholder": "Full Name",
+    "phonePlaceholder": "Phone Number",
+    "shopIssuePlaceholder": "Issue your shop is facing",
+    "shopLinkPlaceholder": "Enter shop link",
+    "submitButton": "FREE SHOP CHECK-UP",
+    "processingText": "PROCESSING..."
   }
 } 
