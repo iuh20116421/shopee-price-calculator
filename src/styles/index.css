@@ -7,6 +7,7 @@
 @import './components/language-switcher.css';
 @import './components/category-selector.css';
 @import './components/toast.css';
+@import './components/consultation-popup.css';
 
 /* Import page styles */
 @import './pages/home.css';

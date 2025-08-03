@@ -121,7 +121,7 @@
 
         .form-section {
             background: white;
-            padding: 35px;
+            padding: 15px;
             border-radius: 20px;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
             border: 1px solid rgba(0, 0, 0, 0.03);
@@ -2305,6 +2305,134 @@ shopeeTypeRadios.forEach(radio => {
 
         initializeApp();
         updateCategoryUI();
+
+        // Language switching functionality
+        const languageSwitchBtn = document.getElementById('languageSwitchBtn');
+        if (languageSwitchBtn) {
+            languageSwitchBtn.addEventListener('click', function() {
+                const currentLang = localStorage.getItem('language') || 'vi';
+                const newLang = currentLang === 'vi' ? 'en' : 'vi';
+                localStorage.setItem('language', newLang);
+                updateLanguage(newLang);
+            });
+        }
+
+        // Initialize language on page load
+        const savedLang = localStorage.getItem('language') || 'vi';
+        updateLanguage(savedLang);
+
+        function updateLanguage(lang) {
+            if (lang === 'en') {
+                // Update main content to English
+                document.title = "Shopee Price Calculator Tool";
+                
+                const headerTitle = document.querySelector('.logo-text h1');
+                if (headerTitle) headerTitle.textContent = "Shopee Price Calculator Tool";
+                
+                const headerSubtitle = document.querySelector('.logo-text p');
+                if (headerSubtitle) headerSubtitle.textContent = "Calculate costs and profits for selling on Shopee accurately with continuously updated data, helping you make timely decisions";
+                
+                // Update language switch button
+                const span = languageSwitchBtn.querySelector('span');
+                if (span) span.textContent = "Tiếng Việt";
+                
+                // Update popup content to English
+                updatePopupToEnglish();
+                
+            } else {
+                // Update main content to Vietnamese
+                document.title = "Công cụ cân đối giá bán shopee";
+                
+                const headerTitle = document.querySelector('.logo-text h1');
+                if (headerTitle) headerTitle.textContent = "Công cụ cân đối giá bán shopee";
+                
+                const headerSubtitle = document.querySelector('.logo-text p');
+                if (headerSubtitle) headerSubtitle.textContent = "Tính toán chi phí và lợi nhuận bán hàng trên Shopee một cách chính xác với dữ liệu cập nhật liên tục, hỗ trợ bạn ra quyết định kịp thời";
+                
+                // Update language switch button
+                const span = languageSwitchBtn.querySelector('span');
+                if (span) span.textContent = "English";
+                
+                // Update popup content to Vietnamese
+                updatePopupToVietnamese();
+            }
+        }
+
+        function updatePopupToEnglish() {
+            const popupTitle = document.querySelector('.popup-form-container h2');
+            if (popupTitle) popupTitle.textContent = "Free Consultation";
+            
+            const popupSubtitle = document.querySelector('.popup-form-container p');
+            if (popupSubtitle) popupSubtitle.textContent = "Leave your information for detailed consultation";
+            
+            const nameLabel = document.querySelector('label[for="popupName"]');
+            if (nameLabel) nameLabel.textContent = "Full Name:";
+            
+            const phoneLabel = document.querySelector('label[for="popupPhone"]');
+            if (phoneLabel) phoneLabel.textContent = "Phone Number:";
+            
+            const emailLabel = document.querySelector('label[for="popupEmail"]');
+            if (emailLabel) emailLabel.textContent = "Email:";
+            
+            const messageLabel = document.querySelector('label[for="popupMessage"]');
+            if (messageLabel) messageLabel.textContent = "Consultation Content:";
+            
+            const nameInput = document.getElementById('popupName');
+            if (nameInput) nameInput.placeholder = "Enter your full name";
+            
+            const phoneInput = document.getElementById('popupPhone');
+            if (phoneInput) phoneInput.placeholder = "Enter your phone number";
+            
+            const emailInput = document.getElementById('popupEmail');
+            if (emailInput) emailInput.placeholder = "Enter your email";
+            
+            const messageInput = document.getElementById('popupMessage');
+            if (messageInput) messageInput.placeholder = "Describe in detail the issue you need consultation for...";
+            
+            const submitBtn = document.querySelector('.popup-form-container button[type="submit"]');
+            if (submitBtn) submitBtn.textContent = "Send Consultation Request";
+            
+            const closeBtn = document.querySelector('.popup-form-container .close-btn');
+            if (closeBtn) closeBtn.textContent = "Close";
+        }
+
+        function updatePopupToVietnamese() {
+            const popupTitle = document.querySelector('.popup-form-container h2');
+            if (popupTitle) popupTitle.textContent = "Tư vấn miễn phí";
+            
+            const popupSubtitle = document.querySelector('.popup-form-container p');
+            if (popupSubtitle) popupSubtitle.textContent = "Để lại thông tin để được tư vấn chi tiết";
+            
+            const nameLabel = document.querySelector('label[for="popupName"]');
+            if (nameLabel) nameLabel.textContent = "Họ và tên:";
+            
+            const phoneLabel = document.querySelector('label[for="popupPhone"]');
+            if (phoneLabel) phoneLabel.textContent = "Số điện thoại:";
+            
+            const emailLabel = document.querySelector('label[for="popupEmail"]');
+            if (emailLabel) emailLabel.textContent = "Email:";
+            
+            const messageLabel = document.querySelector('label[for="popupMessage"]');
+            if (messageLabel) messageLabel.textContent = "Nội dung tư vấn:";
+            
+            const nameInput = document.getElementById('popupName');
+            if (nameInput) nameInput.placeholder = "Nhập họ và tên của bạn";
+            
+            const phoneInput = document.getElementById('popupPhone');
+            if (phoneInput) phoneInput.placeholder = "Nhập số điện thoại";
+            
+            const emailInput = document.getElementById('popupEmail');
+            if (emailInput) emailInput.placeholder = "Nhập email của bạn";
+            
+            const messageInput = document.getElementById('popupMessage');
+            if (messageInput) messageInput.placeholder = "Mô tả chi tiết về vấn đề cần tư vấn...";
+            
+            const submitBtn = document.querySelector('.popup-form-container button[type="submit"]');
+            if (submitBtn) submitBtn.textContent = "Gửi yêu cầu tư vấn";
+            
+            const closeBtn = document.querySelector('.popup-form-container .close-btn');
+            if (closeBtn) closeBtn.textContent = "Đóng";
+        }
     </script>
     </body>
 </html>

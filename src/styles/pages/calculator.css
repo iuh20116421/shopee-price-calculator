@@ -14,6 +14,8 @@
   border-radius: 25px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 .calculator-header {
@@ -59,7 +61,7 @@
   }
 
 .calculator-content {
-  padding: 40px;
+  padding: 15px;
 }
 
 /* Form Section Styles */
@@ -71,6 +73,8 @@
   border: 1px solid rgba(0, 0, 0, 0.03);
   margin-bottom: 24px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .form-section.wide {
@@ -94,7 +98,28 @@
 }
 
 .form-group {
-  margin-bottom: 16px;
+  margin-bottom: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Đặc biệt cho form-group chứa search */
+.form-group:has(.product-search-container) {
+  z-index: 999999;
+}
+
+/* Form-group chứa giá vốn có z-index thấp */
+.form-group:has(input[name="cogs"]) {
+  z-index: 1;
+  position: relative;
+}
+
+/* Đảm bảo các phần tử khác không chồng lên dropdown */
+.form-section,
+.settings-section,
+.cost-section {
+  z-index: 1;
+  position: relative;
 }
 
 .form-group label {
@@ -149,6 +174,8 @@ input, select {
   font-size: 1rem;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   background: #ffffff;
+  position: relative;
+  z-index: 1;
 }
 
 input:focus, select:focus {
@@ -332,7 +359,8 @@ input:focus, select:focus {
 .consultation-btn {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  justify-content: center;
+  gap: 25px;
   background: linear-gradient(135deg, #F30404, #860404);
   color: white;
   padding: 15px 30px;
@@ -345,6 +373,25 @@ input:focus, select:focus {
   margin: 0 10px;
   border: none;
   cursor: pointer;
+  width: 280px;
+  min-width: 290px;
+}
+
+/* Responsive width cho consultation buttons */
+@media (max-width: 768px) {
+  .consultation-btn {
+    width: 100%;
+    max-width: 320px;
+    min-width: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .consultation-btn {
+    width: 100%;
+    max-width: 100%;
+    min-width: 240px;
+  }
 }
 
 .consultation-btn:hover {
@@ -355,7 +402,7 @@ input:focus, select:focus {
 }
 
 .consultation-btn.facebook {
-  background: linear-gradient(135deg, #4267B2, #365899);
+  background: linear-gradient(135deg, #0068FF, #6401cf);
   box-shadow: 0 10px 30px rgba(66, 103, 178, 0.3);
 }
 
@@ -505,12 +552,14 @@ input:focus, select:focus {
 .product-search-container {
   position: relative;
   width: 100%;
+  z-index: 999999;
 }
 
 .search-input-wrapper {
   position: relative;
   display: flex;
   align-items: center;
+  z-index: 999999;
 }
 
 .search-icon {
@@ -573,7 +622,7 @@ input:focus, select:focus {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   max-height: 300px;
   overflow-y: auto;
-  z-index: 1000;
+  z-index: 999999;
   animation: slideDown 0.3s ease;
 }
 
@@ -771,7 +820,9 @@ input:focus, select:focus {
 .settings-cost-layout {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap:20px;
+  position: relative;
+  z-index: 1;
 }
 
 .settings-section,
@@ -781,6 +832,8 @@ input:focus, select:focus {
   border-radius: 15px;
   border: 1px solid #e9ecef;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 /* Inline Form Groups */
