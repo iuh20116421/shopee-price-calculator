@@ -4,6 +4,8 @@ export const FIXED_FEES = {
   CONTENT_XTRA_FEE_PERCENT: 0, // 2.59% (max 50,000 VND cho Mall)
   CONTENT_XTRA_FEE_MAX: 0, // 50,000 VND cho Mall
   VOUCHER_XTRA_FEE_PERCENT: 0, // 3%
+  FREESHIP_XTRA_FEE_PERCENT: 0, // 5.89% - Phí Freeship Xtra đối với mall
+  FREESHIP_XTRA_FEE_MAX: 0, // 50,000 VND - Phí Freeship Xtra max đối với mall
   SHIPPING_COST_PI_SHIP: 0, // 1,620 VND cho Pi ship
   INFRASTRUCTURE_FEE: 0, // 3,000 VND phí hạ tầng
   VAT_PERCENT: 0, // 1.5% VAT
@@ -19,11 +21,14 @@ export interface CalculationInput {
   piShip: 'yes' | 'no'; // Có Pi ship hay không
   contentXtra: boolean; // Có Content Xtra
   voucherXtra: boolean; // Có Voucher Xtra
+  freeshipXtra?: boolean; // Có Freeship Xtra (chỉ cho Mall)
   fixedFees?: {
     PAYMENT_FEE_PERCENT: number;
     CONTENT_XTRA_FEE_PERCENT: number;
     CONTENT_XTRA_FEE_MAX: number;
     VOUCHER_XTRA_FEE_PERCENT: number;
+    FREESHIP_XTRA_FEE_PERCENT: number;
+    FREESHIP_XTRA_FEE_MAX: number;
     SHIPPING_COST_PI_SHIP: number;
     INFRASTRUCTURE_FEE: number;
     VAT_PERCENT: number;
@@ -38,6 +43,7 @@ export interface CalculationResult {
   shippingCost: number;
   contentXtraFee: number;
   voucherXtraFee: number;
+  freeshipXtraFee: number;
   infrastructureFee: number;
   vatFee: number;
   marketingCost: number;
@@ -121,43 +127,64 @@ export function calculateSellingPrice(input: CalculationInput): CalculationResul
     const paymentFee = sellingPrice * (fees.PAYMENT_FEE_PERCENT / 100);
     const shippingCost = input.piShip === 'yes' ? fees.SHIPPING_COST_PI_SHIP : 0;
     
-    // Content Xtra và Voucher Xtra - tính phí cao hơn nếu cả 2 được chọn
+    // Content Xtra, Voucher Xtra và Freeship Xtra - tính phí cao hơn nếu nhiều dịch vụ được chọn
     let contentXtraFee = 0;
     let voucherXtraFee = 0;
+    let freeshipXtraFee = 0;
     
-    if (input.contentXtra && input.voucherXtra) {
-      // Cả 2 được chọn - tính phí cao hơn
-      const contentXtraFeePercent = sellingPrice * (fees.CONTENT_XTRA_FEE_PERCENT / 100);
-      const voucherXtraFeePercent = sellingPrice * (fees.VOUCHER_XTRA_FEE_PERCENT / 100);
+    // Tính phí các dịch vụ Xtra
+    const contentXtraFeePercent = sellingPrice * (fees.CONTENT_XTRA_FEE_PERCENT / 100);
+    const voucherXtraFeePercent = sellingPrice * (fees.VOUCHER_XTRA_FEE_PERCENT / 100);
+    const freeshipXtraFeePercent = sellingPrice * (fees.FREESHIP_XTRA_FEE_PERCENT / 100);
+    
+    let contentXtraFeeCalculated = 0;
+    if (input.shopeeType === 'mall') {
+      contentXtraFeeCalculated = Math.min(contentXtraFeePercent, fees.CONTENT_XTRA_FEE_MAX);
+    } else {
+      contentXtraFeeCalculated = contentXtraFeePercent; // Regular tính theo %
+    }
+    
+    let freeshipXtraFeeCalculated = 0;
+    if (input.shopeeType === 'mall' && input.freeshipXtra) {
+      freeshipXtraFeeCalculated = Math.min(freeshipXtraFeePercent, fees.FREESHIP_XTRA_FEE_MAX);
+    }
+    
+    // Đếm số dịch vụ được chọn
+    const selectedServices = [
+      input.contentXtra, 
+      input.voucherXtra, 
+      input.freeshipXtra && input.shopeeType === 'mall'
+    ].filter(Boolean).length;
+    
+    if (selectedServices > 1) {
+      // Nhiều dịch vụ được chọn - chỉ tính phí cao nhất
+      const fees_array = [];
+      if (input.contentXtra) fees_array.push({ type: 'content', fee: contentXtraFeeCalculated });
+      if (input.voucherXtra) fees_array.push({ type: 'voucher', fee: voucherXtraFeePercent });
+      if (input.freeshipXtra && input.shopeeType === 'mall') fees_array.push({ type: 'freeship', fee: freeshipXtraFeeCalculated });
       
-      let contentXtraFeeCalculated = 0;
-      if (input.shopeeType === 'mall') {
-        contentXtraFeeCalculated = Math.min(contentXtraFeePercent, fees.CONTENT_XTRA_FEE_MAX);
-      } else {
-        contentXtraFeeCalculated = contentXtraFeePercent; // Regular tính theo %
-      }
+      // Tìm phí cao nhất
+      const highestFee = fees_array.reduce((max, current) => current.fee > max.fee ? current : max);
       
-      // Chọn phí cao hơn
-      if (contentXtraFeeCalculated > voucherXtraFeePercent) {
-        contentXtraFee = contentXtraFeeCalculated;
-        voucherXtraFee = 0;
-      } else {
-        contentXtraFee = 0;
-        voucherXtraFee = voucherXtraFeePercent;
+      if (highestFee.type === 'content') {
+        contentXtraFee = highestFee.fee;
+      } else if (highestFee.type === 'voucher') {
+        voucherXtraFee = highestFee.fee;
+      } else if (highestFee.type === 'freeship') {
+        freeshipXtraFee = highestFee.fee;
       }
     } else {
-      // Chỉ 1 trong 2 được chọn - tính bình thường
+      // Chỉ 1 dịch vụ được chọn - tính bình thường
       if (input.contentXtra) {
-        const contentXtraFeePercent = sellingPrice * (fees.CONTENT_XTRA_FEE_PERCENT / 100);
-        if (input.shopeeType === 'mall') {
-          contentXtraFee = Math.min(contentXtraFeePercent, fees.CONTENT_XTRA_FEE_MAX);
-        } else {
-          contentXtraFee = contentXtraFeePercent; // Regular tính theo %
-        }
+        contentXtraFee = contentXtraFeeCalculated;
       }
       
       if (input.voucherXtra) {
-        voucherXtraFee = sellingPrice * (fees.VOUCHER_XTRA_FEE_PERCENT / 100);
+        voucherXtraFee = voucherXtraFeePercent;
+      }
+      
+      if (input.freeshipXtra && input.shopeeType === 'mall') {
+        freeshipXtraFee = freeshipXtraFeeCalculated;
       }
     }
     const infrastructureFee = fees.INFRASTRUCTURE_FEE;
@@ -166,7 +193,7 @@ export function calculateSellingPrice(input: CalculationInput): CalculationResul
 
     // Tính tổng chi phí
     const totalCost = input.cogs + productFee + paymentFee + shippingCost + 
-                     contentXtraFee + voucherXtraFee + infrastructureFee + 
+                     contentXtraFee + voucherXtraFee + freeshipXtraFee + infrastructureFee + 
                      vatFee + marketingCost;
 
     // Tính lợi nhuận thực tế
@@ -180,6 +207,7 @@ export function calculateSellingPrice(input: CalculationInput): CalculationResul
       shippingCost,
       contentXtraFee,
       voucherXtraFee,
+      freeshipXtraFee,
       infrastructureFee,
       vatFee,
       marketingCost,
@@ -212,22 +240,33 @@ function calculateTotalFeePercent(input: CalculationInput, fees: typeof FIXED_FE
                        fees.VAT_PERCENT +
                        input.desiredProfitPercent;
 
-  // Logic tính phí Xtra - chỉ tính phí cao hơn nếu cả 2 được chọn
-  if (input.contentXtra && input.voucherXtra) {
-    // Cả 2 được chọn - chỉ tính phí cao hơn
-    const contentXtraFeePercent = fees.CONTENT_XTRA_FEE_PERCENT;
-    const voucherXtraFeePercent = fees.VOUCHER_XTRA_FEE_PERCENT;
+  // Logic tính phí Xtra - chỉ tính phí cao nhất nếu nhiều dịch vụ được chọn
+  const selectedServices = [
+    input.contentXtra, 
+    input.voucherXtra, 
+    input.freeshipXtra && input.shopeeType === 'mall'
+  ].filter(Boolean).length;
+  
+  if (selectedServices > 1) {
+    // Nhiều dịch vụ được chọn - chỉ tính phí cao nhất
+    const feePercentages = [];
+    if (input.contentXtra) feePercentages.push(fees.CONTENT_XTRA_FEE_PERCENT);
+    if (input.voucherXtra) feePercentages.push(fees.VOUCHER_XTRA_FEE_PERCENT);
+    if (input.freeshipXtra && input.shopeeType === 'mall') feePercentages.push(fees.FREESHIP_XTRA_FEE_PERCENT);
     
-    // Chọn phí cao hơn
-    totalFeePercent += Math.max(contentXtraFeePercent, voucherXtraFeePercent);
+    totalFeePercent += Math.max(...feePercentages);
   } else {
-    // Chỉ 1 trong 2 được chọn - tính bình thường
+    // Chỉ 1 dịch vụ được chọn - tính bình thường
     if (input.contentXtra) {
       totalFeePercent += fees.CONTENT_XTRA_FEE_PERCENT;
     }
 
     if (input.voucherXtra) {
       totalFeePercent += fees.VOUCHER_XTRA_FEE_PERCENT;
+    }
+    
+    if (input.freeshipXtra && input.shopeeType === 'mall') {
+      totalFeePercent += fees.FREESHIP_XTRA_FEE_PERCENT;
     }
   }
 
@@ -248,6 +287,7 @@ function getEmptyResult(): Omit<CalculationResult, 'isValid' | 'errorMessage'> {
     shippingCost: 0,
     contentXtraFee: 0,
     voucherXtraFee: 0,
+    freeshipXtraFee: 0,
     infrastructureFee: 0,
     vatFee: 0,
     marketingCost: 0,
