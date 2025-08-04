@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
+import { accounts, AUTH_TOKEN_KEY, USER_INFO_KEY } from '../constants/accounts';
 
 const Login: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isSignUp, setIsSignUp] = useState(false);
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
     document.title = t('login.title');
@@ -19,14 +25,24 @@ const Login: React.FC = () => {
 
   const handleSignUpSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Xử lý đăng ký
-    console.log('Sign up form submitted');
+    setError(t('login.signUpDisabled'));
   };
 
   const handleSignInSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Xử lý đăng nhập
-    console.log('Sign in form submitted');
+    const account = accounts.find(acc => acc.username === username && acc.password === password);
+    
+    if (account) {
+      // Tạo token đơn giản (trong thực tế nên dùng JWT)
+      const token = btoa(JSON.stringify({ username: account.username, role: account.role }));
+      localStorage.setItem(AUTH_TOKEN_KEY, token);
+      localStorage.setItem(USER_INFO_KEY, JSON.stringify(account));
+      
+      // Redirect về trang chủ
+      navigate('/');
+    } else {
+      setError(t('login.invalidCredentials'));
+    }
   };
 
   return (
@@ -48,9 +64,19 @@ const Login: React.FC = () => {
               </a>
             </div>
             <span>{t('login.orUseEmail')}</span>
-            <input type="text" placeholder={t('login.name')} />
-            <input type="email" placeholder={t('login.email')} />
-            <input type="password" placeholder={t('login.password')} />
+            <input 
+              type="text" 
+              placeholder={t('login.username')} 
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            <input 
+              type="password" 
+              placeholder={t('login.password')} 
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            {error && <div className="error-message">{error}</div>}
             <button type="submit">{t('login.signUp')}</button>
             <button type="button" className="mobile-switch-btn" onClick={handleSignInClick}>
               {t('login.signInButton')}
@@ -74,8 +100,19 @@ const Login: React.FC = () => {
               </a>
             </div>
             <span>{t('login.orUseAccount')}</span>
-            <input type="email" placeholder={t('login.email')} />
-            <input type="password" placeholder={t('login.password')} />
+            <input 
+              type="text" 
+              placeholder={t('login.username')} 
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            <input 
+              type="password" 
+              placeholder={t('login.password')} 
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            {error && <div className="error-message">{error}</div>}
             <a href="/">{t('login.forgotPassword')}</a>
             <button type="submit">{t('login.signInButton')}</button>
             <button type="button" className="mobile-switch-btn" onClick={handleSignUpClick}>

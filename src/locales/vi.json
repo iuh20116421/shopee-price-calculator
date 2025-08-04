@@ -229,18 +229,20 @@
     "title": "Đăng nhập | Tuki Group",
     "createAccount": "Tạo tài khoản",
     "signIn": "Đăng nhập",
-    "name": "Họ và tên",
-    "email": "Email",
+    "username": "Tên đăng nhập",
     "password": "Mật khẩu",
     "forgotPassword": "Quên mật khẩu?",
     "signUp": "Đăng ký",
     "welcomeBack": "Chào mừng trở lại!",
-    "welcomeMessage": "Để kết nối với chúng tôi, hãy đăng nhập bằng thông tin cá nhân của bạn",
+    "welcomeMessage": "Để kết nối với chúng tôi, hãy đăng nhập bằng thông tin tài khoản của bạn",
     "helloFriend": "Xin chào, bạn!",
-    "startJourney": "Nhập thông tin cá nhân của bạn và bắt đầu với Tuki Group",
-    "orUseEmail": "hoặc sử dụng email để đăng ký",
+    "startJourney": "Nhập thông tin tài khoản của bạn và bắt đầu với Tuki Group",
+    "orUseEmail": "hoặc sử dụng tài khoản để đăng ký",
     "orUseAccount": "hoặc sử dụng tài khoản của bạn",
     "signInButton": "Đăng nhập",
-    "signUpButton": "Đăng ký"
+    "signUpButton": "Đăng ký",
+    "signOut": "Đăng xuất",
+    "invalidCredentials": "Tên đăng nhập hoặc mật khẩu không đúng",
+    "signUpDisabled": "Chức năng đăng ký tạm thời không khả dụng"
   }
 } 
