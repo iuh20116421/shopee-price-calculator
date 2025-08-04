@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, Calculator, Home, ChevronDown, ShoppingBag, BookOpen, FileText, Users, LogOut, User } from 'lucide-react';
+import { Menu, Calculator, Home, ChevronDown, ShoppingBag, BookOpen, FileText, Users } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 import ConsultationPopup from './ConsultationPopup';
 import logoImage from '../assets/images/logos.png';
@@ -12,7 +12,6 @@ const Header: React.FC = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [userName, setUserName] = useState('');
   const location = useLocation();
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
@@ -22,11 +21,8 @@ const Header: React.FC = () => {
     const userInfo = localStorage.getItem(USER_INFO_KEY);
     if (token && userInfo) {
       setIsAuthenticated(true);
-      const user = JSON.parse(userInfo);
-      setUserName(user.name);
     } else {
       setIsAuthenticated(false);
-      setUserName('');
     }
   }, [location.pathname]); // Re-check when route changes
 
@@ -54,7 +50,6 @@ const Header: React.FC = () => {
     localStorage.removeItem(AUTH_TOKEN_KEY);
     localStorage.removeItem(USER_INFO_KEY);
     setIsAuthenticated(false);
-    setUserName('');
     navigate(i18n.language === 'en' ? '/login' : '/dang-nhap');
   };
 

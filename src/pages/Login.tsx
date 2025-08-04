@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { accounts, AUTH_TOKEN_KEY, USER_INFO_KEY } from '../constants/accounts';
 
 const Login: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [isSignUp, setIsSignUp] = useState(false);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
