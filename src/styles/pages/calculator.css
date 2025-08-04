@@ -22,14 +22,14 @@
   background: linear-gradient(135deg, #F30404, #860404);
   color: white;
   text-align: center;
-  padding: 30px;
+  padding: 10px;
   position: relative;
 }
 
 .calculator-header h1 {
   font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-weight: 620;
+  margin-bottom: 1px;
   position: relative;
   z-index: 1;
   display: flex;
@@ -67,11 +67,11 @@
 /* Form Section Styles */
 .form-section {
   background: white;
-  padding: 28px;
+  padding: 16px;
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
   border: 1px solid rgba(0, 0, 0, 0.03);
-  margin-bottom: 24px;
+  margin-bottom: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 0;
 }
@@ -403,6 +403,9 @@ input:focus, select:focus {
 .consultation-btn.facebook {
   background: linear-gradient(135deg, #0068FF, #6401cf);
   box-shadow: 0 10px 30px rgba(66, 103, 178, 0.3);
+  width: 150px;
+  border-radius: 10px;
+  margin: 0px 10px 10px 0px;
 }
 
 .consultation-btn.facebook:hover {
@@ -410,8 +413,11 @@ input:focus, select:focus {
 }
 
 .consultation-btn.zalo {
-  background: linear-gradient(135deg, #0068FF, #0052CC);
+  background: linear-gradient(135deg, #ff5d00, #b80f0f);
   box-shadow: 0 10px 30px rgba(0, 104, 255, 0.3);
+  width: 150px;
+  border-radius: 10px;
+  margin: 0px 0px 10px 10px;
 }
 
 .consultation-btn.zalo:hover {
@@ -446,7 +452,7 @@ input:focus, select:focus {
 .result-header {
   background: linear-gradient(135deg, #880E4F, #363B87);
   color: white;
-  padding: 25px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -465,20 +471,20 @@ input:focus, select:focus {
 }
 
 .result-content {
-  padding: 30px;
+  padding: 10px;
 }
 
 .result-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  gap: 20px;
 }
 
 .result-card {
   background: #f8f9fa;
   padding: 25px;
   border-radius: 12px;
-  border-left: 4px solid #F30404;
+  /* border-left: 4px solid #F30404; */
 }
 
 .result-card h3 {
@@ -497,11 +503,15 @@ input:focus, select:focus {
 }
 
 .result-table {
+  background-color: aliceblue;
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   margin-top: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   overflow: hidden;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .result-table th,
@@ -511,14 +521,36 @@ input:focus, select:focus {
   border-bottom: 1px solid #e9ecef;
 }
 
-.result-table {
-  border: 1px solid #e9ecef;
+.result-table th {
+  background: linear-gradient(135deg, #306ffa 0%, #b768ff);
+  color: white;
+  font-weight: 700;
+  font-size: 0.80rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 10px 12px;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  border: none;
 }
 
-.result-table th {
-  background: #34495e;
-  color: white;
-  font-weight: 600;
+.result-table th::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+  pointer-events: none;
+}
+
+.result-table th:first-child {
+  border-top-left-radius: 8px;
+}
+
+.result-table th:last-child {
+  border-top-right-radius: 8px;
 }
 
 .result-table tr:hover {
@@ -544,7 +576,7 @@ input:focus, select:focus {
 }
 
 .final-price-row {
-  background: #e8f5e8;
+  background: #cafff5;
 }
 
 /* Product Search Styles */
@@ -563,8 +595,7 @@ input:focus, select:focus {
 
 .search-icon {
   position: absolute;
-  right: 18px;
-  left: 900px;
+  right: 50px;
   top: 50%;
   transform: translateY(-50%);
   color: #6b7280;
@@ -576,7 +607,7 @@ input:focus, select:focus {
 
 .search-input {
   width: 100%;
-  padding: 16px 20px 16px 52px;
+  padding: 16px 50px 16px 52px;
   border: 2px solid #e9ecef;
   border-radius: 12px;
   font-size: 1.1rem;
@@ -821,14 +852,14 @@ input:focus, select:focus {
 .settings-cost-layout {
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap:5px;
   z-index: 0;
 }
 
 .settings-section,
 .cost-section {
   background: #f8f9fa;
-  padding: 30px;
+  padding: 15px;
   border-radius: 15px;
   border: 1px solid #e9ecef;
   width: 100%;
@@ -841,7 +872,7 @@ input:focus, select:focus {
   display: flex;
   align-items: center;
   gap: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 2px;
   width: 100%;
   overflow: visible;
   min-width: 0;
@@ -943,13 +974,13 @@ input:focus, select:focus {
 .calculate-button-container {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .calculate-button-container .calculate-btn {
   width: 100%;
-  max-width: 400px;
-  padding: 20px 40px;
+  max-width: 280px;
+  padding: 13px 15px;
   font-size: 1.3rem;
   font-weight: 600;
   background: linear-gradient(to bottom, #0991ED, #002095);
@@ -1100,8 +1131,16 @@ input:focus, select:focus {
 
   .consultation-btn {
     display: block;
-    margin: 10px 0;
+    margin: 15px auto;
     text-align: center;
+  }
+
+  .consultation-btn.facebook,
+  .consultation-btn.zalo {
+    width: 80%;
+    max-width: 280px;
+    margin: 8px auto;
+    border-radius: 12px;
   }
 
   .radio-group,
@@ -1346,8 +1385,11 @@ input:focus, select:focus {
   
   .result-table th {
     font-size: 0.8rem;
-    padding: 8px 4px;
-    font-weight: 600;
+    padding: 8px 6px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #306ffa 0%, #b768ff);
+    box-shadow: 0 2px 6px rgba(97, 4, 4, 0.25);
   }
   
   /* Make table scrollable on mobile */
@@ -1409,7 +1451,7 @@ input:focus, select:focus {
     position: sticky;
     top: 0;
     z-index: 10;
-    background: #34495e;
+    background: linear-gradient(135deg, #610404 0%, #2222cd 100%);
   }
   
   .highlight-value {
@@ -1502,21 +1544,30 @@ input:focus, select:focus {
   .consultation-btn {
     padding: 10px 16px;
     font-size: 0.9rem;
-    margin: 1px 0;
+    margin: 5px 0;
     display: block;
     width: 100%;
     text-align: center;
     font-weight: 600;
   }
+
+  .consultation-btn.facebook,
+  .consultation-btn.zalo {
+    width: 90%;
+    max-width: 250px;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 12px 16px;
+  }
   
   /* Product search mobile */
   .search-input {
-    padding: 10px 12px 10px 40px;
+    padding: 10px 50px 10px 40px;
     font-size: 0.9rem;
   }
   
   .search-icon {
-    right: 10px;
+    right: 20px;
     width: 14px;
     height: 14px;
   }
@@ -1755,6 +1806,15 @@ input:focus, select:focus {
     padding: 8px 12px;
     font-size: 0.8rem;
     font-weight: 600;
+  }
+
+  .consultation-btn.facebook,
+  .consultation-btn.zalo {
+    width: 95%;
+    max-width: 220px;
+    margin: 4px auto;
+    border-radius: 8px;
+    padding: 10px 12px;
   }
   
   .header-icon {

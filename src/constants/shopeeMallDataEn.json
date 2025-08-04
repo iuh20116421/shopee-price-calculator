@@ -99,254 +99,524 @@
       "Fish Food": "6.87%",
       "Bird Food": "6.87%",
       "Cat Food": "6.87%",
+      "Cat Snacks": "6.87%",
       "Dog Food": "6.87%",
+      "Dog Snacks": "6.87%",
+      "Others": "6.87%",
+      "Reptile Food": "6.87%",
       "Small Pet Food": "6.87%",
-      "Others": "6.87%"
+      "Small Pet Snacks": "6.87%"
     },
     "Pet Grooming": {
-      "Pet Shampoo": "6.87%",
-      "Pet Brushes": "6.87%",
-      "Pet Nail Clippers": "6.87%",
-      "Pet Toothpaste": "6.87%",
+      "Nail Care": "6.87%",
+      "Fur Care": "6.87%",
+      "Dental Care": "6.87%",
       "Others": "6.87%"
     },
     "Pet Health Care": {
-      "Pet Vitamins": "6.87%",
+      "Deworming & Flea Control": "6.87%",
       "Pet Medicine": "6.87%",
-      "Pet Supplements": "6.87%",
+      "Others": "6.87%",
+      "Vitamins & Supplements": "6.87%"
+    }
+  },
+  "Mobile Phones & Accessories": {
+    "Accessories": {
+      "Cables, Chargers & Adapters": {
+        "Cable Organizers & Cable Protection": "6.38%",
+        "Chargers": "6.38%",
+        "Charging Stands": "6.38%",
+        "Cables & Mobile Adapters": "6.38%",
+        "Others": "6.38%",
+        "Travel Chargers": "6.38%"
+      },
+      "Cases, Covers & Screen Protectors": {
+        "Others": "6.38%",
+        "Phone Cases & Screen Protectors": "6.38%",
+        "Tablet Cases & Screen Protectors": "6.38%"
+      },
+      "Projectors": "6.38%",
+      "Memory Cards": "6.38%",
+      "Phone Flash & Selfie Lights": "6.38%",
+      "Phone Lenses": "6.38%",
+      "Phone Bags": "6.38%",
+      "Others": "6.38%",
+      "Phone Holders": "6.38%",
+      "Phone Straps & Charms": "6.38%",
+      "Portable WiFi": "6.38%",
+      "Power Banks & Batteries": {
+        "Batteries": "6.38%",
+        "Others": "6.38%",
+        "Power Banks": "6.38%",
+        "Power Bank Cases": "6.38%"
+      },
+      "Screen Protectors": "6.38%",
+      "Selfie Accessories": {
+        "Phone Stands": "6.38%",
+        "Others": "6.38%",
+        "Bluetooth Remote Controls": "6.38%",
+        "Selfie Sticks": "6.38%"
+      },
+      "Stylus Pens": "6.38%",
+      "USB Fans & Phone Fans": "6.38%",
+      "USB Lights & Phone Lights": "6.38%",
+      "Smartwatch Accessories": "6.38%"
+    },
+    "Mobile Phones": "1.47%",
+    "Others": "6.38%",
+    "SIM Cards": "6.38%",
+    "Tablets": "1.47%",
+    "Walkie Talkies": "6.38%",
+    "Wearable Technology": {
+      "GPS Devices": "6.38%",
+      "Others": "6.38%",
+      "Smartwatches & Fitness Trackers": "6.38%",
+      "VR Devices": "6.38%"
+    }
+  },
+  "Watches": {
+    "Men's Watches": "6.87%",
+    "Others": "6.87%",
+    "Watch Sets & Couple Watches": "6.87%",
+    "Watch Accessories": {
+      "Watch Batteries": "6.87%",
+      "Watch Boxes": "6.87%",
+      "Watch Clasps": "6.87%",
+      "Others": "6.87%",
+      "Repair Tools": "6.87%",
+      "Watch Bands": "6.87%"
+    },
+    "Women's Watches": "6.87%"
+  },
+  "Travel & Luggage": {
+    "Luggage": "6.87%",
+    "Others": "6.87%",
+    "Travel Accessories": {
+      "Luggage Locks": "7.95%",
+      "Luggage Covers": "7.95%",
+      "Luggage Scales": "7.95%",
+      "Luggage Straps": "7.95%",
+      "Luggage Tags": "7.95%",
+      "Other Accessories": "7.95%",
+      "Passport Holders": "7.95%",
+      "Travel Organizers": "7.95%",
+      "Travel Pillows & Eye Masks": "7.95%",
+      "Travel Bottles": "7.95%"
+    },
+    "Travel Bags": {
+      "Drawstring Bags": "7.95%",
+      "Duffel Bags": "7.95%",
+      "Foldable Bags": "7.95%",
+      "Other Bags": "7.95%"
+    }
+  },
+  "Gaming & Console": {
+    "Console Accessories": "6.87%",
+    "Gaming Consoles": {
+      "Gameboy": "6.38%",
+      "Nintendo DS": "6.38%",
+      "Others": "6.38%",
+      "Playstation": "6.38%",
+      "PS Vita": "6.38%",
+      "PSP": "6.38%",
+      "Switch": "6.38%",
+      "Wii": "6.38%",
+      "Xbox": "6.38%"
+    },
+    "Others": "6.87%",
+    "Video Games": {
+      "Gameboy Games": "6.87%",
+      "Nintendo DS Games": "6.87%",
+      "Other Console Games": "6.87%",
+      "PC Games": "6.87%",
+      "Playstation Games": "6.87%",
+      "PS Vita Games": "6.87%",
+      "PSP Games": "6.87%",
+      "Switch Games": "6.87%",
+      "Wii Games": "6.87%",
+      "Xbox Games": "6.87%"
+    }
+  },
+  "Men's Shoes": {
+    "Boots": {
+      "Fashion Boots": "6.87%",
+      "Others": "6.87%",
+      "Rain Boots": "6.87%",
+      "Work Boots": "6.87%"
+    },
+    "Loafers": "6.87%",
+    "Others": "6.87%",
+    "Oxfords & Dress Shoes": "6.87%",
+    "Sandals & Slippers": {
+      "Flip Flops": "6.87%",
+      "Massage Slippers": "6.87%",
+      "House Slippers": "6.87%",
+      "Others": "6.87%",
+      "Sandals": "6.87%"
+    },
+    "Shoe Accessories": {
+      "Others": "6.87%",
+      "Shoe Care & Cleaning": "6.87%",
+      "Shoe Deodorizers": "6.87%",
+      "Shoe Trees & Shapers": "6.87%",
+      "Insoles": "6.87%",
+      "Shoelaces": "6.87%"
+    },
+    "Slip-ons": "6.87%",
+    "Sneakers": "6.87%"
+  },
+  "Women's Shoes": {
+    "Boots": {
+      "Fashion Boots": "6.87%",
+      "Others": "6.87%",
+      "Rain Boots": "6.87%"
+    },
+    "Sandals & Slippers": {
+      "Flat Sandals": "6.87%",
+      "Flip Flops": "6.87%",
+      "Massage Slippers": "6.87%",
+      "House Slippers": "6.87%",
       "Others": "6.87%"
-    }
+    },
+    "Flats": {
+      "Ballet Flats": "6.87%",
+      "Loafers": "6.87%",
+      "Others": "6.87%",
+      "Oxfords & Lace-ups": "6.87%",
+      "Slip-ons & Ballet Shoes": "6.87%"
+    },
+    "High Heels": "6.87%",
+    "Others": "6.87%",
+    "Shoe Accessories & Care": {
+      "Insoles": "6.87%",
+      "Others": "6.87%",
+      "Shoe Care & Cleaning": "6.87%",
+      "Shoe Deodorizers": "6.87%",
+      "Shoe Trees & Shapers": "6.87%",
+      "Shoelaces": "6.87%"
+    },
+    "Sneakers": "6.87%",
+    "Wedges": "6.87%"
   },
-  "Mother & Baby": {
-    "Baby Safety": {
-      "Baby Monitors": "10.80%",
-      "Baby Safety Gates": "10.80%",
-      "Baby Safety Locks": "10.80%",
-      "Others": "10.80%"
+  "Computers & Laptops": {
+    "Storage Devices": {
+      "CDs": "6.38%",
+      "USB & OTG": "6.38%",
+      "Hard Drive Enclosures": "6.38%",
+      "External Hard Drives": "6.38%",
+      "Network Storage (NAS)": "6.38%",
+      "Others": "6.38%",
+      "SSD Drives": "6.38%"
     },
-    "Baby Bath & Body Care": {
-      "Baby Bath Tubs": "8.84%",
-      "Baby Body Care": "8.84%",
-      "Baby Hair Care": "8.84%",
-      "Baby Skin Care": "8.84%",
-      "Others": "8.84%"
+    "Computer Components": {
+      "Fans & Cooling": "6.38%",
+      "Graphics Cards": "6.38%",
+      "Motherboards": "6.38%",
+      "Optical Drives": "6.38%",
+      "Others": "6.38%",
+      "Computer Cases": "6.38%",
+      "Power Supplies": "6.38%",
+      "Processors (CPU)": "6.38%",
+      "RAM": "6.38%",
+      "Sound Cards": "6.38%",
+      "Thermal Paste": "6.38%",
+      "UPS": "6.38%"
     },
-    "Baby Feeding": {
-      "Baby Bottles": "10.31%",
-      "Baby Food": "10.31%",
-      "Baby Utensils": "10.31%",
-      "Others": "10.31%"
+    "Desktop Computers": {
+      "All-in-One PCs": "1.96%",
+      "Desktop PC Sets": "1.96%",
+      "Mini PCs": "1.96%",
+      "Others": "1.96%",
+      "Servers": "1.96%"
     },
-    "Mother Accessories": {
-      "Breastfeeding Accessories": "10.31%",
-      "Maternity Clothing": "10.31%",
-      "Others": "10.31%"
-    },
-    "Gift Sets": {
-      "Baby Gift Sets": "10.80%",
-      "Mother Gift Sets": "10.80%",
-      "Others": "10.80%"
-    },
-    "Baby Bedroom": {
-      "Baby Bedding": "10.31%",
-      "Baby Furniture": "10.31%",
-      "Others": "10.31%"
-    },
-    "Mother Health Care": {
-      "Maternity Vitamins": "10.31%",
-      "Pregnancy Care": "10.31%",
-      "Others": "10.31%"
-    },
-    "Baby Health Care": {
-      "Baby Medicine": "8.84%",
-      "Baby Vitamins": "8.84%",
-      "Others": "8.84%"
-    },
-    "Baby Diapers": {
-      "Baby Diapers": "8.84%",
-      "Baby Wipes": "8.84%",
-      "Others": "8.84%"
-    },
-    "Baby Formula": {
-      "Baby Formula": "8.84%",
-      "Baby Food": "8.84%",
-      "Others": "8.84%"
-    }
-  },
-  "Electronics": {
-    "Mobile Phones & Accessories": {
-      "Mobile Phones": "1.47%",
-      "Mobile Accessories": "6.38%",
-      "Tablets": "1.47%",
-      "Smart Watches": "6.38%",
+    "Mouse & Keyboards": {
+      "Graphics Tablets": "6.38%",
+      "Computer Keyboards": "6.38%",
+      "Computer Mice": "6.38%",
       "Others": "6.38%"
     },
-    "Computers & Laptops": {
-      "Laptops": "1.47%",
-      "Desktop Computers": "1.47%",
-      "Computer Accessories": "6.87%",
-      "Computer Parts": "6.87%",
-      "Software": "7.85%",
-      "Others": "6.87%"
+    "Laptops": "1.96%",
+    "Monitors": "6.38%",
+    "Networking Equipment": {
+      "KVM Switches": "6.38%",
+      "Routers": "6.38%",
+      "Computer Cables": "6.38%",
+      "Network Switches": "6.38%",
+      "Others": "6.38%",
+      "Network Adapters": "6.38%",
+      "Print Servers": "6.38%",
+      "WiFi Extenders": "6.38%",
+      "USB WiFi Adapters": "6.38%"
     },
-    "Audio Equipment": {
-      "Headphones": "7.85%",
-      "Speakers": "7.85%",
-      "Microphones": "7.85%",
-      "Others": "6.87%"
+    "Office Equipment": {
+      "Time Clocks": "6.87%",
+      "Money Counters": "6.87%",
+      "Others": "6.87%",
+      "Paper Shredders": "6.87%",
+      "Typewriters": "6.87%"
     },
-    "Home Appliances": {
-      "Kitchen Appliances": "7.85%",
-      "Small Appliances": "6.87%",
-      "Large Appliances": "6.87%",
-      "TVs & Accessories": "6.87%",
-      "Others": "6.87%"
+    "Other Computer Accessories": "6.38%",
+    "Computer Accessories": {
+      "Laptop Cooling Pads": "6.38%",
+      "Keyboard Stickers": "6.38%",
+      "Laptop Batteries": "6.38%",
+      "Laptop Chargers": "6.38%",
+      "Laptop Skins & Cases": "6.38%",
+      "Laptop Stands": "6.38%",
+      "Mouse Pads": "6.38%",
+      "Others": "6.38%",
+      "USB Hubs & Card Readers": "6.38%",
+      "Video Conferencing Equipment": "6.38%",
+      "Webcams": "6.38%"
+    },
+    "Printers & Scanners": {
+      "3D Printers": "6.38%",
+      "Ink & Cartridges": "6.38%",
+      "Others": "6.38%",
+      "Printers, Scanners & Copiers": "6.38%",
+      "Barcode Printers": "6.38%"
+    },
+    "Software": "6.38%"
+  },
+  "Mother & Baby": {
+    "Baby Travel Accessories": {
+      "Diaper Bags": "6.87%"
+    },
+    "Baby Feeding": {
+      "Bibs": "7.95%",
+      "Baby Bottles": {
+        "Bottle Cleaning Tools": "7.95%",
+        "Bottle Warmers": "7.95%",
+        "Baby Bottles & Accessories": "7.95%",
+        "Others": "7.95%",
+        "Bottle Sterilizers": "7.95%",
+        "Bottle Warmers": "7.95%"
+      },
+      "Breastfeeding Accessories": {
+        "Breast Pads": "7.95%",
+        "Breast Pumps & Accessories": "7.95%",
+        "Milk Storage Bags": "7.95%",
+        "Nursing Covers": "7.95%",
+        "Others": "7.95%"
+      },
+      "Food Processors": "7.95%",
+      "High Chairs": "7.95%",
+      "Others": "7.95%",
+      "Pacifiers": "7.95%",
+      "Baby Tableware": {
+        "Cups & Bottles": "7.95%",
+        "Food Storage": "7.95%",
+        "Baby Utensils": "7.95%",
+        "Others": "7.95%"
+      }
+    },
+    "Gift Sets": "7.95%",
+    "Mother Accessories": {
+      "Maternity Pillows": "7.95%",
+      "Others": "7.95%",
+      "Support Belts": "7.95%"
+    },
+    "Mother Health Care": {
+      "Vitamins & Supplements": "7.95%",
+      "Moisturizers": "7.95%"
+    },
+    "Baby Bedroom": {
+      "Cribs & Beds": "7.95%",
+      "Bedding": {
+        "Bed Sheets": "7.95%",
+        "Blankets & Swaddles": "7.95%",
+        "Others": "7.95%",
+        "Pillows": "7.95%"
+      },
+      "Storage & Furniture": "7.95%"
+    },
+    "Toys": {
+      "Baby & Toddler Toys": {
+        "Playpens": "6.87%",
+        "Teething Toys": "6.87%"
+      },
+      "Baby Health Care": {
+        "Oral Care": "5.30%",
+        "Skin Care": {
+          "Others": "5.30%"
+        },
+        "Others": "5.30%"
+      },
+      "Baby Safety": {
+        "Safety Gates": "7.85%",
+        "Crib Bumpers & Guards": "7.85%",
+        "Corner Guards": "7.85%",
+        "Baby Monitors": "7.85%",
+        "Mosquito Nets": "7.85%",
+        "Others": "7.85%",
+        "Safety Locks & Straps": "7.85%"
+      }
     }
   },
-  "Fashion": {
-    "Men's Clothing": {
-      "Men's Shirts": "6.87%",
-      "Men's Pants": "6.87%",
-      "Men's Jackets": "6.87%",
-      "Others": "6.87%"
+  "Beauty": {
+    "Bath & Body Care": {
+      "Body Lotions & Creams": "7.95%",
+      "Body Deodorants": "7.95%",
+      "Body Masks": "7.95%",
+      "Body Oils": "7.95%",
+      "Body Scrubs": "7.95%",
+      "Soaps & Body Wash": "7.95%",
+      "Breast Care": "7.95%",
+      "Hair Removal": "7.95%",
+      "Massage Oils": "7.95%",
+      "Others": "7.95%",
+      "Sun Care": {
+        "Sunscreen & After Sun Care": "7.95%",
+        "Others": "7.95%",
+        "Tanning Products": "7.95%"
+      }
     },
-    "Women's Clothing": {
-      "Women's Dresses": "6.87%",
-      "Women's Tops": "6.87%",
-      "Women's Pants": "6.87%",
-      "Others": "6.87%"
-    },
-    "Shoes": {
-      "Men's Shoes": "6.87%",
-      "Women's Shoes": "6.87%",
-      "Sports Shoes": "6.87%",
-      "Others": "6.87%"
-    },
-    "Bags": {
-      "Handbags": "6.87%",
-      "Backpacks": "6.87%",
-      "Wallets": "6.87%",
-      "Others": "6.87%"
-    }
-  },
-  "Beauty & Health": {
-    "Skincare": {
-      "Facial Cleansers": "8.84%",
-      "Moisturizers": "8.84%",
-      "Sunscreen": "8.84%",
-      "Others": "8.84%"
-    },
-    "Makeup": {
-      "Foundation": "8.84%",
-      "Lipstick": "8.84%",
-      "Eye Makeup": "8.84%",
-      "Others": "8.84%"
+    "Beauty Gift Sets": "7.95%",
+    "Beauty Tools": {
+      "Body Slimming Tools": "7.95%",
+      "Face Care Tools": {
+        "Cleansing Tools": "7.95%",
+        "Face Massage Tools": "7.95%",
+        "Facial Steamers": "7.95%",
+        "Others": "7.95%"
+      },
+      "Hair Removal Tools": "7.95%",
+      "Hair Care Tools": {
+        "Hair Brushes": "7.95%",
+        "Hair Dryers": "7.95%",
+        "Hair Styling Tools": "7.95%",
+        "Heat-Free Hair Tools": "7.95%",
+        "Others": "7.95%"
+      },
+      "Makeup Tools": {
+        "Cotton Pads": "7.95%",
+        "Eyebrow Stencils": "7.95%",
+        "Eyelash Curlers": "7.95%",
+        "Eyelid Tape & Glue": "7.95%",
+        "False Eyelashes": "7.95%",
+        "Makeup Bags": "7.95%",
+        "Brush Cleaners": "7.95%",
+        "Makeup Brushes": "7.95%",
+        "Mirrors": "7.95%",
+        "Others": "7.95%",
+        "Pencil Sharpeners": "7.95%",
+        "Makeup Sponges": "7.95%"
+      },
+      "Others": "7.95%"
     },
     "Hair Care": {
-      "Shampoo": "8.84%",
-      "Conditioner": "8.84%",
-      "Hair Styling": "8.84%",
-      "Others": "8.84%"
+      "Conditioners": "7.95%",
+      "Hair Color": "7.95%",
+      "Hair Styling": "7.95%",
+      "Hair Treatments": "7.95%",
+      "Others": "7.95%",
+      "Shampoos": "7.95%"
     },
-    "Health Care": {
-      "Vitamins": "8.84%",
-      "Medicine": "8.84%",
-      "Medical Devices": "8.84%",
-      "Others": "8.84%"
-    }
-  },
-  "Sports & Outdoor": {
-    "Sports Equipment": {
-      "Fitness Equipment": "6.87%",
-      "Team Sports": "6.87%",
-      "Individual Sports": "6.87%",
-      "Others": "6.87%"
+    "Hand, Foot & Nail Care": {
+      "Foot Care": {
+        "Foot Deodorizers": "7.95%",
+        "Foot Masks": "7.95%",
+        "Foot Creams & Oils": "7.95%",
+        "Others": "7.95%"
+      },
+      "Hand Care": {
+        "Hand Masks": "7.95%",
+        "Hand Soaps": "7.95%",
+        "Hand Creams & Oils": "7.95%",
+        "Others": "7.95%"
+      },
+      "Nail Care": {
+        "Fake Nails": "7.95%",
+        "Base & Top Coats": "7.95%",
+        "Nail Tools": "7.95%",
+        "Nail Stickers": "7.95%",
+        "Nail Gel": "7.95%",
+        "Nail Polish": "7.95%",
+        "Nail Polish Removers": "7.95%",
+        "Nail Treatments": "7.95%",
+        "Others": "7.95%"
+      },
+      "Others": "7.95%"
     },
-    "Outdoor Activities": {
-      "Camping": "6.87%",
-      "Hiking": "6.87%",
-      "Fishing": "6.87%",
-      "Others": "6.87%"
+    "Makeup": {
+      "Eye Makeup": {
+        "Eye Primers": "7.95%",
+        "Eyebrow Products": "7.95%",
+        "Eyeliners": "7.95%",
+        "Eyeshadows": "7.95%",
+        "Mascaras": "7.95%",
+        "Others": "7.95%"
+      },
+      "Face Makeup": {
+        "BB & CC Creams": "7.95%",
+        "Blush": "7.95%",
+        "Contouring & Highlighting": "7.95%",
+        "Concealers": "7.95%",
+        "Foundations": "7.95%",
+        "Face Primers": "7.95%",
+        "Others": "7.95%",
+        "Face Powders": "7.95%",
+        "Setting Sprays": "7.95%"
+      },
+      "Lip Makeup": {
+        "Lip Gloss": "7.95%",
+        "Lip Liners": "7.95%",
+        "Lip Plumpers": "7.95%",
+        "Lip Tints": "7.95%",
+        "Lipsticks": "7.95%",
+        "Others": "7.95%"
+      },
+      "Makeup Removers": "7.95%",
+      "Others": "7.95%"
     },
-    "Sports Clothing": {
-      "Sports Shirts": "6.87%",
-      "Sports Pants": "6.87%",
-      "Sports Shoes": "6.87%",
-      "Others": "6.87%"
-    }
-  },
-  "Home & Living": {
-    "Furniture": {
-      "Living Room": "6.87%",
-      "Bedroom": "6.87%",
-      "Kitchen": "6.87%",
-      "Others": "6.87%"
+    "Men's Care": {
+      "Body Wash & Care": "7.95%",
+      "Hair Care": "7.95%",
+      "Others": "7.95%",
+      "Shaving & Hair Removal": {
+        "After Shave Care": "7.95%",
+        "Shaving Creams & Gels": "7.95%",
+        "Others": "7.95%",
+        "Razors": "7.95%",
+        "Electric Shavers": "7.95%",
+        "Shaving Accessories": "7.95%",
+        "Shaving Brushes": "7.95%",
+        "Multi-function Shavers": "7.95%"
+      },
+      "Skin Care": {
+        "Face Cleansers": "7.95%",
+        "Moisturizers & Treatments": "7.95%",
+        "Others": "7.95%"
+      }
     },
-    "Home Decor": {
-      "Wall Decor": "6.87%",
-      "Table Decor": "6.87%",
-      "Lighting": "6.87%",
-      "Others": "6.87%"
-    },
-    "Kitchen & Dining": {
-      "Kitchen Tools": "6.87%",
-      "Dining Sets": "6.87%",
-      "Storage": "6.87%",
-      "Others": "6.87%"
-    }
-  },
-  "Automotive": {
-    "Car Accessories": {
-      "Interior": "6.87%",
-      "Exterior": "6.87%",
-      "Electronics": "6.87%",
-      "Others": "6.87%"
-    },
-    "Motorcycle Accessories": {
-      "Helmets": "6.87%",
-      "Protective Gear": "6.87%",
-      "Parts": "6.87%",
-      "Others": "6.87%"
-    },
-    "Car Care": {
-      "Car Wash": "6.87%",
-      "Car Wax": "6.87%",
-      "Car Polish": "6.87%",
-      "Others": "6.87%"
-    }
-  },
-  "Books & Stationery": {
-    "Books": {
-      "Fiction": "6.87%",
-      "Non-Fiction": "6.87%",
-      "Educational": "6.87%",
-      "Others": "6.87%"
-    },
-    "Stationery": {
-      "Pens": "6.87%",
-      "Paper": "6.87%",
-      "Office Supplies": "6.87%",
-      "Others": "6.87%"
-    }
-  },
-  "Food & Beverages": {
-    "Snacks": {
-      "Chips": "6.87%",
-      "Nuts": "6.87%",
-      "Candy": "6.87%",
-      "Others": "6.87%"
-    },
-    "Beverages": {
-      "Soft Drinks": "6.87%",
-      "Juices": "6.87%",
-      "Coffee": "6.87%",
-      "Others": "6.87%"
-    },
-    "Canned Food": {
-      "Meat": "6.87%",
-      "Fish": "6.87%",
-      "Vegetables": "6.87%",
-      "Others": "6.87%"
+    "Others": "7.95%",
+    "Fragrances": "7.95%",
+    "Skin Care": {
+      "Acne Treatments": "7.95%",
+      "After Sun Care": "7.95%",
+      "Oil Blotting Papers": "7.95%",
+      "Eye Care": {
+        "Eye Creams": "7.95%",
+        "Eye Masks": "7.95%",
+        "Lash & Brow Serums": "7.95%",
+        "Others": "7.95%"
+      },
+      "Face Masks": "7.95%",
+      "Face Scrubs": "7.95%",
+      "Face Sunscreen": "7.95%",
+      "Face Cleansers": "7.95%",
+      "Face Mists": "7.95%",
+      "Face Moisturizers": "7.95%",
+      "Face Oils": "7.95%",
+      "Serums & Treatments": "7.95%",
+      "Lip Care": {
+        "Lip Balms": "7.95%",
+        "Lip Masks": "7.95%",
+        "Lip Scrubs": "7.95%",
+        "Others": "7.95%"
+      },
+      "Others": "7.95%",
+      "Toners": "7.95%"
     }
   }
-} 
+}

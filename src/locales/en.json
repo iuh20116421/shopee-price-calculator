@@ -220,7 +220,9 @@
     "validation": {
       "nameRequired": "Please enter your full name",
       "phoneRequired": "Please enter your phone number",
-      "phoneInvalid": "Invalid phone number format"
+      "phoneInvalid": "Invalid phone number format",
+      "shopLinkRequired": "Please enter shop link",
+      "shopLinkInvalid": "Link must be a valid Shopee shop page (e.g., https://shopee.vn/[store-name] or https://shopee.vn/shop/[store-id])"
     }
   }
 } 

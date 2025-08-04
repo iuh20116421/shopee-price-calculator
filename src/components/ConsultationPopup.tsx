@@ -21,7 +21,8 @@ const ConsultationPopup: React.FC<ConsultationPopupProps> = ({ isOpen, onClose }
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState({
     fullName: '',
-    phoneNumber: ''
+    phoneNumber: '',
+    shopLink: ''
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
@@ -45,10 +46,32 @@ const ConsultationPopup: React.FC<ConsultationPopupProps> = ({ isOpen, onClose }
     return phoneRegex.test(cleanPhone);
   };
 
+  const validateShopeeUrl = (url: string): boolean => {
+    if (!url.trim()) return false;
+    
+    try {
+      const urlObj = new URL(url);
+      // Kiểm tra domain có phải là Shopee không
+      const shopeeRegex = /^(www\.)?shopee\.(vn|com|sg|my|th|ph|tw|co\.id|com\.br|cl|co\.th|com\.mx|com\.co|pl)$/i;
+      
+      if (!shopeeRegex.test(urlObj.hostname)) {
+        return false;
+      }
+      
+      // Kiểm tra path có chứa shop hoặc store không
+      const pathRegex = /\/(shop|store)\/|\/[^\/\s]+$/i;
+      return pathRegex.test(urlObj.pathname);
+      
+    } catch (error) {
+      return false;
+    }
+  };
+
   const validateForm = (): boolean => {
     const newErrors = {
       fullName: '',
-      phoneNumber: ''
+      phoneNumber: '',
+      shopLink: ''
     };
 
     if (!formData.fullName.trim()) {
@@ -61,8 +84,14 @@ const ConsultationPopup: React.FC<ConsultationPopupProps> = ({ isOpen, onClose }
       newErrors.phoneNumber = t('popup.validation.phoneInvalid');
     }
 
+    if (!formData.shopLink.trim()) {
+      newErrors.shopLink = t('popup.validation.shopLinkRequired');
+    } else if (!validateShopeeUrl(formData.shopLink)) {
+      newErrors.shopLink = t('popup.validation.shopLinkInvalid');
+    }
+
     setErrors(newErrors);
-    return !newErrors.fullName && !newErrors.phoneNumber;
+    return !newErrors.fullName && !newErrors.phoneNumber && !newErrors.shopLink;
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -171,9 +200,14 @@ const ConsultationPopup: React.FC<ConsultationPopupProps> = ({ isOpen, onClose }
                   name="shopLink"
                   value={formData.shopLink}
                   onChange={handleInputChange}
-                  placeholder={t('popup.shopLinkPlaceholder')}
-                  className="form-input"
+                  placeholder={`${t('popup.shopLinkPlaceholder')} *`}
+                  className={`form-input ${errors.shopLink ? 'error' : ''}`}
                 />
+                {errors.shopLink && (
+                  <div className="form-error">
+                    {errors.shopLink}
+                  </div>
+                )}
               </div>
 
               <button
