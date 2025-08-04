@@ -229,18 +229,20 @@
     "title": "Login | Tuki Group",
     "createAccount": "Create Account",
     "signIn": "Sign in",
-    "name": "Name",
-    "email": "Email",
+    "username": "Username",
     "password": "Password",
     "forgotPassword": "Forgot your password?",
     "signUp": "Sign Up",
     "welcomeBack": "Welcome Back!",
-    "welcomeMessage": "To keep connected with us please login with your personal info",
+    "welcomeMessage": "To keep connected with us please login with your account",
     "helloFriend": "Hello, Friend!",
-    "startJourney": "Enter your personal details and start your journey with Tuki Group",
-    "orUseEmail": "or use your email for registration",
+    "startJourney": "Enter your account details and start your journey with Tuki Group",
+    "orUseEmail": "or use your account for registration",
     "orUseAccount": "or use your account",
     "signInButton": "Sign In",
-    "signUpButton": "Sign Up"
+    "signUpButton": "Sign Up",
+    "signOut": "Sign Out",
+    "invalidCredentials": "Invalid username or password",
+    "signUpDisabled": "Sign up feature is temporarily unavailable"
   }
 } 

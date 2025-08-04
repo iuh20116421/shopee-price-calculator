@@ -59,7 +59,7 @@ const ConsultationPopup: React.FC<ConsultationPopupProps> = ({ isOpen, onClose }
       }
       
       // Kiểm tra path có chứa shop hoặc store không
-      const pathRegex = /\/(shop|store)\/|\/[^\/\s]+$/i;
+      const pathRegex = /(shop|store)\/|\/[^/\s]+$/i;
       return pathRegex.test(urlObj.pathname);
       
     } catch (error) {

@@ -1,17 +1,30 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Menu, Calculator, Home, ChevronDown, ShoppingBag, BookOpen, FileText, Users } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 import ConsultationPopup from './ConsultationPopup';
 import logoImage from '../assets/images/logos.png';
+import { AUTH_TOKEN_KEY, USER_INFO_KEY } from '../constants/accounts';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const token = localStorage.getItem(AUTH_TOKEN_KEY);
+    const userInfo = localStorage.getItem(USER_INFO_KEY);
+    if (token && userInfo) {
+      setIsAuthenticated(true);
+    } else {
+      setIsAuthenticated(false);
+    }
+  }, [location.pathname]); // Re-check when route changes
 
   // Get calculator URL based on current language
   const getCalculatorUrl = () => {
@@ -32,6 +45,13 @@ const Header: React.FC = () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [isMenuOpen]);
+
+  const handleLogout = () => {
+    localStorage.removeItem(AUTH_TOKEN_KEY);
+    localStorage.removeItem(USER_INFO_KEY);
+    setIsAuthenticated(false);
+    navigate(i18n.language === 'en' ? '/login' : '/dang-nhap');
+  };
 
   const navigation = [
     { 
@@ -160,12 +180,24 @@ const Header: React.FC = () => {
               >
                 {t('navigation.consultation')}
               </button>
-              <Link 
-                to={i18n.language === 'en' ? '/login' : '/dang-nhap'} 
-                className="btn-primary"
-              >
-                {t('login.signIn')}
-              </Link>
+              {isAuthenticated ? (
+                <>
+                 
+                  <button 
+                    className="btn-primary"
+                    onClick={handleLogout}
+                  >
+                    {t('login.signOut')}
+                  </button>
+                </>
+              ) : (
+                <Link 
+                  to={i18n.language === 'en' ? '/login' : '/dang-nhap'} 
+                  className="btn-primary"
+                >
+                  {t('login.signIn')}
+                </Link>
+              )}
             </div>
 
             {/* Mobile CTA and Menu */}
@@ -177,12 +209,21 @@ const Header: React.FC = () => {
                 >
                   {t('navigation.consultation')}
                 </button>
-                <Link 
-                  to={i18n.language === 'en' ? '/login' : '/dang-nhap'} 
-                  className="mobile-cta-button"
-                >
-                  {t('login.signIn')}
-                </Link>
+                {isAuthenticated ? (
+                  <button 
+                    className="mobile-cta-button"
+                    onClick={handleLogout}
+                  >
+                    {t('login.signOut')}
+                  </button>
+                ) : (
+                  <Link 
+                    to={i18n.language === 'en' ? '/login' : '/dang-nhap'} 
+                    className="mobile-cta-button"
+                  >
+                    {t('login.signIn')}
+                  </Link>
+                )}
               </div>
               <div className="header-mobile-toggle">
                 <button
@@ -193,6 +234,7 @@ const Header: React.FC = () => {
                 </button>
                 {isMenuOpen && (
                   <div className="mobile-dropdown">
+
                     <Link to="/" className="mobile-dropdown-item" onClick={() => setIsMenuOpen(false)}>
                       <Home className="mobile-dropdown-icon" />
                       {t('navigation.home')}
@@ -253,4 +295,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header; 
+export default Header;
