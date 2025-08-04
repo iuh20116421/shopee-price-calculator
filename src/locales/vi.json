@@ -112,7 +112,8 @@
       "extraServices": "Dịch vụ Xtra:",
       "contentXtra": "Content Xtra",
       "voucherXtra": "Voucher Xtra",
-      "extraServicesNote": "Khi chọn cả 2 dịch vụ, hệ thống sẽ tính phí theo giá trị cao hơn"
+      "freeshipXtra": "Freeship Xtra (chỉ Mall)",
+      "extraServicesNote": "Khi chọn nhiều dịch vụ, hệ thống sẽ tính phí theo giá trị cao nhất"
     },
     "costs": {
       "title": "Chi phí dự kiến",
@@ -148,6 +149,7 @@
       "shippingCost": "Pi Ship",
       "contentXtraFee": "Content Xtra",
       "voucherXtraFee": "Voucher Xtra",
+      "freeshipXtraFee": "Freeship Xtra",
       "infrastructureFee": "Phí hạ tầng",
       "totalCosts": "Tổng chi phí ước tính (dựa trên giá bán đề xuất)",
       "finalPrice": "Giá bán đề xuất",

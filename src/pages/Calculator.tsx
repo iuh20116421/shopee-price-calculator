@@ -14,6 +14,7 @@ import {
   CalculationInput,
   CalculationResult 
 } from '../constants/calculationFormulas';
+import { showToast } from '../utils/toast';
 import axios from 'axios';
 
 interface CategoryData {
@@ -29,38 +30,42 @@ interface ProductSuggestion {
 const Calculator: React.FC = () => {
   const getDataFixedFee = useCallback(async () => {
     try {
-      const API_KEY = 'AIzaSyDW-UUUQc4AFLpO3kMk_lB_RkSF_sHZyo4';
-      const SPREADSHEET_ID = '1MZSfcmOe_urH3WibOExoTwy28LLSUppdREBC_hYf1Ug';
-      const RANGE = 'Chi phí Shopee!A2:H2';
+      const API_KEY = process.env.REACT_APP_API_KEY;
+      const SPREADSHEET_ID = process.env.REACT_APP_SPREADSHEET_ID;
+      const RANGE = 'Chi phí Shopee!A2:I2';
       
       console.log('Fetching data from Google Sheets...');
       const response = await axios.get(`https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE}?key=${API_KEY}`);
       
       if (response.data && response.data.values) {
         const values = response.data.values;
-                 if (values.length > 0) {
-           const [PAYMENT_FEE_PERCENT, VOUCHER_XTRA_FEE_PERCENT, CONTENT_XTRA_FEE_PERCENT, CONTENT_XTRA_FEE_MAX, SHIPPING_COST_PI_SHIP, INFRASTRUCTURE_FEE, VAT_PERCENT] = values[0];
+                         if (values.length > 0) {
+          const [PAYMENT_FEE_PERCENT, VOUCHER_XTRA_FEE_PERCENT, CONTENT_XTRA_FEE_PERCENT, FREESHIP_XTRA_FEE_PERCENT, FREESHIP_XTRA_FEE_MAX, CONTENT_XTRA_FEE_MAX, SHIPPING_COST_PI_SHIP, INFRASTRUCTURE_FEE, VAT_PERCENT] = values[0];
+          
+          // Lưu vào state
+          setFixedFees({
+            PAYMENT_FEE_PERCENT: parseFloat(PAYMENT_FEE_PERCENT) || 4.91,
+            VOUCHER_XTRA_FEE_PERCENT: parseFloat(VOUCHER_XTRA_FEE_PERCENT) || 3.0,
+            CONTENT_XTRA_FEE_PERCENT: parseFloat(CONTENT_XTRA_FEE_PERCENT) || 2.95,
+            FREESHIP_XTRA_FEE_PERCENT: parseFloat(FREESHIP_XTRA_FEE_PERCENT) || 5.89,
+            FREESHIP_XTRA_FEE_MAX: parseFloat(FREESHIP_XTRA_FEE_MAX) || 50000,
+            CONTENT_XTRA_FEE_MAX: parseFloat(CONTENT_XTRA_FEE_MAX) || 50000,
+            SHIPPING_COST_PI_SHIP: parseFloat(SHIPPING_COST_PI_SHIP) || 1620,
+            INFRASTRUCTURE_FEE: parseFloat(INFRASTRUCTURE_FEE) || 3000,
+            VAT_PERCENT: parseFloat(VAT_PERCENT) || 1.5
+          });
            
-           // Lưu vào state
-           setFixedFees({
-             PAYMENT_FEE_PERCENT: parseFloat(PAYMENT_FEE_PERCENT) || 4.91,
-             VOUCHER_XTRA_FEE_PERCENT: parseFloat(VOUCHER_XTRA_FEE_PERCENT) || 3.0,
-             CONTENT_XTRA_FEE_PERCENT: parseFloat(CONTENT_XTRA_FEE_PERCENT) || 2.59,
-             CONTENT_XTRA_FEE_MAX: parseFloat(CONTENT_XTRA_FEE_MAX) || 50000,
-             SHIPPING_COST_PI_SHIP: parseFloat(SHIPPING_COST_PI_SHIP) || 1620,
-             INFRASTRUCTURE_FEE: parseFloat(INFRASTRUCTURE_FEE) || 3000,
-             VAT_PERCENT: parseFloat(VAT_PERCENT) || 1.5
-           });
-           
-           console.log("Fixed fees updated from Google Sheets:", {
-             PAYMENT_FEE_PERCENT,
-             VOUCHER_XTRA_FEE_PERCENT,
-             CONTENT_XTRA_FEE_PERCENT,
-             CONTENT_XTRA_FEE_MAX,
-             SHIPPING_COST_PI_SHIP,
-             INFRASTRUCTURE_FEE,
-             VAT_PERCENT
-           });
+                     console.log("Fixed fees updated from Google Sheets:", {
+            PAYMENT_FEE_PERCENT,
+            VOUCHER_XTRA_FEE_PERCENT,
+            CONTENT_XTRA_FEE_PERCENT,
+            FREESHIP_XTRA_FEE_PERCENT,
+            FREESHIP_XTRA_FEE_MAX,
+            CONTENT_XTRA_FEE_MAX,
+            SHIPPING_COST_PI_SHIP,
+            INFRASTRUCTURE_FEE,
+            VAT_PERCENT
+          });
          }
       }
       
@@ -102,6 +107,8 @@ const Calculator: React.FC = () => {
     CONTENT_XTRA_FEE_PERCENT: number;
     CONTENT_XTRA_FEE_MAX: number;
     VOUCHER_XTRA_FEE_PERCENT: number;
+    FREESHIP_XTRA_FEE_PERCENT: number;
+    FREESHIP_XTRA_FEE_MAX: number;
     SHIPPING_COST_PI_SHIP: number;
     INFRASTRUCTURE_FEE: number;
     VAT_PERCENT: number;
@@ -236,7 +243,7 @@ const Calculator: React.FC = () => {
         setSelectedProduct(null);
         setSuggestions([]);
         setShowSuggestions(false);
-                 setShowResult(false);
+        setShowResult(false);
          setCalculationResult(null);
        }
     };
@@ -279,30 +286,6 @@ const Calculator: React.FC = () => {
       setShowSuggestions(false);
     }
     clearError('product');
-  };
-
-  // Hiển thị toast thông báo
-  const showToast = (message: string, type: 'error' | 'success' = 'error') => {
-    // Tạo toast element
-    const toast = document.createElement('div');
-    toast.className = `toast toast-${type}`;
-    toast.textContent = message;
-    
-    // Thêm vào body
-    document.body.appendChild(toast);
-    
-    // Hiển thị toast
-    setTimeout(() => {
-      toast.classList.add('show');
-    }, 100);
-    
-    // Tự động ẩn sau 3 giây
-    setTimeout(() => {
-      toast.classList.remove('show');
-      setTimeout(() => {
-        document.body.removeChild(toast);
-      }, 300);
-    }, 3000);
   };
 
   // Validate form
@@ -367,6 +350,7 @@ const Calculator: React.FC = () => {
       piShip: formData.piShip,
       contentXtra: formData.contentXtra,
       voucherXtra: formData.voucherXtra,
+      freeshipXtra: formData.shopeeType === 'mall', // Tự động enable cho Mall
       ...(fixedFees && { fixedFees }) // Chỉ thêm fixedFees nếu nó không null
     };
 
@@ -578,7 +562,7 @@ const Calculator: React.FC = () => {
             </div>
 
           {/* Cài đặt Shopee và Chi phí dự tính - Combined */}
-          <div className="form-section wide">
+          <div className="form-section wide settings-section-container">
             <div className="settings-cost-layout">
             {/* Cài đặt Shopee */}
               <div className="settings-section">
@@ -793,6 +777,12 @@ const Calculator: React.FC = () => {
                             <td>{t('calculator.results.voucherXtraFee')}:</td>
                             <td className="highlight-value" style={{ textAlign: 'right', fontSize: '0.9rem' }}>{formatCurrency(calculationResult.voucherXtraFee)}</td>
                           </tr>
+                          {formData.shopeeType === 'mall' && (
+                            <tr>
+                              <td>{t('calculator.results.freeshipXtraFee')}:</td>
+                              <td className="highlight-value" style={{ textAlign: 'right', fontSize: '0.9rem' }}>{formatCurrency(calculationResult.freeshipXtraFee)}</td>
+                            </tr>
+                          )}
                           <tr>
                             <td>{t('calculator.results.infrastructureFee')}:</td>
                             <td className="highlight-value" style={{ textAlign: 'right', fontSize: '0.9rem' }}>{formatCurrency(calculationResult.infrastructureFee)}</td>
@@ -806,6 +796,7 @@ const Calculator: React.FC = () => {
                                 calculationResult.shippingCost +
                                 calculationResult.contentXtraFee +
                                 calculationResult.voucherXtraFee +
+                                calculationResult.freeshipXtraFee +
                                 calculationResult.infrastructureFee
                               )}
                             </td>
@@ -848,6 +839,7 @@ const Calculator: React.FC = () => {
                               calculationResult.shippingCost +
                               calculationResult.contentXtraFee +
                               calculationResult.voucherXtraFee +
+                              calculationResult.freeshipXtraFee +
                               calculationResult.infrastructureFee
                             )}</td>
                             <td className="highlight-value" style={{ textAlign: 'right', fontSize: '0.9rem' }}>{formatPercentage(calculationResult.finalPrice ? (
@@ -857,6 +849,7 @@ const Calculator: React.FC = () => {
                                 calculationResult.shippingCost +
                                 calculationResult.contentXtraFee +
                                 calculationResult.voucherXtraFee +
+                                calculationResult.freeshipXtraFee +
                                 calculationResult.infrastructureFee
                               ) / calculationResult.finalPrice
                             ) * 100 : 0)}</td>
