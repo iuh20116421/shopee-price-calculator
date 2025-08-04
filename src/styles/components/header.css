@@ -421,14 +421,15 @@
 /* Responsive */
 @media (max-width: 870px) { 
   .header-content {
-    flex-wrap: wrap;
-    gap: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
   }
 
   .header-logo {
     min-width: auto;
-    max-width: none;
-    flex: 1;
+    max-width: 140px;
   }
 
   .header-nav {
@@ -450,8 +451,33 @@
   .btn-primary {
     padding: 8px 12px;
     font-size: 12px;
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 6px;
     white-space: nowrap;
+    background: linear-gradient(135deg, #F30404, #860404);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(243, 4, 4, 0.3);
+    text-decoration: none;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(243, 4, 4, 0.4);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+
+  .btn-icon {
+    width: 16px;
+    height: 16px;
   }
 
   .header-mobile-actions {
@@ -461,14 +487,19 @@
     flex-shrink: 0;
   }
 
+  .mobile-buttons {
+    display: flex;
+    gap: 8px;
+  }
+
   .mobile-cta-button {
     background: linear-gradient(135deg, #F30404, #860404);
     color: white;
     border: none;
-    padding: 8px 12px;
+    padding: 6px 10px;
     border-radius: 6px;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 11px;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(243, 4, 4, 0.3);
