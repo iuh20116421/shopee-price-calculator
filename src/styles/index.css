@@ -11,4 +11,5 @@
 
 /* Import page styles */
 @import './pages/home.css';
-@import './pages/calculator.css'; 
+@import './pages/calculator.css';
+@import './pages/login.css'; 

@@ -14,7 +14,7 @@ html {
 body {
   background-color: #f9fafb;
   color: #111827;
-  line-height: 1.6;
+ /* line-height: 1.6; */
 }
 
 code {

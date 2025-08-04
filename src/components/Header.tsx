@@ -160,16 +160,30 @@ const Header: React.FC = () => {
               >
                 {t('navigation.consultation')}
               </button>
+              <Link 
+                to={i18n.language === 'en' ? '/login' : '/dang-nhap'} 
+                className="btn-primary"
+              >
+                {t('login.signIn')}
+              </Link>
             </div>
 
             {/* Mobile CTA and Menu */}
             <div className="header-mobile-actions">
-              <button 
-                className="mobile-cta-button"
-                onClick={() => setIsPopupOpen(true)}
-              >
-                {t('navigation.consultation')}
-              </button>
+              <div className="mobile-buttons">
+                <button 
+                  className="mobile-cta-button"
+                  onClick={() => setIsPopupOpen(true)}
+                >
+                  {t('navigation.consultation')}
+                </button>
+                <Link 
+                  to={i18n.language === 'en' ? '/login' : '/dang-nhap'} 
+                  className="mobile-cta-button"
+                >
+                  {t('login.signIn')}
+                </Link>
+              </div>
               <div className="header-mobile-toggle">
                 <button
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -215,7 +229,7 @@ const Header: React.FC = () => {
                       <Users className="mobile-dropdown-icon" />
                       {t('navigation.contact')}
                     </Link>
-                    
+
                     {/* Mobile Language Switcher */}
                     <div className="mobile-dropdown-cta">
                       <div className="mobile-language-switcher">

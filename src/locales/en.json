@@ -220,7 +220,27 @@
     "validation": {
       "nameRequired": "Please enter your full name",
       "phoneRequired": "Please enter your phone number",
-      "phoneInvalid": "Invalid phone number format"
+      "phoneInvalid": "Invalid phone number format",
+      "shopLinkRequired": "Please enter shop link",
+      "shopLinkInvalid": "Link must be a valid Shopee shop page (e.g., https://shopee.vn/[store-name] or https://shopee.vn/shop/[store-id])"
     }
+  },
+  "login": {
+    "title": "Login | Tuki Group",
+    "createAccount": "Create Account",
+    "signIn": "Sign in",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot your password?",
+    "signUp": "Sign Up",
+    "welcomeBack": "Welcome Back!",
+    "welcomeMessage": "To keep connected with us please login with your personal info",
+    "helloFriend": "Hello, Friend!",
+    "startJourney": "Enter your personal details and start your journey with Tuki Group",
+    "orUseEmail": "or use your email for registration",
+    "orUseAccount": "or use your account",
+    "signInButton": "Sign In",
+    "signUpButton": "Sign Up"
   }
 } 
