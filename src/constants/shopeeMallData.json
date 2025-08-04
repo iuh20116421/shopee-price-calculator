@@ -380,14 +380,7 @@
   },
  "Mẹ & Bé": {
     "Đồ dùng du lịch cho bé": {
-      "Túi đựng bỉm sữa": "6,87%",
-      "Địu em bé": "6,87%",
-      "Ghế ngồi ô tô & xe máy": "6,87%",
-      "Phụ kiện ghế ngồi ô tô & xe máy": "6,87%",
-      "Dây & Đai dắt trẻ": "6,87%",
-      "Khác": "6,87%",
-      "Phụ kiện xe đẩy": "6,87%",
-      "Xe đẩy": "6,87%"
+      "Túi đựng bỉm sữa": "6,87%"
     },
     "Đồ dùng ăn dặm cho bé": {
       "Yếm": "7,95%",
@@ -410,9 +403,12 @@
       "Ghế ăn dặm": "7,95%",
       "Khác": "7,95%",
       "Ti giả": "7,95%",
-      "Ly, cốc cho bé": "7,95%",
-      "Hộp trữ thức ăn cho bé": "7,95%",
-      "Đồ dùng ăn dặm": "7,95%"
+      "Đồ dùng cho bé": {
+        "Ly, cốc cho bé": "7,95%",
+        "Hộp trữ thức ăn cho bé": "7,95%",
+        "Đồ dùng ăn dặm": "7,95%",
+        "Khác": "7,95%"
+      }
     },
     "Bộ & Gói quà tặng": "7,95%",
     "Phụ kiện cho mẹ": {
@@ -422,9 +418,7 @@
     },
     "Chăm sóc sức khỏe mẹ": {
       "Vitamin & Thực phẩm bổ sung cho mẹ": "7,95%",
-      "Kem dưỡng ẩm cho mẹ": "7,95%",
-      "Sữa bầu": "7,95%",
-      "Khác": "7,95%"
+      "Kem dưỡng ẩm cho mẹ": "7,95%"
     },
     "Đồ dùng phòng ngủ cho bé": {
       "Nôi & Cũi & Giường cho bé": "7,95%",
@@ -434,69 +428,132 @@
         "Khác": "7,95%",
         "Gối": "7,95%"
       },
-      "Kệ & Tủ": "7,95%",
-      "Ghế rung, Ghế nhún & Xích đu tập đi": "6,87%",
-      "Khác": "6,87%",
-      "Xe tập đi": "6,87%"
+      "Kệ & Tủ": "7,95%"
     },
     "Đồ chơi": {
       "Đồ chơi cho trẻ sơ sinh & trẻ nhỏ": {
         "Cũi & Quây em bé": "6,87%",
-        "Gặm nướu": "6,87%",
-        "Đồ chơi nhà tắm": "6,87%",
-        "Đồ chơi treo cũi, nôi & Lục lạc": "6,87%",
+        "Gặm nướu": "6,87%"
+      },
+      "Chăm sóc sức khỏe bé": {
+        "Chăm sóc răng miệng cho bé": "5,30%",
+        "Chăm sóc da cho bé": {
+          "Khác": "5,30%"
+        },
+        "Khác": "5,30%"
+      },
+      "An toàn cho bé": {
+        "Thanh chắn cửa & Cầu thang": "7,85%",
+        "Bộ đệm cũi, Quây cũi & Thanh chắn giường": "7,85%",
+        "Bọc góc & Cạnh": "7,85%",
+        "Thiết bị giám sát trẻ": "7,85%",
+        "Màn chống muỗi": "7,85%",
+        "Khác": "7,85%",
+        "Khóa & Dây đai an toàn": "7,85%"
+      },
+      "Đồ dùng du lịch cho bé": {
+        "Địu em bé": "6,87%",
+        "Ghế ngồi ô tô & xe máy": "6,87%",
+        "Phụ kiện ghế ngồi ô tô & xe máy": "6,87%",
+        "Dây & Đai dắt trẻ": "6,87%",
         "Khác": "6,87%",
-        "Thảm chơi nhạc": "6,87%"
+        "Phụ kiện xe đẩy": "6,87%",
+        "Xe đẩy": "6,87%"
       },
-      "Đồ chơi giáo dục": {
-        "Đồ chơi mỹ thuật & Thủ công": "6,87%",
-        "Đồ chơi toán học": "6,87%",
-        "Đồ chơi âm nhạc": "6,87%",
+      "Đồ dùng phòng tắm & Chăm sóc cơ thể bé": {
+        "Nước hoa cho bé": "6,87%",
+        "Bộ chăm sóc trẻ sơ sinh": "6,87%",
+        "Giặt xả quần áo trẻ em": "6,87%",
+        "Áo choàng tắm, Khăn tắm & Khăn mặt": "6,87%",
+        "Dụng cụ tắm & Phụ kiện": "6,87%",
+        "Chậu tắm & Ghế tắm": "6,87%",
+        "Sản phẩm tắm & gội cho bé": "6,87%",
+        "Nón tắm": "6,87%"
+      },
+      "Tã & bô em bé": {
+        "Bệ thu nhỏ bồn cầu & Bô vệ sinh": "5,30%"
+      },
+      "Chăm sóc sức khỏe mẹ": {
+        "Sữa bầu": "7,95%",
+        "Khác": "7,95%"
+      },
+      "Đồ dùng phòng ngủ cho bé": {
+        "Ghế rung, Ghế nhún & Xích đu tập đi": "6,87%",
         "Khác": "6,87%",
-        "Đồ chơi xếp hình": "6,87%",
-        "Đồ chơi khoa học & Công nghệ": "6,87%",
-        "Đồ chơi hình khối": "6,87%",
-        "Đồ chơi điện tử & Máy tính đồ chơi": "6,87%"
+        "Xe tập đi": "6,87%"
       },
-      "Đồ chơi vận động & Ngoài trời": {
-        "Xe đạp, Xe chòi chân & Xe điện": "6,87%",
-        "Súng đồ chơi": "6,87%",
-        "Đồ chơi mô hình bay, diều & Chong chóng": "6,87%",
-        "Nhà hơi & Cầu trượt": "6,87%",
+      "Khác": "6,87%",
+      "Đồ chơi": {
+        "Đồ chơi cho trẻ sơ sinh & trẻ nhỏ": {
+          "Đồ chơi nhà tắm": "6,87%",
+          "Đồ chơi treo cũi, nôi & Lục lạc": "6,87%",
+          "Khác": "6,87%",
+          "Thảm chơi nhạc": "6,87%"
+        },
+        "Đồ chơi lắp ráp": "6,87%",
+        "Búp bê & Thú nhồi bông": {
+          "Nhà búp bê & Phụ kiện": "6,87%",
+          "Búp bê & Phụ kiện": "6,87%",
+          "Khác": "6,87%",
+          "Thú nhồi bông": "6,87%"
+        },
+        "Đồ chơi giáo dục": {
+          "Đồ chơi mỹ thuật & Thủ công": "6,87%",
+          "Đồ chơi toán học": "6,87%",
+          "Đồ chơi âm nhạc": "6,87%",
+          "Khác": "6,87%",
+          "Đồ chơi xếp hình": "6,87%",
+          "Đồ chơi khoa học & Công nghệ": "6,87%",
+          "Đồ chơi hình khối": "6,87%",
+          "Đồ chơi điện tử & Máy tính đồ chơi": "6,87%"
+        },
         "Khác": "6,87%",
-        "Lều, Ống đường hầm & Nhà banh": "6,87%",
-        "Phao tắm, Đồ chơi nước & Xúc cát": "6,87%",
-        "Đồ chơi thể thao": "6,87%"
+        "Đồ chơi nhập vai": "6,87%",
+        "Đồ chơi Robot": "6,87%",
+        "Slime & Đồ chơi nhựa dẻo": "6,87%",
+        "Đồ chơi vận động & Ngoài trời": {
+          "Xe đạp, Xe chòi chân & Xe điện": "6,87%",
+          "Súng đồ chơi": "6,87%",
+          "Đồ chơi mô hình bay, diều & Chong chóng": "6,87%",
+          "Nhà hơi & Cầu trượt": "6,87%",
+          "Khác": "6,87%",
+          "Lều, Ống đường hầm & Nhà banh": "6,87%",
+          "Phao tắm, Đồ chơi nước & Xúc cát": "6,87%",
+          "Đồ chơi thể thao": "6,87%"
+        },
+        "Xe đồ chơi": "6,87%"
       },
-      "Xe đồ chơi": "6,87%",
-      "Đồ chơi nhập vai": "6,87%",
-      "Đồ chơi Robot": "6,87%",
-      "Slime & Đồ chơi nhựa dẻo": "6,87%"
-    },
-    "Chăm sóc sức khỏe bé": {
-      "Chăm sóc da cho bé": {
-        "Sữa & Kem dưỡng da": "5,30%",
-        "Dầu cho bé": "5,30%",
-        "Phấn cho bé": "5,30%"
+      "Chăm sóc sức khỏe bé": {
+        "Chăm sóc da cho bé": {
+          "Sữa & Kem dưỡng da": "5,30%",
+          "Dầu cho bé": "5,30%",
+          "Phấn cho bé": "5,30%"
+        },
+        "Vitamin & Thực phẩm bổ sung": "5,30%",
+        "Chăm sóc mũi cho bé": "5,30%",
+        "Chống nắng cho bé": "5,30%"
       },
-      "Vitamin & Thực phẩm bổ sung": "5,30%",
-      "Chăm sóc mũi cho bé": "5,30%",
-      "Chống nắng cho bé": "5,30%",
-      "Khác": "5,30%"
-    },
-    "Tã & bô em bé": {
-      "Bệ thu nhỏ bồn cầu & Bô vệ sinh": "5,30%",
-      "Khác": "5,30%",
-      "Bộ lót thay tã": "5,30%",
-      "Tã vải & Phụ kiện": "5,30%",
-      "Tã dùng một lần": "5,30%"
-    },
-    "Sữa công thức & Thực phẩm cho bé": {
-      "Cháo, Thực phẩm xay nhuyễn & Ngũ cốc": "5,30%",
-      "Đồ ăn nhẹ cho bé": "5,30%",
-      "Khác": "5,30%",
-      "Sữa pha sẵn": "5,30%",
-      "Sữa công thức": "3,44%"
+      "Đồ dùng phòng tắm & Chăm sóc cơ thể bé": {
+        "Khác": "6,87%",
+        "Khăn lau": "6,87%"
+      },
+      "Tã & bô em bé": {
+        "Khác": "5,30%"
+      },
+      "Sữa công thức & Thực phẩm cho bé": {
+        "Cháo, Thực phẩm xay nhuyễn & Ngũ cốc": "5,30%",
+        "Đồ ăn nhẹ cho bé": "5,30%",
+        "Khác": "5,30%",
+        "Sữa pha sẵn": "5,30%"
+      },
+      "Tã & bô em bé": {
+        "Bộ lót thay tã": "5,30%",
+        "Tã vải & Phụ kiện": "5,30%",
+        "Tã dùng một lần": "5,30%"
+      },
+      "Sữa công thức & Thực phẩm cho bé": {
+        "Sữa công thức": "3,44%"
+      }
     }
   } ,
   "Mô tô, xe máy": {
@@ -1230,6 +1287,13 @@
       "Bôi trơn": "7,95%",
       "Khác": "7,95%",
       "Tăng cường sinh lý": "7,95%"
+    },
+    "Thực phẩm chức năng": {
+      "Hỗ trợ làm đẹp": "7,95%",
+      "Hỗ trợ tăng cơ": "7,95%",
+      "Khác": "7,95%",
+      "Hỗ trợ kiểm soát cân nặng": "7,95%",
+      "Hỗ trợ sức khỏe": "7,95%"
     },
     "Vật tư y tế": {
       "Dụng cụ sơ cứu": {
