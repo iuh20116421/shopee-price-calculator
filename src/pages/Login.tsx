@@ -37,13 +37,13 @@ const Login: React.FC = () => {
           <form onSubmit={handleSignUpSubmit}>
             <h1>{t('login.createAccount')}</h1>
             <div className="social-container">
-              <a className="social">
+              <a href="https://www.facebook.com" className="social">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a className="social">
+              <a href="https://www.google.com" className="social">
                 <i className="fab fa-google"></i>
               </a>
-              <a className="social">
+              <a href="https://www.instagram.com" className="social">
                 <i className="fab fa-instagram"></i>
               </a>
             </div>
@@ -63,20 +63,20 @@ const Login: React.FC = () => {
           <form onSubmit={handleSignInSubmit}>
             <h1>{t('login.signIn')}</h1>
             <div className="social-container">
-              <a className="social">
+              <a href="https://www.facebook.com" className="social">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a className="social">
+              <a href="https://www.google.com" className="social">
                 <i className="fab fa-google"></i>
               </a>
-              <a className="social">
+              <a href="https://www.instagram.com" className="social">
                 <i className="fab fa-instagram"></i>
               </a>
             </div>
             <span>{t('login.orUseAccount')}</span>
             <input type="email" placeholder={t('login.email')} />
             <input type="password" placeholder={t('login.password')} />
-            <a>{t('login.forgotPassword')}</a>
+            <a href="/">{t('login.forgotPassword')}</a>
             <button type="submit">{t('login.signInButton')}</button>
             <button type="button" className="mobile-switch-btn" onClick={handleSignUpClick}>
               {t('login.signUp')}
