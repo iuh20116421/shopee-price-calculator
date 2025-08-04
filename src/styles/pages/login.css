@@ -275,7 +275,7 @@
   margin: 20px 0;
 }
 
-.social-container a {
+.social-container .social {
   border: 1px solid #DDDDDD;
   border-radius: 50%;
   display: inline-flex;
@@ -284,4 +284,29 @@
   margin: 0 5px;
   height: 40px;
   width: 40px;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-container .social:hover {
+  border-color: #FF4B2B;
+  color: #FF4B2B;
+}
+
+.forgot-password {
+  background: none !important;
+  border: none !important;
+  color: #333 !important;
+  font-size: 14px !important;
+  margin: 15px 0 !important;
+  padding: 0 !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+  max-width: none !important;
+}
+
+.forgot-password:hover {
+  color: #FF4B2B !important;
+  transform: none !important;
 }
