@@ -1,14 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Mail, Phone, Facebook, Youtube, Globe, ArrowUp, Home } from 'lucide-react';
+import { Mail, Phone, Facebook, Youtube, Globe, Home } from 'lucide-react';
 import logoIcon from '../assets/images/logo_icon_trắng.png';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
   
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   return (
     <footer className="footer-main">
