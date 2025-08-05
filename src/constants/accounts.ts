@@ -13,8 +13,8 @@ export const accounts: Account[] = [
     name: 'Administrator'
   },
   {
-    username: 'user1',
-    password: 'user123',
+    username: 'tukilab',
+    password: 'Tuki@2025',
     role: 'user',
     name: 'User Demo'
   },
