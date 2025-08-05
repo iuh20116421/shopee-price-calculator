@@ -9,6 +9,8 @@ const Login: React.FC = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [showSignInPassword, setShowSignInPassword] = useState(false);
+  const [showSignUpPassword, setShowSignUpPassword] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -70,12 +72,18 @@ const Login: React.FC = () => {
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
-            <input 
-              type="password" 
-              placeholder={t('login.password')} 
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
+            <div className="password-input-container">
+              <input 
+                type={showSignUpPassword ? "text" : "password"}
+                placeholder={t('login.password')} 
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <i 
+                className={`fas ${showSignUpPassword ? 'fa-eye' : 'fa-eye-slash'}`}
+                onClick={() => setShowSignUpPassword(!showSignUpPassword)}
+              />
+            </div>
             {error && <div className="error-message">{error}</div>}
             <button type="submit">{t('login.signUp')}</button>
             <button type="button" className="mobile-switch-btn" onClick={handleSignInClick}>
@@ -106,12 +114,18 @@ const Login: React.FC = () => {
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
-            <input 
-              type="password" 
-              placeholder={t('login.password')} 
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
+            <div className="password-input-container">
+              <input 
+                type={showSignInPassword ? "text" : "password"}
+                placeholder={t('login.password')} 
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <i 
+                className={`fas ${showSignInPassword ? 'fa-eye' : 'fa-eye-slash'}`}
+                onClick={() => setShowSignInPassword(!showSignInPassword)}
+              />
+            </div>
             {error && <div className="error-message">{error}</div>}
             <a href="/">{t('login.forgotPassword')}</a>
             <button type="submit">{t('login.signInButton')}</button>

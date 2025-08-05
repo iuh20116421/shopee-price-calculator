@@ -317,3 +317,38 @@
   margin: 10px 0;
   text-align: center;
 }
+
+.password-input-container {
+  position: relative;
+  width: 100%;
+  margin: 8px 0;
+}
+
+.password-input-container input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  width: 100%;
+  padding-right: 40px;
+}
+
+.password-input-container i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s ease;
+  font-size: 16px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.password-input-container i:hover {
+  color: #333;
+}
