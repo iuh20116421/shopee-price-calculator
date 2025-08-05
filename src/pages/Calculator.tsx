@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Calculator as CalculatorIcon, Box, Store, TrendingUp, Facebook, Phone, Search, Info } from 'lucide-react';
+import { Calculator as CalculatorIcon, Box, Store, TrendingUp, Search, Info } from 'lucide-react';
 import shopeeMallData from '../constants/shopeeMallData.json';
 import shopeeRegularData from '../constants/shopeeRegularData.json';
 import shopeeMallDataEn from '../constants/shopeeMallDataEn.json';
