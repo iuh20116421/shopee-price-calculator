@@ -395,8 +395,8 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   background: linear-gradient(135deg, #F30404, #860404);
   border: none;
   border-radius: 50%;
@@ -405,19 +405,128 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   box-shadow: 0 4px 12px rgba(243, 4, 4, 0.3);
   transition: all 0.3s ease;
   z-index: 1000;
+  text-decoration: none;
+  padding: 0;
+  animation: phone-outer 3000ms infinite;
+}
+
+.back-to-top::before {
+  content: '';
+  position: absolute;
+  border: 1px solid #F30404;
+  width: calc(100% + 16px);
+  height: calc(100% + 16px);
+  border-radius: 50%;
+  animation: phone-outer-ring 3000ms infinite;
+}
+
+.back-to-top::after {
+  content: '';
+  position: absolute;
+  border: 1px solid #F30404;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  border-radius: 50%;
+  animation: phone-inner-ring 3000ms infinite;
 }
 
 .back-to-top:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(243, 4, 4, 0.4);
+  color: #fff;
 }
 
 .back-to-top-icon {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
+  animation: phone-shake 3000ms infinite;
+}
+
+@keyframes phone-outer {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  33% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  66% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes phone-inner-ring {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  33% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  66% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes phone-outer-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  33% {
+    transform: scale(1.1);
+    opacity: 0.3;
+  }
+  66% {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+}
+
+@keyframes phone-shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  5%, 15%, 25% {
+    transform: rotate(-15deg);
+  }
+  10%, 20%, 30% {
+    transform: rotate(15deg);
+  }
+  35% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Responsive cho nút gọi điện */
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+  }
 }
 
 /* Responsive */
