@@ -891,23 +891,7 @@ const Calculator: React.FC = () => {
             </div>
           )}
 
-          {/* Phần tư vấn */}
-          <div className="consultation-section">
-            <div className="consultation-title">
-              <Phone className="consultation-icon" />
-              {t('calculator.consultation.title')}
-            </div>
-            <div>
-              <a href="https://www.facebook.com/TukiGroupHCM" target="_blank" rel="noopener noreferrer" className="consultation-btn facebook">
-                <Facebook />
-                {t('calculator.consultation.facebook')}
-              </a>
-              <a href="tel:+84789 282 979" className="consultation-btn zalo">
-                <Phone />
-                {t('calculator.consultation.hotline')}
-              </a>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>

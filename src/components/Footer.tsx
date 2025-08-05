@@ -83,10 +83,10 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      {/* Back to top button */}
-      <button onClick={scrollToTop} className="back-to-top">
-        <ArrowUp className="back-to-top-icon" />
-      </button>
+      {/* Call button */}
+      <a href="tel:0789282979" className="back-to-top">
+        <Phone className="back-to-top-icon" />
+      </a>
     </footer>
   );
 };
