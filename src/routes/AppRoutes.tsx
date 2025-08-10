@@ -4,6 +4,7 @@ import MainLayout from '../layouts/MainLayout';
 import Home from '../pages/Home';
 import Calculator from '../pages/Calculator';
 import Login from '../pages/Login';
+import OTPVerification from '../pages/OTPVerification';
 import { AUTH_TOKEN_KEY } from '../constants/accounts';
 
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -47,6 +48,8 @@ const AppRoutes: React.FC = () => {
           <Route path="/dang-nhap" element={
             isAuthenticated ? <Navigate to="/" replace /> : <Login />
           } />
+          <Route path="/otp-verification" element={<OTPVerification />} />
+          <Route path="/xac-thuc-otp" element={<OTPVerification />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </MainLayout>

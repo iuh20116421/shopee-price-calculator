@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+
+.otp-page {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+}
+
+.otp-container {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.otp-header h1 {
+  color: #333;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.otp-subtitle {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.otp-subtitle strong {
+  color: #F30404;
+  font-weight: 600;
+}
+
+.otp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.otp-input {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #e1e1e1;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.otp-input:focus {
+  border-color: #F30404;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(243, 4, 4, 0.1);
+  transform: translateY(-2px);
+}
+
+.otp-input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.otp-timer {
+  margin: 20px 0;
+}
+
+.otp-timer p {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+}
+
+.timer {
+  color: #F30404;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.expired {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.otp-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.verify-btn, .resend-btn {
+  padding: 14px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+}
+
+.verify-btn {
+  background: linear-gradient(135deg, #F30404, #860404);
+  color: white;
+  box-shadow: 0 4px 15px rgba(243, 4, 4, 0.3);
+}
+
+.verify-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(243, 4, 4, 0.4);
+}
+
+.verify-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.resend-btn {
+  background: transparent;
+  color: #666;
+  border: 2px solid #e1e1e1;
+}
+
+.resend-btn.active {
+  color: #F30404;
+  border-color: #F30404;
+}
+
+.resend-btn.active:hover {
+  background: #F30404;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.resend-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.otp-footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e1e1e1;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #F30404;
+}
+
+/* Spinner animation for buttons */
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ffffff40;
+  border-top: 2px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.resend-btn .spinner {
+  border-color: #66666640;
+  border-top-color: #666666;
+}
+
+.resend-btn.active .spinner {
+  border-color: #F3040440;
+  border-top-color: #F30404;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .otp-container {
+    padding: 30px 20px;
+    margin: 10px;
+  }
+
+  .otp-header h1 {
+    font-size: 24px;
+  }
+
+  .otp-subtitle {
+    font-size: 14px;
+  }
+
+  .otp-inputs {
+    gap: 8px;
+  }
+
+  .otp-input {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .verify-btn, .resend-btn {
+    font-size: 14px;
+    padding: 12px 25px;
+  }
+}
+
+/* Animation for container */
+.otp-container {
+  animation: slideInUp 0.6s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

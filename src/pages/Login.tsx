@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { AUTH_TOKEN_KEY, USER_INFO_KEY } from '../constants/accounts';
-import { AuthService } from '../services';
+import { AuthService, OTPService } from '../services';
 import { showToast } from '../utils/toast';
 import type { LoginRequest, CreateUserRequest } from '../services';
 
@@ -67,33 +67,39 @@ const Login: React.FC = () => {
     await new Promise(resolve => setTimeout(resolve, 1000));
 
     try {
-      const registerData: CreateUserRequest = {
-        name: username.trim(),
-        phone: phone.trim(),
-        password: password.trim(),
-        shopLink: shopLink.trim() || undefined,
-      };
+      // First send OTP for registration
+      const otpResponse = await OTPService.sendOTPForRegister({
+        phone: phone.trim()
+      });
 
-      const response = await AuthService.register(registerData);
-      
-      if (response.success) {
-        // Show success toast with BE message
-        showToast(response.message || t('login.registrationSuccess'), 'success');
+      if (otpResponse.success) {
+        showToast(otpResponse.message, 'success');
         
-        // Save token and user info
-        localStorage.setItem(AUTH_TOKEN_KEY, response.token);
-        localStorage.setItem(USER_INFO_KEY, JSON.stringify(response.user));
-        
-        // Small delay to show toast before redirect
+        // Prepare registration data for OTP page
+        const registrationData: CreateUserRequest = {
+          name: username.trim(),
+          phone: phone.trim(),
+          password: password.trim(),
+          shopLink: shopLink.trim() || undefined,
+        };
+
+        // Navigate to OTP verification page
         setTimeout(() => {
-          navigate('/');
+          navigate('/otp-verification', {
+            state: {
+              phone: phone.trim(),
+              sessionInfo: otpResponse.sessionInfo,
+              expiresIn: otpResponse.expiresIn,
+              type: 'register',
+              registrationData
+            }
+          });
         }, 1000);
       }
     } catch (error: any) {
-      console.error('Registration error:', error);
-      // Show error toast instead of inline error
-      showToast(error.message || t('login.registrationFailed'), 'error');
-      setError(''); // Clear inline error since we're using toast
+      console.error('Send OTP error:', error);
+      showToast(error.message || t('login.sendOTPFailed'), 'error');
+      setError('');
     } finally {
       setIsSignUpLoading(false);
     }

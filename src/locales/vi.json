@@ -203,6 +203,7 @@
     "registrationSuccess": "Đăng ký thành công!",
     "invalidCredentials": "Thông tin đăng nhập không đúng",
     "registrationFailed": "Đăng ký thất bại",
+    "sendOTPFailed": "Không thể gửi mã OTP. Vui lòng thử lại",
     "signUpDisabled": "Tính năng đăng ký tạm thời bị vô hiệu hóa",
     "validation": {
       "usernameRequired": "Vui lòng nhập tên người dùng",
@@ -211,6 +212,20 @@
       "confirmPasswordRequired": "Vui lòng nhập xác nhận mật khẩu",
       "passwordMismatch": "Mật khẩu xác nhận không khớp"
     }
+  },
+  "otp": {
+    "title": "Xác thực OTP",
+    "subtitle": "Chúng tôi đã gửi mã xác thực 6 chữ số đến số điện thoại",
+    "enterFullCode": "Vui lòng nhập đầy đủ 6 chữ số",
+    "timeRemaining": "Thời gian còn lại",
+    "expired": "Mã OTP đã hết hạn",
+    "verify": "Xác thực",
+    "verifying": "Đang xác thực...",
+    "resend": "Gửi lại mã",
+    "resending": "Đang gửi...",
+    "backToLogin": "Quay lại đăng nhập",
+    "verificationFailed": "Xác thực OTP thất bại",
+    "resendFailed": "Không thể gửi lại mã OTP"
   },
   "footer": {
     "description": "Công cụ tính giá sản phẩm Shopee chuyên nghiệp. Giúp bạn tối ưu lợi nhuận và định giá sản phẩm chính xác.",
