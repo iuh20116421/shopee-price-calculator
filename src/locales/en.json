@@ -226,6 +226,7 @@
     }
   },
   "login": {
+    "loading": "Loading...",
     "title": "Login | Tuki Group",
     "createAccount": "Create Account",
     "signIn": "Sign in",

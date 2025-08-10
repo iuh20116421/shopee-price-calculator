@@ -199,6 +199,8 @@
     "shopLink": "Link shop Shopee (tùy chọn)",
     "forgotPassword": "Quên mật khẩu?",
     "loading": "Đang xử lý...",
+    "loginSuccess": "Đăng nhập thành công!",
+    "registrationSuccess": "Đăng ký thành công!",
     "invalidCredentials": "Thông tin đăng nhập không đúng",
     "registrationFailed": "Đăng ký thất bại",
     "signUpDisabled": "Tính năng đăng ký tạm thời bị vô hiệu hóa",

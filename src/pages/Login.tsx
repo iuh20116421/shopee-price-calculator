@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { AUTH_TOKEN_KEY, USER_INFO_KEY } from '../constants/accounts';
 import { AuthService } from '../services';
+import { showToast } from '../utils/toast';
 import type { LoginRequest, CreateUserRequest } from '../services';
 
 const Login: React.FC = () => {
@@ -15,7 +16,8 @@ const Login: React.FC = () => {
   const [loginPhone, setLoginPhone] = useState(''); // Riêng cho form đăng nhập
   const [shopLink, setShopLink] = useState('');
   const [error, setError] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [isSignInLoading, setIsSignInLoading] = useState(false);
+  const [isSignUpLoading, setIsSignUpLoading] = useState(false);
   const [showSignInPassword, setShowSignInPassword] = useState(false);
   const [showSignUpPassword, setShowSignUpPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
@@ -58,8 +60,11 @@ const Login: React.FC = () => {
       return;
     }
 
-    setLoading(true);
+    setIsSignUpLoading(true);
     setError('');
+
+    // Add 1 second delay to show loading
+    await new Promise(resolve => setTimeout(resolve, 1000));
 
     try {
       const registerData: CreateUserRequest = {
@@ -72,18 +77,25 @@ const Login: React.FC = () => {
       const response = await AuthService.register(registerData);
       
       if (response.success) {
+        // Show success toast with BE message
+        showToast(response.message || t('login.registrationSuccess'), 'success');
+        
         // Save token and user info
         localStorage.setItem(AUTH_TOKEN_KEY, response.token);
         localStorage.setItem(USER_INFO_KEY, JSON.stringify(response.user));
         
-        // Redirect to home
-        navigate('/');
+        // Small delay to show toast before redirect
+        setTimeout(() => {
+          navigate('/');
+        }, 1000);
       }
     } catch (error: any) {
       console.error('Registration error:', error);
-      setError(error.message || t('login.registrationFailed'));
+      // Show error toast instead of inline error
+      showToast(error.message || t('login.registrationFailed'), 'error');
+      setError(''); // Clear inline error since we're using toast
     } finally {
-      setLoading(false);
+      setIsSignUpLoading(false);
     }
   };
 
@@ -100,8 +112,11 @@ const Login: React.FC = () => {
       return;
     }
     
-    setLoading(true);
+    setIsSignInLoading(true);
     setError('');
+
+    // Add 1 second delay to show loading
+    await new Promise(resolve => setTimeout(resolve, 1000));
 
     try {
       const loginData: LoginRequest = {
@@ -112,18 +127,25 @@ const Login: React.FC = () => {
       const response = await AuthService.login(loginData);
       
       if (response.success) {
+        // Show success toast with BE message
+        showToast(response.message || t('login.loginSuccess'), 'success');
+        
         // Save token and user info
         localStorage.setItem(AUTH_TOKEN_KEY, response.token);
         localStorage.setItem(USER_INFO_KEY, JSON.stringify(response.user));
         
-        // Redirect to home
-        navigate('/');
+        // Small delay to show toast before redirect
+        setTimeout(() => {
+          navigate('/');
+        }, 1000);
       }
     } catch (error: any) {
       console.error('Login error:', error);
-      setError(error.message || t('login.invalidCredentials'));
+      // Show error toast instead of inline error
+      showToast(error.message || t('login.invalidCredentials'), 'error');
+      setError(''); // Clear inline error since we're using toast
     } finally {
-      setLoading(false);
+      setIsSignInLoading(false);
     }
   };
 
@@ -193,8 +215,13 @@ const Login: React.FC = () => {
               />
             </div>
             {error && <div className="error-message">{error}</div>}
-            <button type="submit" disabled={loading}>
-              {loading ? t('login.loading') || 'Loading...' : t('login.signUp')}
+            <button type="submit" disabled={isSignUpLoading}>
+              {isSignUpLoading ? (
+                <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+                  <div className="spinner"></div>
+                  { 'Loading...'}
+                </span>
+              ) : t('login.signUp')}
             </button>
             <button type="button" className="mobile-switch-btn" onClick={handleSignInClick}>
               {t('login.signInButton')}
@@ -238,8 +265,13 @@ const Login: React.FC = () => {
             </div>
             {error && <div className="error-message">{error}</div>}
             <a href="/">{t('login.forgotPassword')}</a>
-            <button type="submit" disabled={loading}>
-              {loading ? t('login.loading') || 'Loading...' : t('login.signInButton')}
+            <button type="submit" disabled={isSignInLoading}>
+              {isSignInLoading ? (
+                <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+                  <div className="spinner"></div>
+                  { 'Loading...'}
+                </span>
+              ) : t('login.signInButton')}
             </button>
             <button type="button" className="mobile-switch-btn" onClick={handleSignUpClick}>
               {t('login.signUp')}
