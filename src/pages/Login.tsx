@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import { accounts, AUTH_TOKEN_KEY, USER_INFO_KEY } from '../constants/accounts';
+import { AUTH_TOKEN_KEY, USER_INFO_KEY } from '../constants/accounts';
+import { AuthService } from '../services';
+import type { LoginRequest, CreateUserRequest } from '../services';
 
 const Login: React.FC = () => {
   const { t } = useTranslation();
@@ -10,8 +12,10 @@ const Login: React.FC = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [phone, setPhone] = useState('');
+  const [loginPhone, setLoginPhone] = useState(''); // Riêng cho form đăng nhập
   const [shopLink, setShopLink] = useState('');
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
   const [showSignInPassword, setShowSignInPassword] = useState(false);
   const [showSignUpPassword, setShowSignUpPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
@@ -29,7 +33,7 @@ const Login: React.FC = () => {
     setIsSignUp(false);
   };
 
-  const handleSignUpSubmit = (e: React.FormEvent) => {
+  const handleSignUpSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Validate required fields
@@ -54,23 +58,72 @@ const Login: React.FC = () => {
       return;
     }
 
-    setError(t('login.signUpDisabled'));
+    setLoading(true);
+    setError('');
+
+    try {
+      const registerData: CreateUserRequest = {
+        name: username.trim(),
+        phone: phone.trim(),
+        password: password.trim(),
+        shopLink: shopLink.trim() || undefined,
+      };
+
+      const response = await AuthService.register(registerData);
+      
+      if (response.success) {
+        // Save token and user info
+        localStorage.setItem(AUTH_TOKEN_KEY, response.token);
+        localStorage.setItem(USER_INFO_KEY, JSON.stringify(response.user));
+        
+        // Redirect to home
+        navigate('/');
+      }
+    } catch (error: any) {
+      console.error('Registration error:', error);
+      setError(error.message || t('login.registrationFailed'));
+    } finally {
+      setLoading(false);
+    }
   };
 
-  const handleSignInSubmit = (e: React.FormEvent) => {
+  const handleSignInSubmit = async (e: React.FormEvent) => {
     e.preventDefault(); 
-    const account = accounts.find(acc => acc.username === username && acc.password === password);
     
-    if (account) {
-      // Tạo token đơn giản (trong thực tế nên dùng JWT)
-      const token = btoa(JSON.stringify({ username: account.username, role: account.role }));
-      localStorage.setItem(AUTH_TOKEN_KEY, token);
-      localStorage.setItem(USER_INFO_KEY, JSON.stringify(account));
+    // Validate required fields
+    if (!loginPhone.trim()) {
+      setError(t('login.validation.phoneRequired'));
+      return;
+    }
+    if (!password.trim()) {
+      setError(t('login.validation.passwordRequired'));
+      return;
+    }
+    
+    setLoading(true);
+    setError('');
+
+    try {
+      const loginData: LoginRequest = {
+        phone: loginPhone.trim(),
+        password: password.trim(),
+      };
+
+      const response = await AuthService.login(loginData);
       
-      // Redirect về trang chủ
-      navigate('/');
-    } else {
-      setError(t('login.invalidCredentials'));
+      if (response.success) {
+        // Save token and user info
+        localStorage.setItem(AUTH_TOKEN_KEY, response.token);
+        localStorage.setItem(USER_INFO_KEY, JSON.stringify(response.user));
+        
+        // Redirect to home
+        navigate('/');
+      }
+    } catch (error: any) {
+      console.error('Login error:', error);
+      setError(error.message || t('login.invalidCredentials'));
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -140,7 +193,9 @@ const Login: React.FC = () => {
               />
             </div>
             {error && <div className="error-message">{error}</div>}
-            <button type="submit">{t('login.signUp')}</button>
+            <button type="submit" disabled={loading}>
+              {loading ? t('login.loading') || 'Loading...' : t('login.signUp')}
+            </button>
             <button type="button" className="mobile-switch-btn" onClick={handleSignInClick}>
               {t('login.signInButton')}
             </button>
@@ -164,10 +219,10 @@ const Login: React.FC = () => {
             </div>
             <span>{t('login.orUseAccount')}</span>
             <input 
-              type="text" 
-              placeholder={t('login.username')} 
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              type="tel" 
+              placeholder={t('login.phone')} 
+              value={loginPhone}
+              onChange={(e) => setLoginPhone(e.target.value)}
             />
             <div className="password-input-container">
               <input 
@@ -183,7 +238,9 @@ const Login: React.FC = () => {
             </div>
             {error && <div className="error-message">{error}</div>}
             <a href="/">{t('login.forgotPassword')}</a>
-            <button type="submit">{t('login.signInButton')}</button>
+            <button type="submit" disabled={loading}>
+              {loading ? t('login.loading') || 'Loading...' : t('login.signInButton')}
+            </button>
             <button type="button" className="mobile-switch-btn" onClick={handleSignUpClick}>
               {t('login.signUp')}
             </button>

@@ -179,6 +179,37 @@
       "marketing": "Chi phí quảng cáo, afiliate, voucher trên giá bán (ví dụ: 5.5%)."
     }
   },
+  "login": {
+    "title": "Đăng nhập - Shopee Price Calculator",
+    "signIn": "Đăng nhập",
+    "signUp": "Đăng ký",
+    "signInButton": "Đăng nhập",
+    "signUpButton": "Đăng ký",
+    "createAccount": "Tạo tài khoản",
+    "welcomeBack": "Chào mừng bạn trở lại!",
+    "welcomeMessage": "Để giữ kết nối với chúng tôi, vui lòng đăng nhập bằng thông tin cá nhân của bạn",
+    "helloFriend": "Xin chào, bạn!",
+    "startJourney": "Nhập thông tin cá nhân của bạn và bắt đầu hành trình với chúng tôi",
+    "orUseEmail": "hoặc sử dụng email để đăng ký",
+    "orUseAccount": "hoặc sử dụng tài khoản của bạn",
+    "username": "Tên người dùng",
+    "phone": "Số điện thoại",
+    "password": "Mật khẩu",
+    "confirmPassword": "Xác nhận mật khẩu",
+    "shopLink": "Link shop Shopee (tùy chọn)",
+    "forgotPassword": "Quên mật khẩu?",
+    "loading": "Đang xử lý...",
+    "invalidCredentials": "Thông tin đăng nhập không đúng",
+    "registrationFailed": "Đăng ký thất bại",
+    "signUpDisabled": "Tính năng đăng ký tạm thời bị vô hiệu hóa",
+    "validation": {
+      "usernameRequired": "Vui lòng nhập tên người dùng",
+      "phoneRequired": "Vui lòng nhập số điện thoại",
+      "passwordRequired": "Vui lòng nhập mật khẩu",
+      "confirmPasswordRequired": "Vui lòng nhập xác nhận mật khẩu",
+      "passwordMismatch": "Mật khẩu xác nhận không khớp"
+    }
+  },
   "footer": {
     "description": "Công cụ tính giá sản phẩm Shopee chuyên nghiệp. Giúp bạn tối ưu lợi nhuận và định giá sản phẩm chính xác.",
     "quickLinks": "Liên kết nhanh",
@@ -243,7 +274,7 @@
     "signInButton": "Đăng nhập",
     "signUpButton": "Đăng ký",
     "signOut": "Đăng xuất",
-    "invalidCredentials": "Tên đăng nhập hoặc mật khẩu không đúng",
+    "invalidCredentials": "Số điện thoại hoặc mật khẩu không đúng",
     "signUpDisabled": "Chức năng đăng ký tạm thời không khả dụng",
     "phone": "Số điện thoại",
     "shopLink": "Link shop",

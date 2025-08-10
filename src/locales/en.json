@@ -245,7 +245,7 @@
     "signInButton": "Sign In",
     "signUpButton": "Sign Up",
     "signOut": "Sign Out",
-    "invalidCredentials": "Invalid username or password",
+    "invalidCredentials": "Invalid phone number or password",
     "signUpDisabled": "Sign up feature is temporarily unavailable",
     "validation": {
       "usernameRequired": "Please enter username",
