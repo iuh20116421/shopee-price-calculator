@@ -287,11 +287,36 @@
   background: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  color: #333;
+}
+
+.social-container .social.facebook {
+  color: #1877f2;
+  border-color: #1877f2;
+}
+
+.social-container .social.google {
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border-color: #1877f2;
+}
+
+.social-container .social.instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border-image: #1877f2;
+  border-color: #1877f2;;
+  /* border-image: linear-gradient(45deg, #fdf497, #fd5949, #d6249f, #285AEB) 1; */
+  border-radius: 50%;
 }
 
 .social-container .social:hover {
-  border-color: #FF4B2B;
-  color: #FF4B2B;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .forgot-password {
@@ -321,7 +346,6 @@
 .password-input-container {
   position: relative;
   width: 100%;
-  margin: 8px 0;
 }
 
 .password-input-container input {

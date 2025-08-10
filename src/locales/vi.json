@@ -229,8 +229,9 @@
     "title": "Đăng nhập | Tuki Group",
     "createAccount": "Tạo tài khoản",
     "signIn": "Đăng nhập",
-    "username": "Tên đăng nhập",
+    "username": "Tên đăng ký",
     "password": "Mật khẩu",
+    "confirmPassword": "Nhập lại mật khẩu",
     "forgotPassword": "Quên mật khẩu?",
     "signUp": "Đăng ký",
     "welcomeBack": "Chào mừng trở lại!",
@@ -243,6 +244,15 @@
     "signUpButton": "Đăng ký",
     "signOut": "Đăng xuất",
     "invalidCredentials": "Tên đăng nhập hoặc mật khẩu không đúng",
-    "signUpDisabled": "Chức năng đăng ký tạm thời không khả dụng"
+    "signUpDisabled": "Chức năng đăng ký tạm thời không khả dụng",
+    "phone": "Số điện thoại",
+    "shopLink": "Link shop",
+    "validation": {
+      "usernameRequired": "Vui lòng nhập tên đăng ký",
+      "phoneRequired": "Vui lòng nhập số điện thoại", 
+      "passwordRequired": "Vui lòng nhập mật khẩu",
+      "confirmPasswordRequired": "Vui lòng nhập lại mật khẩu",
+      "passwordMismatch": "Mật khẩu nhập lại không khớp"
+    }
   }
 } 

@@ -231,6 +231,9 @@
     "signIn": "Sign in",
     "username": "Username",
     "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "phone": "Phone Number",
+    "shopLink": "Shop Link",
     "forgotPassword": "Forgot your password?",
     "signUp": "Sign Up",
     "welcomeBack": "Welcome Back!",
@@ -243,6 +246,13 @@
     "signUpButton": "Sign Up",
     "signOut": "Sign Out",
     "invalidCredentials": "Invalid username or password",
-    "signUpDisabled": "Sign up feature is temporarily unavailable"
+    "signUpDisabled": "Sign up feature is temporarily unavailable",
+    "validation": {
+      "usernameRequired": "Please enter username",
+      "phoneRequired": "Please enter phone number",
+      "passwordRequired": "Please enter password",
+      "confirmPasswordRequired": "Please confirm your password",
+      "passwordMismatch": "Passwords do not match"
+    }
   }
 } 

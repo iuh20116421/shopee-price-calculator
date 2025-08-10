@@ -8,9 +8,13 @@ const Login: React.FC = () => {
   const [isSignUp, setIsSignUp] = useState(false);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [phone, setPhone] = useState('');
+  const [shopLink, setShopLink] = useState('');
   const [error, setError] = useState('');
   const [showSignInPassword, setShowSignInPassword] = useState(false);
   const [showSignUpPassword, setShowSignUpPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -27,11 +31,34 @@ const Login: React.FC = () => {
 
   const handleSignUpSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Validate required fields
+    if (!username.trim()) {
+      setError(t('login.validation.usernameRequired'));
+      return;
+    }
+    if (!phone.trim()) {
+      setError(t('login.validation.phoneRequired'));
+      return;
+    }
+    if (!password.trim()) {
+      setError(t('login.validation.passwordRequired'));
+      return;
+    }
+    if (!confirmPassword.trim()) {
+      setError(t('login.validation.confirmPasswordRequired'));
+      return;
+    }
+    if (password !== confirmPassword) {
+      setError(t('login.validation.passwordMismatch'));
+      return;
+    }
+
     setError(t('login.signUpDisabled'));
   };
 
   const handleSignInSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+    e.preventDefault(); 
     const account = accounts.find(acc => acc.username === username && acc.password === password);
     
     if (account) {
@@ -55,33 +82,61 @@ const Login: React.FC = () => {
           <form onSubmit={handleSignUpSubmit}>
             <h1>{t('login.createAccount')}</h1>
             <div className="social-container">
-              <a href="https://www.facebook.com" className="social">
+              <a href="https://www.facebook.com" className="social facebook">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="https://www.google.com" className="social">
+              <a href="https://www.google.com" className="social google">
                 <i className="fab fa-google"></i>
               </a>
-              <a href="https://www.instagram.com" className="social">
+              <a href="https://www.instagram.com" className="social instagram">
                 <i className="fab fa-instagram"></i>
               </a>
             </div>
             <span>{t('login.orUseEmail')}</span>
             <input 
               type="text" 
-              placeholder={t('login.username')} 
+              placeholder={`${t('login.username')} *`}
               value={username}
               onChange={(e) => setUsername(e.target.value)}
+              required
+            />
+            <input 
+              type="tel" 
+              placeholder={`${t('login.phone')} *`}
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              required
+            />
+            <input 
+              type="text" 
+              placeholder={t('login.shopLink')}
+              value={shopLink}
+              onChange={(e) => setShopLink(e.target.value)}
             />
             <div className="password-input-container">
               <input 
                 type={showSignUpPassword ? "text" : "password"}
-                placeholder={t('login.password')} 
+                placeholder={`${t('login.password')} *`}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                required
               />
               <i 
                 className={`fas ${showSignUpPassword ? 'fa-eye' : 'fa-eye-slash'}`}
                 onClick={() => setShowSignUpPassword(!showSignUpPassword)}
+              />
+            </div>
+            <div className="password-input-container">
+              <input 
+                type={showConfirmPassword ? "text" : "password"}
+                placeholder={`${t('login.confirmPassword')} *`}
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                required
+              />
+              <i 
+                className={`fas ${showConfirmPassword ? 'fa-eye' : 'fa-eye-slash'}`}
+                onClick={() => setShowConfirmPassword(!showConfirmPassword)}
               />
             </div>
             {error && <div className="error-message">{error}</div>}
@@ -97,13 +152,13 @@ const Login: React.FC = () => {
           <form onSubmit={handleSignInSubmit}>
             <h1>{t('login.signIn')}</h1>
             <div className="social-container">
-              <a href="https://www.facebook.com" className="social">
+              <a href="https://www.facebook.com" className="social facebook">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="https://www.google.com" className="social">
+              <a href="https://www.google.com" className="social google">
                 <i className="fab fa-google"></i>
               </a>
-              <a href="https://www.instagram.com" className="social">
+              <a href="https://www.instagram.com" className="social instagram">
                 <i className="fab fa-instagram"></i>
               </a>
             </div>
