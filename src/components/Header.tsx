@@ -5,26 +5,26 @@ import { Menu, Calculator, Home, ChevronDown, ShoppingBag, BookOpen, FileText, U
 import LanguageSwitcher from './LanguageSwitcher';
 import ConsultationPopup from './ConsultationPopup';
 import logoImage from '../assets/images/logos.png';
-import { AUTH_TOKEN_KEY, USER_INFO_KEY } from '../constants/accounts';
+// import { AUTH_TOKEN_KEY, USER_INFO_KEY } from '../constants/accounts';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  // const [isAuthenticated, setIsAuthenticated] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
 
-  useEffect(() => {
-    const token = localStorage.getItem(AUTH_TOKEN_KEY);
-    const userInfo = localStorage.getItem(USER_INFO_KEY);
-    if (token && userInfo) {
-      setIsAuthenticated(true);
-    } else {
-      setIsAuthenticated(false);
-    }
-  }, [location.pathname]); // Re-check when route changes
+  // useEffect(() => {
+  //   const token = localStorage.getItem(AUTH_TOKEN_KEY);
+  //   const userInfo = localStorage.getItem(USER_INFO_KEY);
+  //   if (token && userInfo) {
+  //     setIsAuthenticated(true);
+  //   } else {
+  //     setIsAuthenticated(false);
+  //   }
+  // }, [location.pathname]); // Re-check when route changes
 
   // Get calculator URL based on current language
   const getCalculatorUrl = () => {
@@ -46,12 +46,12 @@ const Header: React.FC = () => {
     };
   }, [isMenuOpen]);
 
-  const handleLogout = () => {
-    localStorage.removeItem(AUTH_TOKEN_KEY);
-    localStorage.removeItem(USER_INFO_KEY);
-    setIsAuthenticated(false);
-    navigate(i18n.language === 'en' ? '/login' : '/dang-nhap');
-  };
+  // const handleLogout = () => {
+  //   localStorage.removeItem(AUTH_TOKEN_KEY);
+  //   localStorage.removeItem(USER_INFO_KEY);
+  //   setIsAuthenticated(false);
+  //   navigate(i18n.language === 'en' ? '/login' : '/dang-nhap');
+  // };
 
   const navigation = [
     { 
@@ -180,7 +180,8 @@ const Header: React.FC = () => {
               >
                 {t('navigation.consultation')}
               </button>
-              {isAuthenticated ? (
+              {/* Tạm thời comment out phần đăng nhập/đăng xuất */}
+              {/* {isAuthenticated ? (
                 <>
                  
                   <button 
@@ -197,7 +198,7 @@ const Header: React.FC = () => {
                 >
                   {t('login.signIn')}
                 </Link>
-              )}
+              )} */}
             </div>
 
             {/* Mobile CTA and Menu */}
@@ -209,7 +210,8 @@ const Header: React.FC = () => {
                 >
                   {t('navigation.consultation')}
                 </button>
-                {isAuthenticated ? (
+                {/* Tạm thời comment out phần đăng nhập/đăng xuất mobile */}
+                {/* {isAuthenticated ? (
                   <button 
                     className="mobile-cta-button"
                     onClick={handleLogout}
@@ -223,7 +225,7 @@ const Header: React.FC = () => {
                   >
                     {t('login.signIn')}
                   </Link>
-                )}
+                )} */}
               </div>
               <div className="header-mobile-toggle">
                 <button

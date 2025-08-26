@@ -30,13 +30,13 @@ interface ProductSuggestion {
 const Calculator: React.FC = () => {
   const getDataFixedFee = useCallback(async () => {
     try {
-      const API_KEY = process.env.REACT_APP_API_KEY;
-      const SPREADSHEET_ID = process.env.REACT_APP_SPREADSHEET_ID;
-      const RANGE = 'Chi phí Shopee!A2:I2';
+      const API_KEY = 'IoCk1zjePChfFpw65JHqD0Y3';
+      const SPREADSHEET_ID = '1onh0l-7hZ2JQDr9c4rnkC6QHXALYnvRJGdMOs2Wb8w4';
+      const RANGE = 'LadiPage!A2:AZ67';
       
       console.log('Fetching data from Google Sheets...');
       const response = await axios.get(`https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE}?key=${API_KEY}`);
-      
+      console.log('Response from Google Sheets:', response.data);
       if (response.data && response.data.values) {
         const values = response.data.values;
                          if (values.length > 0) {
@@ -70,7 +70,9 @@ const Calculator: React.FC = () => {
       }
       
     } catch (error) {
-      showToast('Error fetching data from Google Sheets', 'error');
+      // Tạm thời ẩn thông báo lỗi Google Sheets
+      // showToast('Error fetching data from Google Sheets', 'error');
+      console.log('Google Sheets fetch error:', error);
     }
   }, []);
 
@@ -118,9 +120,9 @@ const Calculator: React.FC = () => {
   const getProductData = useCallback((): CategoryData => {
     const isEnglish = currentLanguage === 'en';
     if (formData.shopeeType === 'mall') {
-      return isEnglish ? shopeeMallDataEn : shopeeMallData;
+      return (isEnglish ? shopeeMallDataEn : shopeeMallData) as CategoryData;
     } else {
-      return isEnglish ? shopeeRegularDataEn : shopeeRegularData;
+      return (isEnglish ? shopeeRegularDataEn : shopeeRegularData) as CategoryData;
     }
   }, [currentLanguage, formData.shopeeType]);
 

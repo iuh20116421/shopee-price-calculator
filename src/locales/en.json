@@ -113,7 +113,7 @@
       "contentXtra": "Content Xtra",
       "voucherXtra": "Voucher Xtra",
       "freeshipXtra": "Freeship Xtra (Mall only)",
-      "extraServicesNote": "When multiple services are selected, the system will calculate based on the highest fee"
+      "extraServicesNote": "When multiple services are selected, the system calculates based on the highest fee"
     },
     "costs": {
       "title": "Estimated Costs",
@@ -174,9 +174,9 @@
       "hotline": "Hotline: 0789 282 979"
     },
     "tooltips": {
-      "costPrice": "Total cost to have the product ready for sale: import price, shipping, tax, packaging, storage.",
-      "profit": "Desired profit percentage on selling price (e.g., 15.50%).",
-      "marketing": "Advertising, affiliate, voucher costs on selling price (e.g., 5.5%)."
+      "costPrice": "Total product cost: import price, shipping, tax, packaging, storage",
+      "profit": "Desired profit percentage on selling price (e.g., 15.50%)",
+      "marketing": "Advertising, affiliate, voucher costs on selling price (e.g., 5.5%)"
     }
   },
   "footer": {
@@ -226,11 +226,15 @@
     }
   },
   "login": {
+    "loading": "Loading...",
     "title": "Login | Tuki Group",
     "createAccount": "Create Account",
     "signIn": "Sign in",
     "username": "Username",
     "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "phone": "Phone Number",
+    "shopLink": "Shop Link",
     "forgotPassword": "Forgot your password?",
     "signUp": "Sign Up",
     "welcomeBack": "Welcome Back!",
@@ -242,7 +246,14 @@
     "signInButton": "Sign In",
     "signUpButton": "Sign Up",
     "signOut": "Sign Out",
-    "invalidCredentials": "Invalid username or password",
-    "signUpDisabled": "Sign up feature is temporarily unavailable"
+    "invalidCredentials": "Invalid phone number or password",
+    "signUpDisabled": "Sign up feature is temporarily unavailable",
+    "validation": {
+      "usernameRequired": "Please enter username",
+      "phoneRequired": "Please enter phone number",
+      "passwordRequired": "Please enter password",
+      "confirmPasswordRequired": "Please confirm your password",
+      "passwordMismatch": "Passwords do not match"
+    }
   }
 } 

@@ -1,16 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import { accounts, AUTH_TOKEN_KEY, USER_INFO_KEY } from '../constants/accounts';
+import { AUTH_TOKEN_KEY, USER_INFO_KEY } from '../constants/accounts';
+import { AuthService, OTPService } from '../services';
+import { showToast } from '../utils/toast';
+import type { LoginRequest, CreateUserRequest } from '../services';
 
 const Login: React.FC = () => {
   const { t } = useTranslation();
   const [isSignUp, setIsSignUp] = useState(false);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [phone, setPhone] = useState('');
+  const [loginPhone, setLoginPhone] = useState(''); // Riêng cho form đăng nhập
+  const [shopLink, setShopLink] = useState('');
   const [error, setError] = useState('');
+  const [isSignInLoading, setIsSignInLoading] = useState(false);
+  const [isSignUpLoading, setIsSignUpLoading] = useState(false);
   const [showSignInPassword, setShowSignInPassword] = useState(false);
   const [showSignUpPassword, setShowSignUpPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -25,25 +35,123 @@ const Login: React.FC = () => {
     setIsSignUp(false);
   };
 
-  const handleSignUpSubmit = (e: React.FormEvent) => {
+  const handleSignUpSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setError(t('login.signUpDisabled'));
+    
+    // Validate required fields
+    if (!username.trim()) {
+      setError(t('login.validation.usernameRequired'));
+      return;
+    }
+    if (!phone.trim()) {
+      setError(t('login.validation.phoneRequired'));
+      return;
+    }
+    if (!password.trim()) {
+      setError(t('login.validation.passwordRequired'));
+      return;
+    }
+    if (!confirmPassword.trim()) {
+      setError(t('login.validation.confirmPasswordRequired'));
+      return;
+    }
+    if (password !== confirmPassword) {
+      setError(t('login.validation.passwordMismatch'));
+      return;
+    }
+
+    setIsSignUpLoading(true);
+    setError('');
+
+    // Add 1 second delay to show loading
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
+    try {
+      // First send OTP for registration
+      const otpResponse = await OTPService.sendOTPForRegister({
+        phone: phone.trim()
+      });
+
+      if (otpResponse.success) {
+        showToast(otpResponse.message, 'success');
+        
+        // Prepare registration data for OTP page
+        const registrationData: CreateUserRequest = {
+          name: username.trim(),
+          phone: phone.trim(),
+          password: password.trim(),
+          shopLink: shopLink.trim() || undefined,
+        };
+
+        // Navigate to OTP verification page
+        setTimeout(() => {
+          navigate('/otp-verification', {
+            state: {
+              phone: phone.trim(),
+              sessionInfo: otpResponse.sessionInfo,
+              expiresIn: otpResponse.expiresIn,
+              type: 'register',
+              registrationData
+            }
+          });
+        }, 1000);
+      }
+    } catch (error: any) {
+      console.error('Send OTP error:', error);
+      showToast(error.message || t('login.sendOTPFailed'), 'error');
+      setError('');
+    } finally {
+      setIsSignUpLoading(false);
+    }
   };
 
-  const handleSignInSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const account = accounts.find(acc => acc.username === username && acc.password === password);
+  const handleSignInSubmit = async (e: React.FormEvent) => {
+    e.preventDefault(); 
     
-    if (account) {
-      // Tạo token đơn giản (trong thực tế nên dùng JWT)
-      const token = btoa(JSON.stringify({ username: account.username, role: account.role }));
-      localStorage.setItem(AUTH_TOKEN_KEY, token);
-      localStorage.setItem(USER_INFO_KEY, JSON.stringify(account));
+    // Validate required fields
+    if (!loginPhone.trim()) {
+      setError(t('login.validation.phoneRequired'));
+      return;
+    }
+    if (!password.trim()) {
+      setError(t('login.validation.passwordRequired'));
+      return;
+    }
+    
+    setIsSignInLoading(true);
+    setError('');
+
+    // Add 1 second delay to show loading
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
+    try {
+      const loginData: LoginRequest = {
+        phone: loginPhone.trim(),
+        password: password.trim(),
+      };
+
+      const response = await AuthService.login(loginData);
       
-      // Redirect về trang chủ
-      navigate('/');
-    } else {
-      setError(t('login.invalidCredentials'));
+      if (response.success) {
+        // Show success toast with BE message
+        showToast(response.message || t('login.loginSuccess'), 'success');
+        
+        // Save token and user info
+        localStorage.setItem(AUTH_TOKEN_KEY, response.token);
+        localStorage.setItem(USER_INFO_KEY, JSON.stringify(response.user));
+        
+        // Small delay to show toast before redirect
+        setTimeout(() => {
+          navigate('/');
+        }, 1000);
+      }
+    } catch (error: any) {
+      console.error('Login error:', error);
+      // Show error toast instead of inline error
+      showToast(error.message || t('login.invalidCredentials'), 'error');
+      setError(''); // Clear inline error since we're using toast
+    } finally {
+      setIsSignInLoading(false);
     }
   };
 
@@ -55,37 +163,72 @@ const Login: React.FC = () => {
           <form onSubmit={handleSignUpSubmit}>
             <h1>{t('login.createAccount')}</h1>
             <div className="social-container">
-              <a href="https://www.facebook.com" className="social">
+              <a href="https://www.facebook.com" className="social facebook">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="https://www.google.com" className="social">
+              <a href="https://www.google.com" className="social google">
                 <i className="fab fa-google"></i>
               </a>
-              <a href="https://www.instagram.com" className="social">
+              <a href="https://www.instagram.com" className="social instagram">
                 <i className="fab fa-instagram"></i>
               </a>
             </div>
             <span>{t('login.orUseEmail')}</span>
             <input 
               type="text" 
-              placeholder={t('login.username')} 
+              placeholder={`${t('login.username')} *`}
               value={username}
               onChange={(e) => setUsername(e.target.value)}
+              required
+            />
+            <input 
+              type="tel" 
+              placeholder={`${t('login.phone')} *`}
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              required
+            />
+            <input 
+              type="text" 
+              placeholder={t('login.shopLink')}
+              value={shopLink}
+              onChange={(e) => setShopLink(e.target.value)}
             />
             <div className="password-input-container">
               <input 
                 type={showSignUpPassword ? "text" : "password"}
-                placeholder={t('login.password')} 
+                placeholder={`${t('login.password')} *`}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                required
               />
               <i 
                 className={`fas ${showSignUpPassword ? 'fa-eye' : 'fa-eye-slash'}`}
                 onClick={() => setShowSignUpPassword(!showSignUpPassword)}
               />
             </div>
+            <div className="password-input-container">
+              <input 
+                type={showConfirmPassword ? "text" : "password"}
+                placeholder={`${t('login.confirmPassword')} *`}
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                required
+              />
+              <i 
+                className={`fas ${showConfirmPassword ? 'fa-eye' : 'fa-eye-slash'}`}
+                onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+              />
+            </div>
             {error && <div className="error-message">{error}</div>}
-            <button type="submit">{t('login.signUp')}</button>
+            <button type="submit" disabled={isSignUpLoading}>
+              {isSignUpLoading ? (
+                <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+                  <div className="spinner"></div>
+                  { 'Loading...'}
+                </span>
+              ) : t('login.signUp')}
+            </button>
             <button type="button" className="mobile-switch-btn" onClick={handleSignInClick}>
               {t('login.signInButton')}
             </button>
@@ -97,22 +240,22 @@ const Login: React.FC = () => {
           <form onSubmit={handleSignInSubmit}>
             <h1>{t('login.signIn')}</h1>
             <div className="social-container">
-              <a href="https://www.facebook.com" className="social">
+              <a href="https://www.facebook.com" className="social facebook">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="https://www.google.com" className="social">
+              <a href="https://www.google.com" className="social google">
                 <i className="fab fa-google"></i>
               </a>
-              <a href="https://www.instagram.com" className="social">
+              <a href="https://www.instagram.com" className="social instagram">
                 <i className="fab fa-instagram"></i>
               </a>
             </div>
             <span>{t('login.orUseAccount')}</span>
             <input 
-              type="text" 
-              placeholder={t('login.username')} 
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              type="tel" 
+              placeholder={t('login.phone')} 
+              value={loginPhone}
+              onChange={(e) => setLoginPhone(e.target.value)}
             />
             <div className="password-input-container">
               <input 
@@ -128,7 +271,14 @@ const Login: React.FC = () => {
             </div>
             {error && <div className="error-message">{error}</div>}
             <a href="/">{t('login.forgotPassword')}</a>
-            <button type="submit">{t('login.signInButton')}</button>
+            <button type="submit" disabled={isSignInLoading}>
+              {isSignInLoading ? (
+                <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+                  <div className="spinner"></div>
+                  { 'Loading...'}
+                </span>
+              ) : t('login.signInButton')}
+            </button>
             <button type="button" className="mobile-switch-btn" onClick={handleSignUpClick}>
               {t('login.signUp')}
             </button>
