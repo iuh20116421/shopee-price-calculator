@@ -1,2366 +1,1701 @@
 {
+  "Thiết Bị Âm Thanh": {
+    "Amply và đầu chỉnh âm": "10,50%",
+    "Cáp âm thanh/ video & Đầu chuyển": "12,60%",
+    "Tai nghe nhét tai & chụp tai": "12,60%",
+    "Dàn âm thanh": {
+      "Thu sóng AV": "12,60%",
+      "Hệ thống âm thanh giải trí tại gia": "10,50%",
+      "Khác": "12,60%",
+      "Loa": "12,60%"
+    },
+    "Máy nghe nhạc": {
+      "CD, DVD & Bluray": "12,60%",
+      "MP3 & MP4": "12,60%",
+      "Khác": "12,60%",
+      "Radio & Cát-sét": "12,60%",
+      "Máy ghi âm": "10,50%"
+    },
+    "Micro thu âm": "12,60%",
+    "Khác": "12,60%"
+  },
   "Cameras & Flycam": {
     "Phụ kiện máy ảnh": {
-      "Đế pin": "6,38%",
-      "Bộ sạc pin": "6,38%",
-      "Túi đựng máy ảnh": "6,38%",
-      "Phụ kiện đèn Flash": {
-        "Dụng cụ tản sáng": "6,38%",
-        "Thiết bị kích đèn": "6,38%",
-        "Khác": "6,38%"
-      },
-      "Đèn Flash": "6,38%",
-      "Tay cầm chống rung": "6,38%",
-      "Thiết bị ánh sáng và phòng chụp": "6,38%",
-      "Khác": "6,38%",
-      "Giấy & phim in ảnh": "6,38%",
-      "Máy in ảnh": "6,38%",
-      "Chân máy ảnh": "6,38%"
+      "Đế pin": "12,60%",
+      "Bộ sạc pin": "12,60%",
+      "Túi đựng máy ảnh": "12,60%",
+      "Phụ kiện đèn Flash": "12,60%",
+      "Đèn Flash": "12,60%",
+      "Tay cầm chống rung": "12,60%",
+      "Thiết bị ánh sáng và phòng chụp": "12,60%",
+      "Khác": "12,60%",
+      "Giấy & phim in ảnh": "12,60%",
+      "Máy in ảnh": "12,60%",
+      "Chân máy ảnh": "12,60%"
     },
     "Phụ kiện chăm sóc máy ảnh": {
-      "Bóng thổi bụi": "6,38%",
-      "Bộ vệ sinh máy ảnh": "6,38%",
-      "Tủ & hộp chống ẩm": "6,38%",
-      "Bút lau & bàn chải làm sạch ống kính": "6,38%",
-      "Khác": "6,38%",
-      "Gói hút ẩm": "6,38%"
+      "Bóng thổi bụi": "12,60%",
+      "Bộ vệ sinh máy ảnh": "12,60%",
+      "Tủ & hộp chống ẩm": "12,60%",
+      "Bút lau & bàn chải làm sạch ống kính": "12,60%",
+      "Khác": "12,60%",
+      "Gói hút ẩm": "12,60%"
     },
     "Máy ảnh": {
-      "Máy quay hành động": "6,38%",
-      "Máy ảnh film": "6,38%",
-      "Máy ảnh cơ/DSLRs": "3,93%",
-      "Máy ảnh chụp lấy liền": "6,38%",
-      "Máy ảnh không gương lật": "3,93%",
-      "Khác": "6,38%",
-      "Máy ảnh kỹ thuật số": "6,38%",
-      "Máy quay phim": "6,38%"
+      "Máy quay hành động": "7,80%",
+      "Máy ảnh film": "12,60%",
+      "Máy ảnh cơ/DSLRs": "6,40%",
+      "Máy ảnh chụp lấy liền": "7,80%",
+      "Máy ảnh không gương lật": "6,40%",
+      "Khác": "12,60%",
+      "Máy ảnh kỹ thuật số": "7,80%",
+      "Máy quay phim": "12,60%"
     },
-    "Phụ kiện Flycam": "6,38%",
-    "Flycam": "6,38%",
+    "Phụ kiện Flycam": "12,60%",
+    "Flycam": "10,50%",
     "Phụ kiện ống kính": {
-      "Kính lọc": "6,38%",
-      "Nắp ống kính": "6,38%",
-      "Loa che sáng ống kính": "6,38%",
-      "Ngàm ống kính & Ngàm chuyển đổi ống": "6,38%",
-      "Khác": "6,38%"
+      "Kính lọc": "12,60%",
+      "Nắp ống kính": "12,60%",
+      "Loa che sáng ống kính": "12,60%",
+      "Ngàm ống kính & Ngàm chuyển đổi ống": "12,60%",
+      "Khác": "12,60%"
     },
-    "Ống kính": "6,38%",
-    "Khác": "6,38%",
+    "Ống kính": "7,80%",
+    "Khác": "12,60%",
     "Camera giám sát": {
-      "Camera giám sát kết nối internet": "6,38%",
-      "Camera giả chống trộm": "6,38%",
-      "Đầu ghi hình": "6,38%",
-      "Khác": "6,38%",
-      "Camera ngụy trang": "6,38%"
+      "Camera giám sát kết nối internet": "12,60%",
+      "Camera giả chống trộm": "12,60%",
+      "Đầu ghi hình": "12,60%",
+      "Khác": "12,60%",
+      "Camera ngụy trang": "12,60%"
     }
   },
-  "Chăm Sóc Thú Cưng": {
-    "Vệ sinh cho thú cưng": {
-      "Khay & Bồn vệ sinh cho mèo": "6,87%",
-      "Tã cho thú cưng": "6,87%",
-      "Khay huấn luyện vệ sinh cho chó": "6,87%",
-      "Khác": "6,87%",
-      "Túi & Xẻng dọn vệ sinh": "6,87%",
-      "Lót chuồng cho thú nhỏ": "6,87%"
+  "Máy tính & Laptop": {
+    "Thiết Bị Lưu Trữ": {
+      "Đĩa CD": "12,60%",
+      "USB & OTG": "12,60%",
+      "Thiết Bị Đựng Ổ Cứng": "12,60%",
+      "Ổ Cứng Di Động": "10,50%",
+      "Ổ Cứng Mạng (NAS)": "12,60%",
+      "Khác": "12,60%",
+      "Ổ Cứng SSD": "10,50%"
     },
-    "Khác": "6,87%",
-    "Phụ kiện cho thú cưng": {
-      "Phụ kiện thủy sinh": "6,87%",
-      "Bát & dụng cụ ăn": "6,87%",
-      "Vòng cổ, dây dắt & rọ mõm": "6,87%",
-      "Khác": "6,87%",
-      "Nội thất cho thú cưng": {
-        "Đệm & Thảm": "6,87%",
-        "Chuồng & lồng": "6,87%",
-        "Phụ kiện nhà & chuồng": "6,87%",
-        "Nhà": "6,87%",
-        "Khác": "6,87%",
-        "Bàn & cây cào móng": "6,87%"
-      },
-      "Đồ chơi": {
-        "Đồ chơi cho chim": "6,87%",
-        "Đồ chơi cho chó mèo": "6,87%",
-        "Khác": "6,87%",
-        "Đồ chơi cho thú nhỏ": "6,87%"
-      },
-      "Thiết bị du lịch": "6,87%"
+    "Linh Kiện Máy Tính": {
+      "Quạt và Tản Nhiệt": "12,60%",
+      "VGA - Card Màn Hình": "12,60%",
+      "Mainboard - Bo Mạch Chủ": "8,50%",
+      "Ổ Đĩa Quang": "12,60%",
+      "Khác": "12,60%",
+      "Case Máy Tính": "12,60%",
+      "Nguồn Máy Tính": "12,60%",
+      "CPU - Bộ Vi Xử Lý": "7,80%",
+      "Ram Máy Tính": "12,60%",
+      "Bo Mạch Âm Thanh": "12,60%",
+      "Keo Tản Nhiệt": "12,60%",
+      "Bộ Lưu Điện": "10,50%"
     },
-    "Quần áo & phụ kiện": {
-      "Giày, tất & bảo vệ móng": "6,87%",
-      "Kính mắt": "6,87%",
-      "Phụ kiện lông": "6,87%",
-      "Mũ nón thú cưng": "6,87%",
-      "Phụ kiện đeo cổ": "6,87%",
-      "Khác": "6,87%",
-      "Quần áo thú cưng": "6,87%",
-      "Áo mưa chó mèo": "6,87%"
+    "Máy Tính Bàn": {
+      "Máy Tính All in one": "3,30%",
+      "Bộ Máy Tính Bàn": "3,30%",
+      "Máy Tính Mini": "3,30%",
+      "Khác": "8,50%",
+      "Máy Chủ": "3,30%"
     },
-    "Thức ăn cho thú cưng": {
-      "Thức ăn cho cá": "6,87%",
-      "Thức ăn cho chim": "6,87%",
-      "Thức ăn cho mèo": "6,87%",
-      "Snack cho mèo": "6,87%",
-      "Thức ăn cho chó": "6,87%",
-      "Snack cho chó": "6,87%",
-      "Khác": "6,87%",
-      "Thức ăn cho bò sát": "6,87%",
-      "Thức ăn cho thú nhỏ": "6,87%",
-      "Snack cho thú nhỏ": "6,87%"
+    "Chuột & Bàn Phím": {
+      "Bảng Vẽ Điện Tử": "10,50%",
+      "Bàn Phím Máy Tính": "12,60%",
+      "Chuột Máy Tính": "12,60%",
+      "Khác": "12,60%"
     },
-    "Làm đẹp cho thú cưng": {
-      "Chăm sóc móng": "6,87%",
-      "Chăm sóc lông": "6,87%",
-      "Chăm sóc răng miệng": "6,87%",
-      "Khác": "6,87%"
+    "Laptop": "3,30%",
+    "Màn Hình": "7,80%",
+    "Thiết Bị Mạng": {
+      "Bộ Chuyển Mạch KVM": "12,60%",
+      "Bộ Phát Wifi": "12,60%",
+      "Cáp Máy Tính": "12,60%",
+      "Bộ chia mạng": "12,60%",
+      "Khác": "12,60%",
+      "Bộ Chuyển Đổi Mạng": "12,60%",
+      "Máy Chủ Máy In": "12,60%",
+      "Bộ Kích Wifi": "12,60%",
+      "Bộ Thu Wifi": "12,60%"
     },
-    "Chăm sóc sức khỏe": {
-      "Tẩy giun & diệt bọ chét": "6,87%",
-      "Dược phẩm": "6,87%",
-      "Khác": "6,87%",
-      "Vitamin & chất bổ sung dinh dưỡng": "6,87%"
+    "Thiết Bị Văn Phòng": {
+      "Máy Chấm Công": "12,60%",
+      "Máy Đếm Tiền": "12,60%",
+      "Khác": "12,60%",
+      "Máy Hủy Tài Liệu": "12,60%",
+      "Máy Đánh Chữ": "12,60%"
+    },
+    "Phụ Kiện Máy Tính Khác": "12,60%",
+    "Phụ Kiện Máy Tính": {
+      "Đế Tản Nhiệt": "12,60%",
+      "Miếng Dán Bàn Phím": "12,60%",
+      "Pin Laptop": "12,60%",
+      "Bộ Sạc Laptop": "12,60%",
+      "Miếng Dán & Ốp Laptop": "12,60%",
+      "Bàn Laptop": "12,60%",
+      "Bàn Di Chuột": "12,60%",
+      "Khác": "12,60%",
+      "Bộ chia cổng USB & Đọc thẻ nhớ": "12,60%",
+      "Thiết Bị Truyền Hình Hội Nghị": "12,60%",
+      "Webcam": "12,60%"
+    },
+    "Máy In & Máy Scan": {
+      "Máy In 3D": "10,50%",
+      "Mực In & Khay Mực": "12,60%",
+      "Khác": "12,60%",
+      "Máy In, Máy Scan & Máy Photo": "8,50%",
+      "Máy In Mã Vạch": "10,50%"
+    },
+    "Phần Mềm": "12,60%"
+  },
+  "Gaming & Console": {
+    "Phụ kiện console": "12,60%",
+    "Máy chơi game": {
+      "Gameboy": "7,80%",
+      "Nintendo DS": "12,60%",
+      "Khác": "12,60%",
+      "Playstation": "8,50%",
+      "PS Vita": "12,60%",
+      "PSP": "12,60%",
+      "Switch": "12,60%",
+      "Wii": "12,60%",
+      "Xbox": "12,60%"
+    },
+    "Khác": "12,60%",
+    "Video Games": {
+      "Game Gameboy": "12,60%",
+      "Game Nintendo DS": "12,60%",
+      "Game Máy Khác": "12,60%",
+      "Game PC": "12,60%",
+      "Game Playstation": "12,60%",
+      "Game PS Vita": "12,60%",
+      "Game PSP": "12,60%",
+      "Game Switch": "12,60%",
+      "Game Wii": "12,60%",
+      "Game Xbox": "12,60%"
+    }
+  },
+  "Thiết Bị Điện Gia Dụng": {
+    "Pin": "12,60%",
+    "Thuốc lá điện tử": "12,60%",
+    "Mạch điện & Phụ tùng": {
+      "Chuông cửa": "12,60%",
+      "Ổ cắm điện & Dây nối": "12,60%",
+      "Thiết bị an toàn điện tử": "12,60%",
+      "Thiết bị tiết kiệm điện": "12,60%",
+      "Thiết bị báo động nhà ở": "12,60%",
+      "Thiết bị chống sấm sét": "12,60%",
+      "Khác": "12,60%",
+      "Công tắc": "12,60%"
+    },
+    "Đồ gia dụng nhà bếp": {
+      "Nồi chiên không dầu": "12,60%",
+      "Máy pha cà phê & Phụ kiện": "12,60%",
+      "Nồi chiên ngập dầu": "12,60%",
+      "Máy rửa bát đĩa": "6,40%",
+      "Máy chế biến thực phẩm & Xay thịt": "12,60%",
+      "Tủ đông": "5,50%",
+      "Máy hút khói": "7,80%",
+      "Máy ép, Xay sinh tố & Máy làm sữa đậu nành": "12,60%",
+      "Ấm đun siêu tốc": "12,60%",
+      "Lò vi sóng": "12,60%",
+      "Máy trộn thực phẩm": "12,60%",
+      "Nồi nấu đa năng": "12,60%",
+      "Khác": "12,60%",
+      "Lò nướng": "12,60%",
+      "Nồi áp suất": "12,60%",
+      "Tủ lạnh": "5,50%",
+      "Nồi cơm điện": "12,60%",
+      "Nồi nấu chậm & Dụng cụ nấu chân không": "12,60%",
+      "Dụng cụ nấu đặc biệt": "12,60%",
+      "Lò sưởi, Bếp từ & Bộ điều chỉnh gas": "12,60%",
+      "Máy nướng bánh": "12,60%",
+      "Máy lọc nước": "8,50%",
+      "Tủ ủ rượu": "5,50%"
+    },
+    "Thiết bị điện gia dụng lớn": {
+      "Thiết bị làm mát": "6,40%",
+      "Thiết bị sấy khô nệm & Giày": "8,50%",
+      "Máy sưởi": "6,40%",
+      "Khác": "5,50%",
+      "Máy giặt & Máy sấy": "5,50%",
+      "Máy nước nóng": "6,40%"
+    },
+    "Khác": "12,60%",
+    "Máy chiếu & Phụ kiện": {
+      "Khác": "12,60%",
+      "Bút trình chiếu": "12,60%",
+      "Máy chiếu & Màn hình chiếu": "10,50%"
+    },
+    "Thiết bị điều khiển từ xa": "12,60%",
+    "Thiết bị điện gia dụng nhỏ": {
+      "Thiết bị xử lý không khí": "5,50%",
+      "Thiết bị vệ sinh chân & Thư giãn": "12,60%",
+      "Bàn là khô & Hơi nước": "12,60%",
+      "Khác": "12,60%",
+      "Máy may & Phụ kiện": "12,60%",
+      "Điện thoại": "8,50%",
+      "Máy hút bụi & Thiết bị làm sạch sàn": "8,50%",
+      "Máy tăm nước": "12,60%"
+    },
+    "Tivi & Phụ kiện": {
+      "Khác": "12,60%",
+      "Ăng ten Tivi": "12,60%",
+      "Tivi box & Đầu thu kỹ thuật số": "12,60%",
+      "Giá treo tivi": "12,60%",
+      "Tivi": "3,30%"
     }
   },
   "Điện Thoại & Phụ Kiện": {
     "Phụ kiện": {
-      "Cáp, sạc & bộ chuyển đổi": {
-        "Bao đựng cáp, Bảo vệ cáp & Cuộn dây": "6,38%",
-        "Bộ sạc": "6,38%",
-        "Đế sạc đứng": "6,38%",
-        "Cáp & Bộ chuyển đổi di động": "6,38%",
-        "Khác": "6,38%",
-        "Bộ sạc du lịch": "6,38%"
-      },
-      "Vỏ bao, Ốp lưng & Miếng dán": {
-        "Khác": "6,38%",
-        "Vỏ bao, Ốp lưng & Miếng dán điện thoại": "6,38%",
-        "Vỏ bao, Ốp lưng & Miếng dán máy tính bảng": "6,38%"
-      },
-      "Thiết bị trình chiếu": "6,38%",
-      "Thẻ nhớ": "6,38%",
-      "Đèn flash điện thoại & Đèn selfie": "6,38%",
-      "Ống kính điện thoại": "6,38%",
-      "Túi đựng điện thoại": "6,38%",
-      "Khác": "6,38%",
-      "Kẹp điện thoại": "6,38%",
-      "Dây đeo điện thoại & Móc khóa": "6,38%",
-      "Bộ phát Wifi bỏ túi": "6,38%",
-      "Sạc dự phòng & Pin": {
-        "Pin": "6,38%",
-        "Khác": "6,38%",
-        "Sạc dự phòng": "6,38%",
-        "Vỏ sạc dự phòng": "6,38%"
-      },
-      "Miếng dán màn hình": "6,38%",
-      "Phụ kiện selfie": {
-        "Giá đỡ": "6,38%",
-        "Khác": "6,38%",
-        "Điều khiển chụp hình": "6,38%",
-        "Gậy selfie": "6,38%"
-      },
-      "Bút cảm ứng": "6,38%",
-      "Quạt USB & Quạt điện thoại": "6,38%",
-      "Đèn USB & Đèn điện thoại": "6,38%",
-      "Phụ kiện cho đồng hồ thông minh": "6,38%"
+      "Cáp, sạc & bộ chuyển đổi": "12,60%",
+      "Vỏ bao, Ốp lưng & Miếng dán": "12,60%",
+      "Thiết bị trình chiếu": "12,60%",
+      "Thẻ nhớ": "12,60%",
+      "Đèn flash điện thoại & Đèn selfie": "12,60%",
+      "Ống kính điện thoại": "12,60%",
+      "Túi đựng điện thoại": "12,60%",
+      "Khác": "12,60%",
+      "Kẹp điện thoại": "12,60%",
+      "Dây đeo điện thoại & Móc khóa": "12,60%",
+      "Bộ phát Wifi bỏ túi": "12,60%",
+      "Sạc dự phòng & Pin": "12,60%",
+      "Miếng dán màn hình": "12,60%",
+      "Phụ kiện selfie": "12,60%",
+      "Bút cảm ứng": "12,60%",
+      "Quạt USB & Quạt điện thoại": "12,60%",
+      "Đèn USB & Đèn điện thoại": "12,60%",
+      "Phụ kiện cho đồng hồ thông minh": "12,60%"
     },
-    "Điện thoại": "1,47%",
-    "Khác": "6,38%",
-    "Thẻ sim": "6,38%",
-    "Máy tính bảng": "1,47%",
-    "Bộ đàm": "6,38%",
+    "Điện thoại": "2,00%",
+    "Khác": "12,60%",
+    "Thẻ sim": "12,60%",
+    "Máy tính bảng": "3,30%",
+    "Bộ đàm": "12,60%",
     "Thiết bị đeo thông minh": {
-      "Thiết bị định vị GPS": "6,38%",
-      "Khác": "6,38%",
-      "Đồng hồ thông minh & Vòng đeo tay sức khỏe": "6,38%",
-      "Thiết bị thực tế ảo": "6,38%"
-    }
-  },
-  "Đồng Hồ": {
-    "Đồng hồ nam": "6,87%",
-    "Khác": "6,87%",
-    "Bộ đồng hồ & Đồng hồ cặp": "6,87%",
-    "Phụ kiện đồng hồ": {
-      "Pin đồng hồ": "6,87%",
-      "Hộp đựng đồng hồ": "6,87%",
-      "Khóa đồng hồ": "6,87%",
-      "Khác": "6,87%",
-      "Dụng cụ sửa chữa": "6,87%",
-      "Dây đồng hồ": "6,87%"
-    },
-    "Đồng hồ nữ": "6,87%"
-  },
-  "Du lịch & Hành lý": {
-    "Vali": "6,87%",
-    "Khác": "6,87%",
-    "Phụ kiện du lịch": {
-      "Khóa vali": "7,95%",
-      "Áo trùm vali": "7,95%",
-      "Cân hành lý": "7,95%",
-      "Dây đai vali": "7,95%",
-      "Thẻ hành lý": "7,95%",
-      "Phụ kiện khác": "7,95%",
-      "Ví hộ chiếu": "7,95%",
-      "Túi du lịch nhiều ngăn": "7,95%",
-      "Gối & Bịt mắt": "7,95%",
-      "Bộ chiết mỹ phẩm": "7,95%"
-    },
-    "Túi du lịch": {
-      "Túi dây rút": "7,95%",
-      "Túi trống": "7,95%",
-      "Túi gấp gọn": "7,95%",
-      "Túi khác": "7,95%"
-    }
-  },
-  "Gaming & Console": {
-    "Phụ kiện console": "6,87%",
-    "Máy chơi game": {
-      "Gameboy": "6,38%",
-      "Nintendo DS": "6,38%",
-      "Khác": "6,38%",
-      "Playstation": "6,38%",
-      "PS Vita": "6,38%",
-      "PSP": "6,38%",
-      "Switch": "6,38%",
-      "Wii": "6,38%",
-      "Xbox": "6,38%"
-    },
-    "Khác": "6,87%",
-    "Video Games": {
-      "Game Gameboy": "6,87%",
-      "Game Nintendo DS": "6,87%",
-      "Game Máy Khác": "6,87%",
-      "Game PC": "6,87%",
-      "Game Playstation": "6,87%",
-      "Game PS Vita": "6,87%",
-      "Game PSP": "6,87%",
-      "Game Switch": "6,87%",
-      "Game Wii": "6,87%",
-      "Game Xbox": "6,87%"
-    }
-  },
-  "Giày Dép Nam": {
-    "Bốt": {
-      "Bốt thời trang": "6,87%",
-      "Khác": "6,87%",
-      "Bốt đi mưa": "6,87%",
-      "Bốt bảo hộ": "6,87%"
-    },
-    "Giày tây lười": "6,87%",
-    "Khác": "6,87%",
-    "Giày Oxfords & Giày buộc dây": "6,87%",
-    "Xăng-đan & Dép": {
-      "Dép xỏ ngón": "6,87%",
-      "Dép mát-xa": "6,87%",
-      "Dép đi trong nhà": "6,87%",
-      "Khác": "6,87%",
-      "Xăng-đan": "6,87%"
-    },
-    "Phụ kiện giày dép": {
-      "Khác": "6,87%",
-      "Dụng cụ chăm sóc & Vệ sinh giày": "6,87%",
-      "Khử mùi giày dép": "6,87%",
-      "Cây đón gót & Giữ form giày": "6,87%",
-      "Lót giày": "6,87%",
-      "Dây giày": "6,87%"
-    },
-    "Giày sục": "6,87%",
-    "Giày thể thao/ Sneakers": "6,87%"
-  },
-  "Giày Dép Nữ": {
-    "Bốt": {
-      "Bốt thời trang": "6,87%",
-      "Khác": "6,87%",
-      "Bốt đi mưa": "6,87%"
-    },
-    "Xăng-đan và dép": {
-      "Xăng-đan đế bằng": "6,87%",
-      "Dép kẹp/ dép xỏ ngón": "6,87%",
-      "Dép mát-xa": "6,87%",
-      "Dép đi trong nhà": "6,87%",
-      "Khác": "6,87%"
-    },
-    "Giày đế bằng": {
-      "Giày bale": "6,87%",
-      "Giày lười": "6,87%",
-      "Khác": "6,87%",
-      "Giày Oxford & Giày buộc dây": "6,87%",
-      "Giày sục & Giày búp bê": "6,87%"
-    },
-    "Giày cao gót": "6,87%",
-    "Khác": "6,87%",
-    "Phụ kiện & chăm sóc giày": {
-      "Miếng lót giày": "6,87%",
-      "Khác": "6,87%",
-      "Đồ chăm sóc và làm sạch giày": "6,87%",
-      "Đồ khử mùi giày": "6,87%",
-      "Cây đón gót & Giữ form giày": "6,87%",
-      "Dây giày": "6,87%"
-    },
-    "Giày thể thao/ sneaker": "6,87%",
-    "Giày đế xuồng": "6,87%"
-  },
-  "Máy tính & Laptop": {
-    "Thiết Bị Lưu Trữ": {
-      "Đĩa CD": "6,38%",
-      "USB & OTG": "6,38%",
-      "Thiết Bị Đựng Ổ Cứng": "6,38%",
-      "Ổ Cứng Di Động": "6,38%",
-      "Ổ Cứng Mạng (NAS)": "6,38%",
-      "Khác": "6,38%",
-      "Ổ Cứng SSD": "6,38%"
-    },
-    "Linh Kiện Máy Tính": {
-      "Quạt và Tản Nhiệt": "6,38%",
-      "VGA - Card Màn Hình": "6,38%",
-      "Mainboard - Bo Mạch Chủ": "6,38%",
-      "Ổ Đĩa Quang": "6,38%",
-      "Khác": "6,38%",
-      "Case Máy Tính": "6,38%",
-      "Nguồn Máy Tính": "6,38%",
-      "CPU - Bộ Vi Xử Lý": "6,38%",
-      "Ram Máy Tính": "6,38%",
-      "Bo Mạch Âm Thanh": "6,38%",
-      "Keo Tản Nhiệt": "6,38%",
-      "Bộ Lưu Điện": "6,38%"
-    },
-    "Máy Tính Bàn": {
-      "Máy Tính All in one": "1,96%",
-      "Bộ Máy Tính Bàn": "1,96%",
-      "Máy Tính Mini": "1,96%",
-      "Khác": "1,96%",
-      "Máy Chủ": "1,96%"
-    },
-    "Chuột & Bàn Phím": {
-      "Bảng Vẽ Điện Tử": "6,38%",
-      "Bàn Phím Máy Tính": "6,38%",
-      "Chuột Máy Tính": "6,38%",
-      "Khác": "6,38%"
-    },
-    "Laptop": "1,96%",
-    "Màn Hình": "6,38%",
-    "Thiết Bị Mạng": {
-      "Bộ Chuyển Mạch KVM": "6,38%",
-      "Bộ Phát Wifi": "6,38%",
-      "Cáp Máy Tính": "6,38%",
-      "Bộ chia mạng": "6,38%",
-      "Khác": "6,38%",
-      "Bộ Chuyển Đổi Mạng": "6,38%",
-      "Máy Chủ Máy In": "6,38%",
-      "Bộ Kích Wifi": "6,38%",
-      "Bộ Thu Wifi": "6,38%"
-    },
-    "Thiết Bị Văn Phòng": {
-      "Máy Chấm Công": "6,87%",
-      "Máy Đếm Tiền": "6,87%",
-      "Khác": "6,87%",
-      "Máy Hủy Tài Liệu": "6,87%",
-      "Máy Đánh Chữ": "6,87%"
-    },
-    "Phụ Kiện Máy Tính Khác": "6,38%",
-    "Phụ Kiện Máy Tính": {
-      "Đế Tản Nhiệt": "6,38%",
-      "Miếng Dán Bàn Phím": "6,38%",
-      "Pin Laptop": "6,38%",
-      "Bộ Sạc Laptop": "6,38%",
-      "Miếng Dán & Ốp Laptop": "6,38%",
-      "Bàn Laptop": "6,38%",
-      "Bàn Di Chuột": "6,38%",
-      "Khác": "6,38%",
-      "Bộ chia cổng USB & Đọc thẻ nhớ": "6,38%",
-      "Thiết Bị Truyền Hình Hội Nghị": "6,38%",
-      "Webcam": "6,38%"
-    },
-    "Máy In & Máy Scan": {
-      "Máy In 3D": "6,38%",
-      "Mực In & Khay Mực": "6,38%",
-      "Khác": "6,38%",
-      "Máy In, Máy Scan & Máy Photo": "6,38%",
-      "Máy In Mã Vạch": "6,38%"
-    },
-    "Phần Mềm": "6,38%"
-  },
- "Mẹ & Bé": {
-    "Đồ dùng du lịch cho bé": {
-      "Túi đựng bỉm sữa": "6,87%"
-    },
-    "Đồ dùng ăn dặm cho bé": {
-      "Yếm": "7,95%",
-      "Bình sữa": {
-        "Dụng cụ vệ sinh bình sữa": "7,95%",
-        "Túi ủ bình sữa": "7,95%",
-        "Bình sữa & Phụ kiện": "7,95%",
-        "Khác": "7,95%",
-        "Máy tiệt trùng bình sữa": "7,95%",
-        "Máy hâm sữa": "7,95%"
-      },
-      "Đồ dùng cho con bú": {
-        "Miếng lót thấm sữa": "7,95%",
-        "Máy hút sữa & phụ kiện": "7,95%",
-        "Túi trữ sữa": "7,95%",
-        "Khăn choàng cho con bú": "7,95%",
-        "Khác": "7,95%"
-      },
-      "Máy xay cắt thực phẩm": "7,95%",
-      "Ghế ăn dặm": "7,95%",
-      "Khác": "7,95%",
-      "Ti giả": "7,95%",
-      "Đồ dùng cho bé": {
-        "Ly, cốc cho bé": "7,95%",
-        "Hộp trữ thức ăn cho bé": "7,95%",
-        "Đồ dùng ăn dặm": "7,95%",
-        "Khác": "7,95%"
-      }
-    },
-    "Bộ & Gói quà tặng": "7,95%",
-    "Phụ kiện cho mẹ": {
-      "Gối bầu": "7,95%",
-      "Khác": "7,95%",
-      "Đai hỗ trợ bụng": "7,95%"
-    },
-    "Chăm sóc sức khỏe mẹ": {
-      "Vitamin & Thực phẩm bổ sung cho mẹ": "7,95%",
-      "Kem dưỡng ẩm cho mẹ": "7,95%"
-    },
-    "Đồ dùng phòng ngủ cho bé": {
-      "Nôi & Cũi & Giường cho bé": "7,95%",
-      "Nệm và chăn ga": {
-        "Ga trải giường": "7,95%",
-        "Chăn & Quấn em bé": "7,95%",
-        "Khác": "7,95%",
-        "Gối": "7,95%"
-      },
-      "Kệ & Tủ": "7,95%"
-    },
-    "Đồ chơi": {
-      "Đồ chơi cho trẻ sơ sinh & trẻ nhỏ": {
-        "Cũi & Quây em bé": "6,87%",
-        "Gặm nướu": "6,87%"
-      },
-      "Chăm sóc sức khỏe bé": {
-        "Chăm sóc răng miệng cho bé": "5,30%",
-        "Chăm sóc da cho bé": {
-          "Khác": "5,30%"
-        },
-        "Khác": "5,30%"
-      },
-      "An toàn cho bé": {
-        "Thanh chắn cửa & Cầu thang": "7,85%",
-        "Bộ đệm cũi, Quây cũi & Thanh chắn giường": "7,85%",
-        "Bọc góc & Cạnh": "7,85%",
-        "Thiết bị giám sát trẻ": "7,85%",
-        "Màn chống muỗi": "7,85%",
-        "Khác": "7,85%",
-        "Khóa & Dây đai an toàn": "7,85%"
-      },
-      "Đồ dùng du lịch cho bé": {
-        "Địu em bé": "6,87%",
-        "Ghế ngồi ô tô & xe máy": "6,87%",
-        "Phụ kiện ghế ngồi ô tô & xe máy": "6,87%",
-        "Dây & Đai dắt trẻ": "6,87%",
-        "Khác": "6,87%",
-        "Phụ kiện xe đẩy": "6,87%",
-        "Xe đẩy": "6,87%"
-      },
-      "Đồ dùng phòng tắm & Chăm sóc cơ thể bé": {
-        "Nước hoa cho bé": "6,87%",
-        "Bộ chăm sóc trẻ sơ sinh": "6,87%",
-        "Giặt xả quần áo trẻ em": "6,87%",
-        "Áo choàng tắm, Khăn tắm & Khăn mặt": "6,87%",
-        "Dụng cụ tắm & Phụ kiện": "6,87%",
-        "Chậu tắm & Ghế tắm": "6,87%",
-        "Sản phẩm tắm & gội cho bé": "6,87%",
-        "Nón tắm": "6,87%"
-      },
-      "Tã & bô em bé": {
-        "Bệ thu nhỏ bồn cầu & Bô vệ sinh": "5,30%"
-      },
-      "Chăm sóc sức khỏe mẹ": {
-        "Sữa bầu": "7,95%",
-        "Khác": "7,95%"
-      },
-      "Đồ dùng phòng ngủ cho bé": {
-        "Ghế rung, Ghế nhún & Xích đu tập đi": "6,87%",
-        "Khác": "6,87%",
-        "Xe tập đi": "6,87%"
-      },
-      "Khác": "6,87%",
-      "Đồ chơi": {
-        "Đồ chơi cho trẻ sơ sinh & trẻ nhỏ": {
-          "Đồ chơi nhà tắm": "6,87%",
-          "Đồ chơi treo cũi, nôi & Lục lạc": "6,87%",
-          "Khác": "6,87%",
-          "Thảm chơi nhạc": "6,87%"
-        },
-        "Đồ chơi lắp ráp": "6,87%",
-        "Búp bê & Thú nhồi bông": {
-          "Nhà búp bê & Phụ kiện": "6,87%",
-          "Búp bê & Phụ kiện": "6,87%",
-          "Khác": "6,87%",
-          "Thú nhồi bông": "6,87%"
-        },
-        "Đồ chơi giáo dục": {
-          "Đồ chơi mỹ thuật & Thủ công": "6,87%",
-          "Đồ chơi toán học": "6,87%",
-          "Đồ chơi âm nhạc": "6,87%",
-          "Khác": "6,87%",
-          "Đồ chơi xếp hình": "6,87%",
-          "Đồ chơi khoa học & Công nghệ": "6,87%",
-          "Đồ chơi hình khối": "6,87%",
-          "Đồ chơi điện tử & Máy tính đồ chơi": "6,87%"
-        },
-        "Khác": "6,87%",
-        "Đồ chơi nhập vai": "6,87%",
-        "Đồ chơi Robot": "6,87%",
-        "Slime & Đồ chơi nhựa dẻo": "6,87%",
-        "Đồ chơi vận động & Ngoài trời": {
-          "Xe đạp, Xe chòi chân & Xe điện": "6,87%",
-          "Súng đồ chơi": "6,87%",
-          "Đồ chơi mô hình bay, diều & Chong chóng": "6,87%",
-          "Nhà hơi & Cầu trượt": "6,87%",
-          "Khác": "6,87%",
-          "Lều, Ống đường hầm & Nhà banh": "6,87%",
-          "Phao tắm, Đồ chơi nước & Xúc cát": "6,87%",
-          "Đồ chơi thể thao": "6,87%"
-        },
-        "Xe đồ chơi": "6,87%"
-      },
-      "Chăm sóc sức khỏe bé": {
-        "Chăm sóc da cho bé": {
-          "Sữa & Kem dưỡng da": "5,30%",
-          "Dầu cho bé": "5,30%",
-          "Phấn cho bé": "5,30%"
-        },
-        "Vitamin & Thực phẩm bổ sung": "5,30%",
-        "Chăm sóc mũi cho bé": "5,30%",
-        "Chống nắng cho bé": "5,30%"
-      },
-      "Đồ dùng phòng tắm & Chăm sóc cơ thể bé": {
-        "Khác": "6,87%",
-        "Khăn lau": "6,87%"
-      },
-      "Tã & bô em bé": {
-        "Khác": "5,30%"
-      },
-      "Sữa công thức & Thực phẩm cho bé": {
-        "Cháo, Thực phẩm xay nhuyễn & Ngũ cốc": "5,30%",
-        "Đồ ăn nhẹ cho bé": "5,30%",
-        "Khác": "5,30%",
-        "Sữa pha sẵn": "5,30%"
-      },
-      "Tã & bô em bé": {
-        "Bộ lót thay tã": "5,30%",
-        "Tã vải & Phụ kiện": "5,30%",
-        "Tã dùng một lần": "5,30%"
-      },
-      "Sữa công thức & Thực phẩm cho bé": {
-        "Sữa công thức": "3,44%"
-      }
-    }
-  } ,
-  "Mô tô, xe máy": {
-    "Phụ kiện xe máy": {
-      "Thùng chứa đồ": "6,87%",
-      "Lót sàn": "6,87%",
-      "Bạt phủ": "6,87%",
-      "Khóa và thiết bị chống trộm": "6,87%",
-      "Gương và phụ kiện": "6,87%",
-      "Tấm chắn bùn": "6,87%",
-      "Khác": "6,87%",
-      "Giá đỡ điện thoại": "6,87%",
-      "Ghế & bọc ghế": "6,87%",
-      "Đồng hồ đo": "6,87%",
-      "Hình dán, logo, huy hiệu": "6,87%"
-    },
-    "Mũ bảo hiểm & Phụ kiện": "6,87%",
-    "Phụ tùng xe máy": {
-      "Pin & Phụ kiện": "6,87%",
-      "Hệ thống khung xe": "6,87%",
-      "Hệ thống phanh": "6,87%",
-      "Dây cáp & Ống": "6,87%",
-      "Hệ thống dẫn động": {
-        "Vòng bi": "6,87%",
-        "Phụ tùng nhông xích": "6,87%",
-        "Bộ ly hợp": "6,87%",
-        "Khác": "6,87%"
-      },
-      "Hệ thống khí xả": "6,87%",
-      "Hệ thống xử lý nhiên liệu": "6,87%",
-      "Còi & Phụ kiện": "6,87%",
-      "Bộ phận đánh lửa & động cơ": {
-        "Lọc gió": "6,87%",
-        "Hộp đánh lửa & hộp đen": "6,87%",
-        "Cuộn dây đánh lửa": "6,87%",
-        "Khác": "6,87%",
-        "Pít tông": "6,87%",
-        "Bộ tản nhiệt": "6,87%",
-        "Bugi": "6,87%",
-        "Dây Curoa": "6,87%"
-      },
-      "Đèn": "6,87%",
-      "Khác": "6,87%",
-      "Hệ thống giảm xóc": "6,87%",
-      "Lốp xe & Phụ kiện": "6,87%",
-      "Bánh xe, Vành & Phụ kiện": "6,87%"
-    },
-    "Mô tô, xe máy": "1,47%",
-    "Khác": "6,87%"
-  },
-  "Muslim Fashion": {
-    "Kid Muslim Wear": {
-      "Girl's Muslim Attire": "6,87%"
-    },
-    "Men Muslim Wear": {
-      "Sarong": "6,87%"
-    },
-    "Prayer Attire & Equipment": {
-      "Peci, Songkok & Kopiah": "6,87%"
-    },
-    "Sets": "6,87%",
-    "Women Muslim Wear": {
-      "Accessories": {
-        "Socks": "6,87%"
-      },
-      "Bottoms": {
-        "Palazzo": "6,87%",
-        "Pants": "6,87%"
-      },
-      "Dresses": {
-        "Abaya Cloak": "6,87%",
-        "Nursing Jubah": "6,87%",
-        "Robe & Jubah": "6,87%"
-      },
-      "Veils": {
-        "Hijab Accessories": "6,87%",
-        "Instant Hijab": "6,87%",
-        "Khimar": "6,87%",
-        "Pashmina": "6,87%"
-      }
-    }
-  },
-  "Nhà cửa & Đời sống": {
-    "Đồ dùng phòng tắm": {
-      "Bông tắm": "6,87%",
-      "Kệ để đồ phòng tắm": "6,87%",
-      "Bồn tắm": "6,87%",
-      "Khác": "6,87%",
-      "Tay cầm an toàn": "6,87%",
-      "Mũ tắm": "6,87%",
-      "Rèm cửa nhà tắm": "6,87%",
-      "Ghế nhà tắm, ghế chống trượt": "6,87%",
-      "Vòi sen & vòi xịt vệ sinh": "6,87%",
-      "Kệ đựng xà phòng": "6,87%",
-      "Bồn cầu, ghế và nắp bồn cầu": "6,87%",
-      "Kệ đựng bàn chải, kệ nhả kem đánh răng": "6,87%",
-      "Khăn mặt, khăn tắm, áo choàng tắm": {
-        "Áo choàng tắm": "6,87%",
-        "Khăn tắm": "6,87%",
-        "Khăn mặt": "6,87%",
-        "Khác": "6,87%"
-      }
-    },
-    "Chăn ga gối nệm": {
-      "Ga trải giường, vỏ gối": "6,87%",
-      "Chăn, mền": "6,87%",
-      "Gối ôm": "6,87%",
-      "Chiếu điều hòa": "6,87%",
-      "Tấm bảo vệ nệm, topper": "6,87%",
-      "Nệm": "6,38%",
-      "Mùng/ Màn chống muỗi": "6,87%",
-      "Khác": "6,87%",
-      "Gối": "6,87%"
-    },
-    "Trang trí nhà cửa": {
-      "Nến & đồ đựng nến": "6,87%",
-      "Thảm trải sàn": "6,87%",
-      "Đồng hồ": "6,87%",
-      "Rèm cửa, màn che": "6,87%",
-      "Thảm chùi chân": "6,87%",
-      "Hoa trang trí": "6,87%",
-      "Vỏ bọc nội thất": "6,87%",
-      "Gương": "6,87%",
-      "Khác": "6,87%",
-      "Khung ảnh & vật trang trí tường": "6,87%",
-      "Khăn trải bàn": "6,87%",
-      "Bình trang trí": "6,87%",
-      "Decal, tranh dán tường": "6,87%"
-    },
-    "Bộ đồ bàn ăn": {
-      "Tô": "6,87%",
-      "Cốc, ly, tách uống nước": "6,87%",
-      "Bộ dao kéo": "6,87%",
-      "Lồng bàn": "6,87%",
-      "Bình nước": "6,87%",
-      "Khác": "6,87%",
-      "Khay, tấm lót bàn ăn": "6,87%",
-      "Dĩa": "6,87%",
-      "Ống hút": "6,87%",
-      "Bộ ấm trà": "6,87%",
-      "Bình nước & phụ kiện": "6,87%"
-    },
-    "Đồ thờ cúng, đồ phong thủy": "6,87%",
-    "Nội thất": {
-      "Giường, khung giường": "6,87%",
-      "Ghế, ghế dài, ghế đẩu": "6,87%",
-      "Tủ bếp": "6,87%",
-      "Đệm ngồi": "6,87%",
-      "Bàn": "6,87%",
-      "Miếng chặn cửa": "6,87%",
-      "Khác": "6,87%",
-      "Kệ & Giá": "6,87%",
-      "Ghế sofa": "6,87%",
-      "Tủ quần áo": "6,87%"
-    },
-    "Làm vườn": {
-      "Phân bón": "6,87%",
-      "Trang trí vườn": "6,87%",
-      "Đất trồng": "6,87%",
-      "Dụng cụ làm vườn": "6,87%",
-      "Hệ thống tưới nước": "6,87%",
-      "Máy cắt cỏ, dụng cụ cắt cỏ": "6,87%",
-      "Khác": "6,87%",
-      "Cây cảnh": "6,87%",
-      "Chậu cây": "6,87%",
-      "Hạt giống & chất hỗ trợ trồng cây": "6,87%"
-    },
-    "Túi làm ấm": "6,87%",
-    "Dụng cụ chăm sóc nhà cửa": {
-      "Chậu, xô & gáo nước": "5,30%",
-      "Chổi": "5,30%",
-      "Chất tẩy rửa": "5,30%",
-      "Bàn chải vệ sinh": "5,30%",
-      "Khăn vệ sinh": "5,30%",
-      "Dây phơi & giá phơi quần áo": "5,30%",
-      "Chổi phủi bụi": "5,30%",
-      "Phụ kiện giặt là": {
-        "Nước giặt": "5,30%",
-        "Nước xả": "5,30%",
-        "Chất làm thơm quần áo": "5,30%",
-        "Khác": "5,30%"
-      },
-      "Cây lau nhà": "5,30%",
-      "Khác": "5,30%",
-      "Thuốc và dụng cụ diệt côn trùng": "5,30%",
-      "Túi nilon & túi rác": "5,30%",
-      "Miếng bọt biển, miếng chà vệ sinh": "5,30%",
-      "Khăn giấy, giấy ướt": "5,30%",
-      "Giấy vệ sinh": "5,30%",
-      "Thùng rác": "5,30%"
-    },
-    "Chất khử mùi, làm thơm nhà": {
-      "Chất khử mùi, làm thơm": "6,87%",
-      "Máy khuếch tán, tạo ẩm & xông tinh dầu": "6,87%",
-      "Tinh dầu thơm": "6,87%",
-      "Khác": "6,87%"
-    },
-    "Sắp xếp nhà cửa": {
-      "Kệ sách để bàn": "6,87%",
-      "Mắc áo": "6,87%",
-      "Móc treo": "6,87%",
-      "Hộp đựng trang sức": "6,87%",
-      "Túi giặt, giỏ đựng quần áo": "6,87%",
-      "Khác": "6,87%",
-      "Kệ giày, hộp giày": "6,87%",
-      "Hộp đựng, giỏ đựng đồ": "6,87%",
-      "Hộp khăn giấy": "6,87%",
-      "Sắp xếp tủ quần áo": "6,87%"
-    },
-    "Dụng cụ nhà bếp": {
-      "Giấy bạc": "6,87%",
-      "Tạp dề & găng tay nấu nướng": "6,87%",
-      "Dụng cụ nướng & trang trí bánh": "6,87%",
-      "Dụng cụ mở hộp": "6,87%",
-      "Thớt": "6,87%",
-      "Màng bọc thực phẩm": "6,87%",
-      "Hộp đựng thực phẩm": "6,87%",
-      "Bàn nạo, dụng cụ bào, cắt": "6,87%",
-      "Lò nướng & phụ kiện": "6,87%",
-      "Kệ để đồ nhà bếp": "6,87%",
-      "Cân nhà bếp": "6,87%",
-      "Dao & kéo": "6,87%",
-      "Bật lửa, diêm và mồi lửa": "6,87%",
-      "Measuring Glasses & Spoons": "6,87%",
-      "Khác": "6,87%",
-      "Chảo": "6,87%",
-      "Nồi": "6,87%",
-      "Dụng cụ hút chân không": "6,87%",
-      "Cây vét bột & đồ gắp thức ăn": "6,87%",
-      "Dụng cụ lọc": "6,87%",
-      "Dụng cụ pha trà, cà phê": "6,87%",
-      "Phới đánh trứng": "6,87%"
-    },
-    "Đèn": "6,87%",
-    "Khác": "6,87%",
-    "Trang trí tiệc tùng": {
-      "Phông nền, biểu ngữ": "6,87%",
-      "Bong bóng": "6,87%",
-      "Thiệp": "6,87%",
-      "Chén, đĩa dùng một lần": "6,87%",
-      "Khác": "6,87%",
-      "Mũ, mặt nạ dự tiệc": "6,87%",
-      "Băng đeo chéo": "6,87%",
-      "Kẹp gỗ": "6,87%"
-    },
-    "Bảo hộ gia đình": {
-      "Khóa, ổ khóa": "6,87%",
-      "Thiết bị chữa cháy": "6,87%",
-      "Khác": "6,87%",
-      "Két sắt": "6,87%"
-    },
-    "Dụng cụ & Thiết bị tiện ích": {
-      "Máy bơm khí & phụ kiện": "6,87%",
-      "Vật liệu xây dựng": "6,87%",
-      "Cửa & cửa sổ": "6,87%",
-      "Keo & chất kết chính công nghiệp": "6,87%",
-      "Thang": "6,87%",
-      "Khác": "6,87%",
-      "Găng tay, kính bảo hộ & mặt nạ": "6,87%",
-      "Mái & sàn": "6,87%",
-      "Mái hiên, bạt phủ": "6,87%",
-      "Chậu rửa & vòi nước": "6,87%",
-      "Dụng cụ": {
-        "Máy nén khí": "6,87%",
-        "Máy thổi": "6,87%",
-        "Máy khoan, máy vặn vít & phụ kiện": "6,87%",
-        "Máy đo điện & đồng hồ vạn năng": "6,87%",
-        "Búa": "6,87%",
-        "Ống thăng bằng & bánh xe đo": "6,87%",
-        "Dụng cụ đo lường": "6,87%",
-        "Đinh, vít & chốt": "6,87%",
-        "Khác": "6,87%",
-        "Kìm": "6,87%",
-        "Máy phát điện": "6,87%",
-        "Dụng cụ hàn điện": "6,87%",
-        "Máy rửa áp lực nước": "6,87%",
-        "Máy đo khoảng cách": "6,87%",
-        "Giấy nhám, máy chà nhám và phụ kiện": "6,87%",
-        "Cưa, máy cắt & máy mài": "6,87%",
-        "Bộ cờ lê": "6,87%",
-        "Hộp dụng cụ cầm tay": "6,87%"
-      },
-      "Xe đẩy": "6,87%",
-      "Sơn & chất chống thấm tường": "6,87%",
-      "Máy bơm nước & phụ kiện": "6,87%"
-    }
-  },
-  "Ô tô": {
-    "Dịch vụ cho xe": "6,87%",
-    "Phụ kiện ngoại thất ô tô": {
-      "Ăng-ten thu phát sóng": "6,87%",
-      "Bạt phủ": "6,87%",
-      "Nẹp viền": "6,87%",
-      "Rãnh thoát nước mưa": "6,87%",
-      "Còi & phụ kiện": "6,87%",
-      "Phụ kiện biển số": "6,87%",
-      "Gương & Phụ kiện": "6,87%",
-      "Tấm chắn bùn": "6,87%",
-      "Khác": "6,87%",
-      "Nẹp cửa chống trầy": "6,87%",
-      "Hình dán, logo, huy hiệu": "6,87%"
-    },
-    "Phụ kiện nội thất ô tô": {
-      "Hệ thống loa": "6,87%",
-      "Camera hành trình & Camera lùi": "6,87%",
-      "Nệm giường ô tô": "6,87%",
-      "Thảm & Đệm lót": "6,87%",
-      "HUD, Đồng hồ tốc độ, Đồng hồ số": "6,87%",
-      "Khóa và thiết bị chống trộm": "6,87%",
-      "Thiết bị định vị và Hệ thống hình ảnh/âm thanh": "6,87%",
-      "Dụng cụ chứa": "6,87%",
-      "Khác": "6,87%",
-      "Chân ga và Cần số": "6,87%",
-      "Nước hoa, Nước hoa khử mùi, Thiết bị lọc không khí": "6,87%",
-      "Giá đỡ điện thoại": "6,87%",
-      "Gối tựa đầu & lưng": "6,87%",
-      "Ghế & Áo ghế": "6,87%",
-      "Vô lăng & Bọc vô lăng": "6,87%",
-      "Tấm che nắng và Thảm Taplo": "6,87%",
-      "Cốc sạc USB, Thiết bị thu phát FM & Bluetooth": "6,87%"
-    },
-    "Phụ tùng ô tô": {
-      "Vòng bi & con dấu": "6,87%",
-      "Dây chuyền động": "6,87%",
-      "Hệ thống khung xe và giảm sóc": "6,87%",
-      "Hệ thống phanh": "6,87%",
-      "Hệ thống truyền động, hộp số & ly hợp": "6,87%",
-      "Thiết bị điện tử": {
-        "Pin & Phụ kiện": "6,87%",
-        "Bộ phận đánh lửa": "6,87%",
-        "Đèn": "6,87%",
-        "Khác": "6,87%"
-      },
-      "Bộ phận động cơ": {
-        "Bộ lọc khí": "6,87%",
-        "Bộ lọc dầu": "6,87%",
-        "Khác": "6,87%",
-        "Pít tông": "6,87%"
-      },
-      "Hệ thống khí xả": "6,87%",
-      "Hệ thống xử lý nhiên liệu": "6,87%",
-      "Khác": "6,87%",
-      "Bộ tản nhiệt, Làm mát động cơ & Kiểm soát nhiệt": "6,87%",
-      "Giảm xóc, thanh chống và hệ thống treo": "6,87%",
-      "Lốp & Phụ kiện": "6,87%",
-      "Bánh xe, Vành & Phụ kiện": "6,87%",
-      "Cần gạt nước & vòng đệm kính chắn gió": "6,87%"
-    },
-    "Chăm sóc ô tô": {
-      "Rửa kính & Chất chống bám nước": "6,87%",
-      "Chăm sóc nội thất": "6,87%",
-      "Khác": "6,87%",
-      "Đánh bóng, sơn phủ & chất làm kín": "6,87%",
-      "Chăm sóc lốp & vành": "6,87%",
-      "Dung dịch tẩy rửa": "6,87%"
-    },
-    "Móc chìa khóa và Bọc chìa ô tô": "6,87%",
-    "Dầu nhớt và phụ gia ô tô": {
-      "Chất chống đông & chất làm mát": "6,87%",
-      "Dầu máy": {
-        "Dầu phanh": "6,87%",
-        "Khác": "6,87%",
-        "Dầu hộp số": "6,87%"
-      },
-      "Phụ gia": "6,87%",
-      "Mỡ & Chất bôi trơn": "6,87%",
-      "Dầu": "6,87%",
-      "Khác": "6,87%"
-    },
-    "Dụng cụ sửa chữa ô tô": {
-      "Khác": "6,87%",
-      "Dụng cụ Kiểm tra, chẩn đoán & sửa chữa": "6,87%",
-      "Máy đo áp suất lốp": "6,87%"
-    },
-    "Khác": "6,38%"
-  },
-  "Phụ Kiện Thời Trang": {
-    "Bộ phụ kiện": "6,87%",
-    "Phụ kiện thêm": {
-      "Trâm & Ghim cài áo": "7,95%",
-      "Mặt dây chuyền và Charm": "7,95%",
-      "Măng sét nam": "7,95%",
-      "Khăn tay": "7,95%",
-      "Khẩu trang thời trang": "7,95%",
-      "Khác": "7,95%",
-      "Miếng vá áo": "7,95%",
-      "Hình xăm dán": "7,95%"
-    },
-    "Lắc chân": "6,87%",
-    "Thắt lưng": "6,87%",
-    "Vòng tay & Lắc tay": "7,95%",
-    "Bông tai": "7,95%",
-    "Kính mắt": {
-      "Hộp kính và phụ kiện": "7,95%",
-      "Gọng kính": "7,95%",
-      "Khác": "7,95%",
-      "Kính mát": "7,95%"
-    },
-    "Fine Jewelry": {
-      "Anklets": "6,87%",
-      "Bracelets & Bangles": "6,87%",
-      "Brooches & Pins": "6,87%",
-      "Charms, Pendants & Ornaments": "6,87%",
-      "Earrings": "6,87%",
-      "Jewellery Set": "6,87%",
-      "Necklaces": "6,87%",
-      "Others": "6,87%",
-      "Rings": "6,87%"
-    },
-    "Găng tay": "6,87%",
-    "Phụ kiện tóc": {
-      "Kẹp tóc": "7,95%",
-      "Đồ buộc tóc & Nơ": "7,95%",
-      "Băng đô tóc": "7,95%",
-      "Cài tóc, vương miện cài tóc": "7,95%",
-      "Khác": "7,95%",
-      "Tóc giả & Tóc nối": "7,95%"
-    },
-    "Mũ": "6,87%",
-    "Kim loại quý": {
-      "Kim cương": "6,87%",
-      "Ngọc bích, Cẩm thạch": "6,87%",
-      "Khác": "6,87%",
-      "Platinum & Vàng": "6,87%",
-      "Bạc": "6,87%"
-    },
-    "Dây chuyền": "7,95%",
-    "Cà vạt & Nơ cổ": "6,87%",
-    "Khác": "6,87%",
-    "Nhẫn": "7,95%",
-    "Khăn choàng": "6,87%"
-  },
-  "Sắc Đẹp": {
-    "Tắm & chăm sóc cơ thể": {
-      "Kem & sữa dưỡng thể": "7,95%",
-      "Khử mùi cơ thể": "7,95%",
-      "Mặt nạ ủ cơ thể": "7,95%",
-      "Dầu dưỡng da": "7,95%",
-      "Tẩy tế bào chết cơ thể": "7,95%",
-      "Xà phòng & sữa tắm": "7,95%",
-      "Chăm sóc ngực": "7,95%",
-      "Kem tẩy lông & wax lông": "7,95%",
-      "Dầu massage": "7,95%",
-      "Khác": "7,95%",
-      "Chống nắng": {
-        "Chống nắng & chăm sóc sau đi nắng": "7,95%",
-        "Khác": "7,95%",
-        "Thuốc nhuộm da": "7,95%"
-      }
-    },
-    "Bộ sản phẩm làm đẹp": "7,95%",
-    "Dụng cụ làm đẹp": {
-      "Dụng cụ làm thon gọn cơ thể": "7,95%",
-      "Dụng cụ chăm sóc da mặt": {
-        "Dụng cụ rửa mặt": "7,95%",
-        "Dụng cụ làm thon gọn & mát xa mặt": "7,95%",
-        "Máy xông mặt": "7,95%",
-        "Khác": "7,95%"
-      },
-      "Dụng cụ tẩy lông": "7,95%",
-      "Dụng cụ chăm sóc tóc": {
-        "Lược chải": "7,95%",
-        "Máy sấy tóc": "7,95%",
-        "Máy tạo kiểu tóc": "7,95%",
-        "Dụng cụ tạo kiểu không nhiệt": "7,95%",
-        "Khác": "7,95%"
-      },
-      "Dụng cụ trang điểm": {
-        "Bông tẩy trang": "7,95%",
-        "Khuôn kẻ chân mày": "7,95%",
-        "Kẹp bấm mi": "7,95%",
-        "Miếng dán mí & keo dán mí": "7,95%",
-        "Mi giả": "7,95%",
-        "Túi đựng đồ trang điểm": "7,95%",
-        "Dung dịch làm sạch cọ trang điểm": "7,95%",
-        "Cọ trang điểm": "7,95%",
-        "Gương": "7,95%",
-        "Khác": "7,95%",
-        "Chuốt chì kẻ mày": "7,95%",
-        "Bông mút trang điểm": "7,95%"
-      },
-      "Khác": "7,95%"
-    },
-    "Chăm sóc tóc": {
-      "Dầu xả": "7,95%",
-      "Thuốc nhuộm tóc": "7,95%",
-      "Sản phẩm tạo kiểu tóc": "7,95%",
-      "Sản phẩm dưỡng tóc": "7,95%",
-      "Khác": "7,95%",
-      "Dầu gội": "7,95%"
-    },
-    "Chăm sóc tay, chân & móng": {
-      "Chăm sóc chân": {
-        "Khử mùi hôi chân": "7,95%",
-        "Mặt nạ cho chân": "7,95%",
-        "Kem dưỡng, dầu dưỡng & sữa dưỡng": "7,95%",
-        "Khác": "7,95%"
-      },
-      "Chăm sóc tay": {
-        "Mặt nạ cho tay": "7,95%",
-        "Xà phòng rửa tay": "7,95%",
-        "Kem dưỡng, dầu dưỡng & sữa dưỡng": "7,95%",
-        "Khác": "7,95%"
-      },
-      "Chăm sóc móng": {
-        "Móng giả": "7,95%",
-        "Sơn nền & sơn bóng": "7,95%",
-        "Dụng cụ & thiết bị làm móng": "7,95%",
-        "Hình dán móng": "7,95%",
-        "Nail Gel": "7,95%",
-        "Sơn móng": "7,95%",
-        "Dụng cụ tẩy sơn móng": "7,95%",
-        "Dưỡng móng": "7,95%",
-        "Khác": "7,95%"
-      },
-      "Khác": "7,95%"
-    },
-    "Trang điểm": {
-      "Trang điểm mắt": {
-        "Kem lót mắt": "7,95%",
-        "Kẻ mày": "7,95%",
-        "Bút kẻ mắt": "7,95%",
-        "Phấn mắt": "7,95%",
-        "Mascara": "7,95%",
-        "Khác": "7,95%"
-      },
-      "Trang điểm mặt": {
-        "Kem BB & CC": "7,95%",
-        "Má hồng": "7,95%",
-        "Tạo khối & bắt sáng": "7,95%",
-        "Che khuyết điểm": "7,95%",
-        "Kem nền": "7,95%",
-        "Kem lót": "7,95%",
-        "Khác": "7,95%",
-        "Phấn phủ": "7,95%",
-        "Xịt giữ makeup": "7,95%"
-      },
-      "Trang điểm môi": {
-        "Son bóng": "7,95%",
-        "Viền môi": "7,95%",
-        "Son làm căng môi": "7,95%",
-        "Son tint": "7,95%",
-        "Son môi": "7,95%",
-        "Khác": "7,95%"
-      },
-      "Tẩy trang": "7,95%",
-      "Khác": "7,95%"
-    },
-    "Chăm sóc nam giới": {
-      "Sữa tắm & chăm sóc cơ thể": "7,95%",
-      "Chăm sóc tóc": "7,95%",
-      "Khác": "7,95%",
-      "Sản phẩm cạo râu & hớt tóc": {
-        "Dưỡng da sau cạo râu": "7,95%",
-        "Kem dưỡng, kem tạo bọt & gel": "7,95%",
-        "Khác": "7,95%",
-        "Dao cạo râu": "7,95%",
-        "Máy cạo râu": "7,95%",
-        "Phụ kiện hỗ trợ cạo râu": "7,95%",
-        "Cọ cạo râu": "7,95%",
-        "Máy cạo râu đa chức năng": "7,95%"
-      },
-      "Chăm sóc da": {
-        "Sữa rửa mặt": "7,95%",
-        "Kem dưỡng ẩm & dưỡng da": "7,95%",
-        "Khác": "7,95%"
-      }
-    },
-    "Khác": "7,95%",
-    "Nước hoa": "7,95%",
-    "Chăm sóc da mặt": {
-      "Sản phẩm trị mụn": "7,95%",
-      "Kem dưỡng sau chống nắng": "7,95%",
-      "Giấy thấm dầu": "7,95%",
-      "Sản phẩm dưỡng mắt": {
-        "Kem dưỡng mắt": "7,95%",
-        "Mặt nạ cho mắt": "7,95%",
-        "Tinh chất dưỡng mày & mi": "7,95%",
-        "Khác": "7,95%"
-      },
-      "Mặt nạ": "7,95%",
-      "Tẩy tế bào chết": "7,95%",
-      "Kem chống nắng cho mặt": "7,95%",
-      "Sữa rửa mặt": "7,95%",
-      "Xịt khoáng": "7,95%",
-      "Kem dưỡng ẩm": "7,95%",
-      "Dầu dưỡng ẩm": "7,95%",
-      "Tinh chất dưỡng": "7,95%",
-      "Sản phẩm dưỡng môi": {
-        "Son dưỡng môi": "7,95%",
-        "Mặt nạ cho môi": "7,95%",
-        "Tẩy tế bào chết môi": "7,95%",
-        "Khác": "7,95%"
-      },
-      "Khác": "7,95%",
-      "Nước cân bằng da": "7,95%"
-    }
-  },
-  "Sách & Tạp Chí": {
-    "Sách": {
-      "Văn Học Hành Động, Tội Phạm & Kinh Dị": "5,89%",
-      "Sách Người Lớn": "5,89%",
-      "Sách Nông - Lâm - Ngư Nghiệp": "5,89%",
-      "Sách Nghệ thuật, Thiết kế & Nhiếp ảnh": "5,89%",
-      "Sách Nói": "5,89%",
-      "Sách Vải": "5,89%",
-      "Tiểu Sử - Hồi Ký": "5,89%",
-      "Sách Kinh Tế - Kinh Doanh": "5,89%",
-      "Sách Hướng Nghiệp & Phát Triển Bản Thân": "5,89%",
-      "Sách Thiếu Nhi": "5,89%",
-      "Văn Học Kinh Điển": "5,89%",
-      "Truyện Tranh": "5,89%",
-      "Sách Công Nghệ Thông Tin": "5,89%",
-      "Sách Giáo Dục": "5,89%",
-      "Văn Học Giả Tưởng": "5,89%",
-      "Sách Sức Khỏe, Rèn Luyện & Ăn Kiêng": "5,89%",
-      "Sách Lịch Sử - Văn Hóa": "5,89%",
-      "Sách Sở Thích Cá Nhân": "5,89%",
-      "Sách Chiêm Tinh": "5,89%",
-      "Sách Học Ngoại Ngữ & Từ Điển": "5,89%",
-      "Văn Học LGBTQ+": "5,89%",
-      "Light Novels": "5,89%",
-      "Sách Y Học": "5,89%",
-      "Sách Âm Nhạc": "5,89%",
-      "Khác": "5,89%",
-      "Sách Gia Đình": "5,89%",
-      "Sách Chính Trị - Pháp Lý & Khoa Học": "5,89%",
-      "Sách Tâm Lý Học": "5,89%",
-      "Sách Dạy Nấu Ăn": "5,89%",
-      "Sách Tôn giáo & Triết học": "5,89%",
-      "Văn Học Lãng Mạn": "5,89%",
-      "Khoa Học - Toán Học": "5,89%",
-      "Sách Hình Dán & Tô Màu": "5,89%",
-      "Sách Du Lịch - Du Ký": "5,89%"
-    },
-    "E-Books": "6,87%",
-    "Tạp Chí & Báo Giấy": {
-      "Tạp Chí Kinh Tế": "5,89%",
-      "Tạp Chí Đời Sống": "5,89%",
-      "Khác": "5,89%",
-      "Tạp Chí Tuổi Teen": "5,89%"
-    },
-    "Khác": "6,87%"
-  },
-  "Sở thích & Sưu tầm": {
-    "Băng - Đĩa": "6,87%",
-    "Đồ Sưu Tầm": {
-      "Mô hình nhân vật": "6,87%",
-      "Bộ sưu tập hoạt hình truyện tranh": "6,87%",
-      "Tiền xu & tiền giấy sưu tầm": "6,87%",
-      "Bộ sưu tập nhân vật nổi tiếng": "6,87%",
-      "Mô hình mecha/gundam": "6,87%",
-      "Khác": "6,87%",
-      "Bộ sưu tập thể thao": "6,87%",
-      "Tượng tĩnh": "6,87%",
-      "Đá & khoáng vật": "6,87%",
-      "Mô hình xe": "6,87%"
-    },
-    "Nhạc Cụ & Phụ Kiện": {
-      "Đàn Piano & Organ": "6,87%",
-      "Phụ Kiện Âm Nhạc": "6,87%",
-      "Khác": "6,87%",
-      "Nhạc Cụ Gõ": "6,87%",
-      "Nhạc Cụ Dây": {
-        "Guitar & Bass": "6,87%",
-        "Khác": "6,87%",
-        "Đàn Ukulele": "6,87%"
-      },
-      "Sáo, kèn": "6,87%"
-    },
-    "Dụng Cụ May Vá": "6,87%",
-    "Khác": "6,87%",
-    "Album Ảnh": "6,87%",
-    "Quà Lưu Niệm": {
-      "Ống tiết kiệm": "6,87%",
-      "Nam Châm": "6,87%",
-      "Quạt Cầm Tay": "6,87%",
-      "Móc khóa": "6,87%",
-      "Khác": "6,87%"
-    },
-    "Đồ chơi - Giải trí": {
-      "Đồ chơi trứng": "7,95%",
-      "Đồ chơi thẻ bài & boardgame": "7,95%",
-      "Kendama": "7,95%",
-      "Đồ chơi ảo thuật": "7,95%",
-      "Khác": "7,95%",
-      "Đồ chơi chọc ghẹo": "7,95%",
-      "Đồ chơi điều khiển từ xa": "7,95%",
-      "Đồ chơi rubik": "7,95%",
-      "Đồ chơi con xoay": "7,95%",
-      "Yo yo": "7,95%"
-    },
-    "Đĩa Than": "6,87%"
-  },
-  "Sức Khỏe": {
-    "Chăm sóc cá nhân": {
-      "Chống muỗi & xua đuổi côn trùng": "7,95%",
-      "Tã người lớn": "7,95%",
-      "Chăm sóc tai": "7,95%",
-      "Chăm sóc mắt": {
-        "Kính áp tròng": "7,95%",
-        "Thuốc nhỏ mắt và ngâm áp tròng": "7,95%",
-        "Khác": "7,95%"
-      },
-      "Chăm sóc phụ nữ": {
-        "Dung dịch vệ sinh phụ nữ": "7,95%",
-        "Cốc nguyệt san": "7,95%",
-        "Khác": "7,95%",
-        "Que thử thai": "7,95%",
-        "Băng vệ sinh có cánh & không cánh": "7,95%",
-        "Tampon": "7,95%",
-        "Kem dưỡng vùng kín": "7,95%"
-      },
-      "Dung dịch sát khuẩn tay": "7,95%",
-      "Dụng cụ massage và trị liệu": "7,95%",
-      "Vệ sinh răng miệng": {
-        "Chỉ nha khoa": "7,95%",
-        "Răng giả và phụ kiện": "7,95%",
-        "Bàn chải điện & phụ kiện": "7,95%",
-        "Bàn chải đánh răng": "7,95%",
-        "Nước súc miệng": "7,95%",
-        "Dụng cụ hỗ trợ chỉnh nha": "7,95%",
-        "Khác": "7,95%",
-        "Hỗ trợ trắng răng": "7,95%",
-        "Kem đánh răng": "7,95%"
-      },
-      "Khác": "7,95%"
-    },
-    "Hỗ trợ tình dục": {
-      "Bao cao su": "7,95%",
-      "Bôi trơn": "7,95%",
-      "Khác": "7,95%",
-      "Tăng cường sinh lý": "7,95%"
-    },
-    "Thực phẩm chức năng": {
-      "Hỗ trợ làm đẹp": "7,95%",
-      "Hỗ trợ tăng cơ": "7,95%",
-      "Khác": "7,95%",
-      "Hỗ trợ kiểm soát cân nặng": "7,95%",
-      "Hỗ trợ sức khỏe": "7,95%"
-    },
-    "Vật tư y tế": {
-      "Dụng cụ sơ cứu": {
-        "Phụ kiện sơ cấp cứu": "6,87%",
-        "Thuốc sát trùng & khử trùng y tế": "6,87%",
-        "Kem và thuốc mỡ": "6,87%",
-        "Khác": "6,87%",
-        "Băng gạc y tế": "6,87%"
-      },
-      "Kiểm tra và theo dõi sức khỏe": {
-        "Máy đo lượng đường trong máu": "6,87%",
-        "Máy đo huyết áp": "6,87%",
-        "Khác": "6,87%",
-        "Máy đo nồng độ oxy trong máu": "6,87%",
-        "Nhiệt kế": "6,87%"
-      },
-      "Hỗ trợ chấn thương và khuyết tật": {
-        "Dụng cụ nẹp và hỗ trợ khớp": "6,87%",
-        "Trợ thính": "6,87%",
-        "Khác": "6,87%",
-        "Nạng chống": "6,87%",
-        "Xe lăn": "6,87%"
-      },
-      "Dụng cụ thí nghiệm": "6,87%",
-      "Bao tay và khẩu trang y tế": "6,87%",
-      "Chăm sóc mũi": "6,87%",
-      "Khác": "6,87%",
-      "Thuốc không kê đơn": "6,87%",
-      "Sản phẩm giảm đau dùng ngoài da": "6,87%",
-      "Prescription Medicine": "6,87%",
-      "Cân sức khỏe và phân tích cơ thể": "6,87%",
-      "Ống nghe y tế": "6,87%",
-      "Thuốc gia truyền": "6,87%"
-    }
-  },
-  "Thể Thao & Dã Ngoại": {
-    "Khác": "6,87%",
-    "Phụ Kiện Thể Thao & Dã Ngoại": {
-      "Túi Chống Thấm": "6,87%",
-      "Đồ Bảo Hộ Gym": "6,87%",
-      "Dụng Cụ Bảo Vệ Miệng & Băng Keo Thể Thao": "6,87%",
-      "Phụ Kiện Khác": "6,87%",
-      "Áo Mưa": "6,87%",
-      "Túi Đựng Giày": "6,87%",
-      "Mũ Thể Thao & Dã Ngoại": "6,87%",
-      "Băng Đô Thể Thao": "6,87%",
-      "Vòng Tay Thể Thao": "6,87%",
-      "Đồng Hồ Bấm Giây & Máy Đếm Bước Chân": "6,87%",
-      "Phụ Kiện Tập Luyện": "6,87%",
-      "Ô/Dù": "6,87%"
-    },
-    "Thời Trang Thể Thao & Dã Ngoại": {
-      "Quần Thể Thao": "6,87%",
-      "Áo Khoác": "6,87%",
-      "Áo CLB": "6,87%",
-      "Thời Trang Thể Thao Trẻ Em": "6,87%",
-      "Khác": "6,87%",
-      "Bộ Đồ Thể Thao": "6,87%",
-      "Áo Lót Thể Thao": "6,87%",
-      "Đồ Bơi": {
-        "Bộ Bikini": "6,87%",
-        "Đồ Bơi Một Mảnh": "6,87%",
-        "Đồ Bơi Khác": "6,87%",
-        "Áo Bơi Kín": "6,87%",
-        "Quần Bơi": "6,87%"
-      },
-      "Áo Thể Thao": "6,87%"
-    },
-    "Dụng Cụ Thể Thao & Dã Ngoại": {
-      "Bắn Cung": {
-        "Mũi Tên": "6,87%",
-        "Cung": "6,87%",
-        "Khác": "6,87%"
-      },
-      "Cầu Lông": {
-        "Lưới Cầu Lông": "6,87%",
-        "Vợt Cầu Lông": "6,87%",
-        "Khác": "6,87%",
-        "Quả Cầu": "6,87%"
-      },
-      "Bóng Chày & Bóng Ném": "6,87%",
-      "Bóng Rổ": {
-        "Banh Bóng Rổ": "6,87%",
-        "Khung Lưới Bóng Rổ": "6,87%",
-        "Vật Dụng Khác": "6,87%"
-      },
-      "Bida": "6,87%",
-      "Thể Thao Ván Trượt": {
-        "Nón Bảo Hiểm & Đồ Bảo Hộ": "6,87%",
-        "Khác": "6,87%",
-        "Scooters & Xe Đạp 1 Bánh": "6,87%",
-        "Xe Điện Cân Bằng": "6,87%",
-        "Ván Trượt & Giày Patin": "6,87%"
-      },
-      "Chèo Thuyền": "6,87%",
-      "Đấm bốc & Võ Tổng Hợp": {
-        "Găng Tay, Bao Tay & Mũ Bảo Hộ": "6,87%",
-        "Đai Võ": "6,87%",
-        "Khác": "6,87%",
-        "Bao Cát & Đệm": "6,87%"
-      },
-      "Cắm Trại & Dã ngoại": {
-        "Ống Nhòm & Kính Thiên Văn": "6,87%",
-        "Dụng Cụ Nấu Ăn Dã Ngoại": "6,87%",
-        "Dao & Bộ Dụng Cụ Cắm Trại": "6,87%",
-        "Đèn & Đèn Pin": "6,87%",
-        "La Bàn": "6,87%",
-        "Võng": "6,87%",
-        "Gậy Đi Bộ": "6,87%",
-        "Khác": "6,87%",
-        "Thảm & Giỏ Dã Ngoại": "6,87%",
-        "Túi Ngủ": "6,87%",
-        "Lều & Phụ Kiện": "6,87%"
-      },
-      "Đạp Xe": {
-        "Phụ Tùng & Phụ Kiện Xe Đạp": "6,87%",
-        "Xe Đạp": "6,87%",
-        "Mũ Bảo Hiểm Xe Đạp": "6,87%",
-        "Khác": "6,87%"
-      },
-      "Ném Phi Tiêu": "6,87%",
-      "Câu Cá": {
-        "Máy Dò Tìm Cá": "6,87%",
-        "Túi Đựng Dụng Cụ Câu": "6,87%",
-        "Lưỡi Câu": "6,87%",
-        "Dây Câu": "6,87%",
-        "Lưới Bắt Cá": "6,87%",
-        "Cần câu": "6,87%",
-        "Mồi Câu": "6,87%",
-        "Khác": "6,87%"
-      },
-      "Thiết Bị Thể Thao": {
-        "Con Lăn Tập Bụng": "6,87%",
-        "Máy Tập": "6,87%",
-        "Bóng Tập Yoga & Gym": "6,87%",
-        "Khác": "6,87%",
-        "Xà & Dụng Cụ Chống Đẩy": "6,87%",
-        "Dây Nhảy": "6,87%",
-        "Tạ Tập": "6,87%"
-      },
-      "Golf": {
-        "Đồ Bảo Hộ & Luyện Tập": "6,87%",
-        "Túi Đựng Dụng Cụ Golf": "6,87%",
-        "Bóng Golf": "6,87%",
-        "Gậy Golf": "6,87%",
-        "Khác": "6,87%"
-      },
-      "Trượt Tuyết & Thể Thao Mùa Đông": "6,87%",
-      "Môn Thể Thao Khác": "6,87%",
-      "Leo Núi": "6,87%",
-      "Bóng Bầu Dục": "6,87%",
-      "Bắn Súng & Game Sinh Tồn": {
-        "Accessories": "6,87%",
-        "Others": "6,87%",
-        "Tactical Equipment": "6,87%",
-        "Weapons": "6,87%",
-        "Khác": "6,87%"
-      },
-      "Bóng Đá, Futsal & Cầu Mây": {
-        "Bóng": "6,87%",
-        "Khung Thành & Lưới": "6,87%",
-        "Găng Tay & Ống Đồng": "6,87%",
-        "Khác": "6,87%"
-      },
-      "Bóng Quần": "6,87%",
-      "Lướt Ván": "6,87%",
-      "Bơi Lội & Lặn": {
-        "Đèn Lặn": "6,87%",
-        "Mặt Nạ Lặn": "6,87%",
-        "Chân Vịt Lặn": "6,87%",
-        "Áo Phao": "6,87%",
-        "Khác": "6,87%",
-        "Ván Tập Bơi": "6,87%",
-        "Mũ Bơi": "6,87%",
-        "Kính Bơi": "6,87%"
-      },
-      "Bóng Bàn": {
-        "Khác": "6,87%",
-        "Banh Bóng Bàn": "6,87%",
-        "Vợt Bóng Bàn": "6,87%",
-        "Lưới Bóng Bàn": "6,87%"
-      },
-      "Tennis": {
-        "Khác": "6,87%",
-        "Banh Tennis": "6,87%",
-        "Lưới Tennis": "6,87%",
-        "Vợt Tennis": "6,87%"
-      },
-      "Bóng Chuyền": {
-        "Khác": "6,87%",
-        "Banh Bóng Chuyền": "6,87%",
-        "Lưới Bóng Chuyền": "6,87%"
-      },
-      "Yoga & Pilates": {
-        "Khác": "6,87%",
-        "Dây Đàn Hồi": "6,87%",
-        "Dụng Cụ Hỗ Trợ Yoga": "6,87%",
-        "Thảm Yoga": "6,87%"
-      }
-    },
-    "Giày Thể Thao": {
-      "Giày Cầu Lông": "6,87%",
-      "Giày Bóng Rổ": "6,87%",
-      "Giày Futsal": "6,87%",
-      "Giày Dã Ngoại": "6,87%",
-      "Giày Thể Thao Trẻ Em": "6,87%",
-      "Giày Thể Thao Khác": "6,87%",
-      "Giày Chạy Bộ": "6,87%",
-      "Giày Bóng Đá": "6,87%",
-      "Giày Tennis": "6,87%",
-      "Giày Tập Luyện": "6,87%",
-      "Giày Bóng Chuyền": "6,87%"
-    }
-  },
-  "Thiết Bị Âm Thanh": {
-    "Amply và đầu chỉnh âm": "6,38%",
-    "Cáp âm thanh/ video & Đầu chuyển": "6,38%",
-    "Tai nghe nhét tai & chụp tai": "6,38%",
-    "Dàn âm thanh": {
-      "Thu sóng AV": "6,38%",
-      "Hệ thống âm thanh giải trí tại gia": "6,38%",
-      "Khác": "6,38%",
-      "Loa": "6,38%"
-    },
-    "Máy nghe nhạc": {
-      "CD, DVD & Bluray": "6,38%",
-      "MP3 & MP4": "6,38%",
-      "Khác": "6,38%",
-      "Radio & Cát-sét": "6,38%",
-      "Máy ghi âm": "6,38%"
-    },
-    "Micro thu âm": "6,38%",
-    "Khác": "6,38%"
-  },
-  "Thiết Bị Điện Gia Dụng": {
-    "Pin": "6,87%",
-    "Thuốc lá điện tử": "6,38%",
-    "Mạch điện & Phụ tùng": {
-      "Chuông cửa": "6,87%",
-      "Ổ cắm điện & Dây nối": "6,87%",
-      "Thiết bị an toàn điện tử": "6,87%",
-      "Thiết bị tiết kiệm điện": "6,87%",
-      "Thiết bị báo động nhà ở": "6,87%",
-      "Thiết bị chống sấm sét": "6,87%",
-      "Khác": "6,87%",
-      "Công tắc": "6,87%"
-    },
-    "Đồ gia dụng nhà bếp": {
-      "Nồi chiên không dầu": "6,38%",
-      "Máy pha cà phê & Phụ kiện": "6,38%",
-      "Nồi chiên ngập dầu": "6,38%",
-      "Máy rửa bát đĩa": "6,38%",
-      "Máy chế biến thực phẩm & Xay thịt": "6,38%",
-      "Tủ đông": "3,93%",
-      "Máy hút khói": "3,93%",
-      "Máy ép, Xay sinh tố & Máy làm sữa đậu nành": "6,38%",
-      "Ấm đun siêu tốc": "6,38%",
-      "Lò vi sóng": "6,38%",
-      "Máy trộn thực phẩm": "6,38%",
-      "Nồi nấu đa năng": "6,38%",
-      "Khác": "6,38%",
-      "Lò nướng": "6,38%",
-      "Nồi áp suất": "6,38%",
-      "Tủ lạnh": "3,93%",
-      "Nồi cơm điện": "6,38%",
-      "Nồi nấu chậm & Dụng cụ nấu chân không": "6,38%",
-      "Máy làm bánh mì": "6,38%",
-      "Máy làm món tráng miệng": "6,38%",
-      "Máy luộc trứng": "6,38%",
-      "Khác": "6,38%",
-      "Máy làm soda": "6,38%",
-      "Máy làm bánh Takoyaki": "6,38%",
-      "Máy làm bánh Waffle & Crepe": "6,38%",
-      "Lò sưởi, Bếp từ & Bộ điều chỉnh gas": "6,38%",
-      "Máy nướng bánh": "6,38%",
-      "Máy lọc nước": "3,93%",
-      "Tủ ủ rượu": "3,93%"
-    },
-    "Thiết bị điện gia dụng lớn": {
-      "Thiết bị làm mát": {
-        "Máy làm mát không khí & Điều hoà cầm tay": "3,44%",
-        "Điều hòa": "3,44%",
-        "Quạt": "3,44%",
-        "Khác": "3,44%"
-      },
-      "Thiết bị sấy khô nệm & Giày": "3,44%",
-      "Máy sưởi": "3,44%",
-      "Khác": "3,44%",
-      "Máy giặt & Máy sấy": {
-        "Máy sấy quần áo": "3,44%",
-        "Khác": "3,44%",
-        "Máy giặt": "3,44%"
-      },
-      "Máy nước nóng": "3,44%"
-    },
-    "Khác": "6,38%",
-    "Máy chiếu & Phụ kiện": {
-      "Khác": "6,87%",
-      "Bút trình chiếu": "6,87%",
-      "Máy chiếu & Màn hình chiếu": "6,87%"
-    },
-    "Thiết bị điều khiển từ xa": "6,87%",
-    "Thiết bị điện gia dụng nhỏ": {
-      "Thiết bị xử lý không khí": {
-        "Máy hút ẩm": "3,44%",
-        "Khác": "3,44%",
-        "Máy lọc không khí": "3,44%"
-      },
-      "Thiết bị vệ sinh chân & Thư giãn": "6,38%",
-      "Bàn là khô & Hơi nước": "6,38%",
-      "Khác": "6,38%",
-      "Máy may & Phụ kiện": "6,38%",
-      "Điện thoại": {
-        "Điện thoại có dây": "3,44%",
-        "Điện thoại không dây": "3,44%",
-        "Máy fax": "3,44%",
-        "Khác": "6,38%"
-      },
-      "Máy hút bụi & Thiết bị làm sạch sàn": "6,38%",
-      "Máy tăm nước": "6,38%"
-    },
-    "Tivi & Phụ kiện": {
-      "Khác": "6,38%",
-      "Ăng ten Tivi": "6,38%",
-      "Tivi box & Đầu thu kỹ thuật số": "6,38%",
-      "Giá treo tivi": "6,38%",
-      "Tivi": "1,96%"
-    }
-  },
-  "Thời Trang Nam": {
-    "Đồ hóa trang": "6,87%",
-    "Hoodie & Áo nỉ": {
-      "Áo hoodie": "6,87%",
-      "Khác": "6,87%",
-      "Áo nỉ": "6,87%"
-    },
-    "Đồ lót": {
-      "Khác": "6,87%",
-      "Sexy Innerwear": "6,87%",
-      "Đồ lót giữ nhiệt": "6,87%",
-      "Áo lót": "6,87%",
-      "Quần lót": "6,87%"
-    },
-    "Áo khoác": {
-      "Áo khoác": "6,87%",
-      "Khác": "6,87%",
-      "Áo khoác vest": "6,87%",
-      "Áo khoác mùa đông & Áo choàng": "6,87%"
-    },
-    "Quần jean": "6,87%",
-    "Trang phục ngành nghề": "6,87%",
-    "Khác": "6,87%",
-    "Quần dài": {
-      "Quần túi hộp": "6,87%",
-      "Quần jogger": "6,87%",
-      "Khác": "6,87%",
-      "Quần dài": "6,87%"
-    },
-    "Bộ": "6,87%",
-    "Quần đùi": "6,87%",
-    "Đồ ngủ": "6,87%",
-    "Vớ/ Tất": "6,87%",
-    "Com lê": {
-      "Khác": "6,87%",
-      "Áo Khoác & Blazer": "6,87%",
-      "Quần âu": "6,87%",
-      "Bộ Com lê": "6,87%",
-      "Áo vest & Gi lê": "6,87%"
-    },
-    "Áo len": "6,87%",
-    "Áo": {
-      "Khác": "6,87%",
-      "Áo polo": "6,87%",
-      "Áo sơ mi": "6,87%",
-      "Áo thun": "6,87%",
-      "Áo ba lỗ": "6,87%"
-    },
-    "Trang phục truyền thống": {
-      "Quần": "6,87%",
-      "Khác": "6,87%",
-      "Bộ": "6,87%",
-      "Áo": "6,87%"
-    }
-  },
-  "Thời Trang Nữ": {
-    "Đồ hóa trang": "6,87%",
-    "Đầm": "6,87%",
-    "Vải": {
-      "Vải Batik": "6,87%",
-      "Vải canvas": "6,87%",
-      "Vải cotton": "6,87%",
-      "Vải denim": "6,87%",
-      "Vải da": "6,87%",
-      "Khác": "6,87%",
-      "Vải nhung, lụa, satin": "6,87%",
-      "Vải nylon": "6,87%",
-      "Vải len": "6,87%"
-    },
-    "Hoodie và Áo nỉ": {
-      "Áo hoodies": "6,87%",
-      "Khác": "6,87%",
-      "Áo khoác nỉ": "6,87%"
-    },
-    "Áo khoác": {
-      "Áo blazer": "6,87%",
-      "Áo choàng": "6,87%",
-      "Áo khoác ngoài": "6,87%",
-      "Khác": "6,87%",
-      "Áo vest": "6,87%",
-      "Áo khoác mùa đông": "6,87%"
-    },
-    "Quần jeans": "6,87%",
-    "Đồ liền thân": {
-      "Đồ bay (Jumpsuits)": "6,87%",
-      "Khác": "6,87%",
-      "Quần yếm": "6,87%",
-      "Đồ bay ngắn (playsuits)": "6,87%"
-    },
-    "Đồ lót": {
-      "Phụ kiện đồ lót": {
-        "Miếng dán ngực": "6,87%",
-        "Khác": "6,87%",
-        "Miếng mút rời": "6,87%",
-        "Dây áo lót": "6,87%"
-      },
-      "Áo ngực": "6,87%",
-      "Khác": "6,87%",
-      "Quần lót": "6,87%",
-      "Đồ lót bảo hộ": "6,87%",
-      "Bộ đồ lót": "6,87%",
-      "Đồ lót gợi cảm": "6,87%",
-      "Đồ định hình": "6,87%",
-      "Đồ lót giữ nhiệt": "6,87%"
-    },
-    "Đồ Bầu": {
-      "Đồ mặc cho con bú": "6,87%",
-      "Quần bầu, Váy bầu": "6,87%",
-      "Đầm bầu": "6,87%",
-      "Bộ đồ bầu": "6,87%",
-      "Áo bầu": "6,87%",
-      "Áo ngực cho con bú": "6,87%",
-      "Khác": "6,87%"
-    },
-    "Khác": "6,87%",
-    "Quần": {
-      "Quần legging": "6,87%",
-      "Khác": "6,87%",
-      "Quần dài": "6,87%"
-    },
-    "Bộ": {
-      "Bộ đồ đôi": "6,87%",
-      "Bộ đồ gia đình": "6,87%",
-      "Đồ lẻ": "6,87%",
-      "Khác": "6,87%"
-    },
-    "Quần đùi": {
-      "Khác": "6,87%",
-      "Quần đùi": "6,87%",
-      "Quần váy": "6,87%"
-    },
-    "Váy": "6,87%",
-    "Đồ ngủ": {
-      "Áo choàng ngủ, Áo khoác kimono": "6,87%",
-      "Váy ngủ": "6,87%",
-      "Khác": "6,87%",
-      "Pyjama": "6,87%"
-    },
-    "Vớ/ Tất": {
-      "Khác": "6,87%",
-      "Quần tất": "6,87%",
-      "Tất": "6,87%"
-    },
-    "Áo len": "6,87%",
-    "Áo": {
-      "Áo liền thân": "6,87%",
-      "Khác": "6,87%",
-      "Áo polo": "6,87%",
-      "Áo sơ mi": "6,87%",
-      "Áo thun": "6,87%",
-      "Áo hai dây và ba lỗ": "6,87%",
-      "Áo ống": "6,87%"
-    },
-    "Đồ truyền thống": {
-      "Quần và chân váy": "6,87%",
-      "Đầm": "6,87%",
-      "Khác": "6,87%",
-      "Bộ": "6,87%",
-      "Áo": "6,87%"
-    },
-    "Váy cưới": "6,87%"
-  },
-  "Thời trang trẻ em & trẻ sơ sinh": {
-    "Phụ kiện trẻ em & trẻ sơ sinh": {
-      "Túi xách & vali": {
-        "Balo": "6,87%",
-        "Túi đeo chéo/túi đeo vai": "6,87%",
-        "Vali kéo": "6,87%",
-        "Khác": "6,87%",
-        "Ví": "6,87%"
-      },
-      "Thắt lưng": "6,87%",
-      "Chụp tai": "6,87%",
-      "Mắt kính": "6,87%",
-      "Găng tay": "6,87%",
-      "Phụ kiện tóc": "6,87%",
-      "Mũ & mũ lưỡi trai": "6,87%",
-      "Trang sức": {
-        "Vòng Tay": "6,87%",
-        "Bông Tai": "6,87%",
-        "Vòng Cổ": "6,87%",
-        "Khác": "6,87%",
-        "Nhẫn": "6,87%"
-      },
-      "Khác": "6,87%",
-      "Đồ đi mưa": {
-        "Khác": "6,87%",
-        "Ủng đi mưa": "6,87%",
-        "Áo mưa": "6,87%"
-      },
-      "Khăn": "6,87%",
-      "Tất": "6,87%",
-      "Đồng hồ": "6,87%"
-    },
-    "Quần áo trẻ em": {
-      "Bộ đồ liền thân": "6,87%",
-      "Quần/Chân váy": {
-        "Khác": "6,87%",
-        "Quần dài & legging": "6,87%",
-        "Quần ngắn": "6,87%",
-        "Chân váy": "6,87%"
-      },
-      "Váy": "6,87%",
-      "Khác": "6,87%",
-      "Áo khoác nhẹ": "6,87%",
-      "Bộ quần áo": "6,87%",
-      "Đồ ngủ": "6,87%",
-      "Đồ bơi": "6,87%",
-      "Áo": "6,87%",
-      "Áo khoác mùa đông": "6,87%"
-    },
-    "Bao tay trẻ em & Tất": "6,87%",
-    "Quần áo bé trai": {
-      "Quần": {
-        "Quần Jeans": "6,87%",
-        "Khác": "6,87%",
-        "Quần yếm": "6,87%",
-        "Quần dài": "6,87%",
-        "Quần ngắn": "6,87%"
-      },
-      "Đồ hóa trang": "6,87%",
-      "Khác": "6,87%",
-      "Áo khoác": {
-        "Blazers": "6,87%",
-        "Áo nỉ có mũ": "6,87%",
-        "Khác": "6,87%",
-        "Áo choàng & áo khoác": "6,87%",
-        "Áo len chui đầu & cardigan": "6,87%",
-        "Áo gi lê": "6,87%",
-        "Áo khoác mùa đông": "6,87%"
-      },
-      "Đồ ngủ": "6,87%",
-      "Com lê & đồ bộ": "6,87%",
-      "Đồ bơi": "6,87%",
-      "Áo": {
-        "Khác": "6,87%",
-        "Áo polo": "6,87%",
-        "Áo sơ mi": "6,87%",
-        "Áo thun": "6,87%"
-      },
-      "Đồ lót": "6,87%",
-      "Giày": {
-        "Bốt": "6,87%",
-        "Dép lê": "6,87%",
-        "Giày tây": "6,87%",
-        "Giày lười": "6,87%",
-        "Khác": "6,87%",
-        "Dép quai hậu": "6,87%",
-        "Giày thể thao": "6,87%"
-      }
-    },
-    "Quần áo bé gái": {
-      "Quần": {
-        "Quần jeans": "6,87%",
-        "Quần leggings": "6,87%",
-        "Khác": "6,87%",
-        "Quần dài": "6,87%",
-        "Quần ngắn": "6,87%",
-        "Chân váy": "6,87%"
-      },
-      "Đồ hóa trang": "6,87%",
-      "Váy": "6,87%",
-      "Khác": "6,87%",
-      "Áo khoác": {
-        "Blazers": "6,87%",
-        "Áo hoodie": "6,87%",
-        "Khác": "6,87%",
-        "Áo choàng & áo khoác": "6,87%",
-        "Áo len chui đầu & cardigan": "6,87%",
-        "Áo gi lê": "6,87%",
-        "Áo khoác mùa đông": "6,87%"
-      },
-      "Đồ liền thân": "6,87%",
-      "Đồ ngủ": "6,87%",
-      "Com lê & đồ bộ": "6,87%",
-      "Đồ bơi": "6,87%",
-      "Áo": {
-        "Khác": "6,87%",
-        "Áo polo": "6,87%",
-        "Áo sơmi": "6,87%",
-        "Áo thun": "6,87%"
-      },
-      "Đồ lót": "6,87%",
-      "Giày": {
-        "Bốt": "6,87%",
-        "Giày bệt": "6,87%",
-        "Dép lê": "6,87%",
-        "Giày lười": "6,87%",
-        "Khác": "6,87%",
-        "Dép quai hậu": "6,87%",
-        "Giày thể thao": "6,87%"
-      }
-    },
-    "Khác": "6,87%"
-  },
-  "Thực phẩm và đồ uống": {
-    "Đồ uống có cồn": {
-      "Bia và trái cây lên men": "6,87%",
-      "Rượu mạnh": "6,87%",
-      "Khác": "6,87%",
-      "Rượu sake, soju & umeshu": "6,87%",
-      "Rượu vang & Sâm panh": "6,87%"
-    },
-    "Đồ làm bánh": {
-      "Đồ trang trí": "6,87%",
-      "Hương liệu": "6,87%",
-      "Bột nở và muối nở": "6,87%",
-      "Bột pha sẵn": "6,87%",
-      "Bột mì": "6,87%",
-      "Chất tạo màu": "6,87%",
-      "Khác": "6,87%"
-    },
-    "Bộ quà tặng": "6,87%",
-    "Khác": "6,87%",
-    "Các loại bánh": {
-      "Bánh mì": "5,30%",
-      "Bánh kem": "5,30%",
-      "Khác": "5,30%",
-      "Bánh ngọt/ pastry": "5,30%"
-    },
-    "Đồ uống": {
-      "Nước có ga": "5,30%",
-      "Thức uống Sô cô la": "5,30%",
-      "Cà phê": "5,30%",
-      "Siro pha": "5,30%",
-      "Đồ tráng miệng": "5,30%",
-      "Topping": "5,30%",
-      "Nước tăng lực": "5,30%",
-      "Nước trái cây lên men": "5,30%",
-      "Sữa thực vật": "5,30%",
-      "Khác": "5,30%",
-      "Bột pha": "5,30%",
-      "Trà & trà túi lọc": "5,30%",
-      "Trà thảo mộc": "5,30%",
-      "Nước tinh khiết": "5,30%"
-    },
-    "Ngũ cốc & mứt": {
-      "Thanh dinh dưỡng": "5,30%",
-      "Ngũ cốc": "5,30%",
-      "Mật ong và siro": "5,30%",
-      "Mứt": "5,30%",
-      "Khác": "5,30%"
-    },
-    "Đồ chế biến sẵn": {
-      "Đồ ăn chế biến sẵn": "5,30%",
-      "Lẩu ăn liền": "5,30%",
-      "Mì ăn liền": "5,30%",
-      "Cơm và cháo ăn liền": "5,30%",
-      "Khác": "5,30%"
-    },
-    "Nguyên liệu nấu ăn": {
-      "Gói/ bột gia vị": "5,30%",
-      "Phụ gia thực phẩm": "5,30%",
-      "Bột phủ": "5,30%",
-      "Dầu ăn": "5,30%",
-      "Khác": "5,30%",
-      "Gia vị & Hương liệu": {
-        "Ớt & sa tế": "5,30%",
-        "Rượu nấu ăn": "5,30%",
-        "Nước chấm": "5,30%",
-        "Gia vị & Thảo mộc": "5,30%",
-        "Khác": "5,30%",
-        "Tiêu": "5,30%",
-        "Muối": "5,30%",
-        "Các loại sốt": "5,30%",
-        "Giấm": "5,30%"
-      },
-      "Sốt & súp ăn liền": "5,30%",
-      "Đường": "5,30%",
-      "Chất tạo ngọt": "5,30%"
-    },
-    "Sữa - trứng": {
-      "Đậu phụ": "5,30%",
-      "Bơ động vật & thực vật": "5,30%",
-      "Phô mai & bột phô mai": "5,30%",
-      "Bột kem béo": "5,30%",
-      "Trứng": "5,30%",
-      "Kem": "5,30%",
-      "Sữa": {
-        "Sữa đặc": "5,30%",
-        "Sữa tươi": "5,30%",
-        "Khác": "5,30%",
-        "Sữa bột": "5,30%",
-        "Sữa tiệt trùng": "5,30%"
-      },
-      "Khác": "5,30%",
-      "Sữa chua": "5,30%"
-    },
-    "Nhu yếu phẩm": {
-      "Thực phẩm đóng hộp": {
-        "Trái cây đóng hộp": "5,30%",
-        "Thịt hộp": "5,30%",
-        "Hải sản đóng hộp": "5,30%",
-        "Súp hộp": "5,30%",
-        "Rau củ đóng hộp": "5,30%",
-        "Khác": "5,30%"
-      },
-      "Thực phẩm khô": {
-        "Đậu & ngũ cốc": "5,30%",
-        "Hải sản sấy khô": "5,30%",
-        "Khác": "5,30%",
-        "Thảo mộc truyền thống": "5,30%"
-      },
-      "Mì": "5,30%",
-      "Khác": "5,30%",
-      "Mì Ý": "5,30%",
-      "Rau củ ngâm": "5,30%",
-      "Gạo": "5,30%"
-    },
-    "Thực phẩm tươi sống & đông lạnh": {
-      "Thực phẩm đông lạnh chế biến sẵn": "5,30%",
-      "Trái cây": {
-        "Táo & Lê": "5,30%",
-        "Chuối": "5,30%",
-        "Các loại quả mọng": "5,30%",
-        "Họ cam quýt": "5,30%",
-        "Nho": "5,30%",
-        "Các loại dưa": "5,30%",
-        "Khác": "5,30%",
-        "Trái cây sơ chế & set trái cây": "5,30%",
-        "Stonefruits": "5,30%",
-        "Trái cây nhiệt đới & ngoại lai": "5,30%"
-      },
-      "Thịt": {
-        "Thịt bò": "5,30%",
-        "Thịt cừu": "5,30%",
-        "Khác": "5,30%",
-        "Thịt lợn": "5,30%",
-        "Thịt gia cầm": "5,30%"
-      },
-      "Nấm": "5,30%",
-      "Khác": "5,30%",
-      "Thịt và hải sản chế biến sẵn": "5,30%",
-      "Hải sản": {
-        "Cua": "5,30%",
-        "Cá": "5,30%",
-        "Khác": "5,30%",
-        "Tôm": "5,30%"
-      },
-      "Rau củ": {
-        "Họ cà tím, họ bầu bí": "5,30%",
-        "Broccoli & Cauliflowers": "5,30%",
-        "Bắp cải": "5,30%",
-        "Ớt": "5,30%",
-        "Rau gia vị": "5,30%",
-        "Tỏi, gừng & củ hành": "5,30%",
-        "Các loại rau cải": "5,30%",
-        "Khác": "5,30%",
-        "Đậu, hạt & bắp": "5,30%",
-        "Rau củ sơ chế & set rau củ": "5,30%",
-        "Rau dạng củ & thân": "5,30%",
-        "Salads Vegetables": "5,30%",
-        "Rau mầm": "5,30%"
-      },
-      "Thịt chay": "5,30%"
-    },
-    "Đồ ăn vặt": {
-      "Bánh quy": "5,30%",
-      "Khoai tây lát": "5,30%",
-      "Sô cô la": "5,30%",
-      "Thức ăn khô": {
-        "Hoa quả sấy khô": "5,30%",
-        "Hải sản sấy khô": "5,30%",
-        "Chà bông": "5,30%",
-        "Thịt khô": "5,30%",
-        "Khác": "5,30%"
-      },
-      "Các loại đậu sấy khô": "5,30%",
-      "Khác": "5,30%",
-      "Bỏng ngô": "5,30%",
-      "Pudding, thạch & kẹo dẻo": "5,30%",
-      "Các loại rong biển ăn liền": "5,30%",
-      "Các loại hạt sấy khô": "5,30%",
-      "Kẹo": "5,30%"
-    }
-  },
-  "Túi Ví Nam": {
-    "Ba lô": "6,87%",
-    "Cặp xách công sở": "6,87%",
-    "Ví cầm tay": "6,87%",
-    "Túi đeo chéo": "6,87%",
-    "Cặp laptop": {
-      "Ba lô laptop": "6,87%",
-      "Túi & cặp đựng laptop": "6,87%",
-      "Túi chống sốc laptop": "6,87%",
-      "Khác": "6,87%"
-    },
-    "Khác": "6,87%",
-    "Túi tote": "6,87%",
-    "Túi đeo hông & Túi đeo ngực": "6,87%",
-    "Bóp/ Ví": {
-      "Ví gập đôi & gập ba": "6,87%",
-      "Ví đựng thẻ": "6,87%",
-      "Ví đựng tiền xu": "6,87%",
-      "Ví dài": "6,87%",
-      "Ví khác": "6,87%",
-      "Ví đựng điện thoại & chìa khóa": "6,87%"
-    }
-  },
-  "Túi Ví Nữ": {
-    "Ba lô": "6,87%",
-    "Phụ kiện túi": {
-      "Dụng cụ treo/đựng túi": "6,87%",
-      "Túi đa ngăn tiện ích": "6,87%",
-      "Dây đeo túi": "6,87%",
-      "Charm và phụ kiện gắn túi": "6,87%",
-      "Dụng cụ vệ sinh và chăm sóc túi": "6,87%",
-      "Phụ kiện khác": "6,87%"
-    },
-    "Ví dự tiệc & Ví cầm tay": "6,87%",
-    "Túi đeo chéo & Túi đeo vai": "6,87%",
-    "Cặp laptop": {
-      "Ba lô laptop": "6,87%",
-      "Túi & cặp đứng laptop": "6,87%",
-      "Túi chống sốc laptop": "6,87%",
-      "Khác": "6,87%"
-    },
-    "Khác": "6,87%",
-    "Túi quai xách": "6,87%",
-    "Túi tote": "6,87%",
-    "Túi đeo hông & Túi đeo ngực": "6,87%",
-    "Ví": {
-      "Ví gập": "6,87%",
-      "Ví đựng thẻ": "6,87%",
-      "Ví mini đựng tiền": "6,87%",
-      "Ví dài": "6,87%",
-      "Ví khác": "6,87%",
-      "Ví đựng điện thoại & chìa khóa": "6,87%"
-    }
-  },
-  "Văn Phòng Phẩm": {
-    "Họa cụ": {
-      "Sơn Acrylic": "7,95%",
-      "Vải & Giá Vẽ": "7,95%",
-      "Bút Chì Màu": "7,95%",
-      "Bút Màu & Phấn Màu": "7,95%",
-      "Sơn Dầu": "7,95%",
-      "Khác": "7,95%",
-      "Cọ Vẽ": "7,95%",
-      "Bảng Màu": "7,95%",
-      "Sổ vẽ phác thảo": "7,95%",
-      "Màu Nước": "7,95%"
-    },
-    "Quà Tặng - Giấy Gói": {
-      "Xốp Chống Sốc": "6,38%",
-      "Hộp Carton": "6,38%",
-      "Túi Quà Tặng": "6,38%",
-      "Hộp Quà Tặng": "6,38%",
-      "Giấy Gói Quà": "6,38%",
-      "Khác": "6,38%",
-      "Ruy Băng": "6,38%"
-    },
-    "Thư Tín": {
-      "Phong Bì & Bao Lì Xì": "6,87%",
-      "Khác": "6,87%",
-      "Bưu Thiếp": "6,87%",
-      "Tem Các Loại": "6,87%"
-    },
-    "Sổ & Giấy Các Loại": {
-      "Giấy Mỹ Thuật": "6,87%",
-      "Bọc Sách": "6,87%",
-      "Đánh Dấu Trang": "6,87%",
-      "Nhãn Dán Các Loại": "6,87%",
-      "Ruột Sổ": "6,87%",
-      "Giấy Ghi Chú": "6,87%",
-      "Tập, Vở Các Loại": "6,87%",
-      "Khác": "6,87%",
-      "Giấy In": "6,87%",
-      "Giấy Nhiệt": "6,87%"
-    },
-    "Khác": "6,87%",
-    "Thiết Bị Trường Học": {
-      "Máy tính cầm tay": "6,87%",
-      "Lịch": "6,87%",
-      "Kẹp & Ghim Bấm": "6,87%",
-      "Dụng Cụ Lưu Trữ Giấy Tờ": "6,87%",
-      "Hồ Dán": "6,87%",
-      "Máy Đục Lỗ": "6,87%",
-      "Mực Đóng Dấu": "6,87%",
-      "Máy In Nhãn": "6,87%",
-      "Dây Đeo Thẻ & Thẻ Tên": "6,87%",
-      "Khác": "6,87%",
-      "Dao Rọc Giấy & Máy Cắt Giấy": "6,87%",
-      "Hộp Bút": "6,87%",
-      "Thước Các Loại & Giấy Nến": "6,87%",
-      "Kéo": "6,87%",
-      "Gọt bút chì": "6,87%",
-      "Đồ Bấm Kim và Kim Bấm": "6,87%",
-      "Dây & Băng Keo Dán": "6,87%",
-      "Bảng Viết & Giá Treo Bảng": "6,87%"
-    },
-    "Bút Các Loại": {
-      "Dụng Cụ Tẩy Xóa": "6,87%",
-      "Bút Dạ Quang": "6,87%",
-      "Bút Lông Màu": "6,87%",
-      "Khác": "6,87%",
-      "Bút Chì": "6,87%",
-      "Bút & Mực": "6,87%"
+      "Thiết bị định vị GPS": "12,60%",
+      "Khác": "12,60%",
+      "Đồng hồ thông minh & Vòng đeo tay sức khỏe": "10,50%",
+      "Thiết bị thực tế ảo": "12,60%"
     }
   },
   "Voucher & Dịch vụ": {
     "Sức khỏe & Làm đẹp": {
-      "Nha khoa": "6,38%",
-      "Gym & Yoga": "6,38%",
-      "Salon tóc": "6,38%",
-      "Chăm sóc sức khỏe": "6,38%",
-      "Khác": "6,38%",
-      "Spa & Massage": "6,38%"
+      "Nha khoa": "12,60%",
+      "Gym & Yoga": "12,60%",
+      "Salon tóc": "12,60%",
+      "Chăm sóc sức khỏe": "12,60%",
+      "Khác": "12,60%",
+      "Spa & Massage": "12,60%"
     },
     "Sự kiện & Giải trí": {
-      "Hòa nhạc & Triển lãm": "6,38%",
-      "Sự kiện & Hội thảo": "6,38%",
-      "Vé xem phim - Kịch": "6,38%",
-      "Khác": "6,38%",
-      "Công viên giải trí": "6,38%"
+      "Hòa nhạc & Triển lãm": "12,60%",
+      "Sự kiện & Hội thảo": "12,60%",
+      "Vé xem phim - Kịch": "12,60%",
+      "Khác": "12,60%",
+      "Công viên giải trí": "12,60%"
     },
     "Nhà hàng & Ăn uống": {
-      "Ăn tại chỗ & Mang đi": "6,38%",
-      "Giao thức ăn": "6,38%",
-      "Khác": "6,38%"
+      "Ăn tại chỗ & Mang đi": "12,60%",
+      "Giao thức ăn": "12,60%",
+      "Khác": "12,60%"
     },
-    "Khóa học": "6,38%",
-    "Khác": "6,38%",
+    "Khóa học": "12,60%",
+    "Khác": "12,60%",
     "Dịch vụ khác": {
-      "Lắp đặt sửa chữa máy lạnh": "6,38%",
-      "Giao & Vận chuyển hàng hóa": "6,38%",
-      "Thiết kế": "6,38%",
-      "Dọn dẹp nhà cửa": "6,38%",
-      "Bảo hiểm": "6,38%",
-      "Khác": "6,38%",
-      "Gói chụp hình": "6,38%"
+      "Lắp đặt sửa chữa máy lạnh": "12,60%",
+      "Giao & Vận chuyển hàng hóa": "12,60%",
+      "Thiết kế": "12,60%",
+      "Dọn dẹp nhà cửa": "12,60%",
+      "Bảo hiểm": "12,60%",
+      "Khác": "12,60%",
+      "Gói chụp hình": "12,60%"
     },
     "Mã quà tặng Shopee": {
-      "Digital Products": {
-        "Accommodation Bill": "6,38%",
-        "Bus": "6,38%",
-        "Bus Card Top-Up": "6,38%",
-        "Buy Gold": "6,38%",
-        "Cash Card EPIN": "6,38%",
-        "Covid-19 Vaccination": "6,38%",
-        "Crack Screen Insurance": "6,38%",
-        "Credit Card Bill": "6,38%",
-        "Data Package EPIN": "6,38%",
-        "Data Package Top-Up": "6,38%",
-        "Donation": "6,38%",
-        "E-Money Top-Up": "6,38%",
-        "E-Voucher": "6,38%",
-        "Easy Invest": "6,38%",
-        "Education Bill": "6,38%",
-        "Electricity Bill": "6,38%",
-        "Estate Bill": "6,38%",
-        "Events & Attractions": "6,38%",
-        "Express Tickets": "6,38%",
-        "Expressway Card Top-Up": "6,38%",
-        "Fidyah": "6,38%",
-        "Finance Bill": "6,38%",
-        "Flight": "6,38%",
-        "Game EPIN": "6,38%",
-        "Game Top-Up": "6,38%",
-        "Gas Bill": "6,38%",
-        "Gift Card": "6,38%",
-        "Government Services Bill": "6,38%",
-        "Highway Fee Top-Up": "6,38%",
-        "Home Service": "6,38%",
-        "Hotel": "6,38%",
-        "Insurance Bill": "6,38%",
-        "International Events": "6,38%",
-        "Internet Bill": "6,38%",
-        "Landline Bill": "6,38%",
-        "Leasing Bill": "6,38%",
-        "Loan Bill": "6,38%",
-        "Local Council Bill": "6,38%",
-        "Media Bill": "6,38%",
-        "Memorial Bill": "6,38%",
-        "Movie & Theatre": "6,38%",
-        "Movie Snack": "6,38%",
-        "MRT Card Top-Up": "6,38%",
-        "Online Streaming": "6,38%",
-        "Online Streaming Top-Up": "6,38%",
-        "Other Bill": "6,38%",
-        "Parking Bill": "6,38%",
-        "Personalized Telco Data Plan": "6,38%",
-        "Phone Credit Top-Up": "6,38%",
-        "Postpaid Electricity Bill": "6,38%",
-        "Postpaid Phone Bill": "6,38%",
-        "Postpaid TV Cable Bill": "6,38%",
-        "Prepaid TV Cable Bill": "6,38%",
-        "Property Maintenance Bill": "6,38%",
-        "Property Tax Bill": "6,38%",
-        "Qurban": "6,38%",
-        "Regulation Fee Bill": "6,38%",
-        "Retribution Bill": "6,38%",
-        "Roaming Top-Up": "6,38%",
-        "Sell Gold": "6,38%",
-        "Seller Loan Repayment Bill": "6,38%",
-        "SPAYLATER Bill": "6,38%",
-        "Special Event": "6,38%",
-        "State Revenue Bill": "6,38%",
-        "Tax Bill": "6,38%",
-        "Taxi": "6,38%",
-        "Toll Bill": "6,38%",
-        "Train": "6,38%",
-        "Transportation Card Top-Up": "6,38%",
-        "TV Bill": "6,38%",
-        "Vehicle Tax Bill": "6,38%",
-        "Vehinal Tax Bill (E-SAMSAT)": "6,38%",
-        "Wakaf": "6,38%",
-        "Water Bill": "6,38%",
-        "Zakat": "6,38%",
-        "Zakat FItrah": "6,38%",
-        "Khác": "6,38%",
-        "Shopee Official": "6,38%",
-        "Phí quảng cáo Shopee": "6,38%"
-      }
+      "Digital Products": "12,60%",
+      "Khác": "12,60%",
+      "Shopee Official": "12,60%",
+      "Phí quảng cáo Shopee": "12,60%"
     },
     "Mua sắm": {
-      "Trung tâm thương mại": "6,38%",
-      "Khác": "6,38%",
-      "Siêu thị": "6,38%"
+      "Trung tâm thương mại": "12,60%",
+      "Khác": "12,60%",
+      "Siêu thị": "12,60%"
     },
     "Nạp tiền tài khoản": {
-      "Internet & Truyền hình cáp": "6,38%",
-      "Gói data 3G/4G": "6,38%",
-      "Nạp trực tiếp & Mua mã thẻ": "6,38%",
-      "Khác": "6,38%"
+      "Internet & Truyền hình cáp": "12,60%",
+      "Gói data 3G/4G": "12,60%",
+      "Nạp trực tiếp & Mua mã thẻ": "12,60%",
+      "Khác": "12,60%"
     },
-    "Gọi xe": "6,38%",
+    "Gọi xe": "12,60%",
     "Du lịch & Khách sạn": {
-      "Đặt phòng": "6,38%",
-      "Vé xe buýt": "6,38%",
-      "Thuê phương tiện": "6,38%",
-      "Vé máy bay": "6,38%",
-      "Suối nước nóng": "6,38%",
-      "Khác": "6,38%",
-      "Tour du lịch": "6,38%",
-      "Vé tàu lửa": "6,38%"
+      "Đặt phòng": "12,60%",
+      "Vé xe buýt": "12,60%",
+      "Thuê phương tiện": "12,60%",
+      "Vé máy bay": "12,60%",
+      "Suối nước nóng": "12,60%",
+      "Khác": "12,60%",
+      "Tour du lịch": "12,60%",
+      "Vé tàu lửa": "12,60%"
     },
-    "Thanh toán hóa đơn": "6,38%"
+    "Thanh toán hóa đơn": "12,60%"
+  },
+  "Thời trang trẻ em & trẻ sơ sinh": {
+    "Phụ kiện trẻ em & trẻ sơ sinh": {
+      "Túi xách & vali": "14,50%",
+      "Thắt lưng": "14,50%",
+      "Chụp tai": "14,50%",
+      "Mắt kính": "14,50%",
+      "Găng tay": "14,50%",
+      "Phụ kiện tóc": "14,50%",
+      "Mũ & mũ lưỡi trai": "14,50%",
+      "Trang sức": "14,50%",
+      "Khác": "14,50%",
+      "Đồ đi mưa": "14,50%",
+      "Khăn": "14,50%",
+      "Tất": "14,50%",
+      "Đồng hồ": "14,50%"
+    },
+    "Quần áo trẻ em": {
+      "Bộ đồ liền thân": "14,50%",
+      "Quần/Chân váy": "14,50%",
+      "Váy": "14,50%",
+      "Khác": "14,50%",
+      "Áo khoác nhẹ": "14,50%",
+      "Bộ quần áo": "14,50%",
+      "Đồ ngủ": "14,50%",
+      "Đồ bơi": "14,50%",
+      "Áo": "14,50%",
+      "Áo khoác mùa đông": "14,50%"
+    },
+    "Bao tay trẻ em & Tất": "14,50%",
+    "Quần áo bé trai": {
+      "Quần": "14,50%",
+      "Đồ hóa trang": "14,50%",
+      "Khác": "14,50%",
+      "Áo khoác": "14,50%",
+      "Đồ ngủ": "14,50%",
+      "Com lê & đồ bộ": "14,50%",
+      "Đồ bơi": "14,50%",
+      "Áo": "14,50%",
+      "Đồ lót": "14,50%"
+    },
+    "Giày bé trai": {
+      "Bốt": "14,50%",
+      "Dép lê": "14,50%",
+      "Giày tây": "14,50%",
+      "Giày lười": "14,50%",
+      "Khác": "14,50%",
+      "Dép quai hậu": "14,50%",
+      "Giày thể thao": "14,50%"
+    },
+    "Quần áo bé gái": {
+      "Quần": "14,50%",
+      "Đồ hóa trang": "14,50%",
+      "Váy": "14,50%",
+      "Khác": "14,50%",
+      "Áo khoác": "14,50%",
+      "Đồ liền thân": "14,50%",
+      "Đồ ngủ": "14,50%",
+      "Com lê & đồ bộ": "14,50%",
+      "Đồ bơi": "14,50%",
+      "Áo": "14,50%",
+      "Đồ lót": "14,50%"
+    },
+    "Giày bé gái": {
+      "Bốt": "14,50%",
+      "Giày bệt": "14,50%",
+      "Dép lê": "14,50%",
+      "Giày lười": "14,50%",
+      "Khác": "14,50%",
+      "Dép quai hậu": "14,50%",
+      "Giày thể thao": "14,50%"
+    },
+    "Khác": "14,50%"
+  },
+  "Phụ Kiện Thời Trang": {
+    "Bộ phụ kiện": "14,50%",
+    "Phụ kiện thêm": {
+      "Trâm & Ghim cài áo": "14,50%",
+      "Mặt dây chuyền và Charm": "14,50%",
+      "Măng sét nam": "14,50%",
+      "Khăn tay": "14,50%",
+      "Khẩu trang thời trang": "14,50%",
+      "Khác": "14,50%",
+      "Miếng vá áo": "14,50%",
+      "Hình xăm dán": "14,50%"
+    },
+    "Lắc chân": "14,50%",
+    "Thắt lưng": "14,50%",
+    "Vòng tay & Lắc tay": "14,50%",
+    "Bông tai": "14,50%",
+    "Kính mắt": {
+      "Hộp kính và phụ kiện": "14,50%",
+      "Gọng kính": "14,50%",
+      "Khác": "14,50%",
+      "Kính mát": "14,50%"
+    },
+    "Fine Jewelry": {
+      "Anklets": "8,50%",
+      "Bracelets & Bangles": "8,50%",
+      "Brooches & Pins": "8,50%",
+      "Charms, Pendants & Ornaments": "8,50%",
+      "Earrings": "8,50%",
+      "Jewellery Set": "8,50%",
+      "Necklaces": "8,50%",
+      "Others": "8,50%",
+      "Rings": "8,50%"
+    },
+    "Găng tay": "14,50%",
+    "Phụ kiện tóc": {
+      "Kẹp tóc": "14,50%",
+      "Đồ buộc tóc & Nơ": "14,50%",
+      "Băng đô tóc": "14,50%",
+      "Cài tóc, vương miện cài tóc": "14,50%",
+      "Khác": "14,50%",
+      "Tóc giả & Tóc nối": "14,50%"
+    },
+    "Mũ": "14,50%",
+    "Kim loại quý": {
+      "Kim cương": "8,50%",
+      "Ngọc bích, Cẩm thạch": "8,50%",
+      "Khác": "8,50%",
+      "Platinum & Vàng": "8,50%",
+      "Bạc": "14,50%"
+    },
+    "Dây chuyền": "14,50%",
+    "Cà vạt & Nơ cổ": "14,50%",
+    "Khác": "14,50%",
+    "Nhẫn": "14,50%",
+    "Khăn choàng": "14,50%"
+  },
+  "Túi Ví Nam": {
+    "Ba lô": "14,50%",
+    "Cặp xách công sở": "14,50%",
+    "Ví cầm tay": "12,60%",
+    "Túi đeo chéo": "14,50%",
+    "Cặp laptop": {
+      "Ba lô laptop": "14,50%",
+      "Túi & cặp đựng laptop": "14,50%",
+      "Túi chống sốc laptop": "14,50%",
+      "Khác": "14,50%"
+    },
+    "Khác": "14,50%",
+    "Túi tote": "12,60%",
+    "Túi đeo hông & Túi đeo ngực": "14,50%",
+    "Bóp/ Ví": {
+      "Ví gập đôi & gập ba": "14,50%",
+      "Ví đựng thẻ": "14,50%",
+      "Ví đựng tiền xu": "12,60%",
+      "Ví dài": "14,50%",
+      "Ví khác": "12,60%",
+      "Ví đựng điện thoại & chìa khóa": "14,50%"
+    }
+  },
+  "Thời Trang Nam": {
+    "Đồ hóa trang": "14,50%",
+    "Hoodie & Áo nỉ": {
+      "Áo hoodie": "14,50%",
+      "Khác": "14,50%",
+      "Áo nỉ": "14,50%"
+    },
+    "Đồ lót": {
+      "Khác": "14,50%",
+      "Sexy Innerwear": "14,50%",
+      "Đồ lót giữ nhiệt": "14,50%",
+      "Áo lót": "14,50%",
+      "Quần lót": "14,50%"
+    },
+    "Áo khoác": {
+      "Áo khoác": "14,50%",
+      "Khác": "14,50%",
+      "Áo khoác vest": "14,50%",
+      "Áo khoác mùa đông & Áo choàng": "14,50%"
+    },
+    "Quần jean": "14,50%",
+    "Trang phục ngành nghề": "14,50%",
+    "Khác": "14,50%",
+    "Quần dài": {
+      "Quần túi hộp": "14,50%",
+      "Quần jogger": "14,50%",
+      "Khác": "14,50%",
+      "Quần dài": "14,50%"
+    },
+    "Bộ": "14,50%",
+    "Quần đùi": "14,50%",
+    "Đồ ngủ": "14,50%",
+    "Vớ/ Tất": "14,50%",
+    "Com lê": {
+      "Khác": "14,50%",
+      "Áo Khoác & Blazer": "14,50%",
+      "Quần âu": "14,50%",
+      "Bộ Com lê": "14,50%",
+      "Áo vest & Gi lê": "14,50%"
+    },
+    "Áo len": "14,50%",
+    "Áo": {
+      "Khác": "14,50%",
+      "Áo polo": "14,50%",
+      "Áo sơ mi": "14,50%",
+      "Áo thun": "14,50%",
+      "Áo ba lỗ": "14,50%"
+    },
+    "Trang phục truyền thống": {
+      "Quần": "14,50%",
+      "Khác": "14,50%",
+      "Bộ": "14,50%",
+      "Áo": "14,50%"
+    }
+  },
+  "Giày Dép Nam": {
+    "Bốt": {
+      "Bốt thời trang": "13,70%",
+      "Khác": "13,70%",
+      "Bốt đi mưa": "13,70%",
+      "Bốt bảo hộ": "13,70%"
+    },
+    "Giày tây lười": "13,70%",
+    "Khác": "13,70%",
+    "Giày Oxfords & Giày buộc dây": "13,70%",
+    "Xăng-đan & Dép": {
+      "Dép xỏ ngón": "13,70%",
+      "Dép mát-xa": "13,70%",
+      "Dép đi trong nhà": "13,70%",
+      "Khác": "13,70%",
+      "Xăng-đan": "13,70%"
+    },
+    "Phụ kiện giày dép": {
+      "Khác": "13,70%",
+      "Dụng cụ chăm sóc & Vệ sinh giày": "13,70%",
+      "Khử mùi giày dép": "13,70%",
+      "Cây đón gót & Giữ form giày": "13,70%",
+      "Lót giày": "13,70%",
+      "Dây giày": "13,70%"
+    },
+    "Giày sục": "13,70%",
+    "Giày thể thao/ Sneakers": "13,70%"
+  },
+  "Muslim Fashion": {
+    "Kid Muslim Wear": {
+      "Girl's Muslim Attire": "13,70%"
+    },
+    "Men Muslim Wear": {
+      "Sarong": "13,70%"
+    },
+    "Prayer Attire & Equipment": {
+      "Peci, Songkok & Kopiah": "13,70%"
+    },
+    "Sets": "13,70%",
+    "Women Muslim Wear": {
+      "Accessories": "13,70%",
+      "Bottoms": "13,70%",
+      "Dresses": "13,70%",
+      "Veils": "13,70%"
+    }
+  },
+  "Thể Thao & Dã Ngoại": {
+    "Khác": "14,50%",
+    "Phụ Kiện Thể Thao & Dã Ngoại": {
+      "Túi Chống Thấm": "14,50%",
+      "Đồ Bảo Hộ Gym": "14,50%",
+      "Dụng Cụ Bảo Vệ Miệng & Băng Keo Thể Thao": "14,50%",
+      "Phụ Kiện Khác": "14,50%",
+      "Áo Mưa": "14,50%",
+      "Túi Đựng Giày": "14,50%",
+      "Mũ Thể Thao & Dã Ngoại": "14,50%",
+      "Băng Đô Thể Thao": "14,50%",
+      "Vòng Tay Thể Thao": "14,50%",
+      "Đồng Hồ Bấm Giây & Máy Đếm Bước Chân": "14,50%",
+      "Phụ Kiện Tập Luyện": "14,50%",
+      "Ô/Dù": "14,50%"
+    },
+    "Thời Trang Thể Thao & Dã Ngoại": {
+      "Quần Thể Thao": "14,50%",
+      "Áo Khoác": "14,50%",
+      "Áo CLB": "14,50%",
+      "Thời Trang Thể Thao Trẻ Em": "14,50%",
+      "Khác": "14,50%",
+      "Bộ Đồ Thể Thao": "14,50%",
+      "Áo Lót Thể Thao": "14,50%",
+      "Đồ Bơi": "14,50%",
+      "Áo Thể Thao": "14,50%"
+    },
+    "Dụng Cụ Thể Thao & Dã Ngoại": {
+      "Bắn Cung": "13,70%",
+      "Cầu Lông": "13,70%",
+      "Bóng Chày & Bóng Ném": "13,70%",
+      "Bóng Rổ": "13,70%",
+      "Bida": "8,50%",
+      "Thể Thao Ván Trượt": "13,70%",
+      "Chèo Thuyền": "8,50%",
+      "Đấm bốc & Võ Tổng Hợp": "13,70%",
+      "Cắm Trại & Dã ngoại": "13,70%",
+      "Đạp Xe": "13,70%",
+      "Ném Phi Tiêu": "13,70%",
+      "Câu Cá": "13,70%",
+      "Thiết Bị Thể Thao": "13,70%",
+      "Golf": "13,70%",
+      "Trượt Tuyết & Thể Thao Mùa Đông": "13,70%",
+      "Môn Thể Thao Khác": "13,70%",
+      "Leo Núi": "13,70%",
+      "Bóng Bầu Dục": "13,70%",
+      "Bắn Súng & Game Sinh Tồn": "13,70%",
+      "Bóng Đá, Futsal & Cầu Mây": "13,70%",
+      "Bóng Quần": "13,70%",
+      "Lướt Ván": "13,70%",
+      "Bơi Lội & Lặn": "13,70%",
+      "Bóng Bàn": "13,70%",
+      "Tennis": "13,70%",
+      "Bóng Chuyền": "13,70%",
+      "Yoga & Pilates": "13,70%"
+    },
+    "Giày Thể Thao": {
+      "Giày Cầu Lông": "13,70%",
+      "Giày Bóng Rổ": "13,70%",
+      "Giày Futsal": "13,70%",
+      "Giày Dã Ngoại": "13,70%",
+      "Giày Thể Thao Trẻ Em": "13,70%",
+      "Giày Thể Thao Khác": "13,70%",
+      "Giày Chạy Bộ": "13,70%",
+      "Giày Bóng Đá": "13,70%",
+      "Giày Tennis": "13,70%",
+      "Giày Tập Luyện": "13,70%",
+      "Giày Bóng Chuyền": "13,70%"
+    }
+  },
+ "Du lịch & Hành lý": {
+    "Vali": "13,70%",
+    "Khác": "14,50%",
+    "Phụ kiện du lịch": {
+      "Khóa vali": "14,50%",
+      "Áo trùm vali": "14,50%",
+      "Cân hành lý": "14,50%",
+      "Dây đai vali": "14,50%",
+      "Thẻ hành lý": "14,50%",
+      "Phụ kiện khác": "14,50%",
+      "Ví hộ chiếu": "14,50%",
+      "Túi du lịch nhiều ngăn": "14,50%",
+      "Gối & Bịt mắt": "14,50%",
+      "Bộ chiết mỹ phẩm": "14,50%"
+    },
+    "Túi du lịch": {
+      "Túi dây rút": "14,50%",
+      "Túi trống": "14,50%",
+      "Túi gấp gọn": "14,50%",
+      "Túi khác": "14,50%"
+    }
+  },
+  "Đồng Hồ": {
+    "Đồng hồ nam": "12,60%",
+    "Khác": "13,70%",
+    "Bộ đồng hồ & Đồng hồ cặp": "12,60%",
+    "Phụ kiện đồng hồ": {
+      "Pin đồng hồ": "13,70%",
+      "Hộp đựng đồng hồ": "13,70%",
+      "Khóa đồng hồ": "13,70%",
+      "Khác": "13,70%",
+      "Dụng cụ sửa chữa": "13,70%",
+      "Dây đồng hồ": "13,70%"
+    },
+    "Đồng hồ nữ": "13,70%"
+  },
+  "Túi Ví Nữ": {
+    "Ba lô": "14,50%",
+    "Phụ kiện túi": {
+      "Dụng cụ treo/đựng túi": "14,50%",
+      "Túi đa ngăn tiện ích": "14,50%",
+      "Dây đeo túi": "14,50%",
+      "Charm và phụ kiện gắn túi": "14,50%",
+      "Dụng cụ vệ sinh và chăm sóc túi": "14,50%",
+      "Phụ kiện khác": "14,50%"
+    },
+    "Ví dự tiệc & Ví cầm tay": "14,50%",
+    "Túi đeo chéo & Túi đeo vai": "14,50%",
+    "Cặp laptop": {
+      "Ba lô laptop": "14,50%",
+      "Túi & cặp đứng laptop": "14,50%",
+      "Túi chống sốc laptop": "14,50%",
+      "Khác": "14,50%"
+    },
+    "Khác": "14,50%",
+    "Túi quai xách": "14,50%",
+    "Túi tote": "14,50%",
+    "Túi đeo hông & Túi đeo ngực": "14,50%",
+    "Ví": {
+      "Ví gập": "14,50%",
+      "Ví đựng thẻ": "14,50%",
+      "Ví mini đựng tiền": "14,50%",
+      "Ví dài": "14,50%",
+      "Ví khác": "14,50%",
+      "Ví đựng điện thoại & chìa khóa": "14,50%"
+    }
+  },
+  "Thời Trang Nữ": {
+    "Đồ hóa trang": "14,50%",
+    "Đầm": "14,50%",
+    "Vải": {
+      "Vải Batik": "14,50%",
+      "Vải canvas": "14,50%",
+      "Vải cotton": "14,50%",
+      "Vải denim": "14,50%",
+      "Vải da": "14,50%",
+      "Khác": "14,50%",
+      "Vải nhung, lụa, satin": "14,50%",
+      "Vải nylon": "14,50%",
+      "Vải len": "14,50%"
+    },
+    "Hoodie và Áo nỉ": {
+      "Áo hoodies": "14,50%",
+      "Khác": "14,50%",
+      "Áo khoác nỉ": "14,50%"
+    },
+    "Áo khoác": {
+      "Áo blazer": "14,50%",
+      "Áo choàng": "14,50%",
+      "Áo khoác ngoài": "14,50%",
+      "Khác": "14,50%",
+      "Áo vest": "14,50%",
+      "Áo khoác mùa đông": "14,50%"
+    },
+    "Quần jeans": "14,50%",
+    "Đồ liền thân": {
+      "Đồ bay (Jumpsuits)": "14,50%",
+      "Khác": "14,50%",
+      "Quần yếm": "14,50%",
+      "Đồ bay ngắn (playsuits)": "14,50%"
+    },
+    "Đồ lót": {
+      "Phụ kiện đồ lót": "14,50%",
+      "Áo ngực": "14,50%",
+      "Khác": "14,50%",
+      "Quần lót": "14,50%",
+      "Đồ lót bảo hộ": "14,50%",
+      "Bộ đồ lót": "14,50%",
+      "Đồ lót gợi cảm": "14,50%",
+      "Đồ định hình": "14,50%",
+      "Đồ lót giữ nhiệt": "14,50%"
+    },
+    "Đồ Bầu": {
+      "Đồ mặc cho con bú": "14,50%",
+      "Quần bầu, Váy bầu": "14,50%",
+      "Đầm bầu": "14,50%",
+      "Bộ đồ bầu": "14,50%",
+      "Áo bầu": "14,50%",
+      "Áo ngực cho con bú": "14,50%",
+      "Khác": "14,50%"
+    },
+    "Khác": "14,50%",
+    "Quần": {
+      "Quần legging": "14,50%",
+      "Khác": "14,50%",
+      "Quần dài": "14,50%"
+    },
+    "Bộ": {
+      "Bộ đồ đôi": "14,50%",
+      "Bộ đồ gia đình": "14,50%",
+      "Đồ lẻ": "14,50%",
+      "Khác": "14,50%"
+    },
+    "Quần đùi": {
+      "Khác": "14,50%",
+      "Quần đùi": "14,50%",
+      "Quần váy": "14,50%"
+    },
+    "Váy": "14,50%",
+    "Đồ ngủ": {
+      "Áo choàng ngủ, Áo khoác kimono": "14,50%",
+      "Váy ngủ": "14,50%",
+      "Khác": "14,50%",
+      "Pyjama": "14,50%"
+    },
+    "Vớ/ Tất": {
+      "Khác": "14,50%",
+      "Quần tất": "14,50%",
+      "Tất": "14,50%"
+    },
+    "Áo len": "14,50%",
+    "Áo": {
+      "Áo liền thân": "14,50%",
+      "Khác": "14,50%",
+      "Áo polo": "14,50%",
+      "Áo sơ mi": "14,50%",
+      "Áo thun": "14,50%",
+      "Áo hai dây và ba lỗ": "14,50%",
+      "Áo ống": "14,50%"
+    },
+    "Đồ truyền thống": {
+      "Quần và chân váy": "14,50%",
+      "Đầm": "14,50%",
+      "Khác": "14,50%",
+      "Bộ": "14,50%",
+      "Áo": "14,50%"
+    },
+    "Váy cưới": "14,50%"
+  },
+  "Giày Dép Nữ": {
+    "Bốt": {
+      "Bốt thời trang": "13,70%",
+      "Khác": "13,70%",
+      "Bốt đi mưa": "13,70%"
+    },
+    "Xăng-đan và dép": {
+      "Xăng-đan đế bằng": "14,50%",
+      "Dép kẹp/ dép xỏ ngón": "14,50%",
+      "Dép mát-xa": "14,50%",
+      "Dép đi trong nhà": "14,50%",
+      "Khác": "14,50%"
+    },
+    "Giày đế bằng": {
+      "Giày bale": "14,50%",
+      "Giày lười": "12,60%",
+      "Khác": "12,60%",
+      "Giày Oxford & Giày buộc dây": "13,70%",
+      "Giày sục & Giày búp bê": "14,50%"
+    },
+    "Giày cao gót": "14,50%",
+    "Khác": "12,60%",
+    "Phụ kiện & chăm sóc giày": {
+      "Miếng lót giày": "14,50%",
+      "Khác": "14,50%",
+      "Đồ chăm sóc và làm sạch giày": "13,70%",
+      "Đồ khử mùi giày": "13,70%",
+      "Cây đón gót & Giữ form giày": "13,70%",
+      "Dây giày": "13,70%"
+    },
+    "Giày thể thao/ sneaker": "13,70%",
+    "Giày đế xuồng": "13,70%"
+  },
+  "Mẹ & Bé": {
+    "Đồ dùng du lịch cho bé": {
+      "Túi đựng bỉm sữa": "14,20%"
+    },
+    "Đồ dùng ăn dặm cho bé": {
+      "Yếm": "14,50%",
+      "Bình sữa": "14,50%",
+      "Đồ dùng cho con bú": "13,70%",
+      "Máy xay cắt thực phẩm": "14,50%",
+      "Ghế ăn dặm": "13,70%",
+      "Khác": "14,50%",
+      "Ti giả": "14,50%",
+      "Đồ dùng cho bé": "14,50%"
+    },
+    "Bộ & Gói quà tặng": "14,50%",
+    "Phụ kiện cho mẹ": {
+      "Gối bầu": "14,50%",
+      "Khác": "14,50%",
+      "Đai hỗ trợ bụng": "14,50%"
+    },
+    "Chăm sóc sức khỏe mẹ": {
+      "Vitamin & Thực phẩm bổ sung cho mẹ": "14,50%",
+      "Kem dưỡng ẩm cho mẹ": "14,50%"
+    },
+    "Đồ dùng phòng ngủ cho bé": {
+      "Nôi & Cũi & Giường cho bé": "13,70%",
+      "Nệm và chăn ga": "14,50%",
+      "Kệ & Tủ": "13,70%"
+    },
+    "Đồ chơi": {
+      "Đồ chơi cho trẻ sơ sinh & trẻ nhỏ": "14,20%"
+    },
+    "Chăm sóc sức khỏe bé": {
+      "Chăm sóc răng miệng cho bé": "13,70%",
+      "Chăm sóc da cho bé": "13,70%",
+      "Khác": "13,70%"
+    },
+    "An toàn cho bé": {
+      "Thanh chắn cửa & Cầu thang": "14,20%",
+      "Bộ đệm cũi, Quây cũi & Thanh chắn giường": "14,20%",
+      "Bọc góc & Cạnh": "14,20%",
+      "Thiết bị giám sát trẻ": "14,20%",
+      "Màn chống muỗi": "14,20%",
+      "Khác": "14,20%",
+      "Khóa & Dây đai an toàn": "14,20%"
+    },
+    "Đồ dùng du lịch cho bé": {
+      "Địu em bé": "14,20%",
+      "Ghế ngồi ô tô & xe máy": "11,50%",
+      "Phụ kiện ghế ngồi ô tô & xe máy": "14,20%",
+      "Dây & Đai dắt trẻ": "14,20%",
+      "Khác": "14,20%",
+      "Phụ kiện xe đẩy": "14,20%",
+      "Xe đẩy": "11,50%"
+    },
+    "Đồ dùng phòng tắm & Chăm sóc cơ thể bé": {
+      "Nước hoa cho bé": "14,20%",
+      "Bộ chăm sóc trẻ sơ sinh": "14,20%",
+      "Giặt xả quần áo trẻ em": "14,20%",
+      "Áo choàng tắm, Khăn tắm & Khăn mặt": "14,20%",
+      "Dụng cụ tắm & Phụ kiện": "14,20%",
+      "Chậu tắm & Ghế tắm": "14,20%",
+      "Sản phẩm tắm & gội cho bé": "14,20%",
+      "Nón tắm": "14,20%"
+    },
+    "Tã & bô em bé": {
+      "Bệ thu nhỏ bồn cầu & Bô vệ sinh": "12,60%",
+      "Khác": "12,60%",
+      "Bộ lót thay tã": "12,60%",
+      "Tã vải & Phụ kiện": "12,60%",
+      "Tã dùng một lần": "12,60%"
+    },
+    "Chăm sóc sức khỏe mẹ": {
+      "Sữa bầu": "14,50%",
+      "Khác": "14,50%"
+    },
+    "Đồ dùng phòng ngủ cho bé": {
+      "Ghế rung, Ghế nhún & Xích đu tập đi": "13,70%",
+      "Khác": "13,70%",
+      "Xe tập đi": "13,70%"
+    },
+    "Khác": "13,70%",
+    "Đồ chơi": {
+      "Đồ chơi lắp ráp": "14,20%",
+      "Búp bê & Thú nhồi bông": "14,20%",
+      "Đồ chơi giáo dục": "14,20%",
+      "Khác": "14,20%",
+      "Đồ chơi nhập vai": "14,20%",
+      "Đồ chơi Robot": "14,20%",
+      "Slime & Đồ chơi nhựa dẻo": "14,20%",
+      "Đồ chơi vận động & Ngoài trời": "14,20%",
+      "Xe đồ chơi": "14,20%"
+    },
+    "Sữa công thức & Thực phẩm cho bé": {
+      "Cháo, Thực phẩm xay nhuyễn & Ngũ cốc": "12,60%",
+      "Đồ ăn nhẹ cho bé": "12,60%",
+      "Khác": "12,60%",
+      "Sữa pha sẵn": "12,60%",
+      "Sữa công thức": "10,50%"
+    }
+  },
+  "Sắc Đẹp": {
+    "Tắm & chăm sóc cơ thể": {
+      "Kem & sữa dưỡng thể": "15,80%",
+      "Khử mùi cơ thể": "15,80%",
+      "Mặt nạ ủ cơ thể": "15,80%",
+      "Dầu dưỡng da": "15,80%",
+      "Tẩy tế bào chết cơ thể": "15,80%",
+      "Xà phòng & sữa tắm": "15,80%",
+      "Chăm sóc ngực": "15,80%",
+      "Kem tẩy lông & wax lông": "15,80%",
+      "Dầu massage": "15,80%",
+      "Khác": "15,80%",
+      "Chống nắng": "15,80%"
+    },
+    "Bộ sản phẩm làm đẹp": "14,20%",
+    "Dụng cụ làm đẹp": {
+      "Dụng cụ làm thon gọn cơ thể": "14,20%",
+      "Dụng cụ chăm sóc da mặt": "14,20%",
+      "Dụng cụ tẩy lông": "11,50%",
+      "Dụng cụ chăm sóc tóc": "14,20%",
+      "Dụng cụ trang điểm": "15,80%",
+      "Khác": "14,20%"
+    },
+    "Chăm sóc tóc": {
+      "Dầu xả": "15,80%",
+      "Thuốc nhuộm tóc": "15,80%",
+      "Sản phẩm tạo kiểu tóc": "15,80%",
+      "Sản phẩm dưỡng tóc": "15,80%",
+      "Khác": "15,80%",
+      "Dầu gội": "15,80%"
+    },
+    "Chăm sóc tay, chân & móng": {
+      "Chăm sóc chân": "15,80%",
+      "Chăm sóc tay": "15,80%",
+      "Chăm sóc móng": "15,80%",
+      "Khác": "15,80%"
+    },
+    "Trang điểm": {
+      "Trang điểm mắt": "15,80%",
+      "Trang điểm mặt": "15,80%",
+      "Trang điểm môi": "15,80%",
+      "Tẩy trang": "15,80%",
+      "Khác": "15,80%"
+    },
+    "Chăm sóc nam giới": {
+      "Sữa tắm & chăm sóc cơ thể": "15,80%",
+      "Chăm sóc tóc": "15,80%",
+      "Khác": "15,80%",
+      "Sản phẩm cạo râu & hớt tóc": "15,80%",
+      "Chăm sóc da": "15,80%"
+    },
+    "Khác": "15,80%",
+    "Nước hoa": "15,80%",
+    "Chăm sóc da mặt": {
+      "Sản phẩm trị mụn": "15,80%",
+      "Kem dưỡng sau chống nắng": "15,80%",
+      "Giấy thấm dầu": "15,80%",
+      "Sản phẩm dưỡng mắt": "15,80%",
+      "Mặt nạ": "15,80%",
+      "Tẩy tế bào chết": "15,80%",
+      "Kem chống nắng cho mặt": "15,80%",
+      "Sữa rửa mặt": "15,80%",
+      "Xịt khoáng": "15,80%",
+      "Kem dưỡng ẩm": "15,80%",
+      "Dầu dưỡng ẩm": "15,80%",
+      "Tinh chất dưỡng": "15,80%",
+      "Sản phẩm dưỡng môi": "15,80%",
+      "Khác": "15,80%",
+      "Nước cân bằng da": "15,80%"
+    }
+  },
+  "Sức Khỏe": {
+    "Thực phẩm chức năng": {
+      "Hỗ trợ làm đẹp": "14,20%",
+      "Hỗ trợ tăng cơ": "14,20%",
+      "Khác": "14,20%",
+      "Hỗ trợ kiểm soát cân nặng": "15,80%",
+      "Hỗ trợ sức khỏe": "15,80%"
+    },
+    "Khác": "14,20%",
+    "Chăm sóc cá nhân": {
+      "Chống muỗi & xua đuổi côn trùng": "15,80%",
+      "Tã người lớn": "15,80%",
+      "Chăm sóc tai": "15,80%",
+      "Chăm sóc mắt": "15,80%",
+      "Chăm sóc phụ nữ": "15,80%",
+      "Dung dịch sát khuẩn tay": "15,80%",
+      "Dụng cụ massage và trị liệu": "13,70%",
+      "Vệ sinh răng miệng": "15,80%",
+      "Khác": "15,80%"
+    },
+    "Hỗ trợ tình dục": {
+      "Bao cao su": "15,80%",
+      "Bôi trơn": "15,80%",
+      "Khác": "15,80%",
+      "Tăng cường sinh lý": "15,80%"
+    },
+    "Vật tư y tế": {
+      "Dụng cụ sơ cứu": "14,20%",
+      "Kiểm tra và theo dõi sức khỏe": "14,20%",
+      "Hỗ trợ chấn thương và khuyết tật": "14,20%",
+      "Dụng cụ thí nghiệm": "14,20%",
+      "Bao tay và khẩu trang y tế": "14,20%",
+      "Chăm sóc mũi": "14,20%",
+      "Khác": "14,20%",
+      "Thuốc không kê đơn": "14,20%",
+      "Sản phẩm giảm đau dùng ngoài da": "14,20%",
+      "Prescription Medicine": "14,20%",
+      "Cân sức khỏe và phân tích cơ thể": "14,20%",
+      "Ống nghe y tế": "14,20%",
+      "Thuốc gia truyền": "14,20%"
+    }
+  },
+  "Thực phẩm và đồ uống": {
+    "Đồ uống có cồn": {
+      "Bia và trái cây lên men": "14,20%",
+      "Rượu mạnh": "14,20%",
+      "Khác": "14,20%",
+      "Rượu sake, soju & umeshu": "14,20%",
+      "Rượu vang & Sâm panh": "14,20%"
+    },
+    "Đồ làm bánh": {
+      "Đồ trang trí": "14,20%",
+      "Hương liệu": "14,20%",
+      "Bột nở và muối nở": "14,20%",
+      "Bột pha sẵn": "14,20%",
+      "Bột mì": "14,20%",
+      "Chất tạo màu": "14,20%",
+      "Khác": "14,20%"
+    },
+    "Bộ quà tặng": "13,70%",
+    "Khác": "12,60%",
+    "Các loại bánh": {
+      "Bánh mì": "12,60%",
+      "Bánh kem": "12,60%",
+      "Khác": "12,60%",
+      "Bánh ngọt/ pastry": "12,60%"
+    },
+    "Đồ uống": {
+      "Nước có ga": "12,60%",
+      "Thức uống Sô cô la": "12,60%",
+      "Cà phê": "12,60%",
+      "Siro pha": "12,60%",
+      "Đồ tráng miệng": "12,60%",
+      "Topping": "12,60%",
+      "Nước tăng lực": "12,60%",
+      "Nước trái cây lên men": "12,60%",
+      "Sữa thực vật": "12,60%",
+      "Khác": "12,60%",
+      "Bột pha": "12,60%",
+      "Trà & trà túi lọc": "12,60%",
+      "Trà thảo mộc": "12,60%",
+      "Nước tinh khiết": "12,60%"
+    },
+    "Ngũ cốc & mứt": {
+      "Thanh dinh dưỡng": "12,60%",
+      "Ngũ cốc": "12,60%",
+      "Mật ong và siro": "12,60%",
+      "Mứt": "12,60%",
+      "Khác": "12,60%"
+    },
+    "Đồ chế biến sẵn": {
+      "Đồ ăn chế biến sẵn": "12,60%",
+      "Lẩu ăn liền": "12,60%",
+      "Mì ăn liền": "12,60%",
+      "Cơm và cháo ăn liền": "12,60%",
+      "Khác": "12,60%"
+    },
+    "Nguyên liệu nấu ăn": {
+      "Gói/ bột gia vị": "12,60%",
+      "Phụ gia thực phẩm": "12,60%",
+      "Bột phủ": "12,60%",
+      "Dầu ăn": "12,60%",
+      "Khác": "12,60%",
+      "Gia vị & Hương liệu": "12,60%",
+      "Sốt & súp ăn liền": "12,60%",
+      "Đường": "12,60%",
+      "Chất tạo ngọt": "12,60%"
+    },
+    "Sữa - trứng": {
+      "Đậu phụ": "13,70%",
+      "Bơ động vật & thực vật": "13,70%",
+      "Phô mai & bột phô mai": "13,70%",
+      "Bột kem béo": "13,70%",
+      "Trứng": "13,70%",
+      "Kem": "13,70%",
+      "Sữa": "13,70%",
+      "Khác": "13,70%",
+      "Sữa chua": "13,70%"
+    },
+    "Nhu yếu phẩm": {
+      "Thực phẩm đóng hộp": "12,60%",
+      "Thực phẩm khô": "12,60%",
+      "Mì": "12,60%",
+      "Khác": "12,60%",
+      "Mì Ý": "12,60%",
+      "Rau củ ngâm": "12,60%",
+      "Gạo": "12,60%"
+    },
+    "Thực phẩm tươi sống & đông lạnh": {
+      "Thực phẩm đông lạnh chế biến sẵn": "12,60%",
+      "Trái cây": "12,60%",
+      "Thịt": "12,60%",
+      "Nấm": "12,60%",
+      "Khác": "12,60%",
+      "Thịt và hải sản chế biến sẵn": "12,60%",
+      "Hải sản": "12,60%",
+      "Rau củ": "12,60%",
+      "Thịt chay": "12,60%"
+    },
+    "Đồ ăn vặt": {
+      "Bánh quy": "12,60%",
+      "Khoai tây lát": "12,60%",
+      "Sô cô la": "12,60%",
+      "Thức ăn khô": "12,60%",
+      "Các loại đậu sấy khô": "12,60%",
+      "Khác": "12,60%",
+      "Bỏng ngô": "12,60%",
+      "Pudding, thạch & kẹo dẻo": "12,60%",
+      "Các loại rong biển ăn liền": "12,60%",
+      "Các loại hạt sấy khô": "12,60%",
+      "Kẹo": "12,60%"
+    }
+  },
+  "Chăm Sóc Thú Cưng": {
+    "Vệ sinh cho thú cưng": {
+      "Khay & Bồn vệ sinh cho mèo": "13,70%",
+      "Tã cho thú cưng": "13,70%",
+      "Khay huấn luyện vệ sinh cho chó": "13,70%",
+      "Khác": "13,70%",
+      "Túi & Xẻng dọn vệ sinh": "13,70%",
+      "Lót chuồng cho thú nhỏ": "13,70%"
+    },
+    "Khác": "13,70%",
+    "Phụ kiện cho thú cưng": {
+      "Phụ kiện thủy sinh": "13,70%",
+      "Bát & dụng cụ ăn": "13,70%",
+      "Vòng cổ, dây dắt & rọ mõm": "13,70%",
+      "Khác": "13,70%",
+      "Nội thất cho thú cưng": "13,70%",
+      "Đồ chơi": "13,70%",
+      "Thiết bị du lịch": "13,70%"
+    },
+    "Quần áo & phụ kiện": {
+      "Giày, tất & bảo vệ móng": "13,70%",
+      "Kính mắt": "13,70%",
+      "Phụ kiện lông": "13,70%",
+      "Mũ nón thú cưng": "13,70%",
+      "Phụ kiện đeo cổ": "13,70%",
+      "Khác": "13,70%",
+      "Quần áo thú cưng": "13,70%",
+      "Áo mưa chó mèo": "13,70%"
+    },
+    "Thức ăn cho thú cưng": {
+      "Thức ăn cho cá": "14,20%",
+      "Thức ăn cho chim": "14,20%",
+      "Thức ăn cho mèo": "14,20%",
+      "Snack cho mèo": "14,20%",
+      "Thức ăn cho chó": "14,20%",
+      "Snack cho chó": "14,20%",
+      "Khác": "14,20%",
+      "Thức ăn cho bò sát": "14,20%",
+      "Thức ăn cho thú nhỏ": "14,20%",
+      "Snack cho thú nhỏ": "14,20%"
+    },
+    "Làm đẹp cho thú cưng": {
+      "Chăm sóc móng": "13,70%",
+      "Chăm sóc lông": "13,70%",
+      "Chăm sóc răng miệng": "13,70%",
+      "Khác": "13,70%"
+    },
+    "Chăm sóc sức khỏe": {
+      "Tẩy giun & diệt bọ chét": "14,20%",
+      "Dược phẩm": "14,20%",
+      "Khác": "14,20%",
+      "Vitamin & chất bổ sung dinh dưỡng": "14,20%"
+    }
+  },
+  "Ô tô": {
+    "Phụ kiện ngoại thất ô tô": {
+      "Ăng-ten thu phát sóng": "13,70%",
+      "Bạt phủ": "13,70%",
+      "Nẹp viền": "13,70%",
+      "Rãnh thoát nước mưa": "13,70%",
+      "Còi & phụ kiện": "13,70%",
+      "Phụ kiện biển số": "13,70%",
+      "Gương & Phụ kiện": "13,70%",
+      "Tấm chắn bùn": "13,70%",
+      "Khác": "13,70%",
+      "Nẹp cửa chống trầy": "13,70%",
+      "Hình dán, logo, huy hiệu": "13,70%"
+    },
+    "Phụ kiện nội thất ô tô": {
+      "Hệ thống loa": "14,20%",
+      "Camera hành trình & Camera lùi": "11,50%",
+      "Nệm giường ô tô": "14,20%",
+      "Thảm & Đệm lót": "11,50%",
+      "HUD, Đồng hồ tốc độ, Đồng hồ số": "11,50%",
+      "Khóa và thiết bị chống trộm": "14,20%",
+      "Thiết bị định vị và Hệ thống hình ảnh/âm thanh": "11,50%",
+      "Dụng cụ chứa": "14,20%",
+      "Khác": "14,20%",
+      "Chân ga và Cần số": "11,50%",
+      "Nước hoa, Nước hoa khử mùi, Thiết bị lọc không khí": "14,20%",
+      "Giá đỡ điện thoại": "14,20%",
+      "Gối tựa đầu & lưng": "14,20%",
+      "Ghế & Áo ghế": "14,20%",
+      "Vô lăng & Bọc vô lăng": "14,20%",
+      "Tấm che nắng và Thảm Taplo": "14,20%",
+      "Cốc sạc USB, Thiết bị thu phát FM & Bluetooth": "14,20%"
+    },
+    "Phụ tùng ô tô": {
+      "Vòng bi & con dấu": "13,70%",
+      "Dây chuyền động": "13,70%",
+      "Hệ thống khung xe và giảm sóc": "8,50%",
+      "Hệ thống phanh": "13,70%",
+      "Hệ thống truyền động, hộp số & ly hợp": "13,70%",
+      "Thiết bị điện tử": "13,70%",
+      "Bộ phận động cơ": "13,70%",
+      "Hệ thống khí xả": "8,50%",
+      "Hệ thống xử lý nhiên liệu": "13,70%",
+      "Khác": "13,70%",
+      "Bộ tản nhiệt, Làm mát động cơ & Kiểm soát nhiệt": "13,70%",
+      "Giảm xóc, thanh chống và hệ thống treo": "13,70%",
+      "Lốp & Phụ kiện": "13,70%",
+      "Bánh xe, Vành & Phụ kiện": "13,70%",
+      "Cần gạt nước & vòng đệm kính chắn gió": "13,70%"
+    },
+    "Chăm sóc ô tô": {
+      "Rửa kính & Chất chống bám nước": "13,70%",
+      "Chăm sóc nội thất": "13,70%",
+      "Khác": "13,70%",
+      "Đánh bóng, sơn phủ & chất làm kín": "13,70%",
+      "Chăm sóc lốp & vành": "13,70%",
+      "Dung dịch tẩy rửa": "13,70%"
+    },
+    "Móc chìa khóa và Bọc chìa ô tô": "13,70%",
+    "Dầu nhớt và phụ gia ô tô": {
+      "Chất chống đông & chất làm mát": "14,20%",
+      "Dầu máy": "14,20%",
+      "Phụ gia": "14,20%",
+      "Mỡ & Chất bôi trơn": "14,20%"
+    }
+  },
+"Ô tô": {
+    "Dầu nhớt và phụ gia ô tô": {
+      "Dầu": "14,20%",
+      "Khác": "14,20%"
+    },
+    "Dụng cụ sửa chữa ô tô": {
+      "Khác": "12,60%",
+      "Dụng cụ Kiểm tra, chẩn đoán & sửa chữa": "12,60%",
+      "Máy đo áp suất lốp": "12,60%"
+    },
+    "Dịch vụ cho xe": "13,70%",
+    "Khác": "13,70%"
+  },
+  "Sách & Tạp Chí": {
+    "Sách": {
+      "Văn Học Hành Động, Tội Phạm & Kinh Dị": "12,60%",
+      "Sách Người Lớn": "12,60%",
+      "Sách Nông - Lâm - Ngư Nghiệp": "12,60%",
+      "Sách Nghệ thuật, Thiết kế & Nhiếp ảnh": "12,60%",
+      "Sách Nói": "12,60%",
+      "Sách Vải": "12,60%",
+      "Tiểu Sử - Hồi Ký": "12,60%",
+      "Sách Kinh Tế - Kinh Doanh": "12,60%",
+      "Sách Hướng Nghiệp & Phát Triển Bản Thân": "12,60%",
+      "Sách Thiếu Nhi": "12,60%",
+      "Văn Học Kinh Điển": "12,60%",
+      "Truyện Tranh": "12,60%",
+      "Sách Công Nghệ Thông Tin": "12,60%",
+      "Sách Giáo Dục": "12,60%",
+      "Văn Học Giả Tưởng": "12,60%",
+      "Sách Sức Khỏe, Rèn Luyện & Ăn Kiêng": "12,60%",
+      "Sách Lịch Sử - Văn Hóa": "12,60%",
+      "Sách Sở Thích Cá Nhân": "12,60%",
+      "Sách Chiêm Tinh": "12,60%",
+      "Sách Học Ngoại Ngữ & Từ Điển": "12,60%",
+      "Văn Học LGBTQ+": "12,60%",
+      "Light Novels": "12,60%",
+      "Sách Y Học": "12,60%",
+      "Sách Âm Nhạc": "12,60%",
+      "Khác": "12,60%",
+      "Sách Gia Đình": "12,60%",
+      "Sách Chính Trị - Pháp Lý & Khoa Học": "12,60%",
+      "Sách Tâm Lý Học": "12,60%",
+      "Sách Dạy Nấu Ăn": "12,60%",
+      "Sách Tôn giáo & Triết học": "12,60%",
+      "Văn Học Lãng Mạn": "12,60%",
+      "Khoa Học - Toán Học": "12,60%",
+      "Sách Hình Dán & Tô Màu": "12,60%",
+      "Sách Du Lịch - Du Ký": "12,60%"
+    },
+    "E-Books": "12,60%",
+    "Tạp Chí & Báo Giấy": {
+      "Tạp Chí Kinh Tế": "12,60%",
+      "Tạp Chí Đời Sống": "12,60%",
+      "Khác": "12,60%",
+      "Tạp Chí Tuổi Teen": "12,60%"
+    },
+    "Khác": "12,60%"
+  },
+  "Sở thích & Sưu tầm": {
+    "Băng - Đĩa": "13,70%",
+    "Đồ Sưu Tầm": {
+      "Mô hình nhân vật": "12,60%",
+      "Bộ sưu tập hoạt hình truyện tranh": "12,60%",
+      "Tiền xu & tiền giấy sưu tầm": "12,60%",
+      "Bộ sưu tập nhân vật nổi tiếng": "12,60%",
+      "Mô hình mecha/gundam": "12,60%",
+      "Khác": "12,60%",
+      "Bộ sưu tập thể thao": "12,60%",
+      "Tượng tĩnh": "12,60%",
+      "Đá & khoáng vật": "12,60%",
+      "Mô hình xe": "12,60%"
+    },
+    "Nhạc Cụ & Phụ Kiện": {
+      "Đàn Piano & Organ": "9,40%",
+      "Phụ Kiện Âm Nhạc": "13,70%",
+      "Khác": "13,70%",
+      "Nhạc Cụ Gõ": "9,40%",
+      "Nhạc Cụ Dây": "9,40%",
+      "Sáo, kèn": "13,70%"
+    },
+    "Dụng Cụ May Vá": "13,70%",
+    "Khác": "13,70%",
+    "Album Ảnh": "13,70%",
+    "Quà Lưu Niệm": {
+      "Ống tiết kiệm": "13,70%",
+      "Nam Châm": "13,70%",
+      "Quạt Cầm Tay": "13,70%",
+      "Móc khóa": "13,70%",
+      "Khác": "13,70%"
+    },
+    "Đồ chơi - Giải trí": {
+      "Đồ chơi trứng": "13,70%",
+      "Đồ chơi thẻ bài & boardgame": "13,70%",
+      "Kendama": "13,70%",
+      "Đồ chơi ảo thuật": "13,70%",
+      "Khác": "13,70%",
+      "Đồ chơi chọc ghẹo": "13,70%",
+      "Đồ chơi điều khiển từ xa": "13,70%",
+      "Đồ chơi rubik": "13,70%",
+      "Đồ chơi con xoay": "13,70%",
+      "Yo yo": "13,70%"
+    },
+    "Đĩa Than": "13,70%"
+  },
+  "Nhà cửa & Đời sống": {
+    "Đồ dùng phòng tắm": {
+      "Bông tắm": "14,20%",
+      "Kệ để đồ phòng tắm": "14,20%",
+      "Bồn tắm": "11,50%",
+      "Khác": "14,20%",
+      "Tay cầm an toàn": "14,20%",
+      "Mũ tắm": "14,20%",
+      "Rèm cửa nhà tắm": "14,20%",
+      "Ghế nhà tắm, ghế chống trượt": "14,20%",
+      "Vòi sen & vòi xịt vệ sinh": "14,20%",
+      "Kệ đựng xà phòng": "14,20%",
+      "Bồn cầu, ghế và nắp bồn cầu": "11,50%",
+      "Kệ đựng bàn chải, kệ nhả kem đánh răng": "14,20%",
+      "Khăn mặt, khăn tắm, áo choàng tắm": "14,20%"
+    },
+    "Chăn ga gối nệm": {
+      "Ga trải giường, vỏ gối": "13,70%",
+      "Chăn, mền": "13,70%",
+      "Gối ôm": "14,20%",
+      "Chiếu điều hòa": "14,20%",
+      "Tấm bảo vệ nệm, topper": "13,70%",
+      "Nệm": "8,50%",
+      "Mùng/ Màn chống muỗi": "13,70%",
+      "Khác": "14,20%",
+      "Gối": "14,20%"
+    },
+    "Trang trí nhà cửa": {
+      "Nến & đồ đựng nến": "14,20%",
+      "Thảm trải sàn": "14,20%",
+      "Đồng hồ": "14,20%",
+      "Rèm cửa, màn che": "14,20%",
+      "Thảm chùi chân": "14,20%",
+      "Hoa trang trí": "14,20%",
+      "Vỏ bọc nội thất": "14,20%",
+      "Gương": "13,70%",
+      "Khác": "14,20%",
+      "Khung ảnh & vật trang trí tường": "14,20%",
+      "Khăn trải bàn": "14,20%",
+      "Bình trang trí": "14,20%",
+      "Decal, tranh dán tường": "14,20%"
+    },
+    "Bộ đồ bàn ăn": {
+      "Tô": "14,20%",
+      "Cốc, ly, tách uống nước": "13,70%",
+      "Bộ dao kéo": "14,20%",
+      "Lồng bàn": "14,20%",
+      "Bình nước": "14,20%",
+      "Khác": "14,20%",
+      "Khay, tấm lót bàn ăn": "14,20%",
+      "Dĩa": "14,20%",
+      "Ống hút": "14,20%",
+      "Bộ ấm trà": "13,70%",
+      "Bình nước & phụ kiện": "14,20%"
+    },
+    "Đồ thờ cúng, đồ phong thủy": "14,20%",
+    "Nội thất": {
+      "Giường, khung giường": "11,50%",
+      "Ghế, ghế dài, ghế đẩu": "11,50%",
+      "Tủ bếp": "11,50%",
+      "Đệm ngồi": "14,20%",
+      "Bàn": "11,50%",
+      "Miếng chặn cửa": "14,20%",
+      "Khác": "11,50%",
+      "Kệ & Giá": "14,20%",
+      "Ghế sofa": "11,50%",
+      "Tủ quần áo": "11,50%"
+    },
+    "Làm vườn": {
+      "Phân bón": "13,70%",
+      "Trang trí vườn": "13,70%",
+      "Đất trồng": "13,70%",
+      "Dụng cụ làm vườn": "13,70%",
+      "Hệ thống tưới nước": "13,70%",
+      "Máy cắt cỏ, dụng cụ cắt cỏ": "13,70%",
+      "Khác": "13,70%",
+      "Cây cảnh": "13,70%",
+      "Chậu cây": "13,70%",
+      "Hạt giống & chất hỗ trợ trồng cây": "13,70%"
+    },
+    "Túi làm ấm": "14,20%",
+    "Dụng cụ chăm sóc nhà cửa": {
+      "Chậu, xô & gáo nước": "13,70%",
+      "Chổi": "13,70%",
+      "Chất tẩy rửa": "13,70%",
+      "Bàn chải vệ sinh": "13,70%",
+      "Khăn vệ sinh": "13,70%",
+      "Dây phơi & giá phơi quần áo": "13,70%",
+      "Chổi phủi bụi": "13,70%",
+      "Phụ kiện giặt là": "13,70%",
+      "Cây lau nhà": "13,70%",
+      "Khác": "13,70%",
+      "Thuốc và dụng cụ diệt côn trùng": "13,70%",
+      "Túi nilon & túi rác": "13,70%",
+      "Miếng bọt biển, miếng chà vệ sinh": "13,70%",
+      "Khăn giấy, giấy ướt": "11,50%",
+      "Giấy vệ sinh": "13,70%",
+      "Thùng rác": "13,70%"
+    },
+    "Chất khử mùi, làm thơm nhà": {
+      "Chất khử mùi, làm thơm": "14,20%",
+      "Máy khuếch tán, tạo ẩm & xông tinh dầu": "14,20%",
+      "Tinh dầu thơm": "14,20%",
+      "Khác": "14,20%"
+    },
+    "Sắp xếp nhà cửa": {
+      "Kệ sách để bàn": "14,20%",
+      "Mắc áo": "14,20%",
+      "Móc treo": "14,20%",
+      "Hộp đựng trang sức": "14,20%",
+      "Túi giặt, giỏ đựng quần áo": "14,20%",
+      "Khác": "14,20%",
+      "Kệ giày, hộp giày": "14,20%",
+      "Hộp đựng, giỏ đựng đồ": "14,20%",
+      "Hộp khăn giấy": "14,20%",
+      "Sắp xếp tủ quần áo": "14,20%"
+    },
+    "Dụng cụ nhà bếp": {
+      "Giấy bạc": "14,20%",
+      "Tạp dề & găng tay nấu nướng": "14,20%",
+      "Dụng cụ nướng & trang trí bánh": "14,20%",
+      "Dụng cụ mở hộp": "13,70%",
+      "Thớt": "14,20%",
+      "Màng bọc thực phẩm": "14,20%",
+      "Hộp đựng thực phẩm": "14,20%",
+      "Bàn nạo, dụng cụ bào, cắt": "14,20%",
+      "Lò nướng & phụ kiện": "14,20%",
+      "Kệ để đồ nhà bếp": "14,20%",
+      "Cân nhà bếp": "14,20%",
+      "Dao & kéo": "14,20%",
+      "Bật lửa, diêm và mồi lửa": "14,20%",
+      "Measuring Glasses & Spoons": "14,20%",
+      "Khác": "14,20%",
+      "Chảo": "14,20%",
+      "Nồi": "14,20%",
+      "Dụng cụ hút chân không": "14,20%",
+      "Cây vét bột & đồ gắp thức ăn": "14,20%",
+      "Dụng cụ lọc": "14,20%",
+      "Dụng cụ pha trà, cà phê": "14,20%",
+      "Phới đánh trứng": "14,20%"
+    },
+    "Đèn": "14,20%",
+    "Khác": "13,70%",
+    "Trang trí tiệc tùng": {
+      "Phông nền, biểu ngữ": "13,70%",
+      "Bong bóng": "13,70%",
+      "Thiệp": "13,70%",
+      "Chén, đĩa dùng một lần": "13,70%",
+      "Khác": "13,70%",
+      "Mũ, mặt nạ dự tiệc": "13,70%",
+      "Băng đeo chéo": "13,70%",
+      "Kẹp gỗ": "13,70%"
+    },
+    "Bảo hộ gia đình": {
+      "Khóa, ổ khóa": "11,50%",
+      "Thiết bị chữa cháy": "11,50%",
+      "Khác": "11,50%",
+      "Két sắt": "11,50%"
+    },
+    "Dụng cụ & Thiết bị tiện ích": {
+      "Máy bơm khí & phụ kiện": "13,70%",
+      "Vật liệu xây dựng": "12,60%",
+      "Cửa & cửa sổ": "12,60%",
+      "Keo & chất kết chính công nghiệp": "13,70%",
+      "Thang": "12,60%",
+      "Khác": "13,70%",
+      "Găng tay, kính bảo hộ & mặt nạ": "13,70%",
+      "Mái & sàn": "13,70%",
+      "Mái hiên, bạt phủ": "13,70%",
+      "Chậu rửa & vòi nước": "13,70%",
+      "Dụng cụ": "13,70%",
+      "Xe đẩy": "13,70%",
+      "Sơn & chất chống thấm tường": "13,70%",
+      "Máy bơm nước & phụ kiện": "12,60%"
+    }
+  },
+  "Mô tô, xe máy": {
+    "Phụ kiện xe máy": {
+      "Thùng chứa đồ": "13,70%",
+      "Lót sàn": "13,70%",
+      "Bạt phủ": "13,70%",
+      "Khóa và thiết bị chống trộm": "13,70%",
+      "Gương và phụ kiện": "13,70%",
+      "Tấm chắn bùn": "13,70%",
+      "Khác": "13,70%",
+      "Giá đỡ điện thoại": "13,70%",
+      "Ghế & bọc ghế": "13,70%",
+      "Đồng hồ đo": "13,70%",
+      "Hình dán, logo, huy hiệu": "13,70%"
+    },
+    "Mũ bảo hiểm & Phụ kiện": "14,20%",
+    "Phụ tùng xe máy": {
+      "Pin & Phụ kiện": "13,70%",
+      "Hệ thống khung xe": "11,50%",
+      "Hệ thống phanh": "13,70%",
+      "Dây cáp & Ống": "13,70%",
+      "Hệ thống dẫn động": "13,70%",
+      "Hệ thống khí xả": "13,70%",
+      "Hệ thống xử lý nhiên liệu": "13,70%",
+      "Còi & Phụ kiện": "13,70%",
+      "Bộ phận đánh lửa & động cơ": "13,70%",
+      "Đèn": "13,70%",
+      "Khác": "13,70%",
+      "Hệ thống giảm xóc": "11,50%",
+      "Lốp xe & Phụ kiện": "13,70%",
+      "Bánh xe, Vành & Phụ kiện": "13,70%"
+    },
+    "Mô tô, xe máy": "1,50%",
+    "Khác": "13,70%"
+  },
+  "Văn Phòng Phẩm": {
+    "Họa cụ": {
+      "Sơn Acrylic": "13,70%",
+      "Vải & Giá Vẽ": "13,70%",
+      "Bút Chì Màu": "13,70%",
+      "Bút Màu & Phấn Màu": "13,70%",
+      "Sơn Dầu": "13,70%",
+      "Khác": "13,70%",
+      "Cọ Vẽ": "13,70%",
+      "Bảng Màu": "13,70%",
+      "Sổ vẽ phác thảo": "13,70%",
+      "Màu Nước": "13,70%"
+    },
+    "Quà Tặng - Giấy Gói": {
+      "Xốp Chống Sốc": "11,50%",
+      "Hộp Carton": "13,70%",
+      "Túi Quà Tặng": "11,50%",
+      "Hộp Quà Tặng": "13,70%",
+      "Giấy Gói Quà": "13,70%",
+      "Khác": "13,70%",
+      "Ruy Băng": "13,70%"
+    },
+    "Thư Tín": {
+      "Phong Bì & Bao Lì Xì": "13,70%",
+      "Khác": "13,70%",
+      "Bưu Thiếp": "13,70%",
+      "Tem Các Loại": "13,70%"
+    },
+    "Sổ & Giấy Các Loại": {
+      "Giấy Mỹ Thuật": "13,70%",
+      "Bọc Sách": "13,70%",
+      "Đánh Dấu Trang": "13,70%",
+      "Nhãn Dán Các Loại": "13,70%",
+      "Ruột Sổ": "13,70%",
+      "Giấy Ghi Chú": "13,70%",
+      "Tập, Vở Các Loại": "13,70%",
+      "Khác": "13,70%",
+      "Giấy In": "13,70%",
+      "Giấy Nhiệt": "13,70%"
+    },
+    "Khác": "14,20%",
+    "Thiết Bị Trường Học": {
+      "Máy tính cầm tay": "13,70%",
+      "Lịch": "14,20%",
+      "Kẹp & Ghim Bấm": "13,70%",
+      "Dụng Cụ Lưu Trữ Giấy Tờ": "14,20%",
+      "Hồ Dán": "13,70%",
+      "Máy Đục Lỗ": "14,20%",
+      "Mực Đóng Dấu": "14,20%",
+      "Máy In Nhãn": "13,70%",
+      "Dây Đeo Thẻ & Thẻ Tên": "13,70%",
+      "Khác": "14,20%",
+      "Dao Rọc Giấy & Máy Cắt Giấy": "14,20%",
+      "Hộp Bút": "13,70%",
+      "Thước Các Loại & Giấy Nến": "13,70%",
+      "Kéo": "14,20%",
+      "Gọt bút chì": "13,70%",
+      "Đồ Bấm Kim và Kim Bấm": "13,70%",
+      "Dây & Băng Keo Dán": "13,70%",
+      "Bảng Viết & Giá Treo Bảng": "13,70%"
+    },
+    "Bút Các Loại": {
+      "Dụng Cụ Tẩy Xóa": "13,70%",
+      "Bút Dạ Quang": "13,70%",
+      "Bút Lông Màu": "13,70%",
+      "Khác": "13,70%",
+      "Bút Chì": "13,70%",
+      "Bút & Mực": "13,70%"
+    }
   }
-
 }

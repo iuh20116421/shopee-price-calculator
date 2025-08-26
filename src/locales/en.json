@@ -113,7 +113,7 @@
       "contentXtra": "Content Xtra",
       "voucherXtra": "Voucher Xtra",
       "freeshipXtra": "Freeship Xtra (Mall only)",
-      "extraServicesNote": "When multiple services are selected, the system will calculate based on the highest fee"
+      "extraServicesNote": "When multiple services are selected, the system calculates based on the highest fee"
     },
     "costs": {
       "title": "Estimated Costs",
@@ -174,9 +174,9 @@
       "hotline": "Hotline: 0789 282 979"
     },
     "tooltips": {
-      "costPrice": "Total cost to have the product ready for sale: import price, shipping, tax, packaging, storage.",
-      "profit": "Desired profit percentage on selling price (e.g., 15.50%).",
-      "marketing": "Advertising, affiliate, voucher costs on selling price (e.g., 5.5%)."
+      "costPrice": "Total product cost: import price, shipping, tax, packaging, storage",
+      "profit": "Desired profit percentage on selling price (e.g., 15.50%)",
+      "marketing": "Advertising, affiliate, voucher costs on selling price (e.g., 5.5%)"
     }
   },
   "footer": {

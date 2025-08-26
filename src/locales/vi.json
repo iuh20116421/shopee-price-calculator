@@ -113,7 +113,7 @@
       "contentXtra": "Content Xtra",
       "voucherXtra": "Voucher Xtra",
       "freeshipXtra": "Freeship Xtra (chỉ Mall)",
-      "extraServicesNote": "Khi chọn nhiều dịch vụ, hệ thống sẽ tính phí theo giá trị cao nhất"
+      "extraServicesNote": "Khi chọn nhiều dịch vụ, hệ thống tính phí theo giá trị cao nhất"
     },
     "costs": {
       "title": "Chi phí dự kiến",
@@ -174,9 +174,9 @@
       "hotline": "Hotline: 0789 282 979"
     },
     "tooltips": {
-      "costPrice": "Tổng chi phí để có sản phẩm sẵn sàng bán: giá nhập, vận chuyển, thuế, đóng gói, lưu kho.",
-      "profit": "Tỷ lệ lợi nhuận mong muốn trên giá bán (ví dụ: 15.50%).",
-      "marketing": "Chi phí quảng cáo, afiliate, voucher trên giá bán (ví dụ: 5.5%)."
+      "costPrice": "Tổng chi phí sản phẩm: giá nhập, vận chuyển, thuế, đóng gói, lưu kho",
+      "profit": "Tỷ lệ lợi nhuận mong muốn trên giá bán (VD: 15.50%)",
+      "marketing": "Chi phí quảng cáo, affiliate, voucher trên giá bán (VD: 5.5%)"
     }
   },
   "login": {

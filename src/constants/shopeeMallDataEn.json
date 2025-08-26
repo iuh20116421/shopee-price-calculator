@@ -1,622 +1,1701 @@
 {
-  "Cameras & Flycam": {
-    "Camera Accessories": {
-      "Battery Grip": "6.38%",
-      "Battery Charger": "6.38%",
-      "Camera Bag": "6.38%",
-      "Flash Accessories": {
-        "Light Diffuser": "6.38%",
-        "Flash Trigger": "6.38%",
-        "Others": "6.38%"
+    "Audio Devices": {
+      "Amplifiers & Audio Mixers": "10.50%",
+      "Audio/Video Cables & Converters": "12.60%",
+      "Headphones & Earbuds": "12.60%",
+      "Sound Systems": {
+        "AV Receivers": "12.60%",
+        "Home Entertainment Systems": "10.50%",
+        "Others": "12.60%",
+        "Speakers": "12.60%"
       },
-      "Flash": "6.38%",
-      "Gimbal": "6.38%",
-      "Lighting & Studio Equipment": "6.38%",
-      "Others": "6.38%",
-      "Photo Paper & Film": "6.38%",
-      "Photo Printer": "6.38%",
-      "Tripod": "6.38%"
+      "Music Players": {
+        "CD, DVD & Bluray": "12.60%",
+        "MP3 & MP4": "12.60%",
+        "Others": "12.60%",
+        "Radio & Cassettes": "12.60%",
+        "Voice Recorders": "10.50%"
+      },
+      "Microphones": "12.60%",
+      "Others": "12.60%"
     },
-    "Camera Care Accessories": {
-      "Air Blower": "6.38%",
-      "Camera Cleaning Kit": "6.38%",
-      "Dry Box": "6.38%",
-      "Lens Cleaning Pen & Brush": "6.38%",
-      "Others": "6.38%",
-      "Silica Gel": "6.38%"
+    "Cameras & Drones": {
+      "Camera Accessories": {
+        "Battery Grips": "12.60%",
+        "Battery Chargers": "12.60%",
+        "Camera Bags": "12.60%",
+        "Flash Accessories": "12.60%",
+        "Flashes": "12.60%",
+        "Gimbals & Stabilizers": "12.60%",
+        "Lighting & Studio Equipment": "12.60%",
+        "Others": "12.60%",
+        "Photo Paper & Film": "12.60%",
+        "Photo Printers": "12.60%",
+        "Tripods & Monopods": "12.60%"
+      },
+      "Camera Care Accessories": {
+        "Dust Blowers": "12.60%",
+        "Camera Cleaning Kits": "12.60%",
+        "Dry Cabinets & Boxes": "12.60%",
+        "Lens Pens & Brushes": "12.60%",
+        "Others": "12.60%",
+        "Silica Gel Packets": "12.60%"
+      },
+      "Cameras": {
+        "Action Cameras": "7.80%",
+        "Film Cameras": "12.60%",
+        "DSLR Cameras": "6.40%",
+        "Instant Cameras": "7.80%",
+        "Mirrorless Cameras": "6.40%",
+        "Others": "12.60%",
+        "Digital Cameras": "7.80%",
+        "Camcorders": "12.60%"
+      },
+      "Drone Accessories": "12.60%",
+      "Drones": "10.50%",
+      "Lens Accessories": {
+        "Lens Filters": "12.60%",
+        "Lens Caps": "12.60%",
+        "Lens Hoods": "12.60%",
+        "Lens Mounts & Adapters": "12.60%",
+        "Others": "12.60%"
+      },
+      "Lenses": "7.80%",
+      "Others": "12.60%",
+      "Surveillance Cameras": {
+        "Internet-connected Surveillance Cameras": "12.60%",
+        "Dummy Security Cameras": "12.60%",
+        "Digital Video Recorders (DVRs)": "12.60%",
+        "Others": "12.60%",
+        "Hidden Cameras": "12.60%"
+      }
     },
-    "Cameras": {
-      "Action Camera": "6.38%",
-      "Film Camera": "6.38%",
-      "DSLR Camera": "3.93%",
-      "Instant Camera": "6.38%",
-      "Mirrorless Camera": "3.93%",
-      "Others": "6.38%",
-      "Digital Camera": "6.38%",
-      "Video Camera": "6.38%"
+    "Computers & Laptops": {
+      "Data Storage": {
+        "CD Discs": "12.60%",
+        "USB & OTG": "12.60%",
+        "Hard Drive Enclosures": "12.60%",
+        "Portable Hard Drives": "10.50%",
+        "Network Attached Storage (NAS)": "12.60%",
+        "Others": "12.60%",
+        "SSD Hard Drives": "10.50%"
+      },
+      "Computer Components": {
+        "Fans & Coolers": "12.60%",
+        "VGA - Graphics Cards": "12.60%",
+        "Mainboard - Motherboards": "8.50%",
+        "Optical Drives": "12.60%",
+        "Others": "12.60%",
+        "PC Cases": "12.60%",
+        "Power Supply Units (PSU)": "12.60%",
+        "CPU - Processors": "7.80%",
+        "Computer RAM": "12.60%",
+        "Sound Cards": "12.60%",
+        "Thermal Paste": "12.60%",
+        "Uninterruptible Power Supply (UPS)": "10.50%"
+      },
+      "Desktop Computers": {
+        "All-in-one PCs": "3.30%",
+        "Desktop Computer Bundles": "3.30%",
+        "Mini PCs": "3.30%",
+        "Others": "8.50%",
+        "Servers": "3.30%"
+      },
+      "Mice & Keyboards": {
+        "Drawing Tablets": "10.50%",
+        "Keyboards": "12.60%",
+        "Mice": "12.60%",
+        "Others": "12.60%"
+      },
+      "Laptops": "3.30%",
+      "Monitors": "7.80%",
+      "Network Devices": {
+        "KVM Switches": "12.60%",
+        "Wifi Routers": "12.60%",
+        "Computer Cables": "12.60%",
+        "Network Switches": "12.60%",
+        "Others": "12.60%",
+        "Network Adapters": "12.60%",
+        "Print Servers": "12.60%",
+        "Wifi Extenders": "12.60%",
+        "Wifi Receivers": "12.60%"
+      },
+      "Office Equipment": {
+        "Time Clocks": "12.60%",
+        "Money Counters": "12.60%",
+        "Others": "12.60%",
+        "Paper Shredders": "12.60%",
+        "Typewriters": "12.60%"
+      },
+      "Other Computer Accessories": "12.60%",
+      "Computer Accessories": {
+        "Cooling Pads": "12.60%",
+        "Keyboard Skins": "12.60%",
+        "Laptop Batteries": "12.60%",
+        "Laptop Chargers": "12.60%",
+        "Laptop Skins & Cases": "12.60%",
+        "Laptop Tables": "12.60%",
+        "Mouse Pads": "12.60%",
+        "Others": "12.60%",
+        "USB Hubs & Card Readers": "12.60%",
+        "Conference Equipment": "12.60%",
+        "Webcams": "12.60%"
+      },
+      "Printers & Scanners": {
+        "3D Printers": "10.50%",
+        "Ink & Ink Cartridges": "12.60%",
+        "Others": "12.60%",
+        "Printers, Scanners & Photocopiers": "8.50%",
+        "Barcode Printers": "10.50%"
+      },
+      "Software": "12.60%"
     },
-    "Drone Accessories": "6.38%",
-    "Drones": "6.38%",
-    "Lens Accessories": {
-      "Lens Filter": "6.38%",
-      "Lens Cap": "6.38%",
-      "Lens Hood": "6.38%",
-      "Lens Mount & Adapter": "6.38%",
-      "Others": "6.38%"
+    "Gaming & Console": {
+      "Console Accessories": "12.60%",
+      "Gaming Consoles": {
+        "Gameboy": "7.80%",
+        "Nintendo DS": "12.60%",
+        "Others": "12.60%",
+        "Playstation": "8.50%",
+        "PS Vita": "12.60%",
+        "PSP": "12.60%",
+        "Switch": "12.60%",
+        "Wii": "12.60%",
+        "Xbox": "12.60%"
+      },
+      "Others": "12.60%",
+      "Video Games": {
+        "Gameboy Games": "12.60%",
+        "Nintendo DS Games": "12.60%",
+        "Other Console Games": "12.60%",
+        "PC Games": "12.60%",
+        "Playstation Games": "12.60%",
+        "PS Vita Games": "12.60%",
+        "PSP Games": "12.60%",
+        "Switch Games": "12.60%",
+        "Wii Games": "12.60%",
+        "Xbox Games": "12.60%"
+      }
     },
-    "Lenses": "6.38%",
-    "Others": "6.38%",
-    "Security Camera": {
-      "IP Camera": "6.38%",
-      "Fake Security Camera": "6.38%",
-      "DVR": "6.38%",
-      "Others": "6.38%",
-      "Hidden Camera": "6.38%"
+    "Home Appliances": {
+      "Batteries": "12.60%",
+      "E-cigarettes": "12.60%",
+      "Electrical & Parts": {
+        "Doorbells": "12.60%",
+        "Power Outlets & Extension Cords": "12.60%",
+        "Electronic Safety Devices": "12.60%",
+        "Power Saving Devices": "12.60%",
+        "Home Alarm Systems": "12.60%",
+        "Lightning Protection Devices": "12.60%",
+        "Others": "12.60%",
+        "Switches": "12.60%"
+      },
+    "Kitchen Appliances": {
+      "Air Fryers": "12.60%",
+      "Coffee Makers & Accessories": "12.60%",
+      "Deep Fryers": "12.60%",
+      "Dishwashers": "6.40%",
+      "Food Processors & Meat Grinders": "12.60%",
+      "Freezers": "5.50%",
+      "Range Hoods": "7.80%",
+      "Juicers, Blenders & Soy Milk Makers": "12.60%",
+      "Electric Kettles": "12.60%",
+      "Microwave Ovens": "12.60%",
+      "Food Mixers": "12.60%",
+      "Multi-cookers": "12.60%",
+      "Others": "12.60%",
+      "Ovens": "12.60%",
+      "Pressure Cookers": "12.60%",
+      "Refrigerators": "5.50%",
+      "Rice Cookers": "12.60%",
+      "Slow Cookers & Sous Vide Cookers": "12.60%",
+      "Specialty Cookware": "12.60%",
+      "Heaters, Induction Cookers & Gas Regulators": "12.60%",
+      "Toasters": "12.60%",
+      "Water Purifiers": "8.50%",
+      "Wine Coolers": "5.50%"
+    },
+    "Large Home Appliances": {
+      "Cooling Devices": "6.40%",
+      "Mattress & Shoe Dryers": "8.50%",
+      "Heaters": "6.40%",
+      "Others": "5.50%",
+      "Washing Machines & Dryers": "5.50%",
+      "Water Heaters": "6.40%"
+    },
+    "Others": "12.60%",
+    "Projectors & Accessories": {
+      "Others": "12.60%",
+      "Presentation Pointers": "12.60%",
+      "Projectors & Projector Screens": "10.50%"
+    },
+    "Remote Controls": "12.60%",
+    "Small Home Appliances": {
+      "Air Treatment Devices": "5.50%",
+      "Foot Spa & Massagers": "12.60%",
+      "Steam & Dry Irons": "12.60%",
+      "Others": "12.60%",
+      "Sewing Machines & Accessories": "12.60%",
+      "Telephones": "8.50%",
+      "Vacuum Cleaners & Floor Cleaners": "8.50%",
+      "Water Flossers": "12.60%"
+    },
+    "TVs & Accessories": {
+      "Others": "12.60%",
+      "TV Antennas": "12.60%",
+      "TV Boxes & Digital Receivers": "12.60%",
+      "TV Mounts": "12.60%",
+      "TVs": "3.30%"
     }
   },
-  "Pet Care": {
-    "Pet Hygiene": {
-      "Cat Litter Box": "6.87%",
-      "Pet Diapers": "6.87%",
-      "Dog Training Pads": "6.87%",
-      "Others": "6.87%",
-      "Poop Bags & Scoopers": "6.87%",
-      "Small Pet Bedding": "6.87%"
-    },
-    "Others": "6.87%",
-    "Pet Accessories": {
-      "Aquarium Accessories": "6.87%",
-      "Bowls & Feeding Tools": "6.87%",
-      "Collars, Leashes & Muzzles": "6.87%",
-      "Others": "6.87%",
-      "Pet Furniture": {
-        "Beds & Mats": "6.87%",
-        "Cages & Crates": "6.87%",
-        "House & Cage Accessories": "6.87%",
-        "Houses": "6.87%",
-        "Others": "6.87%",
-        "Scratching Posts": "6.87%"
-      },
-      "Toys": {
-        "Bird Toys": "6.87%",
-        "Cat & Dog Toys": "6.87%",
-        "Others": "6.87%",
-        "Small Pet Toys": "6.87%"
-      },
-      "Travel Equipment": "6.87%"
-    },
-    "Pet Clothing & Accessories": {
-      "Shoes, Socks & Nail Protection": "6.87%",
-      "Pet Glasses": "6.87%",
-      "Fur Accessories": "6.87%",
-      "Pet Hats": "6.87%",
-      "Neck Accessories": "6.87%",
-      "Others": "6.87%",
-      "Pet Clothing": "6.87%",
-      "Pet Raincoats": "6.87%"
-    },
-    "Pet Food": {
-      "Fish Food": "6.87%",
-      "Bird Food": "6.87%",
-      "Cat Food": "6.87%",
-      "Cat Snacks": "6.87%",
-      "Dog Food": "6.87%",
-      "Dog Snacks": "6.87%",
-      "Others": "6.87%",
-      "Reptile Food": "6.87%",
-      "Small Pet Food": "6.87%",
-      "Small Pet Snacks": "6.87%"
-    },
-    "Pet Grooming": {
-      "Nail Care": "6.87%",
-      "Fur Care": "6.87%",
-      "Dental Care": "6.87%",
-      "Others": "6.87%"
-    },
-    "Pet Health Care": {
-      "Deworming & Flea Control": "6.87%",
-      "Pet Medicine": "6.87%",
-      "Others": "6.87%",
-      "Vitamins & Supplements": "6.87%"
-    }
-  },
-  "Mobile Phones & Accessories": {
+  "Mobile & Gadgets": {
     "Accessories": {
-      "Cables, Chargers & Adapters": {
-        "Cable Organizers & Cable Protection": "6.38%",
-        "Chargers": "6.38%",
-        "Charging Stands": "6.38%",
-        "Cables & Mobile Adapters": "6.38%",
-        "Others": "6.38%",
-        "Travel Chargers": "6.38%"
-      },
-      "Cases, Covers & Screen Protectors": {
-        "Others": "6.38%",
-        "Phone Cases & Screen Protectors": "6.38%",
-        "Tablet Cases & Screen Protectors": "6.38%"
-      },
-      "Projectors": "6.38%",
-      "Memory Cards": "6.38%",
-      "Phone Flash & Selfie Lights": "6.38%",
-      "Phone Lenses": "6.38%",
-      "Phone Bags": "6.38%",
-      "Others": "6.38%",
-      "Phone Holders": "6.38%",
-      "Phone Straps & Charms": "6.38%",
-      "Portable WiFi": "6.38%",
-      "Power Banks & Batteries": {
-        "Batteries": "6.38%",
-        "Others": "6.38%",
-        "Power Banks": "6.38%",
-        "Power Bank Cases": "6.38%"
-      },
-      "Screen Protectors": "6.38%",
-      "Selfie Accessories": {
-        "Phone Stands": "6.38%",
-        "Others": "6.38%",
-        "Bluetooth Remote Controls": "6.38%",
-        "Selfie Sticks": "6.38%"
-      },
-      "Stylus Pens": "6.38%",
-      "USB Fans & Phone Fans": "6.38%",
-      "USB Lights & Phone Lights": "6.38%",
-      "Smartwatch Accessories": "6.38%"
+      "Cables, Chargers & Adapters": "12.60%",
+      "Cases, Covers & Skins": "12.60%",
+      "Projectors": "12.60%",
+      "Memory Cards": "12.60%",
+      "Phone Flashes & Selfie Lights": "12.60%",
+      "Phone Lenses": "12.60%",
+      "Phone Bags & Pouches": "12.60%",
+      "Others": "12.60%",
+      "Phone Holders": "12.60%",
+      "Phone Straps & Lanyards": "12.60%",
+      "Portable Wifi Routers": "12.60%",
+      "Power Banks & Batteries": "12.60%",
+      "Screen Protectors": "12.60%",
+      "Selfie Accessories": "12.60%",
+      "Stylus Pens": "12.60%",
+      "USB Fans & Phone Fans": "12.60%",
+      "USB Lights & Phone Lights": "12.60%",
+      "Smartwatch Accessories": "12.60%"
     },
-    "Mobile Phones": "1.47%",
-    "Others": "6.38%",
-    "SIM Cards": "6.38%",
-    "Tablets": "1.47%",
-    "Walkie Talkies": "6.38%",
-    "Wearable Technology": {
-      "GPS Devices": "6.38%",
-      "Others": "6.38%",
-      "Smartwatches & Fitness Trackers": "6.38%",
-      "VR Devices": "6.38%"
+    "Phones": "2.00%",
+    "Others": "12.60%",
+    "SIM Cards": "12.60%",
+    "Tablets": "3.30%",
+    "Walkie Talkies": "12.60%",
+    "Smart Wearables": {
+      "GPS Trackers": "12.60%",
+      "Others": "12.60%",
+      "Smartwatches & Fitness Trackers": "10.50%",
+      "Virtual Reality Devices": "12.60%"
+    }
+  },
+  "Vouchers & Services": {
+    "Health & Beauty": {
+      "Dental Care": "12.60%",
+      "Gym & Yoga": "12.60%",
+      "Hair Salon": "12.60%",
+      "Health Care": "12.60%",
+      "Others": "12.60%",
+      "Spa & Massage": "12.60%"
+    },
+    "Events & Entertainment": {
+      "Concerts & Exhibitions": "12.60%",
+      "Events & Workshops": "12.60%",
+      "Movie & Theatre Tickets": "12.60%",
+      "Others": "12.60%",
+      "Amusement Parks": "12.60%"
+    },
+    "Restaurants & Food": {
+      "Dine-in & Takeaway": "12.60%",
+      "Food Delivery": "12.60%",
+      "Others": "12.60%"
+    },
+    "Courses": "12.60%",
+    "Others": "12.60%",
+    "Other Services": {
+      "Air Conditioner Installation & Repair": "12.60%",
+      "Shipping & Logistics": "12.60%",
+      "Design": "12.60%",
+      "Home Cleaning": "12.60%",
+      "Insurance": "12.60%",
+      "Others": "12.60%",
+      "Photo Shoots": "12.60%"
+    },
+    "Shopee Gift Cards": {
+      "Digital Products": "12.60%",
+      "Others": "12.60%",
+      "Shopee Official": "12.60%",
+      "Shopee Ad Fees": "12.60%"
+    },
+    "Shopping": {
+      "Shopping Malls": "12.60%",
+      "Others": "12.60%",
+      "Supermarkets": "12.60%"
+    },
+    "Account Top-up": {
+      "Internet & Cable TV": "12.60%",
+      "3G/4G Data Plans": "12.60%",
+      "Direct Top-up & Card Purchase": "12.60%",
+      "Others": "12.60%"
+    },
+    "Ride-hailing": "12.60%",
+    "Travel & Hotels": {
+      "Hotel Bookings": "12.60%",
+      "Bus Tickets": "12.60%",
+      "Vehicle Rentals": "12.60%",
+      "Flight Tickets": "12.60%",
+      "Hot Springs": "12.60%",
+      "Others": "12.60%",
+      "Tours": "12.60%",
+      "Train Tickets": "12.60%"
+    },
+    "Bill Payments": "12.60%"
+  },
+  "Kids & Baby Fashion": {
+    "Kids & Baby Accessories": {
+      "Bags & Luggage": "14.50%",
+      "Belts": "14.50%",
+      "Earmuffs": "14.50%",
+      "Eyewear": "14.50%",
+      "Gloves": "14.50%",
+      "Hair Accessories": "14.50%",
+      "Hats & Caps": "14.50%",
+      "Jewelry": "14.50%",
+      "Others": "14.50%",
+      "Rainwear": "14.50%",
+      "Scarves": "14.50%",
+      "Socks": "14.50%",
+      "Watches": "14.50%"
+    },
+    "Kids' Clothing": {
+      "Jumpsuits": "14.50%",
+      "Pants/Skirts": "14.50%",
+      "Dresses": "14.50%",
+      "Others": "14.50%",
+      "Light Jackets": "14.50%",
+      "Outfits & Sets": "14.50%",
+      "Pajamas": "14.50%",
+      "Swimwear": "14.50%",
+      "Tops": "14.50%",
+      "Winter Jackets": "14.50%"
+    },
+    "Kids' Gloves & Socks": "14.50%",
+    "Boys' Clothing": {
+      "Pants": "14.50%",
+      "Costumes": "14.50%",
+      "Others": "14.50%",
+      "Jackets": "14.50%",
+      "Pajamas": "14.50%",
+      "Suits & Sets": "14.50%",
+      "Swimwear": "14.50%",
+      "Tops": "14.50%",
+      "Underwear": "14.50%"
+    },
+    "Boys' Shoes": {
+      "Boots": "14.50%",
+      "Sandals": "14.50%",
+      "Formal Shoes": "14.50%",
+      "Loafers": "14.50%",
+      "Others": "14.50%",
+      "Slippers": "14.50%",
+      "Sneakers": "14.50%"
+    },
+    "Girls' Clothing": {
+      "Pants": "14.50%",
+      "Costumes": "14.50%",
+      "Dresses": "14.50%",
+      "Others": "14.50%",
+      "Jackets": "14.50%",
+      "Jumpsuits": "14.50%",
+      "Pajamas": "14.50%",
+      "Suits & Sets": "14.50%",
+      "Swimwear": "14.50%",
+      "Tops": "14.50%",
+      "Underwear": "14.50%"
+    },
+    "Girls' Shoes": {
+      "Boots": "14.50%",
+      "Flats": "14.50%",
+      "Sandals": "14.50%",
+      "Loafers": "14.50%",
+      "Others": "14.50%",
+      "Slippers": "14.50%",
+      "Sneakers": "14.50%"
+    },
+    "Others": "14.50%"
+  },
+  "Fashion Accessories": {
+    "Accessory Sets": "14.50%",
+    "Extra Accessories": {
+      "Brooches & Pins": "14.50%",
+      "Pendants & Charms": "14.50%",
+      "Cufflinks": "14.50%",
+      "Handkerchiefs": "14.50%",
+      "Fashion Masks": "14.50%",
+      "Others": "14.50%",
+      "Patches": "14.50%",
+      "Temporary Tattoos": "14.50%"
+    },
+    "Anklets": "14.50%",
+    "Belts": "14.50%",
+    "Bracelets & Bangles": "14.50%",
+    "Earrings": "14.50%",
+    "Eyewear": {
+      "Cases & Accessories": "14.50%",
+      "Frames": "14.50%",
+      "Others": "14.50%",
+      "Sunglasses": "14.50%"
+    },
+    "Fine Jewelry": {
+      "Anklets": "8.50%",
+      "Bracelets & Bangles": "8.50%",
+      "Brooches & Pins": "8.50%",
+      "Charms, Pendants & Ornaments": "8.50%",
+      "Earrings": "8.50%",
+      "Jewellery Sets": "8.50%",
+      "Necklaces": "8.50%",
+      "Others": "8.50%",
+      "Rings": "8.50%"
+    },
+    "Gloves": "14.50%",
+    "Hair Accessories": {
+      "Hair Clips": "14.50%",
+      "Hair Ties & Bows": "14.50%",
+      "Headbands": "14.50%",
+      "Hair Pins & Tiaras": "14.50%",
+      "Others": "14.50%",
+      "Wigs & Hair Extensions": "14.50%"
+    },
+    "Hats": "14.50%",
+    "Precious Metals": {
+      "Diamonds": "8.50%",
+      "Jade, Emeralds": "8.50%",
+      "Others": "8.50%",
+      "Platinum & Gold": "8.50%",
+      "Silver": "14.50%"
+    },
+    "Necklaces": "14.50%",
+    "Ties & Bowties": "14.50%",
+    "Others": "14.50%",
+    "Rings": "14.50%",
+    "Scarves": "14.50%"
+  },
+  "Men's Bags & Wallets": {
+    "Backpacks": "14.50%",
+    "Briefcases": "14.50%",
+    "Clutches": "12.60%",
+    "Messenger Bags": "14.50%",
+    "Laptop Bags": {
+      "Laptop Backpacks": "14.50%",
+      "Laptop Bags & Briefcases": "14.50%",
+      "Laptop Sleeves": "14.50%",
+      "Others": "14.50%"
+    },
+    "Others": "14.50%",
+    "Tote Bags": "12.60%",
+    "Waist Bags & Chest Bags": "14.50%",
+    "Wallets": {
+      "Bi-fold & Tri-fold Wallets": "14.50%",
+      "Card Holders": "14.50%",
+      "Coin Purses": "12.60%",
+      "Long Wallets": "14.50%",
+      "Other Wallets": "12.60%",
+      "Phone & Key Wallets": "14.50%"
+    }
+  },
+  "Men's Fashion": {
+    "Costumes": "14.50%",
+    "Hoodies & Sweatshirts": {
+      "Hoodies": "14.50%",
+      "Others": "14.50%",
+      "Sweatshirts": "14.50%"
+    },
+    "Underwear": {
+      "Others": "14.50%",
+      "Sexy Innerwear": "14.50%",
+      "Thermal Underwear": "14.50%",
+      "Undershirts": "14.50%",
+      "Briefs & Boxers": "14.50%"
+    },
+    "Jackets & Coats": {
+      "Jackets": "14.50%",
+      "Others": "14.50%",
+      "Vests": "14.50%",
+      "Winter Coats & Jackets": "14.50%"
+    },
+    "Jeans": "14.50%",
+    "Workwear": "14.50%",
+    "Others": "14.50%",
+    "Pants": {
+      "Cargo Pants": "14.50%",
+      "Jogger Pants": "14.50%",
+      "Others": "14.50%",
+      "Long Pants": "14.50%"
+    },
+    "Sets": "14.50%",
+    "Shorts": "14.50%",
+    "Pajamas": "14.50%",
+    "Socks": "14.50%",
+    "Suits": {
+      "Others": "14.50%",
+      "Jackets & Blazers": "14.50%",
+      "Dress Pants": "14.50%",
+      "Suit Sets": "14.50%",
+      "Vests & Waistcoats": "14.50%"
+    },
+    "Sweaters": "14.50%",
+    "Tops": {
+      "Others": "14.50%",
+      "Polo Shirts": "14.50%",
+      "Shirts": "14.50%",
+      "T-Shirts": "14.50%",
+      "Tank Tops": "14.50%"
+    },
+    "Traditional Wear": {
+      "Pants": "14.50%",
+      "Others": "14.50%",
+      "Sets": "14.50%",
+      "Tops": "14.50%"
+    }
+  },
+  "Men's Footwear": {
+    "Boots": {
+      "Fashion Boots": "13.70%",
+      "Others": "13.70%",
+      "Rain Boots": "13.70%",
+      "Safety Boots": "13.70%"
+    },
+    "Loafers": "13.70%",
+    "Others": "13.70%",
+    "Oxfords & Lace-ups": "13.70%",
+    "Sandals & Slippers": {
+      "Flip-flops": "13.70%",
+      "Massage Slippers": "13.70%",
+      "Indoor Slippers": "13.70%",
+      "Others": "13.70%",
+      "Sandals": "13.70%"
+    },
+    "Shoe Accessories": {
+      "Others": "13.70%",
+      "Shoe Care & Cleaning": "13.70%",
+      "Shoe Deodorizers": "13.70%",
+      "Shoe Horns & Trees": "13.70%",
+      "Insoles": "13.70%",
+      "Shoelaces": "13.70%"
+    },
+    "Mules": "13.70%",
+    "Sneakers": "13.70%"
+  },
+  "Muslim Fashion": {
+    "Kid Muslim Wear": {
+      "Girl's Muslim Attire": "13.70%"
+    },
+    "Men Muslim Wear": {
+      "Sarong": "13.70%"
+    },
+    "Prayer Attire & Equipment": {
+      "Peci, Songkok & Kopiah": "13.70%"
+    },
+    "Sets": "13.70%",
+    "Women Muslim Wear": {
+      "Accessories": "13.70%",
+      "Bottoms": "13.70%",
+      "Dresses": "13.70%",
+      "Veils": "13.70%"
+    }
+  },
+  "Sports & Outdoors": {
+    "Others": "14.50%",
+    "Sports & Outdoor Accessories": {
+      "Waterproof Bags": "14.50%",
+      "Gym Protective Gear": "14.50%",
+      "Mouthguards & Sports Tapes": "14.50%",
+      "Other Accessories": "14.50%",
+      "Raincoats": "14.50%",
+      "Shoe Bags": "14.50%",
+      "Sports & Outdoor Hats": "14.50%",
+      "Sports Headbands": "14.50%",
+      "Sports Wristbands": "14.50%",
+      "Stopwatches & Pedometers": "14.50%",
+      "Training Accessories": "14.50%",
+      "Umbrellas": "14.50%"
+    },
+    "Sports & Outdoor Apparel": {
+      "Sports Pants": "14.50%",
+      "Jackets": "14.50%",
+      "Club Jerseys": "14.50%",
+      "Kids' Sports Apparel": "14.50%",
+      "Others": "14.50%",
+      "Sports Sets": "14.50%",
+      "Sports Bras": "14.50%",
+      "Swimwear": "14.50%",
+      "Sports Tops": "14.50%"
+    },
+    "Sports & Outdoor Equipment": {
+      "Archery": "13.70%",
+      "Badminton": "13.70%",
+      "Baseball & Handball": "13.70%",
+      "Basketball": "13.70%",
+      "Billiards": "8.50%",
+      "Board Sports": "13.70%",
+      "Boating": "8.50%",
+      "Boxing & MMA": "13.70%",
+      "Camping & Hiking": "13.70%",
+      "Cycling": "13.70%",
+      "Darts": "13.70%",
+      "Fishing": "13.70%",
+      "Fitness Equipment": "13.70%",
+      "Golf": "13.70%",
+      "Skiing & Winter Sports": "13.70%",
+      "Other Sports": "13.70%",
+      "Mountaineering": "13.70%",
+      "Rugby": "13.70%",
+      "Shooting & Survival Games": "13.70%",
+      "Soccer, Futsal & Sepak Takraw": "13.70%",
+      "Squash": "13.70%",
+      "Surfing": "13.70%",
+      "Swimming & Diving": "13.70%",
+      "Table Tennis": "13.70%",
+      "Tennis": "13.70%",
+      "Volleyball": "13.70%",
+      "Yoga & Pilates": "13.70%"
+    },
+    "Sports Shoes": {
+      "Badminton Shoes": "13.70%",
+      "Basketball Shoes": "13.70%",
+      "Futsal Shoes": "13.70%",
+      "Hiking Shoes": "13.70%",
+      "Kids' Sports Shoes": "13.70%",
+      "Other Sports Shoes": "13.70%",
+      "Running Shoes": "13.70%",
+      "Soccer Shoes": "13.70%",
+      "Tennis Shoes": "13.70%",
+      "Training Shoes": "13.70%",
+      "Volleyball Shoes": "13.70%"
+    }
+  },
+  "Travel & Luggage": {
+    "Luggage": "13.70%",
+    "Others": "14.50%",
+    "Travel Accessories": {
+      "Luggage Locks": "14.50%",
+      "Luggage Covers": "14.50%",
+      "Luggage Scales": "14.50%",
+      "Luggage Straps": "14.50%",
+      "Luggage Tags": "14.50%",
+      "Other Accessories": "14.50%",
+      "Passport Holders": "14.50%",
+      "Multi-pocket Travel Bags": "14.50%",
+      "Travel Pillows & Eye Masks": "14.50%",
+      "Travel Bottles & Containers": "14.50%"
+    },
+    "Travel Bags": {
+      "Drawstring Bags": "14.50%",
+      "Duffle Bags": "14.50%",
+      "Foldable Bags": "14.50%",
+      "Other Bags": "14.50%"
     }
   },
   "Watches": {
-    "Men's Watches": "6.87%",
-    "Others": "6.87%",
-    "Watch Sets & Couple Watches": "6.87%",
+    "Men's Watches": "12.60%",
+    "Others": "13.70%",
+    "Watch Sets & Couple Watches": "12.60%",
     "Watch Accessories": {
-      "Watch Batteries": "6.87%",
-      "Watch Boxes": "6.87%",
-      "Watch Clasps": "6.87%",
-      "Others": "6.87%",
-      "Repair Tools": "6.87%",
-      "Watch Bands": "6.87%"
+      "Watch Batteries": "13.70%",
+      "Watch Boxes": "13.70%",
+      "Watch Clasps": "13.70%",
+      "Others": "13.70%",
+      "Repair Tools": "13.70%",
+      "Watch Straps": "13.70%"
     },
-    "Women's Watches": "6.87%"
+    "Women's Watches": "13.70%"
   },
-  "Travel & Luggage": {
-    "Luggage": "6.87%",
-    "Others": "6.87%",
-    "Travel Accessories": {
-      "Luggage Locks": "7.95%",
-      "Luggage Covers": "7.95%",
-      "Luggage Scales": "7.95%",
-      "Luggage Straps": "7.95%",
-      "Luggage Tags": "7.95%",
-      "Other Accessories": "7.95%",
-      "Passport Holders": "7.95%",
-      "Travel Organizers": "7.95%",
-      "Travel Pillows & Eye Masks": "7.95%",
-      "Travel Bottles": "7.95%"
+  "Women's Bags & Wallets": {
+    "Backpacks": "14.50%",
+    "Bag Accessories": {
+      "Bag Hangers/Organizers": "14.50%",
+      "Bag-in-bag Organizers": "14.50%",
+      "Bag Straps": "14.50%",
+      "Bag Charms & Accessories": "14.50%",
+      "Bag Care & Cleaning Tools": "14.50%",
+      "Other Accessories": "14.50%"
     },
-    "Travel Bags": {
-      "Drawstring Bags": "7.95%",
-      "Duffel Bags": "7.95%",
-      "Foldable Bags": "7.95%",
-      "Other Bags": "7.95%"
+    "Clutches & Evening Bags": "14.50%",
+    "Crossbody & Shoulder Bags": "14.50%",
+    "Laptop Bags": {
+      "Laptop Backpacks": "14.50%",
+      "Laptop Bags & Briefcases": "14.50%",
+      "Laptop Sleeves": "14.50%",
+      "Others": "14.50%"
+    },
+    "Others": "14.50%",
+    "Top Handle Bags": "14.50%",
+    "Tote Bags": "14.50%",
+    "Waist Bags & Chest Bags": "14.50%",
+    "Wallets": {
+      "Bi-fold Wallets": "14.50%",
+      "Card Holders": "14.50%",
+      "Mini Coin Purses": "14.50%",
+      "Long Wallets": "14.50%",
+      "Other Wallets": "14.50%",
+      "Phone & Key Wallets": "14.50%"
     }
   },
-  "Gaming & Console": {
-    "Console Accessories": "6.87%",
-    "Gaming Consoles": {
-      "Gameboy": "6.38%",
-      "Nintendo DS": "6.38%",
-      "Others": "6.38%",
-      "Playstation": "6.38%",
-      "PS Vita": "6.38%",
-      "PSP": "6.38%",
-      "Switch": "6.38%",
-      "Wii": "6.38%",
-      "Xbox": "6.38%"
+  "Women's Fashion": {
+    "Costumes": "14.50%",
+    "Dresses": "14.50%",
+    "Fabrics": {
+      "Batik Fabrics": "14.50%",
+      "Canvas Fabric": "14.50%",
+      "Cotton Fabric": "14.50%",
+      "Denim Fabric": "14.50%",
+      "Leather Fabric": "14.50%",
+      "Others": "14.50%",
+      "Velvet, Silk, Satin Fabric": "14.50%",
+      "Nylon Fabric": "14.50%",
+      "Wool Fabric": "14.50%"
     },
-    "Others": "6.87%",
-    "Video Games": {
-      "Gameboy Games": "6.87%",
-      "Nintendo DS Games": "6.87%",
-      "Other Console Games": "6.87%",
-      "PC Games": "6.87%",
-      "Playstation Games": "6.87%",
-      "PS Vita Games": "6.87%",
-      "PSP Games": "6.87%",
-      "Switch Games": "6.87%",
-      "Wii Games": "6.87%",
-      "Xbox Games": "6.87%"
-    }
+    "Hoodies & Sweatshirts": {
+      "Hoodies": "14.50%",
+      "Others": "14.50%",
+      "Sweatshirts": "14.50%"
+    },
+    "Jackets & Coats": {
+      "Blazers": "14.50%",
+      "Coats": "14.50%",
+      "Outerwear Jackets": "14.50%",
+      "Others": "14.50%",
+      "Vests": "14.50%",
+      "Winter Jackets": "14.50%"
+    },
+    "Jeans": "14.50%",
+    "Jumpsuits & Rompers": {
+      "Jumpsuits": "14.50%",
+      "Others": "14.50%",
+      "Overalls": "14.50%",
+      "Playsuits": "14.50%"
+    },
+    "Lingerie & Underwear": {
+      "Lingerie Accessories": "14.50%",
+      "Bras": "14.50%",
+      "Others": "14.50%",
+      "Panties": "14.50%",
+      "Protective Underwear": "14.50%",
+      "Lingerie Sets": "14.50%",
+      "Sexy Lingerie": "14.50%",
+      "Shapewear": "14.50%",
+      "Thermal Underwear": "14.50%"
+    },
+    "Maternity Wear": {
+      "Nursing Wear": "14.50%",
+      "Maternity Pants, Skirts": "14.50%",
+      "Maternity Dresses": "14.50%",
+      "Maternity Sets": "14.50%",
+      "Maternity Tops": "14.50%",
+      "Nursing Bras": "14.50%",
+      "Others": "14.50%"
+    },
+    "Others": "14.50%",
+    "Pants": {
+      "Leggings": "14.50%",
+      "Others": "14.50%",
+      "Long Pants": "14.50%"
+    },
+    "Sets": {
+      "Couple Sets": "14.50%",
+      "Family Sets": "14.50%",
+      "Separates": "14.50%",
+      "Others": "14.50%"
+    },
+    "Shorts": {
+      "Others": "14.50%",
+      "Shorts": "14.50%",
+      "Skorts": "14.50%"
+    },
+    "Skirts": "14.50%",
+    "Sleepwear": {
+      "Robes, Kimono Jackets": "14.50%",
+      "Nightgowns": "14.50%",
+      "Others": "14.50%",
+      "Pajamas": "14.50%"
+    },
+    "Socks & Stockings": {
+      "Others": "14.50%",
+      "Stockings": "14.50%",
+      "Socks": "14.50%"
+    },
+    "Sweaters & Cardigans": "14.50%",
+    "Tops": {
+      "Bodysuits": "14.50%",
+      "Others": "14.50%",
+      "Polo Shirts": "14.50%",
+      "Shirts & Blouses": "14.50%",
+      "T-Shirts": "14.50%",
+      "Camisoles & Tank Tops": "14.50%",
+      "Tube Tops": "14.50%"
+    },
+    "Traditional Wear": {
+      "Pants & Skirts": "14.50%",
+      "Dresses": "14.50%",
+      "Others": "14.50%",
+      "Sets": "14.50%",
+      "Tops": "14.50%"
+    },
+    "Wedding Dresses": "14.50%"
   },
-  "Men's Shoes": {
+  "Women's Footwear": {
     "Boots": {
-      "Fashion Boots": "6.87%",
-      "Others": "6.87%",
-      "Rain Boots": "6.87%",
-      "Work Boots": "6.87%"
-    },
-    "Loafers": "6.87%",
-    "Others": "6.87%",
-    "Oxfords & Dress Shoes": "6.87%",
-    "Sandals & Slippers": {
-      "Flip Flops": "6.87%",
-      "Massage Slippers": "6.87%",
-      "House Slippers": "6.87%",
-      "Others": "6.87%",
-      "Sandals": "6.87%"
-    },
-    "Shoe Accessories": {
-      "Others": "6.87%",
-      "Shoe Care & Cleaning": "6.87%",
-      "Shoe Deodorizers": "6.87%",
-      "Shoe Trees & Shapers": "6.87%",
-      "Insoles": "6.87%",
-      "Shoelaces": "6.87%"
-    },
-    "Slip-ons": "6.87%",
-    "Sneakers": "6.87%"
-  },
-  "Women's Shoes": {
-    "Boots": {
-      "Fashion Boots": "6.87%",
-      "Others": "6.87%",
-      "Rain Boots": "6.87%"
+      "Fashion Boots": "13.70%",
+      "Others": "13.70%",
+      "Rain Boots": "13.70%"
     },
     "Sandals & Slippers": {
-      "Flat Sandals": "6.87%",
-      "Flip Flops": "6.87%",
-      "Massage Slippers": "6.87%",
-      "House Slippers": "6.87%",
-      "Others": "6.87%"
+      "Flat Sandals": "14.50%",
+      "Flip-flops & Thong Sandals": "14.50%",
+      "Massage Slippers": "14.50%",
+      "Indoor Slippers": "14.50%",
+      "Others": "14.50%"
     },
     "Flats": {
-      "Ballet Flats": "6.87%",
-      "Loafers": "6.87%",
-      "Others": "6.87%",
-      "Oxfords & Lace-ups": "6.87%",
-      "Slip-ons & Ballet Shoes": "6.87%"
+      "Ballet Flats": "14.50%",
+      "Loafers": "12.60%",
+      "Others": "12.60%",
+      "Oxfords & Lace-ups": "13.70%",
+      "Mules & Doll Shoes": "14.50%"
     },
-    "High Heels": "6.87%",
-    "Others": "6.87%",
+    "Heels": "14.50%",
+    "Others": "12.60%",
     "Shoe Accessories & Care": {
-      "Insoles": "6.87%",
-      "Others": "6.87%",
-      "Shoe Care & Cleaning": "6.87%",
-      "Shoe Deodorizers": "6.87%",
-      "Shoe Trees & Shapers": "6.87%",
-      "Shoelaces": "6.87%"
+      "Insoles": "14.50%",
+      "Others": "14.50%",
+      "Shoe Care & Cleaning": "13.70%",
+      "Shoe Deodorizers": "13.70%",
+      "Shoe Horns & Trees": "13.70%",
+      "Shoelaces": "13.70%"
     },
-    "Sneakers": "6.87%",
-    "Wedges": "6.87%"
+    "Sneakers": "13.70%",
+    "Wedges": "13.70%"
   },
-  "Computers & Laptops": {
-    "Storage Devices": {
-      "CDs": "6.38%",
-      "USB & OTG": "6.38%",
-      "Hard Drive Enclosures": "6.38%",
-      "External Hard Drives": "6.38%",
-      "Network Storage (NAS)": "6.38%",
-      "Others": "6.38%",
-      "SSD Drives": "6.38%"
-    },
-    "Computer Components": {
-      "Fans & Cooling": "6.38%",
-      "Graphics Cards": "6.38%",
-      "Motherboards": "6.38%",
-      "Optical Drives": "6.38%",
-      "Others": "6.38%",
-      "Computer Cases": "6.38%",
-      "Power Supplies": "6.38%",
-      "Processors (CPU)": "6.38%",
-      "RAM": "6.38%",
-      "Sound Cards": "6.38%",
-      "Thermal Paste": "6.38%",
-      "UPS": "6.38%"
-    },
-    "Desktop Computers": {
-      "All-in-One PCs": "1.96%",
-      "Desktop PC Sets": "1.96%",
-      "Mini PCs": "1.96%",
-      "Others": "1.96%",
-      "Servers": "1.96%"
-    },
-    "Mouse & Keyboards": {
-      "Graphics Tablets": "6.38%",
-      "Computer Keyboards": "6.38%",
-      "Computer Mice": "6.38%",
-      "Others": "6.38%"
-    },
-    "Laptops": "1.96%",
-    "Monitors": "6.38%",
-    "Networking Equipment": {
-      "KVM Switches": "6.38%",
-      "Routers": "6.38%",
-      "Computer Cables": "6.38%",
-      "Network Switches": "6.38%",
-      "Others": "6.38%",
-      "Network Adapters": "6.38%",
-      "Print Servers": "6.38%",
-      "WiFi Extenders": "6.38%",
-      "USB WiFi Adapters": "6.38%"
-    },
-    "Office Equipment": {
-      "Time Clocks": "6.87%",
-      "Money Counters": "6.87%",
-      "Others": "6.87%",
-      "Paper Shredders": "6.87%",
-      "Typewriters": "6.87%"
-    },
-    "Other Computer Accessories": "6.38%",
-    "Computer Accessories": {
-      "Laptop Cooling Pads": "6.38%",
-      "Keyboard Stickers": "6.38%",
-      "Laptop Batteries": "6.38%",
-      "Laptop Chargers": "6.38%",
-      "Laptop Skins & Cases": "6.38%",
-      "Laptop Stands": "6.38%",
-      "Mouse Pads": "6.38%",
-      "Others": "6.38%",
-      "USB Hubs & Card Readers": "6.38%",
-      "Video Conferencing Equipment": "6.38%",
-      "Webcams": "6.38%"
-    },
-    "Printers & Scanners": {
-      "3D Printers": "6.38%",
-      "Ink & Cartridges": "6.38%",
-      "Others": "6.38%",
-      "Printers, Scanners & Copiers": "6.38%",
-      "Barcode Printers": "6.38%"
-    },
-    "Software": "6.38%"
-  },
-  "Mother & Baby": {
-    "Baby Travel Accessories": {
-      "Diaper Bags": "6.87%"
+  "Mom & Baby": {
+    "Baby Travel Gear": {
+      "Diaper Bags": "14.20%"
     },
     "Baby Feeding": {
-      "Bibs": "7.95%",
-      "Baby Bottles": {
-        "Bottle Cleaning Tools": "7.95%",
-        "Bottle Warmers": "7.95%",
-        "Baby Bottles & Accessories": "7.95%",
-        "Others": "7.95%",
-        "Bottle Sterilizers": "7.95%",
-        "Bottle Warmers": "7.95%"
-      },
-      "Breastfeeding Accessories": {
-        "Breast Pads": "7.95%",
-        "Breast Pumps & Accessories": "7.95%",
-        "Milk Storage Bags": "7.95%",
-        "Nursing Covers": "7.95%",
-        "Others": "7.95%"
-      },
-      "Food Processors": "7.95%",
-      "High Chairs": "7.95%",
-      "Others": "7.95%",
-      "Pacifiers": "7.95%",
-      "Baby Tableware": {
-        "Cups & Bottles": "7.95%",
-        "Food Storage": "7.95%",
-        "Baby Utensils": "7.95%",
-        "Others": "7.95%"
-      }
+      "Bibs": "14.50%",
+      "Bottles": "14.50%",
+      "Breastfeeding Supplies": "13.70%",
+      "Food Processors & Choppers": "14.50%",
+      "High Chairs & Booster Seats": "13.70%",
+      "Others": "14.50%",
+      "Pacifiers & Soothers": "14.50%",
+      "Utensils & Dishes": "14.50%"
     },
-    "Gift Sets": "7.95%",
-    "Mother Accessories": {
-      "Maternity Pillows": "7.95%",
-      "Others": "7.95%",
-      "Support Belts": "7.95%"
+    "Sets & Gift Bundles": "14.50%",
+    "Mom's Accessories": {
+      "Maternity Pillows": "14.50%",
+      "Others": "14.50%",
+      "Belly Support Belts": "14.50%"
     },
-    "Mother Health Care": {
-      "Vitamins & Supplements": "7.95%",
-      "Moisturizers": "7.95%"
+    "Mom's Health": {
+      "Vitamins & Supplements for Moms": "14.50%",
+      "Maternity Skin Care": "14.50%"
     },
-    "Baby Bedroom": {
-      "Cribs & Beds": "7.95%",
-      "Bedding": {
-        "Bed Sheets": "7.95%",
-        "Blankets & Swaddles": "7.95%",
-        "Others": "7.95%",
-        "Pillows": "7.95%"
-      },
-      "Storage & Furniture": "7.95%"
+    "Baby Nursery": {
+      "Cribs, Bassinets & Cots": "13.70%",
+      "Mattresses & Bedding": "14.50%",
+      "Shelves & Storage Units": "13.70%"
     },
     "Toys": {
-      "Baby & Toddler Toys": {
-        "Playpens": "6.87%",
-        "Teething Toys": "6.87%"
-      },
-      "Baby Health Care": {
-        "Oral Care": "5.30%",
-        "Skin Care": {
-          "Others": "5.30%"
-        },
-        "Others": "5.30%"
-      },
-      "Baby Safety": {
-        "Safety Gates": "7.85%",
-        "Crib Bumpers & Guards": "7.85%",
-        "Corner Guards": "7.85%",
-        "Baby Monitors": "7.85%",
-        "Mosquito Nets": "7.85%",
-        "Others": "7.85%",
-        "Safety Locks & Straps": "7.85%"
-      }
+      "Infant & Toddler Toys": "14.20%"
+    },
+    "Baby Health & Wellness": {
+      "Baby Oral Care": "13.70%",
+      "Baby Skin Care": "13.70%",
+      "Others": "13.70%"
+    },
+    "Baby Safety": {
+      "Safety Gates & Guards": "14.20%",
+      "Crib Bumpers, Liners & Bed Rails": "14.20%",
+      "Corner & Edge Guards": "14.20%",
+      "Baby Monitors": "14.20%",
+      "Mosquito Nets": "14.20%",
+      "Others": "14.20%",
+      "Locks & Safety Straps": "14.20%"
+    },
+    "Baby Travel Gear": {
+      "Baby Carriers": "14.20%",
+      "Car & Motorcycle Seats": "11.50%",
+      "Car Seat & Stroller Accessories": "14.20%",
+      "Harnesses & Leashes": "14.20%",
+      "Others": "14.20%",
+      "Stroller Accessories": "14.20%",
+      "Strollers": "11.50%"
+    },
+    "Baby Bath & Body Care": {
+      "Baby Perfumes": "14.20%",
+      "Newborn Care Sets": "14.20%",
+      "Baby Laundry Detergents & Softeners": "14.20%",
+      "Bathrobes, Towels & Face Towels": "14.20%",
+      "Bath Tools & Accessories": "14.20%",
+      "Bathtubs & Bath Seats": "14.20%",
+      "Baby Body Wash & Shampoo": "14.20%",
+      "Shampoo Caps": "14.20%"
+    },
+    "Diapers & Potty Training": {
+      "Toilet Trainers & Potties": "12.60%",
+      "Others": "12.60%",
+      "Diaper Changing Pads": "12.60%",
+      "Cloth Diapers & Accessories": "12.60%",
+      "Disposable Diapers": "12.60%"
+    },
+    "Mom's Health": {
+      "Maternity Milk": "14.50%",
+      "Others": "14.50%"
+    },
+    "Baby Nursery": {
+      "Bouncers, Rockers & Swings": "13.70%",
+      "Others": "13.70%",
+      "Walkers": "13.70%"
+    },
+    "Others": "13.70%",
+    "Toys": {
+      "Building Blocks": "14.20%",
+      "Dolls & Stuffed Animals": "14.20%",
+      "Educational Toys": "14.20%",
+      "Others": "14.20%",
+      "Role-playing Toys": "14.20%",
+      "Robotic Toys": "14.20%",
+      "Slime & Putty Toys": "14.20%",
+      "Outdoor & Sports Toys": "14.20%",
+      "Toy Vehicles": "14.20%"
+    },
+    "Formula & Baby Food": {
+      "Porridge, Purees & Cereals": "12.60%",
+      "Baby Snacks": "12.60%",
+      "Others": "12.60%",
+      "Ready-to-drink Milk": "12.60%",
+      "Formula Milk": "10.50%"
     }
   },
   "Beauty": {
     "Bath & Body Care": {
-      "Body Lotions & Creams": "7.95%",
-      "Body Deodorants": "7.95%",
-      "Body Masks": "7.95%",
-      "Body Oils": "7.95%",
-      "Body Scrubs": "7.95%",
-      "Soaps & Body Wash": "7.95%",
-      "Breast Care": "7.95%",
-      "Hair Removal": "7.95%",
-      "Massage Oils": "7.95%",
-      "Others": "7.95%",
-      "Sun Care": {
-        "Sunscreen & After Sun Care": "7.95%",
-        "Others": "7.95%",
-        "Tanning Products": "7.95%"
-      }
+      "Body Lotions & Creams": "15.80%",
+      "Deodorants": "15.80%",
+      "Body Masks": "15.80%",
+      "Body Oils": "15.80%",
+      "Body Scrubs": "15.80%",
+      "Soaps & Body Washes": "15.80%",
+      "Breast Care": "15.80%",
+      "Hair Removal Creams & Wax": "15.80%",
+      "Massage Oils": "15.80%",
+      "Others": "15.80%",
+      "Sunscreen": "15.80%"
     },
-    "Beauty Gift Sets": "7.95%",
+    "Beauty Sets & Kits": "14.20%",
     "Beauty Tools": {
-      "Body Slimming Tools": "7.95%",
-      "Face Care Tools": {
-        "Cleansing Tools": "7.95%",
-        "Face Massage Tools": "7.95%",
-        "Facial Steamers": "7.95%",
-        "Others": "7.95%"
-      },
-      "Hair Removal Tools": "7.95%",
-      "Hair Care Tools": {
-        "Hair Brushes": "7.95%",
-        "Hair Dryers": "7.95%",
-        "Hair Styling Tools": "7.95%",
-        "Heat-Free Hair Tools": "7.95%",
-        "Others": "7.95%"
-      },
-      "Makeup Tools": {
-        "Cotton Pads": "7.95%",
-        "Eyebrow Stencils": "7.95%",
-        "Eyelash Curlers": "7.95%",
-        "Eyelid Tape & Glue": "7.95%",
-        "False Eyelashes": "7.95%",
-        "Makeup Bags": "7.95%",
-        "Brush Cleaners": "7.95%",
-        "Makeup Brushes": "7.95%",
-        "Mirrors": "7.95%",
-        "Others": "7.95%",
-        "Pencil Sharpeners": "7.95%",
-        "Makeup Sponges": "7.95%"
-      },
-      "Others": "7.95%"
+      "Body Slimming Tools": "14.20%",
+      "Facial Tools": "14.20%",
+      "Hair Removal Tools": "11.50%",
+      "Hair Styling Tools": "14.20%",
+      "Makeup Tools": "15.80%",
+      "Others": "14.20%"
     },
     "Hair Care": {
-      "Conditioners": "7.95%",
-      "Hair Color": "7.95%",
-      "Hair Styling": "7.95%",
-      "Hair Treatments": "7.95%",
-      "Others": "7.95%",
-      "Shampoos": "7.95%"
+      "Conditioners": "15.80%",
+      "Hair Dyes": "15.80%",
+      "Hair Styling Products": "15.80%",
+      "Hair Treatments": "15.80%",
+      "Others": "15.80%",
+      "Shampoos": "15.80%"
     },
     "Hand, Foot & Nail Care": {
-      "Foot Care": {
-        "Foot Deodorizers": "7.95%",
-        "Foot Masks": "7.95%",
-        "Foot Creams & Oils": "7.95%",
-        "Others": "7.95%"
-      },
-      "Hand Care": {
-        "Hand Masks": "7.95%",
-        "Hand Soaps": "7.95%",
-        "Hand Creams & Oils": "7.95%",
-        "Others": "7.95%"
-      },
-      "Nail Care": {
-        "Fake Nails": "7.95%",
-        "Base & Top Coats": "7.95%",
-        "Nail Tools": "7.95%",
-        "Nail Stickers": "7.95%",
-        "Nail Gel": "7.95%",
-        "Nail Polish": "7.95%",
-        "Nail Polish Removers": "7.95%",
-        "Nail Treatments": "7.95%",
-        "Others": "7.95%"
-      },
-      "Others": "7.95%"
+      "Foot Care": "15.80%",
+      "Hand Care": "15.80%",
+      "Nail Care": "15.80%",
+      "Others": "15.80%"
     },
     "Makeup": {
-      "Eye Makeup": {
-        "Eye Primers": "7.95%",
-        "Eyebrow Products": "7.95%",
-        "Eyeliners": "7.95%",
-        "Eyeshadows": "7.95%",
-        "Mascaras": "7.95%",
-        "Others": "7.95%"
-      },
-      "Face Makeup": {
-        "BB & CC Creams": "7.95%",
-        "Blush": "7.95%",
-        "Contouring & Highlighting": "7.95%",
-        "Concealers": "7.95%",
-        "Foundations": "7.95%",
-        "Face Primers": "7.95%",
-        "Others": "7.95%",
-        "Face Powders": "7.95%",
-        "Setting Sprays": "7.95%"
-      },
-      "Lip Makeup": {
-        "Lip Gloss": "7.95%",
-        "Lip Liners": "7.95%",
-        "Lip Plumpers": "7.95%",
-        "Lip Tints": "7.95%",
-        "Lipsticks": "7.95%",
-        "Others": "7.95%"
-      },
-      "Makeup Removers": "7.95%",
-      "Others": "7.95%"
+      "Eye Makeup": "15.80%",
+      "Face Makeup": "15.80%",
+      "Lip Makeup": "15.80%",
+      "Makeup Removers": "15.80%",
+      "Others": "15.80%"
     },
-    "Men's Care": {
-      "Body Wash & Care": "7.95%",
-      "Hair Care": "7.95%",
-      "Others": "7.95%",
-      "Shaving & Hair Removal": {
-        "After Shave Care": "7.95%",
-        "Shaving Creams & Gels": "7.95%",
-        "Others": "7.95%",
-        "Razors": "7.95%",
-        "Electric Shavers": "7.95%",
-        "Shaving Accessories": "7.95%",
-        "Shaving Brushes": "7.95%",
-        "Multi-function Shavers": "7.95%"
-      },
-      "Skin Care": {
-        "Face Cleansers": "7.95%",
-        "Moisturizers & Treatments": "7.95%",
-        "Others": "7.95%"
-      }
+    "Men's Grooming": {
+      "Body Wash & Body Care": "15.80%",
+      "Hair Care": "15.80%",
+      "Others": "15.80%",
+      "Shaving & Trimming Products": "15.80%",
+      "Skin Care": "15.80%"
     },
-    "Others": "7.95%",
-    "Fragrances": "7.95%",
-    "Skin Care": {
-      "Acne Treatments": "7.95%",
-      "After Sun Care": "7.95%",
-      "Oil Blotting Papers": "7.95%",
-      "Eye Care": {
-        "Eye Creams": "7.95%",
-        "Eye Masks": "7.95%",
-        "Lash & Brow Serums": "7.95%",
-        "Others": "7.95%"
-      },
-      "Face Masks": "7.95%",
-      "Face Scrubs": "7.95%",
-      "Face Sunscreen": "7.95%",
-      "Face Cleansers": "7.95%",
-      "Face Mists": "7.95%",
-      "Face Moisturizers": "7.95%",
-      "Face Oils": "7.95%",
-      "Serums & Treatments": "7.95%",
-      "Lip Care": {
-        "Lip Balms": "7.95%",
-        "Lip Masks": "7.95%",
-        "Lip Scrubs": "7.95%",
-        "Others": "7.95%"
-      },
-      "Others": "7.95%",
-      "Toners": "7.95%"
+    "Others": "15.80%",
+    "Perfumes": "15.80%",
+    "Skincare": {
+      "Acne Treatment": "15.80%",
+      "After-sun Care": "15.80%",
+      "Oil Blotting Paper": "15.80%",
+      "Eye Care": "15.80%",
+      "Face Masks": "15.80%",
+      "Facial Scrubs": "15.80%",
+      "Facial Sunscreen": "15.80%",
+      "Facial Cleansers": "15.80%",
+      "Facial Mists": "15.80%",
+      "Moisturizers": "15.80%",
+      "Face Oils": "15.80%",
+      "Serums": "15.80%",
+      "Lip Care": "15.80%",
+      "Others": "15.80%",
+      "Toners": "15.80%"
     }
+  },
+  "Health": {
+    "Health Supplements": {
+      "Beauty Supplements": "14.20%",
+      "Muscle Gain Supplements": "14.20%",
+      "Others": "14.20%",
+      "Weight Management Supplements": "15.80%",
+      "Wellness Supplements": "15.80%"
+    },
+    "Others": "14.20%",
+    "Personal Care": {
+      "Insect & Mosquito Repellents": "15.80%",
+      "Adult Diapers": "15.80%",
+      "Ear Care": "15.80%",
+      "Eye Care": "15.80%",
+      "Feminine Care": "15.80%",
+      "Hand Sanitizers": "15.80%",
+      "Massage & Therapy Tools": "13.70%",
+      "Oral Care": "15.80%",
+      "Others": "15.80%"
+    },
+    "Sexual Wellness": {
+      "Condoms": "15.80%",
+      "Lubricants": "15.80%",
+      "Others": "15.80%",
+      "Sexual Enhancers": "15.80%"
+    },
+    "Medical Supplies": {
+      "First Aid": "14.20%",
+      "Health Monitors & Testers": "14.20%",
+      "Injury & Disability Support": "14.20%",
+      "Lab Supplies": "14.20%",
+      "Medical Gloves & Face Masks": "14.20%",
+      "Nasal Care": "14.20%",
+      "Others": "14.20%",
+      "Over-the-counter Medicine": "14.20%",
+      "Topical Pain Relievers": "14.20%",
+      "Prescription Medicine": "14.20%",
+      "Body Weight & Analysis Scales": "14.20%",
+      "Stethoscopes": "14.20%",
+      "Traditional Medicine": "14.20%"
+    }
+  },
+  "Food & Beverages": {
+    "Alcoholic Beverages": {
+      "Beer & Cider": "14.20%",
+      "Spirits & Liquor": "14.20%",
+      "Others": "14.20%",
+      "Sake, Soju & Umeshu": "14.20%",
+      "Wine & Champagne": "14.20%"
+    },
+    "Baking Supplies": {
+      "Decorations": "14.20%",
+      "Flavors & Extracts": "14.20%",
+      "Baking Powder & Baking Soda": "14.20%",
+      "Baking Mixes": "14.20%",
+      "Flour": "14.20%",
+      "Coloring": "14.20%",
+      "Others": "14.20%"
+    },
+    "Gift Sets": "13.70%",
+    "Others": "12.60%",
+    "Baked Goods": {
+      "Bread": "12.60%",
+      "Cakes": "12.60%",
+      "Others": "12.60%",
+      "Pastries": "12.60%"
+    },
+    "Beverages": {
+      "Carbonated Drinks": "12.60%",
+      "Chocolate Drinks": "12.60%",
+      "Coffee": "12.60%",
+      "Syrups & Concentrates": "12.60%",
+      "Desserts": "12.60%",
+      "Toppings": "12.60%",
+      "Energy Drinks": "12.60%",
+      "Juice": "12.60%",
+      "Plant-based Milk": "12.60%",
+      "Others": "12.60%",
+      "Drink Mixes": "12.60%",
+      "Tea & Tea Bags": "12.60%",
+      "Herbal Tea": "12.60%",
+      "Water": "12.60%"
+    },
+    "Cereals & Spreads": {
+      "Snack Bars": "12.60%",
+      "Cereals": "12.60%",
+      "Honey & Syrup": "12.60%",
+      "Jams & Spreads": "12.60%",
+      "Others": "12.60%"
+    },
+    "Ready-to-Eat Food": {
+      "Canned & Packaged Food": "12.60%",
+      "Instant Hotpot": "12.60%",
+      "Instant Noodles": "12.60%",
+      "Instant Rice & Porridge": "12.60%",
+      "Others": "12.60%"
+    },
+    "Cooking Ingredients": {
+      "Seasoning Mixes & Powders": "12.60%",
+      "Food Additives": "12.60%",
+      "Coating Powders": "12.60%",
+      "Cooking Oil": "12.60%",
+      "Others": "12.60%",
+      "Spices & Flavorings": "12.60%",
+      "Sauces & Instant Soups": "12.60%",
+      "Sugar": "12.60%",
+      "Sweeteners": "12.60%"
+    },
+    "Dairy & Eggs": {
+      "Tofu": "13.70%",
+      "Butter & Margarine": "13.70%",
+      "Cheese & Cheese Powder": "13.70%",
+      "Creamer": "13.70%",
+      "Eggs": "13.70%",
+      "Ice Cream": "13.70%",
+      "Milk": "13.70%",
+      "Others": "13.70%",
+      "Yogurt": "13.70%"
+    },
+    "Pantry Staples": {
+      "Canned Food": "12.60%",
+      "Dried Food": "12.60%",
+      "Noodles": "12.60%",
+      "Others": "12.60%",
+      "Pasta": "12.60%",
+      "Pickled Vegetables": "12.60%",
+      "Rice": "12.60%"
+    },
+    "Fresh & Frozen Food": {
+      "Frozen Ready-to-Eat Food": "12.60%",
+      "Fruits": "12.60%",
+      "Meat": "12.60%",
+      "Mushrooms": "12.60%",
+      "Others": "12.60%",
+      "Processed Meat & Seafood": "12.60%",
+      "Seafood": "12.60%",
+      "Vegetables": "12.60%",
+      "Vegetarian Meat": "12.60%"
+    },
+    "Snacks": {
+      "Biscuits & Cookies": "12.60%",
+      "Potato Chips": "12.60%",
+      "Chocolate": "12.60%",
+      "Dried Snacks": "12.60%",
+      "Dried Beans": "12.60%",
+      "Others": "12.60%",
+      "Popcorn": "12.60%",
+      "Pudding, Jelly & Gummies": "12.60%",
+      "Instant Seaweed": "12.60%",
+      "Dried Nuts": "12.60%",
+      "Candy": "12.60%"
+    }
+  },
+  "Pet Care": {
+    "Pet Hygiene & Potty": {
+      "Cat Litter Boxes & Trays": "13.70%",
+      "Pet Diapers": "13.70%",
+      "Dog Potty Training Trays": "13.70%",
+      "Others": "13.70%",
+      "Waste Bags & Scoopers": "13.70%",
+      "Small Pet Bedding": "13.70%"
+    },
+    "Others": "13.70%",
+    "Pet Accessories": {
+      "Aquarium & Aquatic Supplies": "13.70%",
+      "Bowls & Feeders": "13.70%",
+      "Collars, Leashes & Muzzles": "13.70%",
+      "Others": "13.70%",
+      "Pet Furniture": "13.70%",
+      "Toys": "13.70%",
+      "Travel Gear": "13.70%"
+    },
+    "Pet Apparel & Accessories": {
+      "Shoes, Socks & Paw Protectors": "13.70%",
+      "Eyewear": "13.70%",
+      "Fur Accessories": "13.70%",
+      "Pet Hats & Headwear": "13.70%",
+      "Neck Accessories": "13.70%",
+      "Others": "13.70%",
+      "Pet Clothing": "13.70%",
+      "Pet Raincoats": "13.70%"
+    },
+    "Pet Food": {
+      "Fish Food": "14.20%",
+      "Bird Food": "14.20%",
+      "Cat Food": "14.20%",
+      "Cat Snacks": "14.20%",
+      "Dog Food": "14.20%",
+      "Dog Snacks": "14.20%",
+      "Others": "14.20%",
+      "Reptile Food": "14.20%",
+      "Small Pet Food": "14.20%",
+      "Small Pet Snacks": "14.20%"
+    },
+    "Pet Grooming": {
+      "Nail Care": "13.70%",
+      "Grooming Supplies": "13.70%",
+      "Oral Care": "13.70%",
+      "Others": "13.70%"
+    },
+    "Pet Health Care": {
+      "Dewormers & Flea & Tick Control": "14.20%",
+      "Medicines": "14.20%",
+      "Others": "14.20%",
+      "Vitamins & Supplements": "14.20%"
+    }
+  },
+  "Automotive": {
+    "Car Exterior Accessories": {
+      "Antennas": "13.70%",
+      "Car Covers": "13.70%",
+      "Trim Strips": "13.70%",
+      "Rain Guards": "13.70%",
+      "Horns & Accessories": "13.70%",
+      "License Plate Accessories": "13.70%",
+      "Mirrors & Accessories": "13.70%",
+      "Mudguards": "13.70%",
+      "Others": "13.70%",
+      "Door Scuff Plates": "13.70%",
+      "Stickers, Logos, Emblems": "13.70%"
+    },
+    "Car Interior Accessories": {
+      "Speaker Systems": "14.20%",
+      "Dash Cams & Reverse Cameras": "11.50%",
+      "Car Air Mattresses": "14.20%",
+      "Floor Mats & Liners": "11.50%",
+      "HUD, Speedometers, Digital Gauges": "11.50%",
+      "Locks & Anti-theft Devices": "14.20%",
+      "GPS & Audio/Visual Systems": "11.50%",
+      "Storage Organizers": "14.20%",
+      "Others": "14.20%",
+      "Pedals & Gear Knobs": "11.50%",
+      "Car Perfumes, Air Fresheners, Air Purifiers": "14.20%",
+      "Phone Holders": "14.20%",
+      "Pillows & Backrests": "14.20%",
+      "Seats & Seat Covers": "14.20%",
+      "Steering Wheels & Covers": "14.20%",
+      "Sunshades & Dashboard Covers": "14.20%",
+      "USB Chargers, FM Transmitters & Bluetooth Devices": "14.20%"
+    },
+    "Car Parts": {
+      "Bearings & Seals": "13.70%",
+      "Drivetrain & Transmission": "13.70%",
+      "Chassis & Suspension": "8.50%",
+      "Brake System": "13.70%",
+      "Transmission, Gearbox & Clutch": "13.70%",
+      "Electrical Parts": "13.70%",
+      "Engine Parts": "13.70%",
+      "Exhaust System": "8.50%",
+      "Fuel System": "13.70%",
+      "Others": "13.70%",
+      "Radiators, Cooling & Thermostat": "13.70%",
+      "Shock Absorbers, Struts & Suspension": "13.70%",
+      "Tires & Accessories": "13.70%",
+      "Wheels, Rims & Accessories": "13.70%",
+      "Wipers & Windshield Washers": "13.70%"
+    },
+    "Car Care": {
+      "Window Cleaners & Rain Repellents": "13.70%",
+      "Interior Care": "13.70%",
+      "Others": "13.70%",
+      "Polishes, Waxes & Sealants": "13.70%",
+      "Tire & Rim Care": "13.70%",
+      "Cleaning Solutions": "13.70%"
+    },
+    "Car Keychains & Key Covers": "13.70%",
+    "Car Oils & Fluids": {
+      "Antifreeze & Coolant": "14.20%",
+      "Engine Oil": "14.20%",
+      "Additives": "14.20%",
+      "Greases & Lubricants": "14.20%"
+    }
+  },
+  "Automotive": {
+    "Oils & Additives": {
+      "Oils": "14.20%",
+      "Others": "14.20%"
+    },
+    "Repair Tools": {
+      "Others": "12.60%",
+      "Inspection, Diagnostic & Repair Tools": "12.60%",
+      "Tire Pressure Gauges": "12.60%"
+    },
+    "Vehicle Services": "13.70%",
+    "Others": "13.70%"
+  },
+  "Books & Magazines": {
+    "Books": {
+      "Action, Crime & Horror Literature": "12.60%",
+      "Adult Books": "12.60%",
+      "Agriculture, Forestry & Fishery Books": "12.60%",
+      "Art, Design & Photography Books": "12.60%",
+      "Audiobooks": "12.60%",
+      "Fabric Books": "12.60%",
+      "Biographies & Memoirs": "12.60%",
+      "Business & Economics Books": "12.60%",
+      "Career & Self-help Books": "12.60%",
+      "Children's Books": "12.60%",
+      "Classic Literature": "12.60%",
+      "Comics": "12.60%",
+      "Information Technology Books": "12.60%",
+      "Educational Books": "12.60%",
+      "Fantasy Literature": "12.60%",
+      "Health, Fitness & Dieting Books": "12.60%",
+      "History & Culture Books": "12.60%",
+      "Hobbies Books": "12.60%",
+      "Astrology Books": "12.60%",
+      "Language Learning & Dictionaries": "12.60%",
+      "LGBTQ+ Literature": "12.60%",
+      "Light Novels": "12.60%",
+      "Medical Books": "12.60%",
+      "Music Books": "12.60%",
+      "Others": "12.60%",
+      "Family & Relationships Books": "12.60%",
+      "Politics, Law & Science Books": "12.60%",
+      "Psychology Books": "12.60%",
+      "Cookbooks": "12.60%",
+      "Religion & Philosophy Books": "12.60%",
+      "Romance Literature": "12.60%",
+      "Science & Mathematics": "12.60%",
+      "Sticker & Coloring Books": "12.60%",
+      "Travel Books": "12.60%"
+    },
+    "E-Books": "12.60%",
+    "Magazines & Newspapers": {
+      "Business Magazines": "12.60%",
+      "Lifestyle Magazines": "12.60%",
+      "Others": "12.60%",
+      "Teen Magazines": "12.60%"
+    },
+    "Others": "12.60%"
+  },
+  "Hobbies & Collectibles": {
+    "Tapes & Discs": "13.70%",
+    "Collectibles": {
+      "Character Figures": "12.60%",
+      "Anime & Manga Collectibles": "12.60%",
+      "Coin & Paper Money Collectibles": "12.60%",
+      "Celebrity Collectibles": "12.60%",
+      "Mecha/Gundam Models": "12.60%",
+      "Others": "12.60%",
+      "Sports Collectibles": "12.60%",
+      "Static Figures": "12.60%",
+      "Stones & Minerals": "12.60%",
+      "Diecast Cars": "12.60%"
+    },
+    "Musical Instruments & Accessories": {
+      "Piano & Organ": "9.40%",
+      "Musical Accessories": "13.70%",
+      "Others": "13.70%",
+      "Percussion Instruments": "9.40%",
+      "String Instruments": "9.40%",
+      "Flutes & Horns": "13.70%"
+    },
+    "Sewing & Craft Tools": "13.70%",
+    "Others": "13.70%",
+    "Photo Albums": "13.70%",
+    "Souvenirs": {
+      "Piggy Banks": "13.70%",
+      "Magnets": "13.70%",
+      "Handheld Fans": "13.70%",
+      "Keychains": "13.70%",
+      "Others": "13.70%"
+    },
+    "Toys & Hobbies": {
+      "Gachapon Toys": "13.70%",
+      "Card Games & Board Games": "13.70%",
+      "Kendama": "13.70%",
+      "Magic Toys": "13.70%",
+      "Others": "13.70%",
+      "Prank Toys": "13.70%",
+      "Remote Control Toys": "13.70%",
+      "Rubik's Cubes": "13.70%",
+      "Spinning Tops": "13.70%",
+      "Yo-yos": "13.70%"
+    },
+    "Vinyl Records": "13.70%"
+  },
+  "Home & Living": {
+    "Bathroom Supplies": {
+      "Bath Sponges": "14.20%",
+      "Bathroom Shelves": "14.20%",
+      "Bathtubs": "11.50%",
+      "Others": "14.20%",
+      "Safety Grab Bars": "14.20%",
+      "Shower Caps": "14.20%",
+      "Shower Curtains": "14.20%",
+      "Bath Chairs, Anti-slip Chairs": "14.20%",
+      "Shower Heads & Bidets": "14.20%",
+      "Soap Dishes": "14.20%",
+      "Toilets, Seats & Lids": "11.50%",
+      "Toothbrush Holders, Toothpaste Dispensers": "14.20%",
+      "Face Towels, Bath Towels, Bathrobes": "14.20%"
+    },
+    "Bedding": {
+      "Bed Sheets, Pillowcases": "13.70%",
+      "Blankets, Quilts": "13.70%",
+      "Body Pillows": "14.20%",
+      "Cooling Mats": "14.20%",
+      "Mattress Protectors, Toppers": "13.70%",
+      "Mattresses": "8.50%",
+      "Mosquito Nets": "13.70%",
+      "Others": "14.20%",
+      "Pillows": "14.20%"
+    },
+    "Home Decor": {
+      "Candles & Candle Holders": "14.20%",
+      "Rugs & Carpets": "14.20%",
+      "Clocks": "14.20%",
+      "Curtains, Blinds": "14.20%",
+      "Doormats": "14.20%",
+      "Decorative Flowers": "14.20%",
+      "Furniture Covers": "14.20%",
+      "Mirrors": "13.70%",
+      "Others": "14.20%",
+      "Picture Frames & Wall Decor": "14.20%",
+      "Tablecloths": "14.20%",
+      "Decorative Vases": "14.20%",
+      "Decals, Wallpapers": "14.20%"
+    },
+    "Dinnerware": {
+      "Bowls": "14.20%",
+      "Cups, Glasses, Mugs": "13.70%",
+      "Cutlery Sets": "14.20%",
+      "Food Covers": "14.20%",
+      "Water Bottles": "14.20%",
+      "Others": "14.20%",
+      "Trays, Placemats": "14.20%",
+      "Plates": "14.20%",
+      "Straws": "14.20%",
+      "Tea Sets": "13.70%",
+      "Water Bottles & Accessories": "14.20%"
+    },
+    "Worship & Feng Shui Items": "14.20%",
+    "Furniture": {
+      "Beds, Bed Frames": "11.50%",
+      "Chairs, Benches, Stools": "11.50%",
+      "Kitchen Cabinets": "11.50%",
+      "Cushions": "14.20%",
+      "Tables": "11.50%",
+      "Door Stops": "14.20%",
+      "Others": "11.50%",
+      "Shelves & Racks": "14.20%",
+      "Sofas": "11.50%",
+      "Wardrobes": "11.50%"
+    },
+    "Gardening": {
+      "Fertilizers": "13.70%",
+      "Garden Decor": "13.70%",
+      "Potting Soil": "13.70%",
+      "Gardening Tools": "13.70%",
+      "Irrigation Systems": "13.70%",
+      "Lawn Mowers, Trimmers": "13.70%",
+      "Others": "13.70%",
+      "Indoor Plants": "13.70%",
+      "Plant Pots": "13.70%",
+      "Seeds & Plant Starters": "13.70%"
+    },
+    "Warm Bags": "14.20%",
+    "Cleaning Supplies": {
+      "Basins, Buckets & Ladles": "13.70%",
+      "Brooms": "13.70%",
+      "Detergents": "13.70%",
+      "Cleaning Brushes": "13.70%",
+      "Cleaning Cloths": "13.70%",
+      "Clotheslines & Drying Racks": "13.70%",
+      "Dust Brushes": "13.70%",
+      "Laundry Accessories": "13.70%",
+      "Mops": "13.70%",
+      "Others": "13.70%",
+      "Pesticides & Insect Control": "13.70%",
+      "Plastic Bags & Trash Bags": "13.70%",
+      "Sponges, Scourers": "13.70%",
+      "Tissues, Wet Wipes": "11.50%",
+      "Toilet Paper": "13.70%",
+      "Trash Cans": "13.70%"
+    },
+    "Air Fresheners": {
+      "Deodorizers, Fresheners": "14.20%",
+      "Diffusers, Humidifiers & Oil Burners": "14.20%",
+      "Aromatherapy Oils": "14.20%",
+      "Others": "14.20%"
+    },
+    "Home Organization": {
+      "Desktop Bookshelves": "14.20%",
+      "Hangers": "14.20%",
+      "Hooks": "14.20%",
+      "Jewelry Boxes": "14.20%",
+      "Laundry Bags, Hampers": "14.20%",
+      "Others": "14.20%",
+      "Shoe Racks, Shoe Boxes": "14.20%",
+      "Storage Boxes, Baskets": "14.20%",
+      "Tissue Boxes": "14.20%",
+      "Wardrobe Organizers": "14.20%"
+    },
+    "Kitchen Tools": {
+      "Aluminum Foil": "14.20%",
+      "Aprons & Oven Mitts": "14.20%",
+      "Baking & Cake Decorating Tools": "14.20%",
+      "Can Openers": "13.70%",
+      "Cutting Boards": "14.20%",
+      "Food Wraps": "14.20%",
+      "Food Storage Containers": "14.20%",
+      "Grates, Graters, Slicers": "14.20%",
+      "Ovens & Accessories": "14.20%",
+      "Kitchen Racks": "14.20%",
+      "Kitchen Scales": "14.20%",
+      "Knives & Scissors": "14.20%",
+      "Lighters, Matches & Fire Starters": "14.20%",
+      "Measuring Glasses & Spoons": "14.20%",
+      "Others": "14.20%",
+      "Pans": "14.20%",
+      "Pots": "14.20%",
+      "Vacuum Sealers": "14.20%",
+      "Spatulas & Tongs": "14.20%",
+      "Strainers": "14.20%",
+      "Coffee & Tea Makers": "14.20%",
+      "Whisks": "14.20%"
+    },
+    "Lamps & Lighting": "14.20%",
+    "Others": "13.70%",
+    "Party Supplies": {
+      "Backdrops, Banners": "13.70%",
+      "Balloons": "13.70%",
+      "Greeting Cards": "13.70%",
+      "Disposable Cups, Plates": "13.70%",
+      "Others": "13.70%",
+      "Party Hats, Masks": "13.70%",
+      "Sashes": "13.70%",
+      "Wooden Clips": "13.70%"
+    },
+    "Home Safety & Security": {
+      "Locks, Padlocks": "11.50%",
+      "Fire Extinguishers": "11.50%",
+      "Others": "11.50%",
+      "Safes": "11.50%"
+    },
+    "Tools & Home Improvement": {
+      "Air Pumps & Accessories": "13.70%",
+      "Building Materials": "12.60%",
+      "Doors & Windows": "12.60%",
+      "Adhesives & Sealants": "13.70%",
+      "Ladders": "12.60%",
+      "Others": "13.70%",
+      "Gloves, Goggles & Masks": "13.70%",
+      "Roofing & Flooring": "13.70%",
+      "Awnings, Tarps": "13.70%",
+      "Sinks & Faucets": "13.70%",
+      "Tools": "13.70%",
+      "Trolleys": "13.70%",
+      "Paints & Waterproofing": "13.70%",
+      "Water Pumps & Accessories": "12.60%"
+    }
+  },
+  "Motorcycles": {
+    "Motorcycle Accessories": {
+      "Storage Boxes": "13.70%",
+      "Floor Mats": "13.70%",
+      "Motorcycle Covers": "13.70%",
+      "Locks & Anti-theft Devices": "13.70%",
+      "Mirrors & Accessories": "13.70%",
+      "Mudguards": "13.70%",
+      "Others": "13.70%",
+      "Phone Holders": "13.70%",
+      "Seats & Seat Covers": "13.70%",
+      "Gauges": "13.70%",
+      "Stickers, Logos, Emblems": "13.70%"
+    },
+    "Helmets & Accessories": "14.20%",
+    "Motorcycle Parts": {
+      "Batteries & Accessories": "13.70%",
+      "Chassis System": "11.50%",
+      "Brake System": "13.70%",
+      "Cables & Hoses": "13.70%",
+      "Drivetrain": "13.70%",
+      "Exhaust System": "13.70%",
+      "Fuel System": "13.70%",
+      "Horns & Accessories": "13.70%",
+      "Ignition & Engine Parts": "13.70%",
+      "Lights": "13.70%",
+      "Others": "13.70%",
+      "Suspension System": "11.50%",
+      "Tires & Accessories": "13.70%",
+      "Wheels, Rims & Accessories": "13.70%"
+    },
+    "Motorcycles": "1.50%",
+    "Others": "13.70%"
+  },
+  "Stationery & Office": {
+    "Art Supplies": {
+      "Acrylic Paints": "13.70%",
+      "Canvases & Easels": "13.70%",
+      "Colored Pencils": "13.70%",
+      "Markers & Pastels": "13.70%",
+      "Oil Paints": "13.70%",
+      "Others": "13.70%",
+      "Paint Brushes": "13.70%",
+      "Palettes": "13.70%",
+      "Sketchbooks": "13.70%",
+      "Watercolors": "13.70%"
+    },
+    "Gifts & Wrapping Paper": {
+    "Bubble Wrap": "11.50%",
+    "Cardboard Boxes": "13.70%",
+    "Gift Bags": "11.50%",
+    "Gift Boxes": "13.70%",
+    "Gift Wrapping Paper": "13.70%",
+    "Others": "13.70%",
+    "Ribbons": "13.70%"
+  },
+  "Letter Supplies": {
+    "Envelopes & Red Packets": "13.70%",
+    "Others": "13.70%",
+    "Postcards": "13.70%",
+    "Stamps": "13.70%"
+  },
+  "Notebooks & Paper": {
+    "Art Paper": "13.70%",
+    "Book Covers": "13.70%",
+    "Bookmarks": "13.70%",
+    "Stickers": "13.70%",
+    "Notebook Inserts": "13.70%",
+    "Note Paper": "13.70%",
+    "Notebooks & Exercise Books": "13.70%",
+    "Others": "13.70%",
+    "Printing Paper": "13.70%",
+    "Thermal Paper": "13.70%"
+  },
+  "Others": "14.20%",
+  "School & Office Supplies": {
+    "Calculators": "13.70%",
+    "Calendars": "14.20%",
+    "Clips & Staplers": "13.70%",
+    "File Organizers": "14.20%",
+    "Glue": "13.70%",
+    "Hole Punches": "14.20%",
+    "Stamp Ink": "14.20%",
+    "Label Makers": "13.70%",
+    "Lanyards & Name Tags": "13.70%",
+    "Others": "14.20%",
+    "Box Cutters & Paper Trimmers": "14.20%",
+    "Pencil Cases": "13.70%",
+    "Rulers & Stencils": "13.70%",
+    "Scissors": "14.20%",
+    "Pencil Sharpeners": "13.70%",
+    "Staplers & Staples": "13.70%",
+    "Tape & Dispensers": "13.70%",
+    "Writing Boards & Easels": "13.70%"
+  },
+  "Pens & Pencils": {
+    "Erasers & Correction Supplies": "13.70%",
+    "Highlighters": "13.70%",
+    "Color Markers": "13.70%",
+    "Others": "13.70%",
+    "Pencils": "13.70%",
+    "Pens & Ink": "13.70%"
   }
+}
 }

@@ -1,6 +1,6 @@
 // reCAPTCHA v3 Service for Firebase SMS
 export class RecaptchaService {
-  private static siteKey ='6Lf7uaArAAAAADroQyHyNX_8Aiaw0KT-R4VI2lxP';
+  private static siteKey =process.env.REACT_APP_RECAPTCHA_SITE_KEY  ;
   // Execute reCAPTCHA v3 for SMS action
   static async executeRecaptcha(action: string = 'sms'): Promise<string> {
     return new Promise((resolve, reject) => {
