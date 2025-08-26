@@ -144,10 +144,10 @@ const ConsultationPopup: React.FC<ConsultationPopupProps> = ({ isOpen, onClose }
           </div>
         </div>
         <div className="popup-right">
+          <button className="popup-close-btn" onClick={onClose}>
+            <X size={20} />
+          </button>
           <div className="popup-form-container">
-            <button className="popup-close-btn" onClick={onClose}>
-              <X size={20} />
-            </button>
             <h3 className="popup-form-title">{t('popup.popupTitle')}</h3>
 
             <form onSubmit={handleSubmit} className="popup-form">
