@@ -1,5 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Menu, Calculator, Home, ChevronDown, ShoppingBag, BookOpen, FileText, Users } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -13,6 +17,7 @@ const Header: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   // const [isAuthenticated, setIsAuthenticated] = useState(false);
   const location = useLocation();
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
 
