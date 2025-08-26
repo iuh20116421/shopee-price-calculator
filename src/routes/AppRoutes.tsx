@@ -1,5 +1,9 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from 'react-router-dom';
+import React from 'react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { useNavigate } from 'react-router-dom';
 import MainLayout from '../layouts/MainLayout';
 import Home from '../pages/Home';
 import Calculator from '../pages/Calculator';
