@@ -24,6 +24,7 @@
   text-align: center;
   padding: 10px;
   position: relative;
+  border-radius: 15px;
 }
 
 .calculator-header h1 {
