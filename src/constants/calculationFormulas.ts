@@ -322,8 +322,10 @@ export function formatPercentage(value: number): string {
  * Parse chuỗi phí thành số
  */
 export function parseFeeString(feeString: string): number {
-  const match = feeString.match(/(\d+(?:\.\d+)?)/);
-  return match ? parseFloat(match[1]) : 0;
+  const normalizedString = feeString.replace(',', '.');
+  const match = normalizedString.match(/(\d+(?:\.\d+)?)/);
+  const result = match ? parseFloat(match[1]) : 0;
+  return result;
 }
 
 /**
