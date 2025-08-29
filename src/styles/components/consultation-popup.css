@@ -1740,7 +1740,7 @@ input:focus, select:focus {
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
   max-width: 900px;
   width: 100%;
-  max-height: 90vh;
+  max-height: 70vh;
   overflow: hidden;
   display: flex;
   animation: slideUp 0.3s ease;
