@@ -42,18 +42,18 @@ const Calculator: React.FC = () => {
                          if (values.length > 0) {
           const [PAYMENT_FEE_PERCENT, VOUCHER_XTRA_FEE_PERCENT, CONTENT_XTRA_FEE_PERCENT, FREESHIP_XTRA_FEE_PERCENT, FREESHIP_XTRA_FEE_MAX, CONTENT_XTRA_FEE_MAX, SHIPPING_COST_PI_SHIP, INFRASTRUCTURE_FEE, VAT_PERCENT] = values[0];
           
-          // Lưu vào state
-          setFixedFees({
-            PAYMENT_FEE_PERCENT: parseFloat(PAYMENT_FEE_PERCENT) || 4.91,
-            VOUCHER_XTRA_FEE_PERCENT: parseFloat(VOUCHER_XTRA_FEE_PERCENT) || 3.0,
-            CONTENT_XTRA_FEE_PERCENT: parseFloat(CONTENT_XTRA_FEE_PERCENT) || 2.95,
-            FREESHIP_XTRA_FEE_PERCENT: parseFloat(FREESHIP_XTRA_FEE_PERCENT) || 5.89,
-            FREESHIP_XTRA_FEE_MAX: parseFloat(FREESHIP_XTRA_FEE_MAX) || 50000,
-            CONTENT_XTRA_FEE_MAX: parseFloat(CONTENT_XTRA_FEE_MAX) || 50000,
-            SHIPPING_COST_PI_SHIP: parseFloat(SHIPPING_COST_PI_SHIP) || 1620,
-            INFRASTRUCTURE_FEE: parseFloat(INFRASTRUCTURE_FEE) || 3000,
-            VAT_PERCENT: parseFloat(VAT_PERCENT) || 1.5
-          });
+                     // Lưu vào state
+           setFixedFees({
+             PAYMENT_FEE_PERCENT: parseFloat(PAYMENT_FEE_PERCENT) || 4.91,
+             VOUCHER_XTRA_FEE_PERCENT: parseFloat(VOUCHER_XTRA_FEE_PERCENT) || 3.0,
+             CONTENT_XTRA_FEE_PERCENT: parseFloat(CONTENT_XTRA_FEE_PERCENT) || 2.95,
+             FREESHIP_XTRA_FEE_PERCENT: isNaN(parseFloat(FREESHIP_XTRA_FEE_PERCENT)) ? 5.89 : parseFloat(FREESHIP_XTRA_FEE_PERCENT),
+             FREESHIP_XTRA_FEE_MAX: isNaN(parseFloat(FREESHIP_XTRA_FEE_MAX)) ? 50000 : parseFloat(FREESHIP_XTRA_FEE_MAX),
+             CONTENT_XTRA_FEE_MAX: parseFloat(CONTENT_XTRA_FEE_MAX) || 50000,
+             SHIPPING_COST_PI_SHIP: parseFloat(SHIPPING_COST_PI_SHIP) || 1620,
+             INFRASTRUCTURE_FEE: parseFloat(INFRASTRUCTURE_FEE) || 3000,
+             VAT_PERCENT: parseFloat(VAT_PERCENT) || 1.5
+           });
            
                      console.log("Fixed fees updated from Google Sheets:", {
             PAYMENT_FEE_PERCENT,
