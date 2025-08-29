@@ -30,9 +30,9 @@ interface ProductSuggestion {
 const Calculator: React.FC = () => {
   const getDataFixedFee = useCallback(async () => {
     try {
-      const API_KEY = 'IoCk1zjePChfFpw65JHqD0Y3';
-      const SPREADSHEET_ID = '1onh0l-7hZ2JQDr9c4rnkC6QHXALYnvRJGdMOs2Wb8w4';
-      const RANGE = 'LadiPage!A2:AZ67';
+      const API_KEY = 'AIzaSyDW-UUUQc4AFLpO3kMk_lB_RkSF_sHZyo4';
+      const SPREADSHEET_ID = '1MZSfcmOe_urH3WibOExoTwy28LLSUppdREBC_hYf1Ug';
+      const RANGE = 'Chi phí Shopee!A2:I2';
       
       console.log('Fetching data from Google Sheets...');
       const response = await axios.get(`https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE}?key=${API_KEY}`);
@@ -342,7 +342,6 @@ const Calculator: React.FC = () => {
       }
       return;
     }
-
     const input: CalculationInput = {
       cogs: parseFloat(formData.cogs),
       productFeePercent: parseFeeString(selectedProduct!.fee),
