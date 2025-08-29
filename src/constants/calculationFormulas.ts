@@ -145,46 +145,59 @@ export function calculateSellingPrice(input: CalculationInput): CalculationResul
     }
     
     let freeshipXtraFeeCalculated = 0;
-    if (input.shopeeType === 'mall' && input.freeshipXtra) {
+    if (input.shopeeType === 'mall') {
       freeshipXtraFeeCalculated = Math.min(freeshipXtraFeePercent, fees.FREESHIP_XTRA_FEE_MAX);
     }
     
-    // Đếm số dịch vụ được chọn
-    const selectedServices = [
-      input.contentXtra, 
-      input.voucherXtra, 
-      input.freeshipXtra && input.shopeeType === 'mall'
-    ].filter(Boolean).length;
-    
-    if (selectedServices > 1) {
-      // Nhiều dịch vụ được chọn - chỉ tính phí cao nhất
-      const fees_array = [];
-      if (input.contentXtra) fees_array.push({ type: 'content', fee: contentXtraFeeCalculated });
-      if (input.voucherXtra) fees_array.push({ type: 'voucher', fee: voucherXtraFeePercent });
-      if (input.freeshipXtra && input.shopeeType === 'mall') fees_array.push({ type: 'freeship', fee: freeshipXtraFeeCalculated });
+    // Đối với Mall: Freeship Xtra luôn có, Content và Voucher áp dụng logic "chọn cao hơn"
+    if (input.shopeeType === 'mall') {
+      // Freeship Xtra luôn được tính cho Mall
+      freeshipXtraFee = freeshipXtraFeeCalculated;
       
-      // Tìm phí cao nhất
-      const highestFee = fees_array.reduce((max, current) => current.fee > max.fee ? current : max);
+      // Logic cho Content và Voucher Xtra
+      const contentAndVoucherSelected = input.contentXtra && input.voucherXtra;
       
-      if (highestFee.type === 'content') {
-        contentXtraFee = highestFee.fee;
-      } else if (highestFee.type === 'voucher') {
-        voucherXtraFee = highestFee.fee;
-      } else if (highestFee.type === 'freeship') {
-        freeshipXtraFee = highestFee.fee;
+      if (contentAndVoucherSelected) {
+        // Chọn cả 2: chỉ tính phí cao hơn
+        if (contentXtraFeeCalculated > voucherXtraFeePercent) {
+          contentXtraFee = contentXtraFeeCalculated;
+          voucherXtraFee = 0;
+        } else {
+          voucherXtraFee = voucherXtraFeePercent;
+          contentXtraFee = 0;
+        }
+      } else {
+        // Chỉ chọn 1 hoặc không chọn: tính bình thường
+        if (input.contentXtra) {
+          contentXtraFee = contentXtraFeeCalculated;
+        }
+        
+        if (input.voucherXtra) {
+          voucherXtraFee = voucherXtraFeePercent;
+        }
       }
     } else {
-      // Chỉ 1 dịch vụ được chọn - tính bình thường
-      if (input.contentXtra) {
-        contentXtraFee = contentXtraFeeCalculated;
-      }
+      // Logic cho Regular shop (giữ nguyên)
+      const selectedServices = [input.contentXtra, input.voucherXtra].filter(Boolean).length;
       
-      if (input.voucherXtra) {
-        voucherXtraFee = voucherXtraFeePercent;
-      }
-      
-      if (input.freeshipXtra && input.shopeeType === 'mall') {
-        freeshipXtraFee = freeshipXtraFeeCalculated;
+      if (selectedServices > 1) {
+        // Chọn cả 2: chỉ tính phí cao hơn
+        if (contentXtraFeeCalculated > voucherXtraFeePercent) {
+          contentXtraFee = contentXtraFeeCalculated;
+          voucherXtraFee = 0;
+        } else {
+          voucherXtraFee = voucherXtraFeePercent;
+          contentXtraFee = 0;
+        }
+      } else {
+        // Chỉ chọn 1 hoặc không chọn: tính bình thường
+        if (input.contentXtra) {
+          contentXtraFee = contentXtraFeeCalculated;
+        }
+        
+        if (input.voucherXtra) {
+          voucherXtraFee = voucherXtraFeePercent;
+        }
       }
     }
     const infrastructureFee = fees.INFRASTRUCTURE_FEE;
@@ -240,33 +253,42 @@ function calculateTotalFeePercent(input: CalculationInput, fees: typeof FIXED_FE
                        fees.VAT_PERCENT +
                        input.desiredProfitPercent;
 
-  // Logic tính phí Xtra - chỉ tính phí cao nhất nếu nhiều dịch vụ được chọn
-  const selectedServices = [
-    input.contentXtra, 
-    input.voucherXtra, 
-    input.freeshipXtra && input.shopeeType === 'mall'
-  ].filter(Boolean).length;
-  
-  if (selectedServices > 1) {
-    // Nhiều dịch vụ được chọn - chỉ tính phí cao nhất
-    const feePercentages = [];
-    if (input.contentXtra) feePercentages.push(fees.CONTENT_XTRA_FEE_PERCENT);
-    if (input.voucherXtra) feePercentages.push(fees.VOUCHER_XTRA_FEE_PERCENT);
-    if (input.freeshipXtra && input.shopeeType === 'mall') feePercentages.push(fees.FREESHIP_XTRA_FEE_PERCENT);
+  // Logic tính phí Xtra
+  if (input.shopeeType === 'mall') {
+    // Mall: Freeship Xtra luôn có, Content và Voucher áp dụng logic "chọn cao hơn"
+    totalFeePercent += fees.FREESHIP_XTRA_FEE_PERCENT;
     
-    totalFeePercent += Math.max(...feePercentages);
+    const contentAndVoucherSelected = input.contentXtra && input.voucherXtra;
+    
+    if (contentAndVoucherSelected) {
+      // Chọn cả 2: chỉ tính phí cao hơn
+      totalFeePercent += Math.max(fees.CONTENT_XTRA_FEE_PERCENT, fees.VOUCHER_XTRA_FEE_PERCENT);
+    } else {
+      // Chỉ chọn 1 hoặc không chọn: tính bình thường
+      if (input.contentXtra) {
+        totalFeePercent += fees.CONTENT_XTRA_FEE_PERCENT;
+      }
+      
+      if (input.voucherXtra) {
+        totalFeePercent += fees.VOUCHER_XTRA_FEE_PERCENT;
+      }
+    }
   } else {
-    // Chỉ 1 dịch vụ được chọn - tính bình thường
-    if (input.contentXtra) {
-      totalFeePercent += fees.CONTENT_XTRA_FEE_PERCENT;
-    }
-
-    if (input.voucherXtra) {
-      totalFeePercent += fees.VOUCHER_XTRA_FEE_PERCENT;
-    }
+    // Regular: Logic cho Content và Voucher
+    const contentAndVoucherSelected = input.contentXtra && input.voucherXtra;
     
-    if (input.freeshipXtra && input.shopeeType === 'mall') {
-      totalFeePercent += fees.FREESHIP_XTRA_FEE_PERCENT;
+    if (contentAndVoucherSelected) {
+      // Chọn cả 2: chỉ tính phí cao hơn
+      totalFeePercent += Math.max(fees.CONTENT_XTRA_FEE_PERCENT, fees.VOUCHER_XTRA_FEE_PERCENT);
+    } else {
+      // Chỉ chọn 1 hoặc không chọn: tính bình thường
+      if (input.contentXtra) {
+        totalFeePercent += fees.CONTENT_XTRA_FEE_PERCENT;
+      }
+
+      if (input.voucherXtra) {
+        totalFeePercent += fees.VOUCHER_XTRA_FEE_PERCENT;
+      }
     }
   }
 
